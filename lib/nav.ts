@@ -104,7 +104,7 @@ export const VISA_GROUPS: NavGroup[] = [
           { label: 'ENS 186 Direct Entry', href: '/employer-sponsored/ens-186-direct' },
           { label: 'Regional Sponsored (494)', href: '/employer-sponsored/skilled-regional-494' },
           { label: 'DAMA labour agreements', href: '/employer-sponsored/dama' },
-          { label: 'Global Talent Employer Sponsored', href: '/employer-sponsored/gtes' },
+          { label: 'Global Talent Employer Sponsored (closed)', href: '/employer-sponsored/gtes', desc: 'No new agreements' },
         ],
       },
       {
@@ -319,7 +319,6 @@ export const TOOLS: NavLink[] = [
   { label: 'Student Visa Financial Calculator', href: '/study-australia/student-visa-financial-calculator', desc: 'Estimate funds for a Subclass 500' },
   { label: 'South Australia Nomination', href: '/south-australia-state-nomination', desc: 'Guide to SA state nomination' },
   { label: 'AFP National Police Check', href: '/afp-national-police-check', desc: 'Apply for an Australian police check' },
-  { label: 'Indian Police Check', href: '/indian-police-check', desc: 'Police clearance from India' },
   { label: 'Office Visit Form', href: '/office-visit-form', desc: 'Fill in before you visit us' },
 ];
 

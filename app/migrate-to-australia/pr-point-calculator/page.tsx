@@ -235,12 +235,12 @@ export default function PRPointCalculatorPage() {
                 onChange={(e) => setEnglishKey(e.target.value)}
                 className={`${toolInput} cursor-pointer`}
               >
-                <option value="competent">Competent English (IELTS 6 / PTE 50 each band) — 0 points</option>
-                <option value="proficient">Proficient English (IELTS 7 / PTE 65 each band) — 10 points</option>
-                <option value="superior">Superior English (IELTS 8 / PTE 79 each band) — 20 points</option>
+                <option value="competent">Competent English (IELTS 6 each band, or PTE 47/48/51/54) — 0 points</option>
+                <option value="proficient">Proficient English (IELTS 7 each band, or PTE 58/59/69/76) — 10 points</option>
+                <option value="superior">Superior English (IELTS 8 each band, or PTE 69/70/85/88) — 20 points</option>
               </select>
               <p className={toolHint}>
-                PTE Academic, IELTS, Cambridge C1, or TOEFL iBT results must be less than 3 years old at invitation.
+                PTE scores are listening, reading, writing, then speaking, for a test taken on or after 7 August 2025. Results must be less than 3 years old at invitation.
               </p>
             </div>
 

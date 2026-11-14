@@ -115,11 +115,7 @@ const faqs = [
     a: (
       <>
         If you have lived overseas for 12 months or more in the past ten years, you may need certificates from those
-        countries. See our{' '}
-        <Link href="/indian-police-check" className={linkText}>
-          Indian police check page
-        </Link>{' '}
-        for India.
+        countries as well as an Australian police check.
       </>
     ),
   },
@@ -370,7 +366,6 @@ export default function AfpPoliceCheckPage() {
       <section className="py-12 bg-slate-50">
         <div className={`${container} flex flex-col sm:flex-row sm:items-center gap-4`}>
           <p className="text-base font-bold text-slate-900 sm:mr-4">Related</p>
-          <Link href="/indian-police-check" className={`${btnGhostLight} w-full sm:w-auto`}>Indian police check</Link>
           <Link href="/migrate-to-australia" className={`${btnGhostLight} w-full sm:w-auto`}>Migrate to Australia</Link>
           <Link href="/citizenship" className={`${btnGhostLight} w-full sm:w-auto`}>Citizenship</Link>
           <Link href="/contact" className={`${btnGhostLight} w-full sm:w-auto`}>Contact us</Link>

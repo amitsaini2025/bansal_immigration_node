@@ -148,7 +148,7 @@
  },
  {
   "path": "/employer-sponsored/gtes",
-  "name": "Global Talent Employer Sponsored (GTES)",
+  "name": "Global Talent Employer Sponsored (GTES) — closed",
   "category": "employer-sponsored",
   "isHub": false,
   "order": 21
@@ -925,7 +925,7 @@
  },
  {
   "path": "/skilled-migration/temporary-graduate-visa-extension",
-  "name": "Skilled Recognised Graduate visa (subclass 476) — closed",
+  "name": "Second Temporary Graduate visa (subclass 485)",
   "category": "skilled-migration",
   "isHub": false,
   "order": 132

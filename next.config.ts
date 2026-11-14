@@ -55,6 +55,19 @@ const nextConfig: NextConfig = {
 
     return list;
   },
+  async headers() {
+    const noIndex = [
+      {
+        key: 'X-Robots-Tag',
+        value: 'noindex, nofollow, noarchive, nosnippet, noimageindex',
+      },
+    ];
+
+    return [
+      { source: '/', headers: noIndex },
+      { source: '/:path*', headers: noIndex },
+    ];
+  },
   async rewrites() {
     return {
       fallback: [

@@ -722,7 +722,7 @@
         "x": "**Receive an invitation and lodge your visa.** You have a limited time after an invitation to lodge. Pay the visa application charge and upload your documents."
        },
        {
-        "x": "**Complete health and police checks.** You may need health examinations and police certificates for every country where you lived for a set period. See our [AFP police check](/afp-national-police-check) and [Indian police check](/indian-police-check) pages. After the decision, check your visa conditions and the date by which you must first enter Australia."
+        "x": "**Complete health and police checks.** You may need health examinations and police certificates for every country where you lived for a set period. See our [AFP police check](/afp-national-police-check) page. After the decision, check your visa conditions and the date by which you must first enter Australia."
        }
       ]
      }
@@ -1027,7 +1027,7 @@
       "t": "ul",
       "items": [
        {
-        "x": "**Post-Vocational Education Work Stream**: For graduates with associate degrees, diplomas, or trade qualifications relevant to occupations on the skilled occupation list (up to 18 months)"
+        "x": "**Post-Vocational Education Work stream**: For graduates with an associate degree, diploma, or trade qualification that is closely related to an occupation on the Medium and Long-term Strategic Skills List. The stay is up to 18 months."
        },
        {
         "x": "**Post-Higher Education Work Stream**: For graduates with bachelor's degrees or higher from Australian institutions (2-3 years depending on qualification)"
@@ -1056,7 +1056,7 @@
         "x": "Must have recently graduated from an Australian educational institution with eligible qualification"
        },
        {
-        "x": "Hold valid student visa or bridging visa at time of application"
+        "x": "Be in Australia when you apply, hold an eligible visa, and have held a student visa in the last 6 months"
        },
        {
         "x": "Meet Australian study requirement (at least 2 years study in Australia in CRICOS-registered course)"
@@ -1065,16 +1065,16 @@
         "x": "Apply within 6 months of course completion date"
        },
        {
-        "x": "Be under 35 years of age at time of application"
+        "x": "Be 35 or under when you apply. You can be under 50 if you use a masters by research or a doctoral degree to meet the study requirement, or if you hold a Hong Kong or British National (Overseas) passport."
        },
        {
-        "x": "Hold adequate health insurance (Overseas Visitor Health Cover or equivalent) Demonstrate competent English (For the IELTS, the requirement is an overall band score of 6.5, with at least a 5.5 in each component.)"
+        "x": "Hold adequate health insurance, such as Overseas Visitor Health Cover. Meet the Temporary Graduate English requirement. For IELTS, that is an overall score of 6.5, with at least 5.5 in each part. This is higher than Competent English."
        },
        {
         "x": "Meet health and character requirements"
        },
        {
-        "x": "For Post-Vocational stream: hold skills assessment for nominated occupation on skilled occupation list"
+        "x": "For the Post-Vocational Education Work stream: nominate an occupation on the Medium and Long-term Strategic Skills List and include a skills assessment for that occupation"
        },
        {
         "x": "For Second stream: previously held Subclass 485 and studied/lived in regional Australia"
@@ -1130,13 +1130,13 @@
         "x": "Complete your Australian qualification and receive completion letter from institution"
        },
        {
-        "x": "Check eligibility - confirm qualification type, study requirement (2 years), and age (under 35)"
+        "x": "Check eligibility. Confirm your qualification, the Australian study requirement, and that you are 35 or under, unless an age exception applies."
        },
        {
         "x": "Obtain skills assessment (Post-Vocational stream only) from relevant assessing authority for nominated occupation"
        },
        {
-        "x": "Complete English language test - achieve competent English minimum (IELTS 6.5 each component or equivalent)"
+        "x": "Complete an English test. For IELTS, you need an overall score of 6.5, with at least 5.5 in each part, or the equivalent result on an accepted test."
        },
        {
         "x": "Arrange health insurance - obtain Overseas Visitor Health Cover (OVHC) for visa duration Lodge visa application within 6 months of course completion date through ImmiAccount"
@@ -1249,7 +1249,7 @@
         "x": "[Temporary Graduate Visa Subclass 485-Higher Education](/migrate-to-australia/post-study-work-visa-subclass-485)"
        },
        {
-        "x": "[Temporary Graduate Visa Extension](/skilled-migration/temporary-graduate-visa-extension)"
+        "x": "[Second Temporary Graduate visa (485)](/skilled-migration/temporary-graduate-visa-extension)"
        },
        {
         "x": "[Skilled Independent Visa Subclass 189](/migrate-to-australia/skilled-independent-visa-subclass-189)"
@@ -1390,7 +1390,7 @@
       "t": "ul",
       "items": [
        {
-        "x": "Aged 35 years or under when you apply (exceptions may apply)"
+        "x": "Be 35 or under when you apply. You can be under 50 if you use a masters by research or a doctoral degree to meet the study requirement, or if you hold a Hong Kong or British National (Overseas) passport."
        },
        {
         "x": "Be physically in Australia at the time of lodgement"
@@ -1607,7 +1607,7 @@
         "x": "[Temporary Graduate Visa Subclass 485-Vocational](/migrate-to-australia/temporary-graduate-visa-subclass-485)"
        },
        {
-        "x": "[Temporary Graduate Visa Extension](/skilled-migration/temporary-graduate-visa-extension)"
+        "x": "[Second Temporary Graduate visa (485)](/skilled-migration/temporary-graduate-visa-extension)"
        },
        {
         "x": "[Skilled Independent Visa Subclass 189](/migrate-to-australia/skilled-independent-visa-subclass-189)"
@@ -1950,7 +1950,7 @@
         "x": "[Temporary Graduate Visa Subclass 485-Higher Education](/migrate-to-australia/post-study-work-visa-subclass-485)"
        },
        {
-        "x": "[Temporary Graduate Visa Extension](/skilled-migration/temporary-graduate-visa-extension)"
+        "x": "[Second Temporary Graduate visa (485)](/skilled-migration/temporary-graduate-visa-extension)"
        },
        {
         "x": "[Skilled Nominated Visa Subclass 190](/migrate-to-australia/skilled-nominated-visa-subclass-190)"
@@ -2323,7 +2323,7 @@
         "x": "[Temporary Graduate Visa Subclass 485-Higher Education](/migrate-to-australia/post-study-work-visa-subclass-485)"
        },
        {
-        "x": "[Temporary Graduate Visa Extension](/skilled-migration/temporary-graduate-visa-extension)"
+        "x": "[Second Temporary Graduate visa (485)](/skilled-migration/temporary-graduate-visa-extension)"
        },
        {
         "x": "[Skilled Independent Visa Subclass 189](/migrate-to-australia/skilled-independent-visa-subclass-189)"
@@ -2699,7 +2699,7 @@
         "x": "[Temporary Graduate Visa Subclass 485-Higher Education](/migrate-to-australia/post-study-work-visa-subclass-485)"
        },
        {
-        "x": "[Temporary Graduate Visa Extension](/skilled-migration/temporary-graduate-visa-extension)"
+        "x": "[Second Temporary Graduate visa (485)](/skilled-migration/temporary-graduate-visa-extension)"
        },
        {
         "x": "[Skilled Independent Visa Subclass 189](/migrate-to-australia/skilled-independent-visa-subclass-189)"
@@ -3045,7 +3045,7 @@
         "x": "[Temporary Graduate Visa Subclass 485-Higher Education](/migrate-to-australia/post-study-work-visa-subclass-485)"
        },
        {
-        "x": "[Temporary Graduate Visa Extension](/skilled-migration/temporary-graduate-visa-extension)"
+        "x": "[Second Temporary Graduate visa (485)](/skilled-migration/temporary-graduate-visa-extension)"
        },
        {
         "x": "[Skilled Independent Visa Subclass 189](/migrate-to-australia/skilled-independent-visa-subclass-189)"
@@ -3395,7 +3395,7 @@
         "x": "[Temporary Graduate Visa Subclass 485-Higher Education](/migrate-to-australia/post-study-work-visa-subclass-485)"
        },
        {
-        "x": "[Temporary Graduate Visa Extension](/skilled-migration/temporary-graduate-visa-extension)"
+        "x": "[Second Temporary Graduate visa (485)](/skilled-migration/temporary-graduate-visa-extension)"
        },
        {
         "x": "[Skilled Independent Visa Subclass 189](/migrate-to-australia/skilled-independent-visa-subclass-189)"
@@ -3564,7 +3564,7 @@
      },
      {
       "t": "p",
-      "x": "**English language (maximum 20)**"
+      "x": "**English language (maximum 20).** The PTE scores in this table are for a PTE Academic test taken on or after 7 August 2025. The four skills are listening, reading, writing, then speaking. A test taken before that date uses the older PTE scores on the Home Affairs website."
      },
      {
       "t": "table",
@@ -3576,17 +3576,17 @@
       "rows": [
        [
         "Competent",
-        "IELTS 6 in each band, PTE 50 in each band",
+        "IELTS 6 in each band. PTE Academic: listening 47, reading 48, writing 51, speaking 54",
         "0"
        ],
        [
         "Proficient",
-        "IELTS 7 in each band, PTE 65 in each band",
+        "IELTS 7 in each band. PTE Academic: listening 58, reading 59, writing 69, speaking 76",
         "10"
        ],
        [
         "Superior",
-        "IELTS 8 in each band, PTE 79 in each band",
+        "IELTS 8 in each band. PTE Academic: listening 69, reading 70, writing 85, speaking 88",
         "20"
        ]
       ]
@@ -4103,7 +4103,7 @@
       ],
       "rows": [
        [
-        "You are on a 482 with the same employer for around two years",
+        "You have 2 years of full-time sponsored work on a 482 in the last 3 years",
         "[ENS 186 Temporary Residence Transition](/employer-sponsored/ens-186-trt)",
         "Permanent"
        ],
@@ -4128,9 +4128,9 @@
         "Agreement-based"
        ],
        [
-        "An established employer needs a highly skilled specialist under a labour agreement",
-        "[Global Talent Employer Sponsored](/employer-sponsored/gtes)",
-        "Labour agreement"
+        "You are looking up the old Global Talent Employer Sponsored program",
+        "[GTES (closed)](/employer-sponsored/gtes)",
+        "Closed. Use a 482, a 186, or a labour agreement"
        ],
        [
         "A specialist is needed for a short, highly specialised job",
@@ -4314,7 +4314,7 @@
   ],
   "pageType": "Visa subpage (temporary employer-sponsored work visa)",
   "seo": {
-   "title": "Skill in Demand Visa 482 - Temporary Skill Shortage Visa Australia | Bansal Immigration",
+   "title": "Skills in Demand visa (subclass 482) | Bansal Immigration",
    "description": "The Skills in Demand visa (subclass 482) is a temporary visa that allows approved Australian employers to sponsor skilled overseas workers to fill labour.",
    "h1": "Skill in Demand Visa (482)"
   },
@@ -5783,7 +5783,7 @@
        ],
        [
         "Pathway",
-        "Temporary Skill Shortage (TSS) Visa Subclass 482"
+        "Skills in Demand visa (subclass 482)"
        ]
       ]
      }
@@ -5954,11 +5954,11 @@
     "blocks": [
      {
       "t": "h3",
-      "x": "Temporary Skill Shortage (TSS) Visa Subclass 482"
+      "x": "Skills in Demand visa (subclass 482)"
      },
      {
       "t": "p",
-      "x": "Although the Subclass 408 Temporary Activity visa is intended for short-term activities and has no direct route to permanent residency, it can serve as a strategic stepping stone toward longer-term skilled migration. By showcasing your skills, professionalism, and adaptability during your 408 visa period, you may attract interest from Australian employers willing to sponsor you for a Temporary Skill Shortage (TSS) Subclass 482 visa. The TSS 482 visa enables skilled work for up to four years and can lead to permanent residency through the Employer Nomination Scheme (ENS) Subclass 186 after three years with the same employer, offering a clear pathway from temporary activity to long-term settlement in Australia."
+      "x": "The subclass 408 visa is for a short-term activity. It does not lead straight to permanent residence. An Australian employer may later sponsor you for a Skills in Demand visa (subclass 482). That visa lets you work for up to 4 years. Permanent residence through the Employer Nomination Scheme (subclass 186) needs a new nomination. For the Temporary Residence Transition stream, you need 2 years of full-time sponsored work in the 3 years before you apply. Your most recent approved sponsor nominates you. None of this is automatic."
      }
     ]
    },
@@ -6112,7 +6112,7 @@
        ],
        [
         "Pathway",
-        "Temporary Skill Shortage (TSS) Visa Subclass 482"
+        "Skills in Demand visa (subclass 482)"
        ]
       ]
      }
@@ -6283,11 +6283,11 @@
     "blocks": [
      {
       "t": "h3",
-      "x": "Temporary Skill Shortage (TSS) Visa Subclass 482"
+      "x": "Skills in Demand visa (subclass 482)"
      },
      {
       "t": "p",
-      "x": "While the Subclass 400 Temporary Work (Short Stay Specialist) visa is designed for short-term, highly specialized work with no direct pathway to permanent residency, successfully completing your specialized assignment in Australia can position you strategically for longer-term employer-sponsored opportunities, particularly the Temporary Skill Shortage (TSS) visa Subclass 482. After demonstrating your highly specialized skills, professional capabilities, and value to Australian businesses during your 400 visa period, you may build relationships with Australian employers or client organizations that recognize your expertise and are willing to provide formal sponsorship for longer-term employment."
+      "x": "The subclass 400 visa is for short, highly specialised work. It does not lead straight to permanent residence. After the assignment, an Australian employer may agree to sponsor you for a Skills in Demand visa (subclass 482). That is a separate application. You still have to meet the rules for that visa."
      }
     ]
    },
@@ -6441,7 +6441,7 @@
        ],
        [
         "Pathway",
-        "Temporary Skill Shortage (TSS) Visa Subclass 482"
+        "Skills in Demand visa (subclass 482)"
        ]
       ]
      }
@@ -6616,11 +6616,11 @@
     "blocks": [
      {
       "t": "h3",
-      "x": "Temporary Skill Shortage (TSS) Visa Subclass 482"
+      "x": "Skills in Demand visa (subclass 482)"
      },
      {
       "t": "p",
-      "x": "Although the Subclass 407 Training visa is temporary and has no direct pathway to permanent residency, it can serve as a valuable stepping stone toward skilled migration. Completing your training in Australia helps you gain local experience, build professional networks, and showcase your abilities to potential employers who may sponsor you for a Temporary Skill Shortage (TSS) Subclass 482 visa. The 482 visa allows skilled work for up to four years and can lead to permanent residency through the Employer Nomination Scheme (ENS) 186 after three years with the same employer. By using your 407 visa period strategically, you can strengthen your skills, meet visa requirements, and position yourself for long-term settlement in Australia."
+      "x": "The subclass 407 visa is for training. It does not lead straight to permanent residence. An employer may later sponsor you for a Skills in Demand visa (subclass 482). That visa lets you work for up to 4 years. Permanent residence through the Employer Nomination Scheme (subclass 186) needs a new nomination. For the Temporary Residence Transition stream, you need 2 years of full-time sponsored work in the 3 years before you apply. Your most recent approved sponsor nominates you. None of this is automatic."
      }
     ]
    },
@@ -6729,14 +6729,14 @@
   "pageType": "Visa subpage (permanent employer-sponsored visa, transition stream)",
   "seo": {
    "title": "ENS 186 TRT Visa - Employer Nomination Scheme Transition | Bansal Immigration",
-   "description": "The Subclass 186 Temporary Residence Transition stream is open to 482 holders after 2 years in the nominated occupation. A new subclass 457 is closed. If you still hold a 457, you may still be able to use this stream.",
+   "description": "The subclass 186 Temporary Residence Transition stream is open after 2 years of full-time sponsored work in the last 3 years. Your most recent sponsor must nominate you.",
    "h1": "Employer Nomination Scheme 186 (TRT)"
   },
   "hero": {
    "badge": "",
    "h1": "Employer Nomination Scheme 186 (TRT)",
    "intro": [
-    "This permanent visa is open to people who hold a Skills in Demand (482) visa and have worked in the nominated occupation for at least 2 years. Your employer must nominate you. A new subclass 457 is closed. If you still hold a 457, you may still be able to use this stream. Permanent residence is not automatic."
+    "This permanent visa is open to people who hold a Skills in Demand (482) visa, or who still hold a subclass 457. You need 2 years of full-time sponsored work in Australia in the 3 years before you apply. Unpaid leave does not count. Your most recent approved sponsor must nominate you. A new subclass 457 is closed. Permanent residence is not automatic."
    ],
    "buttons": [
     {
@@ -6788,7 +6788,7 @@
     "blocks": [
      {
       "t": "p",
-      "x": "The **TRT stream** is designed for temporary skilled visa holders (subclass 457, 482, or eligible bridging) who have worked **for at least two years** with their sponsoring employer in the same occupation. It allows these workers to transition from temporary to permanent residence while continuing employment with their current approved sponsor."
+      "x": "The **Temporary Residence Transition stream** is for people who hold a subclass 457 or 482 visa, or an eligible bridging visa. You need at least 2 years of full-time sponsored work in Australia in the 3 years before you apply. The work must be in an occupation your 457 or 482 was granted for. Unpaid leave does not count. Your most recent approved sponsor nominates you."
      }
     ]
    },
@@ -6805,10 +6805,10 @@
         "x": "You hold a 457, 482, or eligible bridging visa."
        },
        {
-        "x": "You were nominated by your current sponsoring employer."
+        "x": "Your most recent approved sponsor nominates you."
        },
        {
-        "x": "You have worked full-time for at least 2 years in the position."
+        "x": "You have at least 2 years of full-time sponsored work in Australia in the 3 years before you apply. Unpaid leave does not count."
        },
        {
         "x": "The occupation is consistent with your sponsored role."
@@ -6826,7 +6826,7 @@
         "x": "Your employer meets nomination and sponsorship obligations."
        },
        {
-        "x": "You are paid at or above the market salary and TSMIT."
+        "x": "Your pay is at least the market salary rate and the Core Skills Income Threshold. For a nomination lodged from 1 July 2026 to 30 June 2027, that threshold is AUD 79,423."
        },
        {
         "x": "You intend to continue working for your employer long term."
@@ -6888,7 +6888,7 @@
       "t": "ol",
       "items": [
        {
-        "x": "Work for your sponsor full-time for 2 years (on 457/482)."
+        "x": "Count 2 years of full-time sponsored work in the 3 years before you apply. The work can be with more than one approved sponsor."
        },
        {
         "x": "Ensure your employer is still an approved sponsor."
@@ -6949,7 +6949,7 @@
      },
      {
       "t": "p",
-      "x": "Australian citizenship marks full integration and a strong sense of belonging within the national community. Applicants apply online, sit a citizenship test, provide identity and character documents, and attend a citizenship ceremony after approval, usually within 3–12 months. Dual citizenship is allowed by Australia, though some countries require renunciation, so rules should be checked. With fees around AUD 400, most ENS 186 TRT holders can apply about one year after gaining permanent residency—typically achieving citizenship 5–6 years after first arriving on a 482 visa—completing their journey to full Australian membership and security."
+      "x": "You can apply for Australian citizenship after you have lived in Australia for 4 years, including at least 12 months as a permanent resident. You also need to meet the character rules and, in most cases, pass the citizenship test. You pay the citizenship application charge on the Home Affairs website. Check that charge before you apply. Australia allows dual citizenship. Some other countries do not, so check the rules of any country you already belong to."
      }
     ]
    },
@@ -7002,7 +7002,7 @@
      },
      {
       "t": "p",
-      "x": "If an applicant aged 18 or over does not have functional English, a second charge of AUD 4,885 can apply before the visa is granted. It is nil if they have functional English."
+      "x": "If the main applicant does not have functional English, a second charge of AUD 9,800 is paid before the visa is granted. For each other applicant aged 18 or over, that second charge is AUD 4,890. It is nil for a person who has functional English."
      }
     ]
    },
@@ -7141,10 +7141,10 @@
         "x": "You have an occupation on the relevant skilled list."
        },
        {
-        "x": "You have at least 3 years of relevant work experience (commonly expected)."
+        "x": "You have at least 3 years of full-time work in the nominated occupation, unless an exemption applies."
        },
        {
-        "x": "You hold a positive skills assessment for the nominated occupation."
+        "x": "You have a positive skills assessment for the nominated occupation, unless an exemption applies."
        },
        {
         "x": "You meet Competent English requirements."
@@ -7159,7 +7159,7 @@
         "x": "The position is genuine and full-time."
        },
        {
-        "x": "The market salary rate and TSMIT thresholds are met."
+        "x": "The pay is at least the market salary rate and the Core Skills Income Threshold. For a nomination lodged from 1 July 2026 to 30 June 2027, that threshold is AUD 79,423."
        },
        {
         "x": "The employer meets sponsorship compliance obligations."
@@ -7335,7 +7335,7 @@
      },
      {
       "t": "p",
-      "x": "If an applicant aged 18 or over does not have functional English, a second charge of AUD 4,885 can apply before the visa is granted. It is nil if they have functional English."
+      "x": "If the main applicant does not have functional English, a second charge of AUD 9,800 is paid before the visa is granted. For each other applicant aged 18 or over, that second charge is AUD 4,890. It is nil for a person who has functional English."
      }
     ]
    },
@@ -7382,8 +7382,8 @@
   "path": "/employer-sponsored/gtes",
   "category": "employer-sponsored",
   "isHub": false,
-  "name": "Global Talent Employer Sponsored (GTES)",
-  "primaryKeyword": "Global Talent Employer Sponsored",
+  "name": "Global Talent Employer Sponsored (GTES) — closed",
+  "primaryKeyword": "Global Talent Employer Sponsored closed",
   "keywords": [
    "GTES program Australia",
    "GTES visa",
@@ -7394,15 +7394,15 @@
   ],
   "pageType": "Visa subpage (employer-led specialist pathway)",
   "seo": {
-   "title": "GTES Program Australia | Global Talent Employer Sponsored | Bansal Immigration",
-   "description": "The Global Talent Employer Sponsored (GTES) program lets approved Australian employers sponsor highly skilled, niche overseas workers for roles that.",
+   "title": "GTES program closed | What employers can use now | Bansal Immigration",
+   "description": "The Global Talent Employer Sponsored program is closed to new agreements. Employers can look at the Skills in Demand visa, a 186 visa, or a labour agreement.",
    "h1": "Global Talent Employer Sponsored (GTES)"
   },
   "hero": {
    "badge": "",
    "h1": "Global Talent Employer Sponsored (GTES)",
    "intro": [
-    "The Global Talent Employer Sponsored (GTES) program lets approved Australian employers sponsor highly skilled, niche overseas workers for roles that cannot be filled by Australians or via standard visa pathways. It provides flexible concessions, priority processing, and a PR pathway via the Skills in Demand (SID) visa, with streams for Established Businesses and Startups."
+    "This program is closed to new agreements. It is not a visa. Employers who need a highly skilled worker should look at the Skills in Demand visa (subclass 482), the Employer Nomination Scheme (subclass 186), or a labour agreement. A person with an exceptional record can look at the National Innovation visa (subclass 858)."
    ],
    "buttons": [
     {
@@ -7421,53 +7421,32 @@
     "blocks": [
      {
       "t": "p",
-      "x": "The GTES program is designed to bring globally mobile, highly specialised talent to Australia where their expertise will act as job multipliers—creating new roles for Australians and transferring skills into local teams. Employers must first show that the position cannot be filled through existing skilled visa programs (particularly the SID visa’s standard streams). Once a GTES agreement is approved, the employer can sponsor candidates for a SID visa with tailored concessions and faster processing."
+      "x": "The Global Talent Employer Sponsored program used to let some employers sponsor highly skilled workers, with extra concessions. You cannot start a new GTES agreement now."
      },
      {
       "t": "p",
-      "x": "**Key features include:**"
+      "x": "If you already have a GTES agreement, that agreement still runs to its own end date. A registered agent can read it with you."
+     },
+     {
+      "t": "p",
+      "x": "**What to look at instead**"
      },
      {
       "t": "ul",
       "items": [
        {
-        "x": "Access to niche roles beyond the standard SID occupation lists."
+        "x": "[Skills in Demand visa (subclass 482)](/employer-sponsored/sid-visa-482), including the Specialist Skills stream for highly paid roles."
        },
        {
-        "x": "**Two streams:**Established Business : up to 20 positions per year, streamlined agreements, 4-year SID visas, pathway to PR after 2 years, possible age concessions, and 180 days for visa holders to find a new sponsor if employment ceases. Startup: for tech/STEM startups endorsed by the independent GTES startup advisory panel; up to 5 positions per year; similar flexibility, 4-year SID visas, and PR pathway after 2 years."
+        "x": "[Employer Nomination Scheme (subclass 186)](/employer-sponsored/ens-186-direct), if the goal is permanent residence."
        },
        {
-        "x": "Higher earning thresholds than standard SID streams."
+        "x": "A labour agreement, including a [DAMA](/employer-sponsored/dama), where a standard occupation list does not fit the role."
        },
        {
-        "x": "Ability to negotiate variations on SID criteria (e.g., age for PR pathway)."
-       },
-       {
-        "x": "Priority processing of GTES agreements."
+        "x": "[National Innovation visa (subclass 858)](/migrate-to-australia/national-innovation-visa-858), for a person with an exceptional record. This is not an employer visa. You need an invitation before you can apply."
        }
       ]
-     },
-     {
-      "t": "p",
-      "x": "**Employers must:**"
-     },
-     {
-      "t": "ul",
-      "items": [
-       {
-        "x": "Obtain GTES access by demonstrating unfilled demand and benefits to Australians (job creation, skills transfer)."
-       },
-       {
-        "x": "Meet sponsorship obligations and maintain accredited sponsor status if applicable."
-       },
-       {
-        "x": "Show ongoing realisation of benefits (e.g., training plans, local hiring outcomes) over the agreement period."
-       }
-      ]
-     },
-     {
-      "t": "p",
-      "x": "**Outcome:** Approved GTES employers can sponsor top global experts on 4-year SID visas with a transition to permanent residence after 2 years, helping Australian businesses innovate and scale while ensuring opportunities and capability are built for Australian workers."
      }
     ]
    },
@@ -7995,7 +7974,7 @@
         "x": "[Employer sponsored visas](/employer-sponsored)"
        },
        {
-        "x": "[Global Talent Employer Sponsored (GTES)](/employer-sponsored/gtes)"
+        "x": "[Global Talent Employer Sponsored (GTES) — closed](/employer-sponsored/gtes)"
        },
        {
         "x": "[ENS 186 Direct Entry](/employer-sponsored/ens-186-direct)"
@@ -8368,7 +8347,7 @@
         "x": "[Employer Sponsorship Application Process Guide](/employer-sponsored/application-process-guide)"
        },
        {
-        "x": "[Global Talent Employer Sponsored (GTES)](/employer-sponsored/gtes)"
+        "x": "[Global Talent Employer Sponsored (GTES) — closed](/employer-sponsored/gtes)"
        }
       ]
      }
@@ -15617,14 +15596,14 @@
   "pageType": "Supporting information page (costs guide for the contributory parent visa family)",
   "seo": {
    "title": "Contributory Parent visa subclass 173 and 143 | Bansal Immigration",
-   "description": "How Much Does a Contributory Visa Cost? | Australia 2025 Applicants for Contributory Parent Visas (Subclass 173 and 143) must be sponsored by their child.",
+   "description": "Contributory parent visa charges for subclass 173 and subclass 143, including the second instalment. Figures are from 1 July 2026.",
    "h1": "Cost For Contributory Visas"
   },
   "hero": {
    "badge": "Registered migration agents, Melbourne and Adelaide",
    "h1": "Cost For Contributory Visas",
    "intro": [
-    "How Much Does a Contributory Visa Cost? | Australia 2025 Applicants for Contributory Parent Visas (Subclass 173 and 143) must be sponsored by their child who resides in Australia. In cases where th..."
+    "Contributory parent visas (subclass 173 and subclass 143) need a sponsor. The sponsor is usually your child, and that child must be settled in Australia. The charges on this page are from 1 July 2026. Check the Home Affairs pricing table before you pay."
    ],
    "buttons": [
     {
@@ -22000,7 +21979,7 @@
      },
      {
       "t": "p",
-      "x": "If you hold an employer-sponsored visa (such as the Temporary Skill Shortage (TSS) subclass 482 visa), and your Standard Business Sponsor and Nomination have been approved, you can:"
+      "x": "If you hold an employer-sponsored visa, such as the Skills in Demand visa (subclass 482), and your sponsorship and nomination are approved, you can:"
      },
      {
       "t": "ul",
@@ -27615,7 +27594,7 @@
      },
      {
       "t": "p",
-      "x": "After finishing your Australian qualification, you can transition from a Student visa (Subclass 500) to the Temporary Graduate visa (Subclass 485) to live, study, and work in Australia. First, confirm your stream (Post-Study Work, Graduate Work, or second Post-Study Work if eligible), ensure your course is CRICOS-registered and meets Australian Study Requirement (usually at least 92 weeks and 16 calendar months), and check English, health, character, and AFP check requirements."
+      "x": "After you finish your Australian qualification, you may be able to apply for a Temporary Graduate visa (subclass 485). Check which stream fits your course: Post-Higher Education Work, Post-Vocational Education Work, or Second Post-Higher Education Work. Your course must be CRICOS-registered and meet the Australian study requirement. You also need to meet the English, health, character, and police-check requirements."
      }
     ]
    },
@@ -29690,7 +29669,7 @@
      },
      {
       "t": "p",
-      "x": "Trades Recognition Australia assesses whether your trade or technical skills meet Australian standards for migration and licensing. TRA offers multiple assessment programs (Provisional Skills Assessment, Job Ready Program, Migration Skills Assessment, Offshore Skills Assessment Program, Temporary Skill Shortage (TSS) Skills Assessment and Migration Points Advice) and issues outcomes used by the Department of Home Affairs and other agencies."
+      "x": "Trades Recognition Australia assesses whether your trade or technical skills meet Australian standards for migration and licensing. TRA offers several programs, including the Provisional Skills Assessment, Job Ready Program, Migration Skills Assessment, Offshore Skills Assessment Program, a skills assessment for the Skills in Demand visa (subclass 482), and Migration Points Advice. Home Affairs uses these outcomes."
      },
      {
       "t": "p",
@@ -29698,7 +29677,7 @@
      },
      {
       "t": "p",
-      "x": "Which TRA program applies depends on your occupation, where you studied, your passport/country of residence and the visa you are seeking. For example, the Job Ready Program (JRP) is for eligible international graduates with Australian trade/associate qualifications; the Offshore Skills Assessment Program (OSAP) is for applicants outside Australia seeking migration skills assessment; and the TSS Skills Assessment supports Temporary Skill Shortage visa applications."
+      "x": "Which TRA program applies depends on your occupation, where you studied, your passport country, and the visa you want. The Job Ready Program is for eligible international graduates with an Australian trade or associate qualification. The Offshore Skills Assessment Program is for people outside Australia who need a migration skills assessment. TRA also assesses skills for a Skills in Demand visa (subclass 482) when that visa needs a skills assessment."
      },
      {
       "t": "p",
@@ -29720,7 +29699,7 @@
         "x": "Offshore Skills Assessment Program (OSAP): For applicants offshore seeking a skills assessment for migration or recognition."
        },
        {
-        "x": "TSS Skills Assessment Program: Designed to support Temporary Skill Shortage (Subclass 482) visa applications where a skills assessment is required."
+        "x": "Skills in Demand skills assessment: TRA still labels one program the TSS Skills Assessment. It is the assessment used when a Skills in Demand visa (subclass 482) needs a skills assessment."
        },
        {
         "x": "Migration Points Advice (MPA): Provides an assessment of how many migration points a particular qualification may attract (where requested by Home Affairs)."
@@ -29929,7 +29908,7 @@
         "x": "Offshore Skills Assessment Program (OSAP) — for applicants outside Australia seeking a migration skills assessment."
        },
        {
-        "x": "TSS Skills Assessment — for Temporary Skill Shortage (subclass 482) visa applications where a skills assessment is required."
+        "x": "Skills in Demand skills assessment — TRA still calls this the TSS Skills Assessment. It is for a subclass 482 application that needs a skills assessment."
        },
        {
         "x": "Migration Points Advice (MPA) — optional advice to Home Affairs on how many migration points a qualification may attract."
@@ -30517,7 +30496,7 @@
         "x": "**Temporary Graduate Visa (485):** Post-study work rights"
        },
        {
-        "x": "**Temporary Skill Shortage Visa (482):** Employer-sponsored work visa"
+        "x": "**Skills in Demand visa (482):** Employer-sponsored work visa"
        },
        {
         "x": "**Employer Nomination Scheme (186):** Permanent employer sponsorship"
@@ -35278,7 +35257,7 @@
   "path": "/skilled-migration/temporary-graduate-visa-extension",
   "category": "skilled-migration",
   "isHub": false,
-  "name": "Skilled Recognised Graduate visa (subclass 476) — closed",
+  "name": "Second Temporary Graduate visa (subclass 485)",
   "primaryKeyword": "subclass 476 closed",
   "keywords": [
    "subclass 476",
@@ -35287,15 +35266,15 @@
   ],
   "pageType": "Service page",
   "seo": {
-   "title": "Skilled-Recognised Graduate visa (subclass 476) | Bansal Immigration",
-   "description": "A temporary extension visa for graduates who previously held a Post‑Higher Education Work or Post‑Study Work stream 485 visa and who studied at an.",
-   "h1": "Temporary Graduate Visa Extension"
+   "title": "Second Temporary Graduate visa (485) | Regional graduates | Bansal Immigration",
+   "description": "The Second Post-Higher Education Work stream of the subclass 485 visa is open for eligible regional graduates. The old subclass 476 visa is closed.",
+   "h1": "Second Temporary Graduate visa (485)"
   },
   "hero": {
-   "badge": "Closed",
-   "h1": "Temporary Graduate Visa Extension",
+   "badge": "",
+   "h1": "Second Temporary Graduate visa (485)",
    "intro": [
-    "A temporary extension visa for graduates who previously held a Post‑Higher Education Work or Post‑Study Work stream 485 visa and who studied at an eligible regional Australian institution, allowing a further limited period to live, work and study in Australia."
+    "This is the Second Post-Higher Education Work stream of the subclass 485 visa. It is open. It is for people who already hold a 485 and who studied and lived in regional Australia. The old Skilled Recognised Graduate visa (subclass 476) is closed. Do not lodge a 476 application."
    ],
    "buttons": [
     {
@@ -35351,7 +35330,7 @@
     "blocks": [
      {
       "t": "p",
-      "x": "This second Temporary Graduate visa is for holders of a prior 485 visa (Post‑Higher Education Work or Post‑Study Work) granted after studying at an eligible designated regional institution. It is granted for between 1 and 2 years depending on the regional location of the institution and where you have been living on your first 485 visa. You must be in Australia to apply and meet health, character and insurance requirements."
+      "x": "This is the Second Post-Higher Education Work stream. It is for people who hold a subclass 485 visa in the Post-Higher Education Work stream, or who still hold an older Post-Study Work or Replacement stream visa, after study at an eligible regional institution. The extra stay is 1 or 2 years. It depends on where you studied and where you lived. You must be in Australia to apply, and you must meet the health, character and insurance requirements."
      }
     ]
    },
@@ -35365,7 +35344,7 @@
       "t": "ul",
       "items": [
        {
-        "x": "Be aged 35 years or under when you apply (exceptions may apply)"
+        "x": "Be 35 or under when you apply. You can be under 50 if you hold a Hong Kong or British National (Overseas) passport, or if a masters by research or a doctoral degree was used to meet the study requirement for your first 485."
        },
        {
         "x": "Be physically in Australia when you lodge the application"
@@ -36117,7 +36096,7 @@
         "x": "[Distinguished Talent Visa (124)](/migrate-to-australia/distinguished-talent-visa-124)"
        },
        {
-        "x": "[Global Talent Employer Sponsored (GTES)](/employer-sponsored/gtes)"
+        "x": "[Global Talent Employer Sponsored (GTES) — closed](/employer-sponsored/gtes)"
        },
        {
         "x": "[Skilled migration visas](/migrate-to-australia)"
@@ -36626,13 +36605,13 @@
       "t": "ul",
       "items": [
        {
-        "x": "**Competent English (0 points):** IELTS 6.0 in each band, PTE 50 in each skill"
+        "x": "**Competent English (0 points):** IELTS 6.0 in each band. PTE Academic: listening 47, reading 48, writing 51, speaking 54."
        },
        {
-        "x": "**Proficient English (10 points):** IELTS 7.0 in each band, PTE 65 in each skill"
+        "x": "**Proficient English (10 points):** IELTS 7.0 in each band. PTE Academic: listening 58, reading 59, writing 69, speaking 76."
        },
        {
-        "x": "**Superior English (20 points):** IELTS 8.0 in each band, PTE 79 in each skill"
+        "x": "**Superior English (20 points):** IELTS 8.0 in each band. PTE Academic: listening 69, reading 70, writing 85, speaking 88. These PTE scores are for a test taken on or after 7 August 2025. A test taken before that date uses the older PTE scores."
        }
       ]
      },

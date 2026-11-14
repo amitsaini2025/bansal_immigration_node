@@ -43,7 +43,6 @@ const TOOL_ICONS: Record<string, React.ElementType> = {
   '/study-australia/student-visa-financial-calculator': GraduationCap,
   '/south-australia-state-nomination': Landmark,
   '/afp-national-police-check': ShieldCheck,
-  '/indian-police-check': FileText,
   '/office-visit-form': ClipboardList,
 };
 const TOOL_CALCULATORS = [
