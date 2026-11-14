@@ -19,6 +19,9 @@ import {
 import { getPaginatedBlogs, BlogRecord } from '@/lib/db';
 import Breadcrumbs from '@/components/common/Breadcrumbs';
 
+/** Editors publish posts in the database, so this list is read on each request. */
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: 'Australian Immigration News & Guides | Bansal Immigration',
   description:

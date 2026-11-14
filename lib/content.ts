@@ -59,6 +59,34 @@ export function getAllPaths(): string[] {
   return index.map((e) => e.path);
 }
 
+/** Hubs that already have their own page.tsx, so the dynamic route must not also build them. */
+const DEDICATED_HUBS = new Set([
+  'migrate-to-australia',
+  'skilled-migration',
+  'visitor-visa',
+  'family-visa',
+  'study-australia',
+]);
+
+/** Visa and service hubs built from content/pages.json. One entry per category index. */
+export function getContentHubParams(): { category: string }[] {
+  return index
+    .filter((e) => e.isHub && e.path === `/${e.category}` && !DEDICATED_HUBS.has(e.category))
+    .map((e) => ({ category: e.category }));
+}
+
+/** Visa and service articles built from content/pages.json. Paths are /category/slug. */
+export function getContentChildParams(): { category: string; slug: string }[] {
+  const params: { category: string; slug: string }[] = [];
+  for (const e of index) {
+    if (e.isHub) continue;
+    const parts = e.path.split('/').filter(Boolean);
+    if (parts.length !== 2) continue;
+    params.push({ category: parts[0], slug: parts[1] });
+  }
+  return params;
+}
+
 export function plainText(s: string): string {
   return s
     .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')

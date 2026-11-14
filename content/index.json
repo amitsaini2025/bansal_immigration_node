@@ -768,5 +768,208 @@
   "category": "study-australia",
   "isHub": false,
   "order": 109
+ },
+ {
+  "path": "/skill-assessment",
+  "name": "Skill Assessment",
+  "category": "skill-assessment",
+  "isHub": true,
+  "order": 110
+ },
+ {
+  "path": "/skill-assessment/acs-skill-assessment",
+  "name": "ACS Skill Assessment",
+  "category": "skill-assessment",
+  "isHub": false,
+  "order": 111
+ },
+ {
+  "path": "/skill-assessment/vetassess-skill-assessment",
+  "name": "VETASSESS Skill Assessment",
+  "category": "skill-assessment",
+  "isHub": false,
+  "order": 112
+ },
+ {
+  "path": "/skill-assessment/ea-skill-assessment",
+  "name": "EA Skill Assessment",
+  "category": "skill-assessment",
+  "isHub": false,
+  "order": 113
+ },
+ {
+  "path": "/skill-assessment/accountant-skill-assessment",
+  "name": "Accountant Skill Assessment",
+  "category": "skill-assessment",
+  "isHub": false,
+  "order": 114
+ },
+ {
+  "path": "/skill-assessment/nursing-aphara-registration-and-anmac-skill-assessment",
+  "name": "Nursing AHPRA Registration and ANMAC Skill Assessment Process",
+  "category": "skill-assessment",
+  "isHub": false,
+  "order": 115
+ },
+ {
+  "path": "/skill-assessment/trades-recognition-australia",
+  "name": "Trades Recognition Australia",
+  "category": "skill-assessment",
+  "isHub": false,
+  "order": 116
+ },
+ {
+  "path": "/skill-assessment/skills-assessment-for-trades",
+  "name": "Skills Assessment for Trades",
+  "category": "skill-assessment",
+  "isHub": false,
+  "order": 117
+ },
+ {
+  "path": "/skill-assessment/job-ready-program",
+  "name": "Job Ready Program",
+  "category": "skill-assessment",
+  "isHub": false,
+  "order": 118
+ },
+ {
+  "path": "/skill-assessment/guide",
+  "name": "Skills Assessment Guide for Australian Immigration",
+  "category": "skill-assessment",
+  "isHub": false,
+  "order": 119
+ },
+ {
+  "path": "/skill-assessment/requirements",
+  "name": "Skills Assessment Requirements by Authority",
+  "category": "skill-assessment",
+  "isHub": false,
+  "order": 120
+ },
+ {
+  "path": "/skill-assessment/timeline",
+  "name": "Skills Assessment Processing Times & Timeline",
+  "category": "skill-assessment",
+  "isHub": false,
+  "order": 121
+ },
+ {
+  "path": "/citizenship/citizenship-by-conferral",
+  "name": "Citizenship By Conferral",
+  "category": "citizenship",
+  "isHub": false,
+  "order": 122
+ },
+ {
+  "path": "/citizenship/citizenship-by-descent",
+  "name": "Citizenship By Descent",
+  "category": "citizenship",
+  "isHub": false,
+  "order": 123
+ },
+ {
+  "path": "/citizenship/citizenship-by-birth",
+  "name": "Citizenship by Birth",
+  "category": "citizenship",
+  "isHub": false,
+  "order": 124
+ },
+ {
+  "path": "/citizenship/dual-citizenship",
+  "name": "Dual Citizenship Australia - Complete Guide to Multiple Citizenships",
+  "category": "citizenship",
+  "isHub": false,
+  "order": 125
+ },
+ {
+  "path": "/citizenship/citizenship-test",
+  "name": "Australian Citizenship Test - Preparation & Requirements",
+  "category": "citizenship",
+  "isHub": false,
+  "order": 126
+ },
+ {
+  "path": "/citizenship/evidence-of-australian-citizenship",
+  "name": "Evidence of Australian Citizenship",
+  "category": "citizenship",
+  "isHub": false,
+  "order": 127
+ },
+ {
+  "path": "/other-countries/canada",
+  "name": "Canada",
+  "category": "other-countries",
+  "isHub": false,
+  "order": 128
+ },
+ {
+  "path": "/other-countries/new-zealand",
+  "name": "New Zealand Tourist Visa",
+  "category": "other-countries",
+  "isHub": false,
+  "order": 129
+ },
+ {
+  "path": "/other-countries/usa",
+  "name": "Complete Guide to USA Tourist Visa (B-2)",
+  "category": "other-countries",
+  "isHub": false,
+  "order": 130
+ },
+ {
+  "path": "/celebrity-visas",
+  "name": "Celebrity Visas",
+  "category": "celebrity-visas",
+  "isHub": true,
+  "order": 131
+ },
+ {
+  "path": "/skilled-migration/temporary-graduate-visa-extension",
+  "name": "Skilled Recognised Graduate visa (subclass 476)",
+  "category": "skilled-migration",
+  "isHub": false,
+  "order": 132
+ },
+ {
+  "path": "/migrate-to-australia/national-innovation-visa-858",
+  "name": "National Innovation Visa (subclass 858)",
+  "category": "migrate-to-australia",
+  "isHub": false,
+  "order": 133
+ },
+ {
+  "path": "/migrate-to-australia/global-talent-independent-program-gti",
+  "name": "Global Talent Independent Program (GTI)",
+  "category": "migrate-to-australia",
+  "isHub": false,
+  "order": 134
+ },
+ {
+  "path": "/migrate-to-australia/distinguished-talent-visa-124",
+  "name": "Distinguished Talent Visa (124)",
+  "category": "migrate-to-australia",
+  "isHub": false,
+  "order": 135
+ },
+ {
+  "path": "/migrate-to-australia/distinguished-talent-visa-858",
+  "name": "Distinguished Talent Visa (858)",
+  "category": "migrate-to-australia",
+  "isHub": false,
+  "order": 136
+ },
+ {
+  "path": "/migrate-to-australia/how-to-claim-regional-points",
+  "name": "How to Claim Regional Points for Australian Skilled Migration",
+  "category": "migrate-to-australia",
+  "isHub": false,
+  "order": 137
+ },
+ {
+  "path": "/migrate-to-australia/points-for-english-score",
+  "name": "Points for English Score",
+  "category": "migrate-to-australia",
+  "isHub": false,
+  "order": 138
  }
 ]

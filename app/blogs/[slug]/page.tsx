@@ -17,6 +17,9 @@ import {
 import Breadcrumbs from '@/components/common/Breadcrumbs';
 import { getBlog, getRelatedBlogs } from '@/lib/db';
 
+/** A post is read from the database on each request so a new article does not wait for a rebuild. */
+export const dynamic = 'force-dynamic';
+
 export async function generateMetadata({
   params,
 }: {

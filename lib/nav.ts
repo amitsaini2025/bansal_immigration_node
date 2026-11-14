@@ -39,8 +39,54 @@ export const VISA_GROUPS: NavGroup[] = [
           { label: 'Temporary Graduate (485)', href: '/migrate-to-australia/temporary-graduate-visa-subclass-485' },
           { label: 'Post Study Work (485)', href: '/migrate-to-australia/post-study-work-visa-subclass-485' },
           { label: 'How points are calculated', href: '/skilled-migration/how-points-are-calculated' },
+          { label: 'Points for an English score', href: '/migrate-to-australia/points-for-english-score' },
+          { label: 'Regional points', href: '/migrate-to-australia/how-to-claim-regional-points' },
           { label: 'How skilled migration works', href: '/skilled-migration' },
           { label: 'Step-by-step process guide', href: '/migrate-to-australia/migration' },
+        ],
+      },
+      {
+        heading: 'Talent visas',
+        links: [
+          { label: 'Skilled Recognised Graduate (476)', href: '/skilled-migration/temporary-graduate-visa-extension' },
+          { label: 'National Innovation visa (858)', href: '/migrate-to-australia/national-innovation-visa-858' },
+          { label: 'Global Talent Independent', href: '/migrate-to-australia/global-talent-independent-program-gti' },
+          { label: 'Distinguished Talent (124)', href: '/migrate-to-australia/distinguished-talent-visa-124' },
+          { label: 'Distinguished Talent (858)', href: '/migrate-to-australia/distinguished-talent-visa-858' },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'assessment',
+    label: 'Skill assessment',
+    hub: { label: 'Skill assessment overview', href: '/skill-assessment' },
+    blurb: 'Skills assessments for skilled and trade occupations.',
+    columns: [
+      {
+        heading: 'Professional assessments',
+        links: [
+          { label: 'ACS (ICT)', href: '/skill-assessment/acs-skill-assessment' },
+          { label: 'VETASSESS', href: '/skill-assessment/vetassess-skill-assessment' },
+          { label: 'Engineers Australia', href: '/skill-assessment/ea-skill-assessment' },
+          { label: 'Accounting', href: '/skill-assessment/accountant-skill-assessment' },
+          { label: 'Nursing (AHPRA and ANMAC)', href: '/skill-assessment/nursing-aphara-registration-and-anmac-skill-assessment' },
+        ],
+      },
+      {
+        heading: 'Trades',
+        links: [
+          { label: 'Trades Recognition Australia', href: '/skill-assessment/trades-recognition-australia' },
+          { label: 'Skills assessment for trades', href: '/skill-assessment/skills-assessment-for-trades' },
+          { label: 'Job Ready Program', href: '/skill-assessment/job-ready-program' },
+        ],
+      },
+      {
+        heading: 'Guides',
+        links: [
+          { label: 'Skills assessment guide', href: '/skill-assessment/guide' },
+          { label: 'Assessment requirements', href: '/skill-assessment/requirements' },
+          { label: 'Assessment timeline', href: '/skill-assessment/timeline' },
         ],
       },
     ],
@@ -229,8 +275,23 @@ export const VISA_GROUPS: NavGroup[] = [
           { label: 'Bridging Visa C (030)', href: '/bridging-return-visas/bridging-visa-c-030' },
           { label: 'Bridging Visa E (050/051)', href: '/bridging-return-visas/bridging-visa-e-050-051' },
           { label: 'Resident Return (155/157)', href: '/bridging-return-visas/resident-return-visa-155-157' },
+        ],
+      },
+      {
+        heading: 'Citizenship and other countries',
+        links: [
           { label: 'Australian citizenship', href: '/citizenship' },
+          { label: 'Citizenship by conferral', href: '/citizenship/citizenship-by-conferral' },
+          { label: 'Citizenship by descent', href: '/citizenship/citizenship-by-descent' },
+          { label: 'Citizenship by birth', href: '/citizenship/citizenship-by-birth' },
+          { label: 'Dual citizenship', href: '/citizenship/dual-citizenship' },
+          { label: 'Citizenship test', href: '/citizenship/citizenship-test' },
+          { label: 'Evidence of citizenship', href: '/citizenship/evidence-of-australian-citizenship' },
           { label: 'Other countries', href: '/other-countries' },
+          { label: 'Canada', href: '/other-countries/canada' },
+          { label: 'New Zealand', href: '/other-countries/new-zealand' },
+          { label: 'United States', href: '/other-countries/usa' },
+          { label: 'Celebrity visas', href: '/celebrity-visas' },
         ],
       },
       {

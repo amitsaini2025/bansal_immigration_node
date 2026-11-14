@@ -37,6 +37,9 @@ import {
 import { getContent, plainText } from '@/lib/content';
 import { SKILLED_PAGE_REVIEWER, SKILLED_PAGE_UPDATED } from '@/lib/siteConfig';
 
+/** This hub is a file in content/pages.json, built with the rest of the visa pages. */
+export const dynamic = 'force-static';
+
 const PATH = '/migrate-to-australia';
 const SITE = 'https://bansalimmigration.com.au';
 
