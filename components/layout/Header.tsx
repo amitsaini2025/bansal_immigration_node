@@ -78,8 +78,8 @@ const logoImg = (
   <Image
     src="/img/logo/logo_transparent.png"
     alt="Bansal Immigration Consultants"
-    width={155}
-    height={44}
+    width={180}
+    height={64}
     priority
     className="h-10 sm:h-11 w-auto object-contain"
   />

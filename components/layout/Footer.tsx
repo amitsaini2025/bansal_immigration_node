@@ -92,8 +92,8 @@ export default function Footer() {
               <Image
                 src="/img/logo/logo_transparent.png"
                 alt="Bansal Immigration Consultants"
-                width={180}
-                height={51}
+                width={220}
+                height={80}
                 className="h-12 w-auto object-contain"
               />
             </Link>

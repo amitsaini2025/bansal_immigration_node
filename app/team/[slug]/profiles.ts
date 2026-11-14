@@ -38,7 +38,6 @@ function placeholderAgent(input: {
   languages: string;
 }): Profile {
   const { slug, first, name, pronoun, languages } = input;
-  const possessive = pronoun === 'His' ? 'his' : 'her';
   return {
     slug,
     first,
@@ -68,7 +67,7 @@ function placeholderAgent(input: {
       'Our fees are service-based and explained upfront, and we do not charge success fees. The first consultation is free.',
     ],
     qualifications: ['Registered migration agent'],
-    registrationNote: `${first} is a registered migration agent, so ${pronoun === 'His' ? 'he' : 'she'} has to follow the Code of Conduct for registered migration agents. The MARN will be published on this page so you can check it on the OMARA register. You can read the Code of Conduct and our Consumer Guide before you book.`,
+    registrationNote: `${first} is a registered migration agent, so ${pronoun === 'His' ? 'he' : 'she'} has to follow the Code of Conduct for registered migration agents. You can read the Code of Conduct and our Consumer Guide before you book.`,
     registrationLinks: [
       {
         href: 'https://www.legislation.gov.au/F2021L01856/2026-04-01/2026-04-01/text/original/pdf',
@@ -93,7 +92,7 @@ function placeholderAgent(input: {
       },
       {
         q: `Is ${first} a registered migration agent?`,
-        a: `Yes. ${first} is registered with OMARA. The MARN will be published on this profile so you can check it on the register.`,
+        a: `Yes. ${first} is registered with OMARA.`,
       },
       { q: `Which languages does ${first} speak?`, a: languages.endsWith('.') ? languages : `${languages}.` },
       {
@@ -476,7 +475,6 @@ export const PROFILES: Record<string, Profile> = {
     image: '/img/team/celesty-parmar.svg',
     facts: [
       { label: 'Role', value: 'Registered Migration Agent' },
-      { label: 'Registration', value: 'Registered with OMARA. MARN to be published on this page.' },
       { label: 'Office', value: 'Melbourne' },
       { label: 'Languages', value: 'English, Hindi, Gujarati' },
       { label: 'Focus', value: 'Australian migration law and education' },
@@ -494,7 +492,7 @@ export const PROFILES: Record<string, Profile> = {
     ],
     qualifications: [],
     registrationNote:
-      'Celesty is a registered migration agent, so she has to follow the Code of Conduct for registered migration agents. The MARN will be published on this page so you can check it on the OMARA register. You can read the Code of Conduct and our Consumer Guide before you book.',
+      'Celesty is a registered migration agent, so she has to follow the Code of Conduct for registered migration agents. You can read the Code of Conduct and our Consumer Guide before you book.',
     registrationLinks: [
       {
         href: 'https://www.legislation.gov.au/F2021L01856/2026-04-01/2026-04-01/text/original/pdf',

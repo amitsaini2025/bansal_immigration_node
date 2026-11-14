@@ -111,12 +111,8 @@ const AGENTS: AgentData[] = [
     qualifications: 'Registered migration agent',
     experience: '',
     languages: 'English, Hindi, Punjabi',
-    shortBio:
-      'Shubam is a registered migration agent at Bansal Immigration. Photo and registration number will be added to this profile.',
-    fullBio: [
-      'Shubam Kumar is a registered migration agent at Bansal Immigration.',
-      'His photo, MARN and practice details will be added to this profile.',
-    ],
+    shortBio: 'Shubam is a registered migration agent at Bansal Immigration.',
+    fullBio: ['Shubam Kumar is a registered migration agent at Bansal Immigration.'],
     categories: [],
     practiceAreas: [{ name: 'Australian visa advice', href: '/book-an-appointment' }],
     image: '/img/team/shubam-kumar.svg',
@@ -132,12 +128,8 @@ const AGENTS: AgentData[] = [
     qualifications: 'Registered migration agent',
     experience: '',
     languages: 'English, Hindi, Punjabi',
-    shortBio:
-      'Shaveena is a registered migration agent at Bansal Immigration. Photo and registration number will be added to this profile.',
-    fullBio: [
-      'Shaveena is a registered migration agent at Bansal Immigration.',
-      'Her photo, MARN and practice details will be added to this profile.',
-    ],
+    shortBio: 'Shaveena is a registered migration agent at Bansal Immigration.',
+    fullBio: ['Shaveena is a registered migration agent at Bansal Immigration.'],
     categories: [],
     practiceAreas: [{ name: 'Australian visa advice', href: '/book-an-appointment' }],
     image: '/img/team/shaveena.svg',
@@ -153,12 +145,8 @@ const AGENTS: AgentData[] = [
     qualifications: 'Registered migration agent',
     experience: '',
     languages: 'English, Hindi, Gujarati',
-    shortBio:
-      'Vijay is a registered migration agent at Bansal Immigration. Photo and registration number will be added to this profile.',
-    fullBio: [
-      'Vijay Patel is a registered migration agent at Bansal Immigration.',
-      'His photo, MARN and practice details will be added to this profile.',
-    ],
+    shortBio: 'Vijay is a registered migration agent at Bansal Immigration.',
+    fullBio: ['Vijay Patel is a registered migration agent at Bansal Immigration.'],
     categories: [],
     practiceAreas: [{ name: 'Australian visa advice', href: '/book-an-appointment' }],
     image: '/img/team/vijay-patel.svg',
