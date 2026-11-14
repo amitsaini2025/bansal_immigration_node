@@ -45,7 +45,7 @@ const nodes: Record<string, Node> = {
           links: [
             { label: "Student visa information", href: "/study-australia/student-visa-information" },
             { label: "Student visa journey", href: "/study-australia/student-visa-journey" },
-            { label: "Dependent family members (500)", href: "/study-australia/student-dependent-visa-500" },
+            { label: "Family on a student visa (500)", href: "/study-australia/student-dependent-visa-500" },
           ],
           tool: { label: "Student visa financial calculator", href: "/study-australia/student-visa-financial-calculator" },
         },

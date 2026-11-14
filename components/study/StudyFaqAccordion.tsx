@@ -43,7 +43,7 @@ const FAQS: FaqItem[] = [
   {
     question: 'Can I include my spouse and dependent children in my student visa application?',
     answer:
-      'Yes. You can include your spouse/de facto partner and unmarried dependent children under 18 in your original Subclass 500 application, or have them join you later as subsequent entrants. You must declare all family members in your initial application even if they are not travelling immediately. Partners are generally eligible to work 48 hours per fortnight, with full work rights available to partners of students enrolled in Masters (Coursework or Research) or Doctoral degree programs.',
+      'Not as a later application. You cannot add a partner or child after a student visa is granted, and there is no exemption from that rule. You can include them in the same student visa application only if an exemption applies, such as a PhD, a DFAT or Defence sponsorship, a foreign government scholarship, or an eligible Pacific or ASEAN student. Family already on your current student visa can be included again in limited further-student-visa cases. Everyone included must be in the same location when you lodge. A partner who is included generally works up to 48 hours a fortnight, with no cap if you are enrolled in a masters by research or a doctorate.',
     category: 'Family & Dependants',
   },
 ];

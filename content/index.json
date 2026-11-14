@@ -729,7 +729,7 @@
  },
  {
   "path": "/study-australia/student-dependent-visa-500",
-  "name": "Student Dependant Visa (Subsequent Entrant, Subclass 500)",
+  "name": "Family members on a student visa (subclass 500)",
   "category": "study-australia",
   "isHub": false,
   "order": 104
@@ -925,7 +925,7 @@
  },
  {
   "path": "/skilled-migration/temporary-graduate-visa-extension",
-  "name": "Skilled Recognised Graduate visa (subclass 476)",
+  "name": "Skilled Recognised Graduate visa (subclass 476) — closed",
   "category": "skilled-migration",
   "isHub": false,
   "order": 132

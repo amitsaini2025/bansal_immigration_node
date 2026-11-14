@@ -48,7 +48,6 @@ export const VISA_GROUPS: NavGroup[] = [
       {
         heading: 'Talent visas',
         links: [
-          { label: 'Skilled Recognised Graduate (476)', href: '/skilled-migration/temporary-graduate-visa-extension' },
           { label: 'National Innovation visa (858)', href: '/migrate-to-australia/national-innovation-visa-858' },
           { label: 'Global Talent Independent', href: '/migrate-to-australia/global-talent-independent-program-gti' },
           { label: 'Distinguished Talent (124)', href: '/migrate-to-australia/distinguished-talent-visa-124' },
@@ -195,7 +194,7 @@ export const VISA_GROUPS: NavGroup[] = [
           { label: 'Student visa information (500)', href: '/study-australia/student-visa-information' },
           { label: 'Student visa journey', href: '/study-australia/student-visa-journey' },
           { label: 'Student visa extension', href: '/study-australia/student-visa-extension' },
-          { label: 'Student dependant (500)', href: '/study-australia/student-dependent-visa-500' },
+          { label: 'Family on a student visa (500)', href: '/study-australia/student-dependent-visa-500' },
           { label: 'Student Guardian (590)', href: '/study-australia/student-guardian-visa-590' },
           { label: 'Financial calculator', href: '/study-australia/student-visa-financial-calculator' },
         ],

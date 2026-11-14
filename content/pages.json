@@ -1244,6 +1244,27 @@
     ]
    },
    {
+    "id": "family-on-a-485",
+    "name": "Family on a 485",
+    "kind": "prose",
+    "h2": "Family members cannot apply later",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "From 13 November 2026 a partner or child cannot apply later as a 485 subsequent entrant, even if they could have been included at the start. They must be in the same application. You must be in Australia when you apply. They can be in or outside Australia. An application lodged before 13 November 2026 is assessed under the earlier rules."
+     },
+     {
+      "t": "ul",
+      "items": [
+       {"x": "They were your dependant on your previous student visa or first 485, and they still hold it, held the student visa on 2 October 2026, or held it within the last six months. On a second 485 they must hold a 485 as your dependant now, or have held one within the last six months."},
+       {"x": "You are a Pacific or ASEAN national, you completed a PhD while holding a student visa, or your student-visa course was fully funded by a foreign government."},
+       {"x": "The child was born outside Australia after your most recent student visa or 485 was granted. They still have to be in the same application. They cannot be added after the 485 is granted."},
+       {"x": "A child born in Australia to a 485 holder is taken to hold a 485. You do not lodge a separate application, but you must tell the Department about the birth."}
+      ]
+     }
+    ]
+   },
+   {
     "id": "what-next",
     "name": "What next",
     "kind": "related",
@@ -1303,7 +1324,7 @@
    },
    {
     "q": "Can I include my partner?",
-    "a": "Usually yes as a dependant."
+    "a": "Only in the same application, and only if they meet the rules that started on 13 November 2026. A partner cannot apply later as a subsequent entrant."
    },
    {
     "q": "Can I apply from overseas?",
@@ -1375,7 +1396,7 @@
         "x": "Travel in and out of Australia during the visa period."
        },
        {
-        "x": "Include your partner and children where eligible."
+        "x": "Include an eligible partner or child only in the same 485 application. From 13 November 2026 they cannot apply later as subsequent entrants. See the [485 eligibility guide](/migrate-to-australia/temporary-graduate-visa-subclass-485)."
        }
       ]
      },
@@ -1623,24 +1644,24 @@
   "name": "Skilled Independent Visa (Subclass 189)",
   "primaryKeyword": "subclass 189 visa",
   "keywords": [
-   "skilled independent visa 189 requirements",
+   "skilled independent visa 189",
    "189 visa points",
-   "189 visa invitation rounds",
+   "189 visa invitation",
    "189 visa processing time",
-   "189 visa occupation list",
-   "189 visa Melbourne"
+   "189 visa cost",
+   "skilled occupation list"
   ],
   "pageType": "Visa subpage",
   "seo": {
-   "title": "Subclass 189 Visa: Requirements and Points | Bansal Immigration",
-   "description": "Subclass 189 skilled independent visa: eligibility, points, fees and how invitations work. Advice from registered migration agents in Melbourne.",
-   "h1": "Skilled Independent Visa (Subclass 189): Requirements, Points and Process"
+   "title": "Skilled Independent visa (subclass 189) | Bansal Immigration",
+   "description": "The Subclass 189 is a permanent skilled visa. You do not need an employer or a state to nominate you. See who can apply, how the points test works, and the current visa charge.",
+   "h1": "Skilled Independent Visa Subclass 189"
   },
   "hero": {
    "badge": "",
-   "h1": "Skilled Independent Visa (Subclass 189): Requirements, Points and Process",
+   "h1": "Skilled Independent Visa Subclass 189",
    "intro": [
-    "The 189 is a permanent visa for skilled workers who are invited on points alone. No employer or state sponsors you, and you can live and work anywhere in Australia. It is also the most competitive skilled visa. We help you check whether your score is realistic and what to do if it is not."
+    "A permanent visa for skilled workers. You do not need an employer or a state to nominate you. You must be invited, and you can then live and work anywhere in Australia."
    ],
    "buttons": [
     {
@@ -1648,8 +1669,8 @@
      "href": "/book-an-appointment"
     },
     {
-     "label": "Check Your Points",
-     "href": "/migrate-to-australia/pr-point-calculator"
+     "label": "How to Apply",
+     "href": "#how-to-apply"
     }
    ],
    "phone": true
@@ -1669,92 +1690,71 @@
       ],
       "rows": [
        [
-        "Visa type",
-        "Permanent residence"
+        "Duration",
+        "Permanent"
        ],
        [
-        "Sponsor",
-        "None"
-       ],
-       [
-        "Points test",
-        "Yes. Minimum 65 points to submit an EOI (Source: Department of Home Affairs, checked 12 November 2026)"
-       ],
-       [
-        "Age",
-        "Under 45 when invited"
-       ],
-       [
-        "Occupation",
-        "On the Skilled Occupation List"
-       ],
-       [
-        "Where you can live",
-        "Anywhere in Australia"
-       ],
-       [
-        "Government fee",
-        "Check the Department of Home Affairs website for the current figure."
+        "Cost",
+        "From AUD 6,135"
        ],
        [
         "Processing time",
-        "Check the Department of Home Affairs website for the current figure."
+        "Check the Home Affairs guide"
+       ],
+       [
+        "Pathway",
+        "Pathway to Australian Citizenship"
        ]
       ]
      }
     ]
    },
    {
-    "id": "what-the-visa-is",
-    "name": "What the visa is",
+    "id": "overview",
+    "name": "Overview",
     "kind": "prose",
-    "h2": "What the visa is",
+    "h2": "Overview",
     "blocks": [
      {
       "t": "p",
-      "x": "The 189 lets you live, work and study in Australia permanently. You can include your partner and children. After a period of residence you may apply for citizenship if you meet the requirements. See [citizenship](/citizenship)."
+      "x": "The Subclass 189 is a permanent visa. You do not need an employer or a state to nominate you. You must be invited. After the visa is granted, you can live and work anywhere in Australia."
      },
      {
       "t": "p",
-      "x": "You do not apply directly. You lodge an Expression of Interest (EOI) in SkillSelect, and the Department invites high-ranking people to apply."
+      "x": "Most people apply in the points-tested stream. Your job must be on the skilled occupation list, and you need a suitable skills assessment."
+     },
+     {
+      "t": "p",
+      "x": "There is also a Hong Kong stream for people who hold a Hong Kong passport or a British National (Overseas) passport and meet the residence rules. The New Zealand stream is closed to new applications."
+     },
+     {
+      "t": "p",
+      "x": "If your score is not high enough for an invitation, look at the [Subclass 190](/migrate-to-australia/skilled-nominated-visa-subclass-190), which adds 5 points, or the [Subclass 491](/migrate-to-australia/skilled-work-regional-provisional-visa-subclass-491), which adds 15 points if you can live in regional Australia."
      }
     ]
    },
    {
-    "id": "is-this-right-for-you",
-    "name": "Is this right for you?",
+    "id": "check-your-points",
+    "name": "Check your points",
     "kind": "prose",
-    "h2": "Is this right for you?",
+    "h2": "Check your points",
     "blocks": [
      {
-      "t": "ul",
-      "items": [
-       {
-        "x": "My occupation is on the list for 189."
-       },
-       {
-        "x": "I have a positive skills assessment, or I can get one."
-       },
-       {
-        "x": "I am under 45."
-       },
-       {
-        "x": "I have at least competent English."
-       },
-       {
-        "x": "My points are 65 or more, and I understand invitations usually need more."
-       },
-       {
-        "x": "I do not need or want state sponsorship."
-       },
-       {
-        "x": "I want to live anywhere in Australia."
-       }
-      ]
+      "t": "p",
+      "x": "Use the points test to estimate your score for this visa. The Victorian Points Calculator is for a Victorian nomination on a Subclass 190 or 491. The 189 visa does not use it."
      },
      {
-      "t": "p",
-      "x": "If your points are close to the minimum, read about the [190](/migrate-to-australia/skilled-nominated-visa-subclass-190) and [491](/migrate-to-australia/skilled-work-regional-provisional-visa-subclass-491). Victoria also publishes its own criteria: see the [Victorian Points Test](/migrate-to-australia/victorian-points-test)."
+      "t": "buttons",
+      "items": [
+       {
+        "label": "Points test",
+        "href": "/migrate-to-australia/pr-point-calculator"
+       },
+       {
+        "label": "Victorian Points Calculator",
+        "href": "/migrate-to-australia/victorian-points-test"
+       }
+      ]
      }
     ]
    },
@@ -1762,87 +1762,156 @@
     "id": "eligibility",
     "name": "Eligibility",
     "kind": "prose",
-    "h2": "Eligibility",
+    "h2": "Do You Have What It Takes?",
     "blocks": [
      {
-      "t": "table",
-      "head": [
-       "Requirement",
-       "Detail"
-      ],
-      "rows": [
-       [
-        "Invitation",
-        "Required, through SkillSelect"
-       ],
-       [
-        "Occupation",
-        "Nominated occupation on the relevant list"
-       ],
-       [
-        "Skills assessment",
-        "Positive result from the assessing authority"
-       ],
-       [
-        "Age",
-        "Under 45 at invitation"
-       ],
-       [
-        "English",
-        "At least competent"
-       ],
-       [
-        "Points",
-        "At least 65"
-       ],
-       [
-        "Health and character",
-        "Required for all applicants"
-       ]
+      "t": "ul",
+      "items": [
+       {
+        "x": "Receive an invitation to apply through SkillSelect"
+       },
+       {
+        "x": "Be under 45 years of age at the time of invitation"
+       },
+       {
+        "x": "Score at least 65 points on the points test (higher scores increase invitation chances)"
+       },
+       {
+        "x": "Have a nominated occupation on the relevant skilled occupation list"
+       },
+       {
+        "x": "Hold a positive skills assessment for your nominated occupation"
+       },
+       {
+        "x": "Demonstrate competent English (IELTS 6.0 or equivalent in each component)"
+       },
+       {
+        "x": "Meet health and character requirements"
+       }
       ]
      }
     ]
    },
    {
-    "id": "189-compared-with-other-skilled-visas",
-    "name": "189 compared with other skilled visas",
+    "id": "benefits",
+    "name": "Benefits",
     "kind": "prose",
-    "h2": "189 compared with other skilled visas",
+    "h2": "Why Choose This Path?",
     "blocks": [
      {
-      "t": "table",
-      "head": [
-       "",
-       "189",
-       "190",
-       "491"
-      ],
-      "rows": [
-       [
-        "Sponsor",
-        "None",
-        "State or territory",
-        "State or territory, or eligible relative"
-       ],
-       [
-        "Extra points",
-        "0",
-        "5",
-        "15"
-       ],
-       [
-        "Location",
-        "Anywhere",
-        "Intended to settle in the nominating state",
-        "Designated regional area"
-       ],
-       [
-        "Competition",
-        "Highest",
-        "High",
-        "Usually lower"
-       ]
+      "t": "ul",
+      "items": [
+       {
+        "x": "Live and work permanently anywhere in Australia"
+       },
+       {
+        "x": "No sponsorship or nomination required"
+       },
+       {
+        "x": "Freedom to change employers and locations"
+       },
+       {
+        "x": "Include eligible family members in your application"
+       },
+       {
+        "x": "Spouse/partner and dependent children can accompany you"
+       },
+       {
+        "x": "Access to Australia's Medicare healthcare system"
+       },
+       {
+        "x": "Enroll in Australian educational institutions"
+       }
       ]
+     }
+    ]
+   },
+   {
+    "id": "how-to-apply",
+    "name": "How to apply",
+    "kind": "steps",
+    "h2": "Your Roadmap to Success",
+    "blocks": [
+     {
+      "t": "ol",
+      "items": [
+       {
+        "x": "Check eligibility - confirm occupation on skilled list, calculate points (minimum 65), verify age under 45"
+       },
+       {
+        "x": "Obtain positive skills assessment from relevant assessing authority"
+       },
+       {
+        "x": "Complete English language test (IELTS, PTE, TOEFL) - achieve competent English minimum (IELTS 6.0 each component)"
+       },
+       {
+        "x": "Submit Expression of Interest (EOI) through SkillSelect (valid 2 years)"
+       },
+       {
+        "x": "Wait for an invitation. Home Affairs decides when it invites people. If you are invited, you have 60 days to lodge the visa"
+       },
+       {
+        "x": "Lodge visa application within 60 days"
+       },
+       {
+        "x": "Complete health examinations and provide police certificates from all countries lived 12+ months"
+       },
+       {
+        "x": "Wait for processing and visa grant notification"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "duration",
+    "name": "Duration",
+    "kind": "prose",
+    "h2": "Visa Duration",
+    "blocks": [
+     {
+      "t": "h3",
+      "x": "Initial Duration"
+     },
+     {
+      "t": "p",
+      "x": "Permanent"
+     }
+    ]
+   },
+   {
+    "id": "pathways",
+    "name": "Pathways",
+    "kind": "prose",
+    "h2": "Visa Pathways",
+    "blocks": [
+     {
+      "t": "h3",
+      "x": "Pathway to Australian Citizenship"
+     },
+     {
+      "t": "p",
+      "x": "You may be able to apply for Australian citizenship after you have lived in Australia for 4 years, including at least 12 months as a permanent resident. You must also meet the character rules and pass the citizenship test."
+     },
+     {
+      "t": "p",
+      "x": "The visa lets you travel in and out of Australia for 5 years from the date it is granted. After those 5 years you are still a permanent resident, but you may need a [Resident Return visa](/bridging-return-visas/resident-return-visa-155-157) to leave Australia and come back."
+     }
+    ]
+   },
+   {
+    "id": "processing-times",
+    "name": "Processing times",
+    "kind": "prose",
+    "h2": "Processing times",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Home Affairs does not publish one fixed time for this visa. Use the [visa processing time guide](https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-processing-times). It shows how long recent applications took. It is a guide only."
+     },
+     {
+      "t": "p",
+      "x": "The wait for an invitation is separate. That wait can be longer than the time Home Affairs takes to decide the visa after you lodge it."
      }
     ]
    },
@@ -1855,216 +1924,64 @@
      {
       "t": "table",
       "head": [
-       "Cost",
-       "Amount"
+       "Charge",
+       "Amount",
+       "Notes"
       ],
       "rows": [
        [
-        "Visa application charge, main applicant",
-        "Check the Department of Home Affairs website for the current figure."
+        "Base application charge",
+        "AUD 6,135",
+        "Points-tested stream and Hong Kong stream"
        ],
        [
-        "English test",
-        "Paid to the test provider"
+        "Additional applicant, 18 or over",
+        "AUD 3,070",
+        "Each additional applicant aged 18 or over"
        ],
        [
-        "Health checks and police certificates",
-        "Paid separately"
+        "Additional applicant, under 18",
+        "AUD 1,540",
+        "Points-tested stream. The Hong Kong stream charge is AUD 1,535"
        ],
        [
-        "Professional fees",
-        "Check the Department of Home Affairs website for the current figure."
+        "Second instalment",
+        "AUD 4,885",
+        "Only if the person is 18 or over and Home Affairs finds they do not have functional English. Otherwise there is no second instalment"
        ]
       ]
-     }
-    ]
-   },
-   {
-    "id": "processing-times",
-    "name": "Processing times",
-    "kind": "steps",
-    "h2": "Processing times",
-    "blocks": [
+     },
      {
-      "t": "p",
-      "x": "Check the Department of Home Affairs website for the current processing time. The wait for an invitation is separate and can be longer than visa processing."
-     }
-    ]
-   },
-   {
-    "id": "step-by-step-process",
-    "name": "Step-by-step process",
-    "kind": "steps",
-    "h2": "Step-by-step process",
-    "blocks": [
-     {
-      "t": "ol",
-      "items": [
-       {
-        "x": "Check [occupation with the Occupation Finder](/occupation-finder)."
-       },
-       {
-        "x": "Take an English test."
-       },
-       {
-        "x": "Apply for a skills assessment."
-       },
-       {
-        "x": "Check [points with the PR Points Calculator](/migrate-to-australia/pr-point-calculator)."
-       },
-       {
-        "x": "Lodge an EOI in SkillSelect."
-       },
-       {
-        "x": "Wait for an invitation."
-       },
-       {
-        "x": "Lodge your visa application within the time allowed."
-       },
-       {
-        "x": "Complete health and police checks."
-       },
-       {
-        "x": "Receive your decision."
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "id": "document-checklist",
-    "name": "Document checklist",
-    "kind": "docs",
-    "h2": "Document checklist",
-    "blocks": [
-     {
-      "t": "ul",
-      "items": [
-       {
-        "x": "Passport and identity documents"
-       },
-       {
-        "x": "Skills assessment outcome"
-       },
-       {
-        "x": "Qualification certificates and transcripts"
-       },
-       {
-        "x": "Employment references and tax records"
-       },
-       {
-        "x": "English test result"
-       },
-       {
-        "x": "Relationship and dependant evidence"
-       },
-       {
-        "x": "Police certificates and health examinations when requested"
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "id": "common-mistakes",
-    "name": "Common mistakes",
-    "kind": "mistakes",
-    "h2": "Common mistakes",
-    "blocks": [
-     {
-      "t": "ul",
-      "items": [
-       {
-        "x": "Relying on a 65 point score for a competitive occupation."
-       },
-       {
-        "x": "Claiming points you cannot prove."
-       },
-       {
-        "x": "Not allowing for a skills assessment waiting time."
-       },
-       {
-        "x": "Letting English results expire."
-       },
-       {
-        "x": "Not updating the EOI when your circumstances change."
-       },
-       {
-        "x": "Age increasing past a points band before an invitation."
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "id": "after-the-visa",
-    "name": "After the visa",
-    "kind": "prose",
-    "h2": "After the visa",
-    "blocks": [
-     {
-      "t": "p",
-      "x": "Permanent residents can live and work in Australia, use Medicare and may apply for citizenship when they meet the residence rules. The travel facility on your visa is time-limited, so check your grant letter. If it ends, see [Resident Return visas](/bridging-return-visas/resident-return-visa-155-157)."
-     }
-    ]
-   },
-   {
-    "id": "related-visas-and-cta",
-    "name": "Related visas and CTA",
-    "kind": "related",
-    "h2": "Related visas",
-    "blocks": [
-     {
-      "t": "ul",
-      "items": [
-       {
-        "x": "[Skilled Nominated (190)](/migrate-to-australia/skilled-nominated-visa-subclass-190)"
-       },
-       {
-        "x": "[Skilled Work Regional (491)](/migrate-to-australia/skilled-work-regional-provisional-visa-subclass-491)"
-       },
-       {
-        "x": "[Temporary Graduate (485)](/migrate-to-australia/temporary-graduate-visa-subclass-485)"
-       },
-       {
-        "x": "[PR Points Calculator](/migrate-to-australia/pr-point-calculator)"
-       },
-       {
-        "x": "[Skilled migration options](/migrate-to-australia)"
-       }
-      ]
+      "t": "note",
+      "x": "These amounts are the visa application charge from the Department of Home Affairs pricing table, checked 14 November 2026. The New Zealand stream is closed, so it has no charge for new applicants. You also pay separately for a skills assessment, an English test, health checks and police certificates."
      }
     ]
    }
   ],
   "faqs": [
    {
-    "q": "How many points do I need for the 189?",
-    "a": "At least 65 to lodge an EOI. Invitations normally go to higher scores, depending on occupation and round."
+    "q": "What is the Subclass 189 visa?",
+    "a": "The Subclass 189 is a points-tested permanent residency visa for skilled workers not sponsored by an employer, state, or family. It allows you to live, work, and study anywhere in Australia permanently."
    },
    {
-    "q": "Do I need a job offer?",
-    "a": "No."
+    "q": "How many points do I need for a 189 visa?",
+    "a": "You need a minimum of 65 points to submit an Expression of Interest (EOI). However, higher scores (80-90+) are often required in competitive occupations like IT, engineering, and healthcare."
    },
    {
-    "q": "Can I apply from outside Australia?",
-    "a": "Yes."
+    "q": "How do I apply for a 189 visa?",
+    "a": "The application process involves a skill assessment, an English test, submitting an Expression of Interest (EOI) on SkillSelect, waiting for an invitation, and applying within 60 days of the invitation."
    },
    {
-    "q": "What happens if I am not invited?",
-    "a": "You can improve your points, try 190 or 491, or consider another visa."
+    "q": "How are invitations issued under the 189 visa?",
+    "a": "Invitations are issued through SkillSelect, ranked by points. The Department of Home Affairs conducts invitation rounds based on occupation ceilings and current demand. Occupations in high demand may receive more invitations."
    },
    {
-    "q": "Can my partner add points?",
-    "a": "Yes, if they meet the partner criteria. See [how points are calculated](/skilled-migration/how-points-are-calculated)."
+    "q": "Can I include my de facto partner or children in the application?",
+    "a": "Yes. You can include your spouse, de facto partner, and dependent children. They will be granted the same permanent residency rights as you if the visa is approved."
    },
    {
-    "q": "Is the 189 permanent?",
-    "a": "Yes."
-   },
-   {
-    "q": "Can you guarantee an invitation?",
-    "a": "No. Only the Department of Home Affairs decides."
+    "q": "What is the occupation ceiling and how does it affect me?",
+    "a": "The occupation ceiling limits how many invitations are issued for each occupation annually. If your occupation hits its ceiling early, you may not receive an invitation, even with a high points score."
    }
   ],
   "cta": {},
@@ -2077,24 +1994,24 @@
   "name": "Skilled Nominated Visa (Subclass 190)",
   "primaryKeyword": "subclass 190 visa",
   "keywords": [
-   "skilled nominated visa 190 requirements",
-   "190 visa state nomination",
-   "Victoria 190 nomination",
-   "190 visa points",
-   "190 visa processing time",
-   "South Australia 190 visa"
+   "Skilled Nominated Visa Subclass 190",
+   "Subclass 190 Visa Australia",
+   "Skilled Migration Visa 190",
+   "190 Visa Processing Time",
+   "Australia PR Visa Subclass 190",
+   "190 Visa Eligibility Australia"
   ],
   "pageType": "Visa subpage",
   "seo": {
-   "title": "Subclass 190 Visa: State Nomination Guide | Bansal Immigration",
-   "description": "Subclass 190 visa requirements, state nomination, points and process. Advice for Victoria and South Australia from registered agents.",
-   "h1": "Skilled Nominated Visa (Subclass 190): State Nomination, Points and Process"
+   "title": "Skilled Nominated visa (subclass 190) | Bansal Immigration",
+   "description": "Applying for the Skilled Nominated Visa (subclass 190)? You can lodge your application either inside or outside Australia, as long as you are not in immigration clearance at the time of application or decision. Bansal Immigration provides expert guidance to help you meet state nomination requirements and complete your 190 visa process smoothly.",
+   "h1": "Skilled Nominated Visa Subclass 190"
   },
   "hero": {
    "badge": "",
-   "h1": "Skilled Nominated Visa (Subclass 190): State Nomination, Points and Process",
+   "h1": "Skilled Nominated Visa Subclass 190",
    "intro": [
-    "The 190 is a permanent visa for skilled workers nominated by a state or territory. The nomination adds 5 points to your score and shows a state wants your skills. In return, you intend to live in that state. We help you check state lists, prepare nomination applications and plan the next step."
+    "A permanent visa for skilled workers nominated by an Australian state or territory. You should plan to live and work in that state for at least 2 years."
    ],
    "buttons": [
     {
@@ -2102,8 +2019,8 @@
      "href": "/book-an-appointment"
     },
     {
-     "label": "Try the Victorian Points Test",
-     "href": "/migrate-to-australia/victorian-points-test"
+     "label": "How to Apply",
+     "href": "#how-to-apply"
     }
    ],
    "phone": true
@@ -2123,79 +2040,69 @@
       ],
       "rows": [
        [
-        "Visa type",
-        "Permanent residence"
+        "Duration",
+        "Permanent"
        ],
        [
-        "Sponsor",
-        "State or territory government nomination"
-       ],
-       [
-        "Points test",
-        "Yes, minimum 65 including nomination points (Source: Department of Home Affairs, checked 12 November 2026)"
-       ],
-       [
-        "Nomination points",
-        "5"
-       ],
-       [
-        "Age",
-        "Under 45"
-       ],
-       [
-        "Government fee",
-        "Check the Department of Home Affairs website for the current figure."
+        "Cost",
+        "From AUD 6,140"
        ],
        [
         "Processing time",
-        "Check the Department of Home Affairs website for the current figure."
+        "Check the Home Affairs guide"
        ],
        [
-        "State fee",
-        "Check the Department of Home Affairs website for the current figure."
+        "Pathway",
+        "Pathway to Australian Citizenship"
        ]
       ]
      }
     ]
    },
    {
-    "id": "what-the-visa-is",
-    "name": "What the visa is",
+    "id": "overview",
+    "name": "Overview",
     "kind": "prose",
-    "h2": "What the visa is",
+    "h2": "Overview",
     "blocks": [
      {
       "t": "p",
-      "x": "The 190 gives you permanent residence, Medicare access and the right to work in Australia. You can include family. A state or territory must nominate you first. Each state chooses occupations and sets its own criteria."
+      "x": "The Subclass 190 is a permanent visa for skilled workers. A state or territory must nominate you. That nomination adds 5 points to your score."
+     },
+     {
+      "t": "p",
+      "x": "You should plan to live and work in the nominating state for at least 2 years. The visa does not ban you from moving later, but the state expects you to stay for that first period."
+     },
+     {
+      "t": "p",
+      "x": "Each state has its own job list and rules. If you are looking at Victoria, use the Victorian Points Calculator below. If you are looking at South Australia, read the [South Australia nomination guide](/south-australia-state-nomination)."
+     },
+     {
+      "t": "p",
+      "x": "If you do not want a state nomination, look at the [Subclass 189](/migrate-to-australia/skilled-independent-visa-subclass-189). If you can live in regional Australia, the [Subclass 491](/migrate-to-australia/skilled-work-regional-provisional-visa-subclass-491) adds 15 points."
      }
     ]
    },
    {
-    "id": "is-this-right-for-you",
-    "name": "Is this right for you?",
+    "id": "check-your-points",
+    "name": "Check your points",
     "kind": "prose",
-    "h2": "Is this right for you?",
+    "h2": "Check your points",
     "blocks": [
      {
-      "t": "ul",
+      "t": "p",
+      "x": "Estimate your score on the points test, and use the Victorian Points Calculator if you want to see how Victoria assesses a nomination."
+     },
+     {
+      "t": "buttons",
       "items": [
        {
-        "x": "My occupation is on a state or territory list."
+        "label": "Points test",
+        "href": "/migrate-to-australia/pr-point-calculator"
        },
        {
-        "x": "I have, or can get, a positive skills assessment."
-       },
-       {
-        "x": "I am under 45 and have competent English."
-       },
-       {
-        "x": "I am happy to live in the nominating state for the required period."
-       },
-       {
-        "x": "I do not have enough points for a 189 invitation."
-       },
-       {
-        "x": "I understand nomination is not guaranteed."
+        "label": "Victorian Points Calculator",
+        "href": "/migrate-to-australia/victorian-points-test"
        }
       ]
      }
@@ -2205,71 +2112,166 @@
     "id": "eligibility",
     "name": "Eligibility",
     "kind": "prose",
-    "h2": "Eligibility",
+    "h2": "Do You Have What It Takes?",
     "blocks": [
      {
-      "t": "table",
-      "head": [
-       "Requirement",
-       "Detail"
-      ],
-      "rows": [
-       [
-        "State or territory nomination",
-        "Required. Each state sets its own rules"
-       ],
-       [
-        "Skills assessment",
-        "Positive result"
-       ],
-       [
-        "Points",
-        "65 or more"
-       ],
-       [
-        "Age",
-        "Under 45"
-       ],
-       [
-        "English",
-        "At least competent"
-       ],
-       [
-        "Intention to live",
-        "Intend to live in the nominating state"
-       ],
-       [
-        "Health and character",
-        "Required"
-       ]
+      "t": "ul",
+      "items": [
+       {
+        "x": "Must be invited to apply after receiving state/territory nomination"
+       },
+       {
+        "x": "Be under 45 years when invited to apply"
+       },
+       {
+        "x": "Score minimum 65 points (including 5 bonus points from nomination)"
+       },
+       {
+        "x": "Have positive skills assessment obtained within 3 years before invitation"
+       },
+       {
+        "x": "Demonstrate competent English (IELTS 6.0 or equivalent in each component)"
+       },
+       {
+        "x": "Be nominated by Australian state/territory government agency"
+       },
+       {
+        "x": "Hold substantive visa or bridging visa if applying from Australia"
+       },
+       {
+        "x": "Meet health and character requirements"
+       },
+       {
+        "x": "Have paid back any debt to Australian government"
+       },
+       {
+        "x": "Sign Australian Values Statement"
+       }
       ]
      }
     ]
    },
    {
-    "id": "how-state-nomination-works",
-    "name": "How state nomination works",
+    "id": "benefits",
+    "name": "Benefits",
     "kind": "prose",
-    "h2": "How state nomination works",
+    "h2": "Why Choose This Path?",
     "blocks": [
-     {
-      "t": "p",
-      "x": "Each state and territory has an allocation of places and a list of occupations. Many require you to register an interest through SkillSelect or their own portal, meet extra rules such as work experience in the state, and score above their own thresholds."
-     },
-     {
-      "t": "p",
-      "x": "States can pause, change or close programs without much notice. Check the state website or ask us before you rely on one."
-     },
      {
       "t": "ul",
       "items": [
        {
-        "x": "Victoria: [Victorian Points Test](/migrate-to-australia/victorian-points-test)"
+        "x": "Live and work in Australia. Plan to stay in the nominating state for at least the first 2 years"
        },
        {
-        "x": "South Australia: [South Australia state nomination](/south-australia-state-nomination)"
+        "x": "5 bonus points added to application with state/territory nomination"
+       },
+       {
+        "x": "Include family members - spouse/partner and dependent children receive permanent residence"
+       },
+       {
+        "x": "Access Medicare and enroll in Australian educational institutions"
+       },
+       {
+        "x": "Pathway to Australian citizenship after meeting residency requirements (4 years including 12 months as PR)"
+       },
+       {
+        "x": "Travel freely to and from Australia for 5 years from visa grant"
+       },
+       {
+        "x": "Sponsor eligible relatives for permanent residence"
+       },
+       {
+        "x": "No employer sponsorship required - freedom to change jobs and occupations"
+       },
+       {
+        "x": "Access state-specific occupation lists providing more opportunities"
+       },
+       {
+        "x": "Government backing increases approval chances with official state support"
        }
       ]
+     }
+    ]
+   },
+   {
+    "id": "how-to-apply",
+    "name": "How to apply",
+    "kind": "steps",
+    "h2": "Your Roadmap to Success",
+    "blocks": [
+     {
+      "t": "ol",
+      "items": [
+       {
+        "x": "Research state/territory requirements and check eligibility (occupation on skilled list, 65 points minimum, under 45 years)"
+       },
+       {
+        "x": "Obtain positive skills assessment from relevant assessing authority (valid 3 years)"
+       },
+       {
+        "x": "Complete English language test - achieve competent English minimum (IELTS 6.0 each component or equivalent)"
+       },
+       {
+        "x": "Submit Expression of Interest (EOI) through SkillSelect indicating preferred states/territories. Apply for state/territory nomination directly to the chosen state government agency"
+       },
+       {
+        "x": "Receive state nomination approval and invitation to apply from Department of Home Affairs (60 days to lodge)"
+       },
+       {
+        "x": "Lodge visa application within 60 days, pay the visa application charge (from AUD 6,140), and upload all supporting documents"
+       },
+       {
+        "x": "Complete health examinations with approved panel physicians and provide police certificates. Respond promptly to any additional information requests from the Department"
+       },
+       {
+        "x": "Receive visa grant notification and plan your move to Australia"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "duration",
+    "name": "Duration",
+    "kind": "prose",
+    "h2": "Visa Duration",
+    "blocks": [
+     {
+      "t": "h3",
+      "x": "Initial Duration"
+     },
+     {
+      "t": "p",
+      "x": "Permanent"
+     }
+    ]
+   },
+   {
+    "id": "pathways",
+    "name": "Pathways",
+    "kind": "prose",
+    "h2": "Visa Pathways",
+    "blocks": [
+     {
+      "t": "h3",
+      "x": "Pathway to Australian Citizenship"
+     },
+     {
+      "t": "p",
+      "x": "You may be able to apply for Australian citizenship after you have lived in Australia for 4 years, including at least 12 months as a permanent resident. You must also meet the character rules and pass the citizenship test. You can travel in and out of Australia for 5 years from the visa grant. After that, you may need a [Resident Return visa](/bridging-return-visas/resident-return-visa-155-157)."
+     }
+    ]
+   },
+   {
+    "id": "processing-times",
+    "name": "Processing times",
+    "kind": "prose",
+    "h2": "Processing times",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Home Affairs does not publish one fixed time for this visa. Use the [visa processing time guide](https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-processing-times). It shows how long recent applications took. It is a guide only. The wait for a state nomination and an invitation is separate."
      }
     ]
    },
@@ -2282,217 +2284,64 @@
      {
       "t": "table",
       "head": [
-       "Cost",
-       "Amount"
+       "Charge",
+       "Amount",
+       "Notes"
       ],
       "rows": [
        [
-        "Visa application charge",
-        "Check the Department of Home Affairs website for the current figure."
+        "Base application charge",
+        "AUD 6,140",
+        "Skilled Nominated visa (subclass 190)"
        ],
        [
-        "State nomination fee",
-        "Check the Department of Home Affairs website for the current figure."
+        "Additional applicant, 18 or over",
+        "AUD 3,070",
+        "Each additional applicant aged 18 or over"
        ],
        [
-        "English test, health, police checks",
-        "Paid separately"
+        "Additional applicant, under 18",
+        "AUD 1,535",
+        "Each additional applicant under 18"
        ],
        [
-        "Professional fees",
-        "Check the Department of Home Affairs website for the current figure."
+        "Second instalment",
+        "AUD 4,885",
+        "Only if the person is 18 or over and Home Affairs finds they do not have functional English. Otherwise there is no second instalment"
        ]
       ]
-     }
-    ]
-   },
-   {
-    "id": "processing-times",
-    "name": "Processing times",
-    "kind": "steps",
-    "h2": "Processing times",
-    "blocks": [
+     },
      {
-      "t": "p",
-      "x": "Check the Department of Home Affairs website for the current processing time. State nomination has its own waiting period."
-     }
-    ]
-   },
-   {
-    "id": "step-by-step-process",
-    "name": "Step-by-step process",
-    "kind": "steps",
-    "h2": "Step-by-step process",
-    "blocks": [
-     {
-      "t": "ol",
-      "items": [
-       {
-        "x": "Check your occupation on the state list."
-       },
-       {
-        "x": "Complete skills assessment and English test."
-       },
-       {
-        "x": "[Calculate points with the PR Points Calculator](/migrate-to-australia/pr-point-calculator)."
-       },
-       {
-        "x": "Lodge an EOI in SkillSelect, marked for the state(s) you want."
-       },
-       {
-        "x": "Apply for state nomination."
-       },
-       {
-        "x": "Receive nomination and an invitation to apply."
-       },
-       {
-        "x": "Lodge your visa application within the time limit."
-       },
-       {
-        "x": "Health and police checks."
-       },
-       {
-        "x": "Decision."
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "id": "document-checklist",
-    "name": "Document checklist",
-    "kind": "docs",
-    "h2": "Document checklist",
-    "blocks": [
-     {
-      "t": "ul",
-      "items": [
-       {
-        "x": "Passport and identity documents"
-       },
-       {
-        "x": "Skills assessment"
-       },
-       {
-        "x": "Qualifications and transcripts"
-       },
-       {
-        "x": "Employment evidence"
-       },
-       {
-        "x": "English test result"
-       },
-       {
-        "x": "Evidence for state criteria (for example residence or work in the state)"
-       },
-       {
-        "x": "Family relationship documents"
-       },
-       {
-        "x": "Police and health documents when requested"
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "id": "common-mistakes",
-    "name": "Common mistakes",
-    "kind": "mistakes",
-    "h2": "Common mistakes",
-    "blocks": [
-     {
-      "t": "ul",
-      "items": [
-       {
-        "x": "Treating nomination as certain."
-       },
-       {
-        "x": "Applying to a state whose list does not match your occupation."
-       },
-       {
-        "x": "Not meeting a state's extra criteria."
-       },
-       {
-        "x": "Moving interstate soon after the grant without understanding the expectation to settle."
-       },
-       {
-        "x": "Using outdated state information."
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "id": "after-the-visa",
-    "name": "After the visa",
-    "kind": "prose",
-    "h2": "After the visa",
-    "blocks": [
-     {
-      "t": "p",
-      "x": "You are expected to live in the nominating state for a period. Check your grant letter and the state's conditions before you move."
-     }
-    ]
-   },
-   {
-    "id": "related-and-cta",
-    "name": "Related and CTA",
-    "kind": "related",
-    "h2": "Related visas",
-    "blocks": [
-     {
-      "t": "ul",
-      "items": [
-       {
-        "x": "[Skilled Independent (189)](/migrate-to-australia/skilled-independent-visa-subclass-189)"
-       },
-       {
-        "x": "[Skilled Work Regional (491)](/migrate-to-australia/skilled-work-regional-provisional-visa-subclass-491)"
-       },
-       {
-        "x": "[Temporary Graduate (485)](/migrate-to-australia/temporary-graduate-visa-subclass-485)"
-       },
-       {
-        "x": "[Skilled migration options](/migrate-to-australia)"
-       }
-      ]
+      "t": "note",
+      "x": "These amounts are the visa application charge from the Department of Home Affairs pricing table, checked 14 November 2026. You also pay separately for a skills assessment, an English test, health checks and police certificates."
      }
     ]
    }
   ],
   "faqs": [
    {
-    "q": "How many points does 190 nomination add?",
-    "a": "5 points."
+    "q": "What is the Skilled Nominated Visa (Subclass 190)?",
+    "a": "It is a permanent residency visa for skilled workers nominated by an Australian state or territory."
    },
    {
-    "q": "Is the 190 permanent?",
-    "a": "Yes."
+    "q": "Can I apply for the 190 visa without a nomination?",
+    "a": "No, state or territory nomination is mandatory for this visa."
    },
    {
-    "q": "Can I choose which state?",
-    "a": "You can apply to states where your occupation is listed and you meet their rules."
+    "q": "Do I need work experience for a 190 visa?",
+    "a": "Work experience can add points. It is not a separate rule for every person. Some skills assessments still ask you to show your work history."
    },
    {
-    "q": "Must I stay in the state?",
-    "a": "You must intend to live there for a period."
+    "q": "Can family members be included in my 190 visa application?",
+    "a": "Yes, you can include eligible family members in your application."
    },
    {
-    "q": "Is nomination guaranteed if I meet the criteria?",
-    "a": "No."
+    "q": "Is the 190 visa a permanent residency visa?",
+    "a": "Yes, it grants permanent residence from the date it is approved."
    },
    {
-    "q": "What if my occupation is not on a state list?",
-    "a": "Consider 189, 491 or another visa."
-   },
-   {
-    "q": "Can my partner add points?",
-    "a": "Yes, if they meet the criteria."
-   },
-   {
-    "q": "Can you guarantee nomination?",
-    "a": "No."
+    "q": "Can I move to another state after receiving my 190 visa?",
+    "a": "While not legally restricted, you are expected to live and work in your nominating state for at least 2 years."
    }
   ],
   "cta": {},
@@ -3263,24 +3112,24 @@
   "name": "Skilled Work Regional Provisional Visa (Subclass 491)",
   "primaryKeyword": "subclass 491 visa",
   "keywords": [
-   "skilled work regional visa 491",
-   "491 visa requirements",
+   "Skilled Work Regional visa 491",
+   "491 visa regional Australia",
    "491 visa points",
-   "491 visa family sponsored",
-   "491 to PR",
-   "491 visa regional areas"
+   "491 to 191",
+   "state nomination 491",
+   "family sponsored 491"
   ],
   "pageType": "Visa subpage",
   "seo": {
-   "title": "Subclass 491 Visa: Regional Skilled Work Guide | Bansal Immigration",
-   "description": "Subclass 491 visa: eligibility, 15 bonus points, regional areas, and the pathway to PR through the 191. Advice from Melbourne agents.",
-   "h1": "Skilled Work Regional Visa (Subclass 491): Eligibility, Points and Pathway to PR"
+   "title": "Skilled Work Regional (Provisional) visa (subclass 491) | Bansal Immigration",
+   "description": "The Subclass 491 lets skilled workers live and work in regional Australia for up to 5 years. A state or an eligible relative can add 15 points. You may later apply for permanent residence on a Subclass 191.",
+   "h1": "Skilled Work Regional Provisional Visa Subclass 491"
   },
   "hero": {
    "badge": "",
-   "h1": "Skilled Work Regional Visa (Subclass 491): Eligibility, Points and Pathway to PR",
+   "h1": "Skilled Work Regional Provisional Visa Subclass 491",
    "intro": [
-    "The 491 is a provisional visa for up to 5 years for skilled people who will live and work in regional Australia. A state nomination or eligible relative sponsorship adds 15 points, which can lift a modest score. After the required time you may apply for permanent residence through the 191. We help you decide whether regional life fits your plans."
+    "Allows skilled workers and their families to live, work, and study in regional Australia for up to five years, offering a pathway to permanent residency through the Subclass 191 Visa."
    ],
    "buttons": [
     {
@@ -3288,8 +3137,8 @@
      "href": "/book-an-appointment"
     },
     {
-     "label": "Check Your Points",
-     "href": "/migrate-to-australia/pr-point-calculator"
+     "label": "How to Apply",
+     "href": "#how-to-apply"
     }
    ],
    "phone": true
@@ -3309,83 +3158,73 @@
       ],
       "rows": [
        [
-        "Visa type",
-        "Provisional, up to 5 years"
+        "Duration",
+        "Up to 5 years"
        ],
        [
-        "Sponsor",
-        "State or territory nomination, or eligible relative in a designated regional area"
+        "Cost",
+        "From AUD 6,140"
        ],
        [
         "Extra points",
-        "15"
-       ],
-       [
-        "Minimum points",
-        "65 including bonus points (Source: Department of Home Affairs, checked 12 November 2026)"
-       ],
-       [
-        "Age",
-        "Under 45"
-       ],
-       [
-        "Where you live and work",
-        "Designated regional area"
-       ],
-       [
-        "Government fee",
-        "Check the Department of Home Affairs website for the current figure."
+        "15, if a state or an eligible relative sponsors you"
        ],
        [
         "Processing time",
-        "Check the Department of Home Affairs website for the current figure."
+        "Check the Home Affairs guide"
        ],
        [
-        "Pathway to PR",
-        "Subclass 191"
+        "Pathway",
+        "Subclass 191, if you meet the rules"
        ]
       ]
      }
     ]
    },
    {
-    "id": "what-the-visa-is",
-    "name": "What the visa is",
+    "id": "overview",
+    "name": "Overview",
     "kind": "prose",
-    "h2": "What the visa is",
+    "h2": "Overview",
     "blocks": [
      {
       "t": "p",
-      "x": "The 491 is built for regional Australia. You live and work in a designated regional area during the visa. If you meet the 191 requirements, you can then apply for permanent residence."
+      "x": "The Subclass 491 lets you live, work and study in a designated regional area of Australia for up to 5 years. It is not a permanent visa."
+     },
+     {
+      "t": "p",
+      "x": "A state or territory must nominate you, or an eligible relative who lives in a designated regional area must sponsor you. That nomination or sponsorship adds 15 points."
+     },
+     {
+      "t": "p",
+      "x": "An eligible relative is usually a close family member, such as a parent, child, brother, sister, aunt, uncle, niece, nephew, grandparent or first cousin. They must be an Australian citizen, an Australian permanent resident, or an eligible New Zealand citizen, and they must live in a designated regional area. Use the [postcode checker](/postcode-checker) to see if an address counts as regional."
+     },
+     {
+      "t": "p",
+      "x": "After at least 3 years you may be able to apply for the [Subclass 191](/migrate-to-australia/permanent-residence-skilled-regional-visa-subclass-191). You must have met the income amount set by Home Affairs and followed your visa conditions. Permanent residence is not automatic. If you want a permanent visa straight away, compare this with the [Subclass 190](/migrate-to-australia/skilled-nominated-visa-subclass-190) and the [Subclass 189](/migrate-to-australia/skilled-independent-visa-subclass-189)."
      }
     ]
    },
    {
-    "id": "is-this-right-for-you",
-    "name": "Is this right for you?",
+    "id": "check-your-points",
+    "name": "Check your points",
     "kind": "prose",
-    "h2": "Is this right for you?",
+    "h2": "Check your points",
     "blocks": [
      {
-      "t": "ul",
+      "t": "p",
+      "x": "Use the points test and include the 15 points from a state nomination or an eligible relative. If you want a Victorian nomination, also use the Victorian Points Calculator."
+     },
+     {
+      "t": "buttons",
       "items": [
        {
-        "x": "I am open to living and working outside the major cities."
+        "label": "Points test",
+        "href": "/migrate-to-australia/pr-point-calculator"
        },
        {
-        "x": "My occupation is on a state list, or I have an eligible relative in a regional area."
-       },
-       {
-        "x": "I have a positive skills assessment."
-       },
-       {
-        "x": "I am under 45 with competent English or better."
-       },
-       {
-        "x": "I understand the 491 is not permanent."
-       },
-       {
-        "x": "I can plan for the income and time rules for the 191."
+        "label": "Victorian Points Calculator",
+        "href": "/migrate-to-australia/victorian-points-test"
        }
       ]
      }
@@ -3395,60 +3234,161 @@
     "id": "eligibility",
     "name": "Eligibility",
     "kind": "prose",
-    "h2": "Eligibility",
+    "h2": "Do You Have What It Takes?",
     "blocks": [
      {
-      "t": "table",
-      "head": [
-       "Requirement",
-       "Detail"
-      ],
-      "rows": [
-       [
-        "Nomination or sponsorship",
-        "State or territory, or eligible relative"
-       ],
-       [
-        "Skills assessment",
-        "Positive result"
-       ],
-       [
-        "Points",
-        "65 or more"
-       ],
-       [
-        "Age",
-        "Under 45"
-       ],
-       [
-        "English",
-        "At least competent"
-       ],
-       [
-        "Regional commitment",
-        "Live and work in a designated regional area"
-       ],
-       [
-        "Health and character",
-        "Required"
-       ]
+      "t": "ul",
+      "items": [
+       {
+        "x": "Nominated by a state or territory, or sponsored by an eligible relative who lives in a designated regional area"
+       },
+       {
+        "x": "Occupation on a relevant skilled occupation list"
+       },
+       {
+        "x": "Suitable skills assessment for the nominated occupation"
+       },
+       {
+        "x": "Invited to apply through SkillSelect"
+       },
+       {
+        "x": "Score at least 65 points. The 15 sponsorship points can be part of that score. A higher score gives you a better chance of an invitation"
+       },
+       {
+        "x": "Be under 45 when you are invited, and meet the English, health and character rules"
+       }
       ]
      }
     ]
    },
    {
-    "id": "two-routes-to-a-491",
-    "name": "Two routes to a 491",
+    "id": "benefits",
+    "name": "Benefits",
     "kind": "prose",
-    "h2": "Two routes to a 491",
+    "h2": "Why Choose This Path?",
     "blocks": [
      {
-      "t": "p",
-      "x": "**State or territory nomination.** A state invites eligible EOIs and applies its own criteria. Check the [Victorian Points Test](/migrate-to-australia/victorian-points-test) and [South Australia nomination](/south-australia-state-nomination)."
+      "t": "ul",
+      "items": [
+       {
+        "x": "Live and work in designated regional Australia with full work rights"
+       },
+       {
+        "x": "Include spouse/partner and dependent children (including as subsequent entrants)"
+       },
+       {
+        "x": "Gain Australian work experience to build points toward PR"
+       },
+       {
+        "x": "Access pathway to permanent residence (subclass 191) after 3 years meeting income and compliance rules"
+       },
+       {
+        "x": "Travel in and out of Australia while the visa is valid"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "how-to-apply",
+    "name": "How to apply",
+    "kind": "steps",
+    "h2": "Your Roadmap to Success",
+    "blocks": [
+     {
+      "t": "ol",
+      "items": [
+       {
+        "x": "Check eligibility: occupation list, points (65+), age under 45, English."
+       },
+       {
+        "x": "Obtain a positive skills assessment from the relevant authority."
+       },
+       {
+        "x": "Sit an approved English test (IELTS/PTE/TOEFL etc.)."
+       },
+       {
+        "x": "Research state/territory nomination criteria or confirm eligible relative sponsor."
+       },
+       {
+        "x": "Submit Expression of Interest (EOI) in SkillSelect and indicate regions/states."
+       },
+       {
+        "x": "Apply for state/territory nomination or provide evidence of eligible relative sponsorship."
+       },
+       {
+        "x": "Receive invitation to apply for subclass 491."
+       },
+       {
+        "x": "Lodge visa application via ImmiAccount within the specified timeframe and pay the visa application charge (from AUD 6,140)."
+       },
+       {
+        "x": "Complete health checks, provide police certificates, and upload supporting documents."
+       },
+       {
+        "x": "Await decision; once granted, live and work in designated regional areas and maintain compliance."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "duration",
+    "name": "Duration",
+    "kind": "prose",
+    "h2": "Visa Duration",
+    "blocks": [
+     {
+      "t": "h3",
+      "x": "Initial Duration"
      },
      {
       "t": "p",
-      "x": "**Eligible relative sponsorship.** A qualifying relative who lives in a designated regional area can sponsor you."
+      "x": "Up to 5 years"
+     },
+     {
+      "t": "h3",
+      "x": "Extension Duration"
+     },
+     {
+      "t": "p",
+      "x": "Not extendable"
+     },
+     {
+      "t": "h3",
+      "x": "Permanent residence"
+     },
+     {
+      "t": "p",
+      "x": "You may apply for a Subclass 191 after at least 3 years if you meet the income test and your visa conditions. It is not granted automatically."
+     }
+    ]
+   },
+   {
+    "id": "pathways",
+    "name": "Pathways",
+    "kind": "prose",
+    "h2": "Visa Pathways",
+    "blocks": [
+     {
+      "t": "h3",
+      "x": "Pathway to Permanent Residence (subclass 191)"
+     },
+     {
+      "t": "p",
+      "x": "After at least 3 years on this visa, you may apply for the [Subclass 191](/migrate-to-australia/permanent-residence-skilled-regional-visa-subclass-191) if you lived and worked in a designated regional area, met the income amount set by Home Affairs, and followed your visa conditions. Once you hold that permanent visa, you can live anywhere in Australia."
+     }
+    ]
+   },
+   {
+    "id": "processing-times",
+    "name": "Processing times",
+    "kind": "prose",
+    "h2": "Processing times",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Home Affairs does not publish one fixed time for this visa. Use the [visa processing time guide](https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-processing-times). It shows how long recent applications took. It is a guide only. The wait for a nomination or sponsorship, and then an invitation, is separate."
      }
     ]
    },
@@ -3461,229 +3401,64 @@
      {
       "t": "table",
       "head": [
-       "Cost",
-       "Amount"
+       "Charge",
+       "Amount",
+       "Notes"
       ],
       "rows": [
        [
-        "Visa application charge",
-        "Check the Department of Home Affairs website for the current figure."
+        "Base application charge",
+        "AUD 6,140",
+        "Skilled Work Regional (Provisional) visa (subclass 491)"
        ],
        [
-        "State nomination fee",
-        "Check the Department of Home Affairs website for the current figure."
+        "Additional applicant, 18 or over",
+        "AUD 3,070",
+        "Each additional applicant aged 18 or over"
        ],
        [
-        "English test, health and police checks",
-        "Paid separately"
+        "Additional applicant, under 18",
+        "AUD 1,535",
+        "Each additional applicant under 18"
        ],
        [
-        "Professional fees",
-        "Check the Department of Home Affairs website for the current figure."
+        "Second instalment",
+        "AUD 4,890",
+        "Only if the person was 18 or over when you applied and Home Affairs finds they do not have functional English. Otherwise there is no second instalment"
        ]
       ]
-     }
-    ]
-   },
-   {
-    "id": "processing-times",
-    "name": "Processing times",
-    "kind": "steps",
-    "h2": "Processing times",
-    "blocks": [
+     },
      {
-      "t": "p",
-      "x": "Check the Department of Home Affairs website for the current processing time. State nomination has its own wait."
-     }
-    ]
-   },
-   {
-    "id": "step-by-step-process",
-    "name": "Step-by-step process",
-    "kind": "steps",
-    "h2": "Step-by-step process",
-    "blocks": [
-     {
-      "t": "ol",
-      "items": [
-       {
-        "x": "Check occupation and regional lists."
-       },
-       {
-        "x": "Complete skills assessment and English test."
-       },
-       {
-        "x": "Calculate points."
-       },
-       {
-        "x": "Lodge an EOI."
-       },
-       {
-        "x": "Apply for state nomination or relative sponsorship."
-       },
-       {
-        "x": "Receive an invitation."
-       },
-       {
-        "x": "Lodge your visa application."
-       },
-       {
-        "x": "Health and police checks."
-       },
-       {
-        "x": "Grant, then relocate to the regional area."
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "id": "document-checklist",
-    "name": "Document checklist",
-    "kind": "docs",
-    "h2": "Document checklist",
-    "blocks": [
-     {
-      "t": "ul",
-      "items": [
-       {
-        "x": "Passport and identity documents"
-       },
-       {
-        "x": "Skills assessment and qualifications"
-       },
-       {
-        "x": "Employment evidence"
-       },
-       {
-        "x": "English test result"
-       },
-       {
-        "x": "Nomination or sponsorship evidence"
-       },
-       {
-        "x": "Relationship documents for family"
-       },
-       {
-        "x": "Police and health documents when requested"
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "id": "common-mistakes",
-    "name": "Common mistakes",
-    "kind": "mistakes",
-    "h2": "Common mistakes",
-    "blocks": [
-     {
-      "t": "ul",
-      "items": [
-       {
-        "x": "Choosing a location that is not designated regional."
-       },
-       {
-        "x": "Not planning for the 191 income test."
-       },
-       {
-        "x": "Moving out of the region without checking conditions."
-       },
-       {
-        "x": "Treating the 491 as permanent."
-       },
-       {
-        "x": "Not keeping tax and work records."
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "id": "pathway-to-pr",
-    "name": "Pathway to PR",
-    "kind": "related",
-    "h2": "Pathway to PR",
-    "blocks": [
-     {
-      "t": "p",
-      "x": "After enough time in the region and meeting the income test, you may apply for the [191](/migrate-to-australia/permanent-residence-skilled-regional-visa-subclass-191). If you hold an older regional visa, see the [887](/migrate-to-australia/skilled-regional-visa-subclass-887)."
-     }
-    ]
-   },
-   {
-    "id": "melbourne-and-victoria-angle",
-    "name": "Melbourne and Victoria angle",
-    "kind": "prose",
-    "h2": "Is Melbourne regional?",
-    "blocks": [
-     {
-      "t": "p",
-      "x": "Greater Melbourne is not regional for this visa, but many other Victorian towns and cities are. Use the [Postcode Checker](/postcode-checker) before you accept a job or sign a lease."
-     }
-    ]
-   },
-   {
-    "id": "related-and-cta",
-    "name": "Related and CTA",
-    "kind": "related",
-    "h2": "Related visas",
-    "blocks": [
-     {
-      "t": "ul",
-      "items": [
-       {
-        "x": "[Permanent Residence Regional (191)](/migrate-to-australia/permanent-residence-skilled-regional-visa-subclass-191)"
-       },
-       {
-        "x": "[Skilled Nominated (190)](/migrate-to-australia/skilled-nominated-visa-subclass-190)"
-       },
-       {
-        "x": "[Skilled Independent (189)](/migrate-to-australia/skilled-independent-visa-subclass-189)"
-       },
-       {
-        "x": "[Skilled Regional (887)](/migrate-to-australia/skilled-regional-visa-subclass-887)"
-       },
-       {
-        "x": "[Skilled migration options](/migrate-to-australia)"
-       }
-      ]
+      "t": "note",
+      "x": "These amounts are the visa application charge from the Department of Home Affairs pricing table, checked 14 November 2026. You also pay separately for a skills assessment, an English test, health checks and police certificates."
      }
     ]
    }
   ],
   "faqs": [
    {
-    "q": "How many points does a 491 add?",
-    "a": "15."
+    "q": "What is the Skilled Work Regional Visa (Subclass 491)?",
+    "a": "It is a provisional visa that allows skilled workers to live and work in regional Australia for up to 5 years."
    },
    {
-    "q": "Is the 491 permanent?",
-    "a": "No. It is provisional."
+    "q": "Who can sponsor me for the 491 visa?",
+    "a": "A state or territory government can nominate you. Or an eligible relative who lives in a designated regional area can sponsor you. Use the postcode checker on this website to see if their address is regional."
    },
    {
-    "q": "Can I live in Melbourne on a 491?",
-    "a": "Generally no. Check the area first."
+    "q": "Can I apply for PR after the 491 visa?",
+    "a": "You may apply for a Subclass 191 after at least 3 years if you meet the income test and your visa conditions. It is not automatic. The income amount is set by Home Affairs."
    },
    {
-    "q": "How does it lead to PR?",
-    "a": "Through the 191 once you meet its requirements."
+    "q": "Is the 491 visa points-tested?",
+    "a": "Yes. You need at least 65 points. A state nomination or an eligible relative adds 15 points, and those points can be part of your score."
    },
    {
-    "q": "Can a relative sponsor me?",
-    "a": "Yes, if they are eligible and live in a designated regional area."
+    "q": "Can I include family members in my 491 visa?",
+    "a": "Yes, eligible family members can be included in your application."
    },
    {
-    "q": "Can I change jobs?",
-    "a": "Usually yes, within the region."
-   },
-   {
-    "q": "Does my partner need to be skilled?",
-    "a": "Not for the visa, but their skills can add points."
-   },
-   {
-    "q": "Can you guarantee a 491?",
-    "a": "No."
+    "q": "Can I move to a major city while on a 491 visa?",
+    "a": "No, you must live, work, and study only in designated regional areas."
    }
   ],
   "cta": {},
@@ -32052,7 +31827,7 @@
    },
    {
     "q": "Can I bring family?",
-    "a": "Possibly. See [Student Dependent Visa](/study-australia/student-dependent-visa-500)."
+    "a": "A later application is no longer available. Family can be included in the student visa application only if an exemption applies. See [family on a student visa](/study-australia/student-dependent-visa-500)."
    },
    {
     "q": "Is approval guaranteed?",
@@ -38291,8 +38066,8 @@
        ],
        [
         "A partner or child of a student",
-        "Subclass 500 as a family member",
-        "[Student dependant visa 500](/study-australia/student-dependent-visa-500)"
+        "Included only if an exemption applies. A later application is closed",
+        "[Family on a student visa](/study-australia/student-dependent-visa-500)"
        ],
        [
         "A parent of a student under 18",
@@ -38393,8 +38168,8 @@
         "Apply again from inside Australia"
        ],
        [
-        "[Student dependant visa 500](/study-australia/student-dependent-visa-500)",
-        "Bring a partner or children"
+        "[Family on a student visa](/study-australia/student-dependent-visa-500)",
+        "Who can still be included, and who cannot apply later"
        ],
        [
         "[Student guardian visa 590](/study-australia/student-guardian-visa-590)",
@@ -38530,7 +38305,7 @@
    },
    {
     "q": "Can my family come with me?",
-    "a": "Partners and children may be able to apply as dependants. Parents of a student under 18 may qualify for a guardian visa. See the [dependant visa](/study-australia/student-dependent-visa-500) and [guardian visa](/study-australia/student-guardian-visa-590) pages."
+    "a": "Only if an exemption applies, and only in the same application. You cannot add them after the student visa is granted. A parent of a student under 18 may still qualify for a guardian visa. See [family on a student visa](/study-australia/student-dependent-visa-500) and the [guardian visa](/study-australia/student-guardian-visa-590)."
    },
    {
     "q": "Do you guarantee a student visa?",
@@ -40280,27 +40055,27 @@
   "path": "/study-australia/student-dependent-visa-500",
   "category": "study-australia",
   "isHub": false,
-  "name": "Student Dependant Visa (Subsequent Entrant, Subclass 500)",
-  "primaryKeyword": "student dependent visa subclass 500",
+  "name": "Family members on a student visa (subclass 500)",
+  "primaryKeyword": "student visa family members",
   "keywords": [
-   "student visa subsequent entrant",
-   "bring spouse on student visa Australia",
-   "student visa family members",
-   "subclass 500 dependant work rights",
+   "student visa subsequent entrant closed",
    "add partner to student visa",
-   "student dependant visa cost"
+   "student visa family members",
+   "subclass 500 dependant",
+   "student visa family exemption"
   ],
   "pageType": "Visa subpage (study)",
   "seo": {
-   "title": "Student Dependant Visa 500 Australia | Bansal Immigration",
-   "description": "Bring your partner or children on a student visa. Learn eligibility, costs, work rights and steps for Subclass 500 dependants. Book advice.",
-   "h1": "Student Dependant Visa (Subclass 500): Bring Your Family to Australia"
+   "title": "Family on a Student Visa: Subsequent Entrants Closed | Bansal Immigration",
+   "description": "You can no longer add a partner or child after a student visa is granted. Family can be included in the same application only if an exemption applies.",
+   "h1": "Family members on a student visa"
   },
   "hero": {
-   "badge": "",
-   "h1": "Student Dependant Visa (Subclass 500): Bring Your Family to Australia",
+   "badge": "Subsequent entrants closed",
+   "h1": "Family members on a student visa",
    "intro": [
-    "If you are studying in Australia, your partner and children may be able to come with you or join you later. They apply for their own Subclass 500 visa as members of your family unit. Here is who qualifies, what it costs and what you must show."
+    "You can no longer add a partner or dependent child after a student visa (subclass 500) has been granted. There is no exemption from that rule.",
+    "Family can be included in the same student visa application only if an exemption applies. The student and every family member included must be in the same location when the application is lodged."
    ],
    "buttons": [
     {
@@ -40326,7 +40101,7 @@
       "rows": [
        [
         "Visa",
-        "Student visa (Subclass 500) as a family member, also called a subsequent entrant"
+        "Student visa (subclass 500) as a family member. A separate application after grant is closed"
        ],
        [
         "Who",
@@ -40364,7 +40139,7 @@
     "blocks": [
      {
       "t": "p",
-      "x": "The main student holds a Subclass 500 visa. Family members hold their own Subclass 500 visa, linked to the main visa. If the main visa ends, so does theirs. This page is for family. If you are the [student, read Student Visa Information](/study-australia/student-visa-information)."
+      "x": "A family member who is included holds their own subclass 500 visa, linked to the student's visa. If the student's visa ends, so does theirs. They cannot lodge their own application after the student's visa is granted. If you are the student, read [Student visa information](/study-australia/student-visa-information)."
      }
     ]
    },
@@ -40401,24 +40176,29 @@
     ]
    },
    {
-    "id": "together-or-later",
-    "name": "Together or later",
+    "id": "who-can-still-be-included",
+    "name": "Who can still be included",
     "kind": "prose",
-    "h2": "Together or later",
+    "h2": "Who can still be included",
     "blocks": [
+     {
+      "t": "p",
+      "x": "A partner or child can be included in the student visa application only if one of these applies:"
+     },
      {
       "t": "ul",
       "items": [
-       {
-        "x": "**Included in the main application:** Family members are added when you apply. This is often easiest."
-       },
-       {
-        "x": "**Subsequent entrant:** Family members apply after you have started study, as members of your family unit. A relationship that began after your visa was granted may be treated differently. Check before you apply."
-       },
-       {
-        "x": "**Children born in Australia:** Check the Department of Home Affairs website for the current figure."
-       }
+       {"x": "The student is a PhD student."},
+       {"x": "The student is sponsored by the Department of Foreign Affairs and Trade or by Defence."},
+       {"x": "The student holds a foreign government scholarship."},
+       {"x": "The student is an eligible student from a Pacific country or an ASEAN member country."},
+       {"x": "The family members are already on the current student visa and the next student visa application is lodged in Australia."},
+       {"x": "The family members are already on the current student visa, and the student needs up to 12 more months to finish the main course, or the education provider has defaulted. That application can be lodged in or outside Australia."}
       ]
+     },
+     {
+      "t": "p",
+      "x": "The student and every family member in the application must be in the same place when it is lodged. A relationship that starts after the visa is granted does not create a way to add that person later."
      }
     ]
    },
@@ -40438,7 +40218,7 @@
         "x": "The applicant is a member of the family unit: spouse or de facto partner, or dependent child."
        },
        {
-        "x": "The applicant is included in the main application or allowed as a subsequent entrant."
+        "x": "The applicant is included in the same application, and an exemption applies. A later application is not available."
        },
        {
         "x": "Proof of the relationship and, for children, dependency."
@@ -40648,7 +40428,7 @@
         "x": "Assuming the partner can work unlimited hours."
        },
        {
-        "x": "Adding a family member after grant without checking the rules."
+        "x": "Trying to add a family member after the student visa is granted. That application is no longer available."
        }
       ]
      }
@@ -40685,8 +40465,8 @@
     "a": "Children of school age usually enrol in school. State rules apply."
    },
    {
-    "q": "Do I apply together or later?",
-    "a": "Both are possible. Applying together is often simpler."
+    "q": "Can my family apply after my student visa is granted?",
+    "a": "No. Subsequent entrant applications are closed, and there is no exemption. Family can only be included in the same application, and only where an exemption applies."
    },
    {
     "q": "How much money must I show?",
@@ -41174,7 +40954,7 @@
     "blocks": [
      {
       "t": "p",
-      "x": "A student under 18 must have appropriate welfare arrangements. A guardian can be that arrangement. The Subclass 590 visa lets you live in Australia while the student studies, and is for the main purpose of caring for them. If you want to bring a partner or child of your own, that is a different visa. See [Student Dependant visa](/study-australia/student-dependent-visa-500)."
+      "x": "A student under 18 must have appropriate welfare arrangements. A guardian can be that arrangement. The Subclass 590 visa lets you live in Australia while the student studies, and is for the main purpose of caring for them. A partner or child is a different question, and a later application is closed. See [family on a student visa](/study-australia/student-dependent-visa-500)."
      }
     ]
    },
@@ -41614,7 +41394,7 @@
      },
      {
       "t": "p",
-      "x": "**Family:** Partners and children may be able to apply with you. See [Student Dependant visa](/study-australia/student-dependent-visa-500) and [Student Guardian visa](/study-australia/student-guardian-visa-590)."
+      "x": "**Family:** You cannot add a partner or child after the student visa is granted. Including them in the same application is limited to exemptions. See [family on a student visa](/study-australia/student-dependent-visa-500) and the [Student Guardian visa](/study-australia/student-guardian-visa-590)."
      }
     ]
    },
@@ -41767,7 +41547,7 @@
    },
    {
     "q": "Can I bring my family?",
-    "a": "Often yes, as dependants. See the [dependant page](/study-australia/student-dependent-visa-500)."
+    "a": "Only with an exemption, and only in the same application. A later application is closed. See [family on a student visa](/study-australia/student-dependent-visa-500)."
    },
    {
     "q": "Do I need an agent?",
@@ -42218,7 +41998,7 @@
    },
    {
     "q": "Can I include my family?",
-    "a": "Often yes. See [Student Dependant visa](/study-australia/student-dependent-visa-500)."
+    "a": "Only with an exemption, and only in the same application. See [family on a student visa](/study-australia/student-dependent-visa-500)."
    },
    {
     "q": "Can I extend my visa?",
@@ -49103,24 +48883,25 @@
   "path": "/skilled-migration/temporary-graduate-visa-extension",
   "category": "skilled-migration",
   "isHub": false,
-  "name": "Skilled Recognised Graduate visa (subclass 476)",
-  "primaryKeyword": "subclass 476",
+  "name": "Skilled Recognised Graduate visa (subclass 476) — closed",
+  "primaryKeyword": "subclass 476 closed",
   "keywords": [
    "subclass 476",
    "skilled recognised graduate visa",
-   "engineering graduate visa Australia"
+   "476 visa closed"
   ],
   "pageType": "Service page",
   "seo": {
-   "title": "Skilled Recognised Graduate visa (subclass 476) | Bansal Immigration",
-   "description": "This visa is for recent engineering graduates. It allows them to reside, do work or get enrolled in study course in Australia for up to 18 months.",
-   "h1": "Skilled Recognised Graduate visa (subclass 476)"
+   "title": "Subclass 476 visa closed | Bansal Immigration",
+   "description": "The Skilled Recognised Graduate visa (subclass 476) closed to new applications on 1 July 2024. A visa already granted stays valid until it expires.",
+   "h1": "Subclass 476 visa is closed"
   },
   "hero": {
-   "badge": "",
-   "h1": "Skilled Recognised Graduate visa (subclass 476)",
+   "badge": "Closed",
+   "h1": "Subclass 476 visa is closed",
    "intro": [
-    "This visa is for recent engineering graduates. It allows them to reside, do work or get enrolled in a study course in Australia for up to 18 months."
+    "You can no longer apply for a Skilled Recognised Graduate visa (subclass 476). The Department of Home Affairs closed it to new applications, including family members, on 1 July 2024.",
+    "A subclass 476 visa that was already granted stays valid until the date on the grant letter."
    ],
    "buttons": [
     {
@@ -49136,18 +48917,46 @@
   },
   "sections": [
    {
-    "id": "what-the-476-is",
-    "name": "What the 476 is",
+    "id": "what-happened",
+    "name": "Closure",
     "kind": "prose",
-    "h2": "What the subclass 476 visa is",
+    "h2": "What happened to the subclass 476 visa",
     "blocks": [
      {
       "t": "p",
-      "x": "The Skilled Recognised Graduate visa (subclass 476) is for recent engineering graduates. It allows them to reside, do work or get enrolled in a study course in Australia for up to 18 months."
+      "x": "The subclass 476 visa was for recent engineering graduates from recognised institutions. It let them live, work or study in Australia for up to 18 months."
      },
      {
       "t": "p",
-      "x": "It is a separate visa from the [Temporary Graduate visa (subclass 485)](/migrate-to-australia/temporary-graduate-visa-subclass-485). If you have already finished study in Australia, start with the 485 pages."
+      "x": "Home Affairs capped the visa on 22 December 2023 and closed it permanently on 1 July 2024. New applications cannot be lodged, and a family member cannot apply to join a 476 holder on this visa."
+     }
+    ]
+   },
+   {
+    "id": "if-you-hold-one",
+    "name": "Existing holders",
+    "kind": "prose",
+    "h2": "If you already hold a subclass 476 visa",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Your visa continues until the expiry date on your grant. You can keep the work and study rights that came with it until that date. Before it expires, you need another visa or you need to leave Australia."
+     }
+    ]
+   },
+   {
+    "id": "what-to-consider",
+    "name": "Other pathways",
+    "kind": "prose",
+    "h2": "What engineering graduates can consider now",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {"x": "[Temporary Graduate visa (subclass 485)](/migrate-to-australia/temporary-graduate-visa-subclass-485), if you have recently finished study in Australia."},
+       {"x": "[Skills in Demand visa (subclass 482)](/employer-sponsored/sid-visa-482), if an Australian employer will sponsor you."},
+       {"x": "[Skilled migration](/migrate-to-australia), including subclasses 189, 190 and 491, if your occupation and points fit a points-tested visa."}
+      ]
      }
     ]
    },
@@ -49155,18 +48964,22 @@
     "id": "talk-to-us",
     "name": "Enquiry form and CTA",
     "kind": "form",
-    "h2": "Talk to us about Skilled Recognised Graduate visa (subclass 476)",
+    "h2": "Talk to us about another visa",
     "blocks": []
    }
   ],
   "faqs": [
    {
-    "q": "Who is the subclass 476 visa for?",
-    "a": "Recent engineering graduates. It lets them live, work or enrol in study in Australia for up to 18 months."
+    "q": "Can I still apply for a subclass 476 visa?",
+    "a": "No. It closed to all new applications on 1 July 2024, including applications by family members."
    },
    {
-    "q": "How long can I stay on a 476?",
-    "a": "Up to 18 months, as described on the current subclass 476 page."
+    "q": "I already hold a subclass 476 visa. Is it still valid?",
+    "a": "Yes. A visa that was granted stays valid until the expiry date on the grant letter."
+   },
+   {
+    "q": "What can an engineering graduate apply for instead?",
+    "a": "Depending on your study, work and occupation, that may be a subclass 485, an employer-sponsored subclass 482, or a points-tested skilled visa. We can check which one fits."
    }
   ],
   "cta": {},
