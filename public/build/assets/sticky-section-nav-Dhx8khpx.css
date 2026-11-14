@@ -1,0 +1,1 @@
+.nav-item.active{background-color:#3b82f61a;color:#3b82f6}.nav-item.active .w-2{transform:scale(1.5);box-shadow:0 0 0 4px #3b82f633}.nav-item.active .absolute{opacity:1}#sticky-nav .group:hover .absolute{max-height:calc(100vh - 2rem);overflow-y:auto}@media(max-height:800px){#sticky-nav{top:25%!important}}@media(max-height:600px){#sticky-nav{top:20%!important}}

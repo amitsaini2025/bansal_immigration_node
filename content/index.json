@@ -1,0 +1,772 @@
+[
+ {
+  "path": "/migrate-to-australia",
+  "name": "Migrate to Australia (Skilled Migration Hub)",
+  "category": "migrate-to-australia",
+  "isHub": true,
+  "order": 0
+ },
+ {
+  "path": "/skilled-migration",
+  "name": "Skilled Migration Services",
+  "category": "skilled-migration",
+  "isHub": true,
+  "order": 1
+ },
+ {
+  "path": "/migrate-to-australia/migration",
+  "name": "Step-by-Step Migration Process Guide",
+  "category": "migrate-to-australia",
+  "isHub": false,
+  "order": 2
+ },
+ {
+  "path": "/migrate-to-australia/temporary-graduate-visa-subclass-485",
+  "name": "Temporary Graduate Visa (Subclass 485)",
+  "category": "migrate-to-australia",
+  "isHub": false,
+  "order": 3
+ },
+ {
+  "path": "/migrate-to-australia/post-study-work-visa-subclass-485",
+  "name": "Post Study Work Visa (Subclass 485)",
+  "category": "migrate-to-australia",
+  "isHub": false,
+  "order": 4
+ },
+ {
+  "path": "/migrate-to-australia/skilled-independent-visa-subclass-189",
+  "name": "Skilled Independent Visa (Subclass 189)",
+  "category": "migrate-to-australia",
+  "isHub": false,
+  "order": 5
+ },
+ {
+  "path": "/migrate-to-australia/skilled-nominated-visa-subclass-190",
+  "name": "Skilled Nominated Visa (Subclass 190)",
+  "category": "migrate-to-australia",
+  "isHub": false,
+  "order": 6
+ },
+ {
+  "path": "/migrate-to-australia/skilled-regional-visa-subclass-887",
+  "name": "Skilled Regional Visa (Subclass 887)",
+  "category": "migrate-to-australia",
+  "isHub": false,
+  "order": 7
+ },
+ {
+  "path": "/migrate-to-australia/permanent-residence-skilled-regional-visa-subclass-191",
+  "name": "Permanent Residence Skilled Regional Visa (Subclass 191)",
+  "category": "migrate-to-australia",
+  "isHub": false,
+  "order": 8
+ },
+ {
+  "path": "/migrate-to-australia/skilled-work-regional-provisional-visa-subclass-491",
+  "name": "Skilled Work Regional Provisional Visa (Subclass 491)",
+  "category": "migrate-to-australia",
+  "isHub": false,
+  "order": 9
+ },
+ {
+  "path": "/skilled-migration/how-points-are-calculated",
+  "name": "How Points Are Calculated",
+  "category": "skilled-migration",
+  "isHub": false,
+  "order": 10
+ },
+ {
+  "path": "/employer-sponsored",
+  "name": "Employer Sponsored Visas Hub",
+  "category": "employer-sponsored",
+  "isHub": true,
+  "order": 11
+ },
+ {
+  "path": "/employer-sponsored/sid-visa-482",
+  "name": "Skills in Demand Visa (Subclass 482)",
+  "category": "employer-sponsored",
+  "isHub": false,
+  "order": 12
+ },
+ {
+  "path": "/employer-sponsored/temporary-work-international-relations-403",
+  "name": "Temporary Work (International Relations) Visa 403",
+  "category": "employer-sponsored",
+  "isHub": false,
+  "order": 13
+ },
+ {
+  "path": "/employer-sponsored/dama",
+  "name": "Designated Area Migration Agreements (DAMA)",
+  "category": "employer-sponsored",
+  "isHub": false,
+  "order": 14
+ },
+ {
+  "path": "/employer-sponsored/skilled-regional-494",
+  "name": "Skilled Employer Sponsored Regional Visa (Subclass 494)",
+  "category": "employer-sponsored",
+  "isHub": false,
+  "order": 15
+ },
+ {
+  "path": "/employer-sponsored/temporary-activity-408",
+  "name": "Temporary Activity Visa (Subclass 408)",
+  "category": "employer-sponsored",
+  "isHub": false,
+  "order": 16
+ },
+ {
+  "path": "/employer-sponsored/short-stay-400",
+  "name": "Short Stay Specialist Visa (Subclass 400)",
+  "category": "employer-sponsored",
+  "isHub": false,
+  "order": 17
+ },
+ {
+  "path": "/employer-sponsored/training-visa-407",
+  "name": "Training Visa (Subclass 407)",
+  "category": "employer-sponsored",
+  "isHub": false,
+  "order": 18
+ },
+ {
+  "path": "/employer-sponsored/ens-186-trt",
+  "name": "ENS 186 Temporary Residence Transition (TRT)",
+  "category": "employer-sponsored",
+  "isHub": false,
+  "order": 19
+ },
+ {
+  "path": "/employer-sponsored/ens-186-direct",
+  "name": "ENS 186 Direct Entry",
+  "category": "employer-sponsored",
+  "isHub": false,
+  "order": 20
+ },
+ {
+  "path": "/employer-sponsored/gtes",
+  "name": "Global Talent Employer Sponsored (GTES)",
+  "category": "employer-sponsored",
+  "isHub": false,
+  "order": 21
+ },
+ {
+  "path": "/employer-sponsored/application-process-guide",
+  "name": "Employer Sponsorship Application Process Guide",
+  "category": "employer-sponsored",
+  "isHub": false,
+  "order": 22
+ },
+ {
+  "path": "/employer-sponsored/standard-business-sponsorship",
+  "name": "Standard Business Sponsorship (SBS) Guide",
+  "category": "employer-sponsored",
+  "isHub": false,
+  "order": 23
+ },
+ {
+  "path": "/employer-sponsored/nomination-process",
+  "name": "Position Nomination Process Guide",
+  "category": "employer-sponsored",
+  "isHub": false,
+  "order": 24
+ },
+ {
+  "path": "/family-visa",
+  "name": "Family and Partner Visas Hub",
+  "category": "family-visa",
+  "isHub": true,
+  "order": 25
+ },
+ {
+  "path": "/family-visa/partner-provisional-visa-subclass-309",
+  "name": "Partner Provisional Visa Subclass 309",
+  "category": "family-visa",
+  "isHub": false,
+  "order": 26
+ },
+ {
+  "path": "/family-visa/partner-permanent-visa-subclass-100",
+  "name": "Partner Permanent Visa Subclass 100",
+  "category": "family-visa",
+  "isHub": false,
+  "order": 27
+ },
+ {
+  "path": "/family-visa/partner-provisional-visa-subclass-820",
+  "name": "Partner Provisional Visa Subclass 820",
+  "category": "family-visa",
+  "isHub": false,
+  "order": 28
+ },
+ {
+  "path": "/family-visa/partner-permanent-visa-subclass-801",
+  "name": "Partner Permanent Visa Subclass 801",
+  "category": "family-visa",
+  "isHub": false,
+  "order": 29
+ },
+ {
+  "path": "/family-visa/prospective-marriage-visa-subclass-300",
+  "name": "Prospective Marriage Visa Subclass 300",
+  "category": "family-visa",
+  "isHub": false,
+  "order": 30
+ },
+ {
+  "path": "/family-visa/contributory-parent-visa-subclass-143",
+  "name": "Contributory Parent Visa Subclass 143",
+  "category": "family-visa",
+  "isHub": false,
+  "order": 31
+ },
+ {
+  "path": "/family-visa/parent-visa-subclass-103",
+  "name": "Parent Visa Subclass 103",
+  "category": "family-visa",
+  "isHub": false,
+  "order": 32
+ },
+ {
+  "path": "/family-visa/contributory-aged-parent-temporary-visa-subclass-884",
+  "name": "Contributory Aged Parent Temporary Visa Subclass 884",
+  "category": "family-visa",
+  "isHub": false,
+  "order": 33
+ },
+ {
+  "path": "/family-visa/contributory-aged-parent-visa-subclass-864",
+  "name": "Contributory Aged Parent Visa Subclass 864",
+  "category": "family-visa",
+  "isHub": false,
+  "order": 34
+ },
+ {
+  "path": "/family-visa/contributory-parent-temporary-visa-subclass-173",
+  "name": "Contributory Parent Temporary Visa Subclass 173",
+  "category": "family-visa",
+  "isHub": false,
+  "order": 35
+ },
+ {
+  "path": "/family-visa/aged-parent-visa-subclass-804",
+  "name": "Aged Parent Visa Subclass 804",
+  "category": "family-visa",
+  "isHub": false,
+  "order": 36
+ },
+ {
+  "path": "/family-visa/sponsored-parent-temporary-visa-subclass-870",
+  "name": "Sponsored Parent Temporary Visa Subclass 870",
+  "category": "family-visa",
+  "isHub": false,
+  "order": 37
+ },
+ {
+  "path": "/family-visa/child-visa-subclass-101",
+  "name": "Child Visa Subclass 101",
+  "category": "family-visa",
+  "isHub": false,
+  "order": 38
+ },
+ {
+  "path": "/family-visa/child-visa-subclass-802",
+  "name": "Child Visa Subclass 802",
+  "category": "family-visa",
+  "isHub": false,
+  "order": 39
+ },
+ {
+  "path": "/family-visa/adoption-visa",
+  "name": "Adoption Visa",
+  "category": "family-visa",
+  "isHub": false,
+  "order": 40
+ },
+ {
+  "path": "/family-visa/dependent-child-visa",
+  "name": "Dependent Child Visa",
+  "category": "family-visa",
+  "isHub": false,
+  "order": 41
+ },
+ {
+  "path": "/family-visa/new-zealand-citizen-family-relationship-visa-subclass-461",
+  "name": "New Zealand Citizen Family Relationship Visa (Subclass 461)",
+  "category": "family-visa",
+  "isHub": false,
+  "order": 42
+ },
+ {
+  "path": "/family-visa/remaining-relative-visa-subclass-115",
+  "name": "Remaining Relative Visa Subclass 115",
+  "category": "family-visa",
+  "isHub": false,
+  "order": 43
+ },
+ {
+  "path": "/family-visa/remaining-relative-visa-subclass-835",
+  "name": "Remaining Relative Visa Subclass 835",
+  "category": "family-visa",
+  "isHub": false,
+  "order": 44
+ },
+ {
+  "path": "/family-visa/orphan-reletive-visa-117",
+  "name": "Orphan Relative Visa 117",
+  "category": "family-visa",
+  "isHub": false,
+  "order": 45
+ },
+ {
+  "path": "/family-visa/orphan-relative-visa-837",
+  "name": "Orphan Relative Visa 837",
+  "category": "family-visa",
+  "isHub": false,
+  "order": 46
+ },
+ {
+  "path": "/family-visa/carer-visa-offshore-subclass-116",
+  "name": "Carer Visa Offshore Subclass 116",
+  "category": "family-visa",
+  "isHub": false,
+  "order": 47
+ },
+ {
+  "path": "/family-visa/carer-visa-onshore-subclass-836",
+  "name": "Carer Visa Onshore Subclass 836",
+  "category": "family-visa",
+  "isHub": false,
+  "order": 48
+ },
+ {
+  "path": "/family-visa/aged-dependent-114",
+  "name": "Aged Dependent Relative Visa Subclass 114 (Overview Page)",
+  "category": "family-visa",
+  "isHub": false,
+  "order": 49
+ },
+ {
+  "path": "/family-visa/aged-dependent-offshore-114",
+  "name": "Aged Dependent Relative Visa Offshore Subclass 114",
+  "category": "family-visa",
+  "isHub": false,
+  "order": 50
+ },
+ {
+  "path": "/family-visa/aged-dependent-onshore-838",
+  "name": "Aged Dependent Relative Visa Onshore Subclass 838",
+  "category": "family-visa",
+  "isHub": false,
+  "order": 51
+ },
+ {
+  "path": "/family-visa/cost-for-contributory-visas",
+  "name": "Cost for Contributory Visas",
+  "category": "family-visa",
+  "isHub": false,
+  "order": 52
+ },
+ {
+  "path": "/visitor-visa",
+  "name": "Visitor Visas Hub",
+  "category": "visitor-visa",
+  "isHub": true,
+  "order": 53
+ },
+ {
+  "path": "/visitor-visa/visitor-visa-600",
+  "name": "Visitor Visa (Subclass 600)",
+  "category": "visitor-visa",
+  "isHub": false,
+  "order": 54
+ },
+ {
+  "path": "/visitor-visa/work-holiday-462",
+  "name": "Work and Holiday Visa (Subclass 462)",
+  "category": "visitor-visa",
+  "isHub": false,
+  "order": 55
+ },
+ {
+  "path": "/visitor-visa/work-holiday-417",
+  "name": "Working Holiday Visa (Subclass 417)",
+  "category": "visitor-visa",
+  "isHub": false,
+  "order": 56
+ },
+ {
+  "path": "/visitor-visa/sponsored-family",
+  "name": "Sponsored Family Visitor Visa",
+  "category": "visitor-visa",
+  "isHub": false,
+  "order": 57
+ },
+ {
+  "path": "/visitor-visa/offshore-extension",
+  "name": "Offshore Tourist Visa Options (Staying Longer)",
+  "category": "visitor-visa",
+  "isHub": false,
+  "order": 58
+ },
+ {
+  "path": "/visitor-visa/electronic-travel-authority-601",
+  "name": "Electronic Travel Authority (Subclass 601)",
+  "category": "visitor-visa",
+  "isHub": false,
+  "order": 59
+ },
+ {
+  "path": "/visitor-visa/evisitor-651",
+  "name": "eVisitor (Subclass 651)",
+  "category": "visitor-visa",
+  "isHub": false,
+  "order": 60
+ },
+ {
+  "path": "/visitor-visa/onshore-visitor-visa-extension",
+  "name": "Onshore Visitor Visa Extension",
+  "category": "visitor-visa",
+  "isHub": false,
+  "order": 61
+ },
+ {
+  "path": "/business-visa",
+  "name": "Business and Investor Visas Hub",
+  "category": "business-visa",
+  "isHub": true,
+  "order": 62
+ },
+ {
+  "path": "/business-visa/business-innovation-and-investment-permanent-visa-subclass-888",
+  "name": "Business Innovation and Investment Permanent Visa (Subclass 888)",
+  "category": "business-visa",
+  "isHub": false,
+  "order": 63
+ },
+ {
+  "path": "/business-visa/business-innovation-and-investment-provisional-visa-subclass-188",
+  "name": "Business Innovation and Investment Provisional Visa (Subclass 188)",
+  "category": "business-visa",
+  "isHub": false,
+  "order": 64
+ },
+ {
+  "path": "/business-visa/business-talent-permanent-visa-subclass-132",
+  "name": "Business Talent Permanent Visa (Subclass 132)",
+  "category": "business-visa",
+  "isHub": false,
+  "order": 65
+ },
+ {
+  "path": "/appeals",
+  "name": "Appeals and Reviews Hub",
+  "category": "appeals",
+  "isHub": true,
+  "order": 66
+ },
+ {
+  "path": "/appeals/art-appeals",
+  "name": "ART Appeals",
+  "category": "appeals",
+  "isHub": false,
+  "order": 67
+ },
+ {
+  "path": "/appeals/federal-court-appeals",
+  "name": "Federal Court Appeals",
+  "category": "appeals",
+  "isHub": false,
+  "order": 68
+ },
+ {
+  "path": "/appeals/ministerial-intervention",
+  "name": "Ministerial Intervention",
+  "category": "appeals",
+  "isHub": false,
+  "order": 69
+ },
+ {
+  "path": "/appeals/review-process",
+  "name": "Review Process",
+  "category": "appeals",
+  "isHub": false,
+  "order": 70
+ },
+ {
+  "path": "/appeals/visa-refusal",
+  "name": "Visa Refusal",
+  "category": "appeals",
+  "isHub": false,
+  "order": 71
+ },
+ {
+  "path": "/appeals/visa-cancellation",
+  "name": "Visa Cancellation",
+  "category": "appeals",
+  "isHub": false,
+  "order": 72
+ },
+ {
+  "path": "/appeals/notice-of-intention-to-consider-cancellation",
+  "name": "Notice of Intention to Consider Cancellation (NOICC)",
+  "category": "appeals",
+  "isHub": false,
+  "order": 73
+ },
+ {
+  "path": "/appeals/waiver-request",
+  "name": "Waiver Request (No Further Stay)",
+  "category": "appeals",
+  "isHub": false,
+  "order": 74
+ },
+ {
+  "path": "/appeals/applying-for-work-rights",
+  "name": "Applying for Work Rights",
+  "category": "appeals",
+  "isHub": false,
+  "order": 75
+ },
+ {
+  "path": "/appeals/applying-for-study-rights",
+  "name": "Applying for Study Rights",
+  "category": "appeals",
+  "isHub": false,
+  "order": 76
+ },
+ {
+  "path": "/bridging-return-visas",
+  "name": "Bridging and Resident Return Visas Hub",
+  "category": "bridging-return-visas",
+  "isHub": true,
+  "order": 77
+ },
+ {
+  "path": "/bridging-return-visas/bridging-visa-a-010",
+  "name": "Bridging Visa A (010)",
+  "category": "bridging-return-visas",
+  "isHub": false,
+  "order": 78
+ },
+ {
+  "path": "/bridging-return-visas/bridging-visa-b-020",
+  "name": "Bridging Visa B (020)",
+  "category": "bridging-return-visas",
+  "isHub": false,
+  "order": 79
+ },
+ {
+  "path": "/bridging-return-visas/bridging-visa-c-030",
+  "name": "Bridging Visa C (030)",
+  "category": "bridging-return-visas",
+  "isHub": false,
+  "order": 80
+ },
+ {
+  "path": "/bridging-return-visas/bridging-visa-e-050-051",
+  "name": "Bridging Visa E (050/051)",
+  "category": "bridging-return-visas",
+  "isHub": false,
+  "order": 81
+ },
+ {
+  "path": "/bridging-return-visas/resident-return-visa-155-157",
+  "name": "Resident Return Visa (155/157)",
+  "category": "bridging-return-visas",
+  "isHub": false,
+  "order": 82
+ },
+ {
+  "path": "/citizenship",
+  "name": "Australian Citizenship Hub",
+  "category": "citizenship",
+  "isHub": true,
+  "order": 83
+ },
+ {
+  "path": "/other-countries",
+  "name": "Other Countries Migration Services Hub",
+  "category": "other-countries",
+  "isHub": true,
+  "order": 84
+ },
+ {
+  "path": "/maritime-crew",
+  "name": "Maritime Crew Hub",
+  "category": "maritime-crew",
+  "isHub": true,
+  "order": 85
+ },
+ {
+  "path": "/maritime-crew/crew-travel-authority-942",
+  "name": "Crew Travel Authority (942)",
+  "category": "maritime-crew",
+  "isHub": false,
+  "order": 86
+ },
+ {
+  "path": "/maritime-crew/maritime-crew-visa-988",
+  "name": "Maritime Crew Visa (988)",
+  "category": "maritime-crew",
+  "isHub": false,
+  "order": 87
+ },
+ {
+  "path": "/medical-humanitarian",
+  "name": "Medical and Humanitarian Hub",
+  "category": "medical-humanitarian",
+  "isHub": true,
+  "order": 88
+ },
+ {
+  "path": "/medical-humanitarian/medical-treatment-visa-602",
+  "name": "Medical Treatment Visa (602)",
+  "category": "medical-humanitarian",
+  "isHub": false,
+  "order": 89
+ },
+ {
+  "path": "/medical-humanitarian/pacific-engagement-visa-192",
+  "name": "Pacific Engagement Visa (192)",
+  "category": "medical-humanitarian",
+  "isHub": false,
+  "order": 90
+ },
+ {
+  "path": "/medical-humanitarian/former-resident-visa-151",
+  "name": "Former Resident Visa (151)",
+  "category": "medical-humanitarian",
+  "isHub": false,
+  "order": 91
+ },
+ {
+  "path": "/transit-special-purpose",
+  "name": "Transit and Special Purpose Hub",
+  "category": "transit-special-purpose",
+  "isHub": true,
+  "order": 92
+ },
+ {
+  "path": "/transit-special-purpose/transit-visa-771",
+  "name": "Transit Visa (771)",
+  "category": "transit-special-purpose",
+  "isHub": false,
+  "order": 93
+ },
+ {
+  "path": "/transit-special-purpose/special-category-visa-444",
+  "name": "Special Category Visa (444)",
+  "category": "transit-special-purpose",
+  "isHub": false,
+  "order": 94
+ },
+ {
+  "path": "/transit-special-purpose/special-purpose-visa",
+  "name": "Special Purpose Visa",
+  "category": "transit-special-purpose",
+  "isHub": false,
+  "order": 95
+ },
+ {
+  "path": "/transit-special-purpose/special-purpose-travel-authority-945",
+  "name": "Special Purpose Travel Authority (945)",
+  "category": "transit-special-purpose",
+  "isHub": false,
+  "order": 96
+ },
+ {
+  "path": "/study-australia",
+  "name": "Study in Australia Hub",
+  "category": "study-australia",
+  "isHub": true,
+  "order": 97
+ },
+ {
+  "path": "/study-australia/admission-in-australia",
+  "name": "Admission in Australia",
+  "category": "study-australia",
+  "isHub": false,
+  "order": 98
+ },
+ {
+  "path": "/study-australia/new-coe",
+  "name": "New CoE",
+  "category": "study-australia",
+  "isHub": false,
+  "order": 99
+ },
+ {
+  "path": "/study-australia/course-change-in-australia",
+  "name": "Course Change in Australia",
+  "category": "study-australia",
+  "isHub": false,
+  "order": 100
+ },
+ {
+  "path": "/study-australia/what-is-recognized-prior-learning-rpl-australia",
+  "name": "Recognition of Prior Learning (RPL)",
+  "category": "study-australia",
+  "isHub": false,
+  "order": 101
+ },
+ {
+  "path": "/study-australia/professional-year-program",
+  "name": "Professional Year Program",
+  "category": "study-australia",
+  "isHub": false,
+  "order": 102
+ },
+ {
+  "path": "/study-australia/request-to-defer-your-studies",
+  "name": "Request to Defer Your Studies",
+  "category": "study-australia",
+  "isHub": false,
+  "order": 103
+ },
+ {
+  "path": "/study-australia/student-dependent-visa-500",
+  "name": "Student Dependant Visa (Subsequent Entrant, Subclass 500)",
+  "category": "study-australia",
+  "isHub": false,
+  "order": 104
+ },
+ {
+  "path": "/study-australia/student-visa-extension",
+  "name": "Student Visa Extension",
+  "category": "study-australia",
+  "isHub": false,
+  "order": 105
+ },
+ {
+  "path": "/study-australia/student-guardian-visa-590",
+  "name": "Student Guardian Visa (Subclass 590)",
+  "category": "study-australia",
+  "isHub": false,
+  "order": 106
+ },
+ {
+  "path": "/study-australia/student-visa-journey",
+  "name": "Student Visa Journey",
+  "category": "study-australia",
+  "isHub": false,
+  "order": 107
+ },
+ {
+  "path": "/study-australia/student-visa-information",
+  "name": "Student Visa Information (Subclass 500)",
+  "category": "study-australia",
+  "isHub": false,
+  "order": 108
+ },
+ {
+  "path": "/study-australia/our-affiliations",
+  "name": "Our Affiliations",
+  "category": "study-australia",
+  "isHub": false,
+  "order": 109
+ }
+]

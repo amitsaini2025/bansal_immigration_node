@@ -39,3 +39,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local-only files (keep out of GitHub)
+~$*
+*.docx
+*.xlsx
+*.zip
+.claude/settings.local.json
+.claude/scheduled_tasks.lock
+tsconfig.tsbuildinfo

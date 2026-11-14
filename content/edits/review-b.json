@@ -1,0 +1,1352 @@
+{
+ "/employer-sponsored": {
+  "remove": [
+   "which-visa-fits-your-situation",
+   "how-we-help-workers-and-employers"
+  ],
+  "replace": {
+   "is-this-page-for-you": {
+    "h2": "Are you the worker or the employer?",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Most sponsorship cases involve both. The employer sponsors and nominates. The worker applies for the visa. Each visa page below shows what applies to each side."
+     },
+     {
+      "t": "p",
+      "x": "**Workers and graduates.** You have a job offer and want to know which visa applies, or you hold a 482 and want to reach permanent residence."
+     },
+     {
+      "t": "p",
+      "x": "**Employers.** You cannot fill a role locally, you have never sponsored before, or you sponsor already and need help with nominations, renewals or compliance. Start with the [Application Process Guide](/employer-sponsored/application-process-guide)."
+     }
+    ]
+   },
+   "the-three-stages-of-an-employer-sponsored-visa": {
+    "h2": "The three stages of sponsorship",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Most employer sponsored visas follow the same three stages. Each stage has its own forms, charges and processing time."
+     },
+     {
+      "t": "table",
+      "head": [
+       "Stage",
+       "Who does it",
+       "What it means"
+      ],
+      "rows": [
+       [
+        "1. Sponsorship",
+        "The employer",
+        "The business applies to become an approved sponsor. The Department checks that it is genuine and lawful."
+       ],
+       [
+        "2. Nomination",
+        "The employer",
+        "The business nominates a specific position, usually with a named worker, and shows the job is genuine and pays enough."
+       ],
+       [
+        "3. Visa application",
+        "The worker",
+        "The worker applies once the nomination is lodged or approved. Health, character, skills and English are checked."
+       ]
+      ]
+     },
+     {
+      "t": "note",
+      "label": "Note",
+      "x": "The order of nomination and visa lodgement varies by visa. A few visas, such as the Short Stay Specialist 400, need no sponsorship. Read the [Application Process Guide](/employer-sponsored/application-process-guide) for the full sequence."
+     }
+    ]
+   },
+   "employer-sponsored-visa-options": {
+    "h2": "Which visa is right for me?",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Find your situation in the table, then open the visa page."
+     },
+     {
+      "t": "table",
+      "head": [
+       "Your situation",
+       "Visa",
+       "Type"
+      ],
+      "rows": [
+       [
+        "You are on a 482 with the same employer for around two years",
+        "[ENS 186 Temporary Residence Transition](/employer-sponsored/ens-186-trt)",
+        "Permanent"
+       ],
+       [
+        "You have a permanent job offer and a skills assessment, in or outside Australia",
+        "[ENS 186 Direct Entry](/employer-sponsored/ens-186-direct)",
+        "Permanent"
+       ],
+       [
+        "You have a skilled job offer and need to start soon",
+        "[Skills in Demand 482](/employer-sponsored/sid-visa-482)",
+        "Temporary, up to 4 years"
+       ],
+       [
+        "The job is in regional Australia and you want a path to permanent residence",
+        "[Skilled Employer Sponsored Regional 494](/employer-sponsored/skilled-regional-494)",
+        "Provisional, 5 years"
+       ],
+       [
+        "A regional employer has roles the standard lists do not cover",
+        "[DAMA](/employer-sponsored/dama)",
+        "Agreement-based"
+       ],
+       [
+        "An established employer needs a highly skilled specialist under a labour agreement",
+        "[Global Talent Employer Sponsored](/employer-sponsored/gtes)",
+        "Labour agreement"
+       ],
+       [
+        "A specialist is needed for a short, highly specialised job",
+        "[Short Stay Specialist 400](/employer-sponsored/short-stay-400)",
+        "Temporary, short"
+       ],
+       [
+        "Someone is coming for structured workplace training",
+        "[Training 407](/employer-sponsored/training-visa-407)",
+        "Temporary"
+       ],
+       [
+        "A performer, researcher, athlete or religious worker is coming for an activity",
+        "[Temporary Activity 408](/employer-sponsored/temporary-activity-408)",
+        "Temporary"
+       ],
+       [
+        "Government staff or a government agreement worker",
+        "[Temporary Work 403](/employer-sponsored/temporary-work-international-relations-403)",
+        "Temporary"
+       ]
+      ]
+     },
+     {
+      "t": "note",
+      "label": "Note",
+      "x": "This table is a starting point, not advice. The answer depends on the occupation, salary, location, English, qualifications and visa history. The National Innovation Visa (subclass 858) is an individual pathway and is not an employer sponsored visa."
+     }
+    ]
+   },
+   "for-employers-guides-to-sponsoring-a-worker": {
+    "h2": "Guides for employers",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Sponsoring is a business process as well as a visa process. These guides explain each part."
+     },
+     {
+      "t": "table",
+      "head": [
+       "Guide",
+       "What you will learn"
+      ],
+      "rows": [
+       [
+        "[Application Process Guide](/employer-sponsored/application-process-guide)",
+        "The three stages, who pays what and a realistic timeline"
+       ],
+       [
+        "[Standard Business Sponsorship](/employer-sponsored/standard-business-sponsorship)",
+        "How to become an approved sponsor and what you promise once approved"
+       ],
+       [
+        "[Nomination Process](/employer-sponsored/nomination-process)",
+        "How to nominate a role, set the salary, test the labour market and prove the job is genuine"
+       ]
+      ]
+     }
+    ]
+   },
+   "who-pays-what-in-employer-sponsorship": {
+    "h2": "Who pays what",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Costs fall into three groups. We explain which apply before you start."
+     },
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "**Government charges.** The sponsor application, the nomination, the visa application charge and, for some visas, the Skilling Australians Fund (SAF) levy."
+       },
+       {
+        "x": "**Employer-only costs.** The SAF levy and the sponsorship and nomination charges. An employer cannot recover them from the worker."
+       },
+       {
+        "x": "**Professional fees and third-party costs.** Our fees, skills assessments, English tests, medicals and police checks."
+       }
+      ]
+     },
+     {
+      "t": "p",
+      "x": "See the cost section on each visa page. Check the Department of Home Affairs website for current charges."
+     }
+    ]
+   },
+   "sponsoring-in-melbourne-victoria-and-south-australia": {
+    "h2": "Regional rules in Victoria and South Australia",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "Melbourne is a capital city, so the regional 494 visa is not available for a role based in Melbourne. Regional Victoria may qualify. Use our [Regional Postcode Checker](/postcode-checker) to test a location."
+       },
+       {
+        "x": "Victoria has a Designated Area Migration Agreement for the Great South Coast region. See [DAMA](/employer-sponsored/dama)."
+       },
+       {
+        "x": "South Australia has its own regional DAMA arrangements, and the state has been negotiating renewal."
+       }
+      ]
+     }
+    ]
+   },
+   "speak-to-an-australian-migration-specialist": {
+    "h2": "Speak to a registered migration agent",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Email info@bansalimmigration.com.au. Melbourne office: Level 8/278 Collins St, Melbourne VIC 3000. Adelaide office: Unit 5, 55 Gawler Pl, Adelaide SA 5000. Monday to Friday, 9:30 am to 6:00 pm."
+     }
+    ]
+   }
+  }
+ },
+ "/employer-sponsored/sid-visa-482": {
+  "remove": [
+   "quick-check-for-workers",
+   "sponsoring-a-482-worker-in-melbourne-or-adelaide"
+  ],
+  "replace": {
+   "which-482-stream-applies": {
+    "h2": "Which 482 stream applies?",
+    "blocks": [
+     {
+      "t": "table",
+      "head": [
+       "Stream",
+       "Who it is for",
+       "Key condition"
+      ],
+      "rows": [
+       [
+        "Specialist Skills",
+        "High-paid specialists in many occupations",
+        "Salary at or above the SSIT, and the occupation is in an eligible group. Some occupation groups are excluded."
+       ],
+       [
+        "Core Skills",
+        "Workers in occupations on the Core Skills Occupation List",
+        "Salary at or above the CSIT and the market rate for the job. The employer must meet nomination rules."
+       ],
+       [
+        "Labour Agreement",
+        "Workers sponsored under a labour agreement",
+        "The terms depend on the agreement the employer has with the Department."
+       ]
+      ]
+     },
+     {
+      "t": "note",
+      "label": "Note",
+      "x": "The stream changes the occupation test, the salary test and sometimes the testing you must do. Choose the stream before you advertise the role. Check your occupation with our [Occupation Finder](/occupation-finder)."
+     }
+    ]
+   },
+   "how-long-does-a-482-visa-take": {
+    "h2": "How long does a 482 take?",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Processing has three parts: the sponsor application, the nomination and the visa application. Check the Department of Home Affairs website for current processing times, which change often. Some streams and occupations get priority."
+     },
+     {
+      "t": "p",
+      "x": "**Employers:** allow several months from the day you decide to sponsor to the day the worker can start. Do not set a start date you cannot move."
+     }
+    ]
+   },
+   "from-the-482-to-permanent-residence": {
+    "h2": "From the 482 to permanent residence",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "The most common route is the [ENS 186 Temporary Residence Transition stream](/employer-sponsored/ens-186-trt). In general you need two years of full-time work for your sponsor on a 482, and your employer must nominate you again for a permanent role."
+     },
+     {
+      "t": "p",
+      "x": "Other routes include the [Direct Entry stream](/employer-sponsored/ens-186-direct), state nominated visas through our [skilled migration pages](/migrate-to-australia) and the [regional 191](/migrate-to-australia/permanent-residence-skilled-regional-visa-subclass-191). The best route depends on your occupation, age and points. Use the [PR Points Calculator](/migrate-to-australia/pr-point-calculator)."
+     },
+     {
+      "t": "p",
+      "x": "**Changing employers.** You can usually move to a new sponsor if the new employer nominates you within the time allowed."
+     }
+    ]
+   }
+  },
+  "faqs_remove": [
+   "What salary do I need?",
+   "How do I get PR from a 482?"
+  ],
+  "faqs_add": [
+   {
+    "q": "What salary do I need?",
+    "a": "Core Skills needs at least the CSIT and the market salary for the job. Specialist Skills needs at least the SSIT. See the stream table above. Thresholds change each year, so check the Department of Home Affairs website."
+   },
+   {
+    "q": "How do I get PR from a 482?",
+    "a": "Most people use the ENS 186 Temporary Residence Transition stream. See the section on permanent residence above."
+   }
+  ]
+ },
+ "/employer-sponsored/temporary-work-international-relations-403": {
+  "replace": {
+   "costs-and-timing": {
+    "h2": "Costs and timing",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Check the Department of Home Affairs website for the current charge and processing time. Other costs include medical examinations, police certificates and translations."
+     }
+    ]
+   },
+   "how-a-403-application-works": {
+    "h2": "How a 403 application works",
+    "blocks": [
+     {
+      "t": "ol",
+      "items": [
+       {
+        "x": "**Identify the stream.** We confirm which arrangement covers you."
+       },
+       {
+        "x": "**Check the approvals.** The employer, scheme or government agency confirms what is in place."
+       },
+       {
+        "x": "**Collect documents.** Use the checklist below."
+       },
+       {
+        "x": "**Lodge the visa application.** This is done through ImmiAccount."
+       },
+       {
+        "x": "**Health and character.** Provide results when asked."
+       },
+       {
+        "x": "**Decision.** The Department sends a decision. Check the length and the conditions."
+       }
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "/employer-sponsored/temporary-activity-408": {
+  "replace": {
+   "costs": {
+    "h2": "Costs",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Check the Department of Home Affairs website for the current charge and processing time. Other costs include medical exams, police certificates and professional fees."
+     }
+    ]
+   },
+   "the-408-process": {
+    "h2": "The 408 process",
+    "blocks": [
+     {
+      "t": "ol",
+      "items": [
+       {
+        "x": "**Identify the stream.** We match your activity to a stream."
+       },
+       {
+        "x": "**Host approval.** The host or sponsor obtains any approval or endorsement."
+       },
+       {
+        "x": "**Collect documents.** Use the checklist below."
+       },
+       {
+        "x": "**Lodge the visa application.**"
+       },
+       {
+        "x": "**Health and character.** Provide results when asked."
+       },
+       {
+        "x": "**Decision and travel.** Check dates and conditions."
+       }
+      ]
+     }
+    ]
+   },
+   "how-long-does-it-take": {
+    "h2": "How long does it take?",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Check the Department of Home Affairs website for current processing times. Lodge early if you have an event date. Do not book travel before a decision."
+     }
+    ]
+   }
+  }
+ },
+ "/employer-sponsored/short-stay-400": {
+  "replace": {
+   "costs": {
+    "h2": "Costs",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "There is no sponsorship, nomination or SAF levy. Check the Department of Home Affairs website for the current charge and processing time. Other costs include medical exams if requested, police certificates and professional fees."
+     }
+    ]
+   },
+   "how-long-does-it-take": {
+    "h2": "How long does it take?",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "The 400 usually has fewer steps than the 482, so it is often quicker. Check the Department of Home Affairs website for current processing times."
+     }
+    ]
+   }
+  }
+ },
+ "/employer-sponsored/training-visa-407": {
+  "replace": {
+   "how-long-does-it-take": {
+    "h2": "How long does it take?",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "The training plan and host approval come first, then the visa application. Check the Department of Home Affairs website for current processing times."
+     }
+    ]
+   }
+  }
+ },
+ "/employer-sponsored/gtes": {
+  "replace": {
+   "costs-and-timing": {
+    "h2": "Costs and timing",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Employers cannot recover sponsorship costs from the worker. Check the Department of Home Affairs website for the current charge and processing time."
+     }
+    ]
+   }
+  }
+ },
+ "/employer-sponsored/ens-186-trt": {
+  "remove": [
+   "melbourne-and-adelaide-angle"
+  ],
+  "replace": {
+   "how-long-does-it-take": {
+    "h2": "How long does it take?",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Check the Department of Home Affairs website for current processing times. If your 482 is close to ending, plan early and ask about bridging visa rights."
+     }
+    ]
+   },
+   "what-pr-means": {
+    "h2": "What permanent residence means",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "The 186 has no regional restriction. You can live and work anywhere in Australia, study, use Medicare and sponsor family. After the residence period you can apply for citizenship. See [Citizenship](/citizenship). If your 482 is with a regional employer, you may also have other options. See the [494](/employer-sponsored/skilled-regional-494)."
+     }
+    ]
+   }
+  }
+ },
+ "/employer-sponsored/ens-186-direct": {
+  "remove": [
+   "melbourne-and-adelaide-angle"
+  ],
+  "replace": {
+   "how-long-does-it-take": {
+    "h2": "How long does it take?",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Allow time for the skills assessment, labour market testing, nomination and visa application. Check the Department of Home Affairs website for current processing times."
+     }
+    ]
+   },
+   "what-pr-means": {
+    "h2": "What permanent residence means",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "The 186 has no regional restriction. You can live and work anywhere in Australia, study, use Medicare and sponsor family. After the residence period you can apply for citizenship. See [Citizenship](/citizenship)."
+     }
+    ]
+   },
+   "direct-entry-eligibility": {
+    "h2": "Direct Entry eligibility",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "**Worker**"
+     },
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "Occupation on the list for the stream."
+       },
+       {
+        "x": "Positive skills assessment, where required."
+       },
+       {
+        "x": "Work experience in the occupation."
+       },
+       {
+        "x": "English at the required level."
+       },
+       {
+        "x": "Under 45 or an exemption."
+       },
+       {
+        "x": "Health and character checks."
+       }
+      ]
+     },
+     {
+      "t": "p",
+      "x": "**Employer**"
+     },
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "The sponsor, salary and SAF rules are the same as for [TRT](/employer-sponsored/ens-186-trt)."
+       },
+       {
+        "x": "A genuine, full-time, ongoing position."
+       },
+       {
+        "x": "Labour market testing completed, unless exempt."
+       }
+      ]
+     }
+    ]
+   },
+   "related-visas-and-tools": {
+    "h2": "Related pages",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[ENS 186 TRT](/employer-sponsored/ens-186-trt)"
+       },
+       {
+        "x": "[Skills in Demand 482](/employer-sponsored/sid-visa-482)"
+       },
+       {
+        "x": "[494 regional visa](/employer-sponsored/skilled-regional-494)"
+       },
+       {
+        "x": "[DAMA](/employer-sponsored/dama)"
+       },
+       {
+        "x": "[Position Nomination Process Guide](/employer-sponsored/nomination-process)"
+       },
+       {
+        "x": "[Skilled migration pages](/migrate-to-australia)"
+       },
+       {
+        "x": "[Occupation Finder](/occupation-finder)"
+       },
+       {
+        "x": "[PR Points Calculator](/migrate-to-australia/pr-point-calculator)"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "/employer-sponsored/skilled-regional-494": {
+  "replace": {
+   "how-long-does-it-take": {
+    "h2": "How long does it take?",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Check the Department of Home Affairs website for current processing times. Allow time for the sponsor application and the nomination first."
+     }
+    ]
+   },
+   "494-eligibility": {
+    "h2": "494 eligibility",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "**Worker**"
+     },
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "A nominated job in a regional area."
+       },
+       {
+        "x": "Skills and work experience for the occupation."
+       },
+       {
+        "x": "English at the required level."
+       },
+       {
+        "x": "Under 45 at the time of application, unless an exemption applies."
+       },
+       {
+        "x": "Health and character checks."
+       }
+      ]
+     },
+     {
+      "t": "p",
+      "x": "**Employer**"
+     },
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "The sponsor, nomination and SAF rules are the same as for the [482](/employer-sponsored/sid-visa-482). See the [SBS guide](/employer-sponsored/standard-business-sponsorship)."
+       },
+       {
+        "x": "A business operating in a regional area."
+       },
+       {
+        "x": "A genuine position, with salary at least the TSMIT and the market rate."
+       }
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "/employer-sponsored/standard-business-sponsorship": {
+  "replace": {
+   "the-training-commitment": {
+    "h2": "The training commitment",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Sponsors support the training of Australians. In general this is done by paying the Skilling Australians Fund (SAF) levy when nominating a worker. The levy is the employer's cost and cannot be recovered from the worker. Check the Department of Home Affairs website for the current rule."
+     }
+    ]
+   },
+   "how-to-apply": {
+    "h2": "How to apply",
+    "blocks": [
+     {
+      "t": "ol",
+      "items": [
+       {
+        "x": "**Check eligibility.** We review your business before you apply."
+       },
+       {
+        "x": "**Gather documents.** Use the checklist below."
+       },
+       {
+        "x": "**Lodge the application.** Complete the form in ImmiAccount, upload documents and pay the fee."
+       },
+       {
+        "x": "**Department assessment.** The Department checks your business, key people and compliance history. It may ask for more information."
+       },
+       {
+        "x": "**Decision.** If approved, you receive notice and the approval period begins."
+       },
+       {
+        "x": "**Plan your nominations.** See the [Nomination Guide](/employer-sponsored/nomination-process)."
+       }
+      ]
+     }
+    ]
+   },
+   "how-long-does-it-take": {
+    "h2": "How long does it take?",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Check the Department of Home Affairs website for current processing times. Apply well before you plan to advertise the job."
+     }
+    ]
+   }
+  },
+  "remove": [
+   "how-we-help"
+  ]
+ },
+ "/employer-sponsored/nomination-process": {
+  "replace": {
+   "labour-market-testing": {
+    "h2": "Labour market testing",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Labour market testing shows you looked for an Australian worker first. When it applies, you advertise the job and keep records."
+     },
+     {
+      "t": "p",
+      "x": "Typical rules:"
+     },
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "Advertise for at least four weeks."
+       },
+       {
+        "x": "Use at least two advertisements on recognised platforms."
+       },
+       {
+        "x": "Match the advertised role, salary and requirements to the nomination."
+       },
+       {
+        "x": "Lodge the nomination within the allowed time after the ads end."
+       },
+       {
+        "x": "Keep a record of applicants and why you did not hire them."
+       }
+      ]
+     },
+     {
+      "t": "p",
+      "x": "It does not apply to every nomination. For example, it is not required for 186 TRT. Some trade-agreement and other exemptions exist."
+     }
+    ]
+   },
+   "costs": {
+    "h2": "Costs",
+    "blocks": [
+     {
+      "t": "table",
+      "head": [
+       "Cost",
+       "Amount"
+      ],
+      "rows": [
+       [
+        "Nomination fee",
+        "Check the Department of Home Affairs website for the current figure."
+       ],
+       [
+        "SAF levy",
+        "See the levy table above."
+       ],
+       [
+        "Advertising",
+        "Your cost"
+       ],
+       [
+        "Professional fees",
+        "Agreed with your agent in a written service agreement."
+       ]
+      ]
+     }
+    ]
+   },
+   "how-long-does-a-nomination-take": {
+    "h2": "How long does a nomination take?",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Check the Department of Home Affairs website for current processing times. Allow extra time if labour market testing applies."
+     }
+    ]
+   }
+  },
+  "remove": [
+   "how-we-help"
+  ],
+  "faqs_remove": [
+   "What salary do I need to offer?"
+  ],
+  "faqs_add": [
+   {
+    "q": "What salary do I need to offer?",
+    "a": "At least the income threshold for your visa, the market rate and the same pay as an Australian in the role. See the salary section above."
+   }
+  ]
+ },
+ "/employer-sponsored/application-process-guide": {
+  "remove": [
+   "how-we-help"
+  ],
+  "faqs_remove": [
+   "Who pays?"
+  ],
+  "faqs_add": [
+   {
+    "q": "Who pays?",
+    "a": "The employer pays the sponsor application, the nomination and the SAF levy, and cannot recover them from the worker. The visa application charge may be paid by either side. See the cost table above."
+   }
+  ]
+ },
+ "/study-australia": {
+  "remove": [
+   "not-sure-where-to-start"
+  ],
+  "replace": {
+   "where-are-you-on-your-study-journey": {
+    "h2": "Where are you on your study journey?",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Pick the row that matches you."
+     },
+     {
+      "t": "table",
+      "head": [
+       "You are",
+       "What you need",
+       "Page"
+      ],
+      "rows": [
+       [
+        "Overseas, and want to enrol at a university, TAFE or college",
+        "Course shortlist, offer, CoE, Subclass 500 application",
+        "[Admission in Australia](/study-australia/admission-in-australia)"
+       ],
+       [
+        "A current student changing course or provider",
+        "Release rules, a new CoE, a check on whether you need a new visa",
+        "[Course change](/study-australia/course-change-in-australia)"
+       ],
+       [
+        "A current student whose visa ends before the course does",
+        "New CoE, extended OSHC, new Subclass 500",
+        "[Student visa extension](/study-australia/student-visa-extension)"
+       ],
+       [
+        "A graduate looking at further study or a Professional Year",
+        "Further study options or a Professional Year",
+        "[Professional Year](/study-australia/professional-year-program)"
+       ],
+       [
+        "A partner or child of a student",
+        "Subclass 500 as a family member",
+        "[Student dependant visa 500](/study-australia/student-dependent-visa-500)"
+       ],
+       [
+        "A parent of a student under 18",
+        "Subclass 590 guardian visa",
+        "[Student guardian visa 590](/study-australia/student-guardian-visa-590)"
+       ]
+      ]
+     }
+    ]
+   },
+   "the-honest-path-course-visa-work-graduate-visa-then-pr-if-you-qualify": {
+    "h2": "The path: course, visa, then PR only if you qualify",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Study can be part of a pathway to permanent residence, but it is never automatic."
+     },
+     {
+      "t": "ol",
+      "items": [
+       {
+        "x": "**Choose a course.** Pick a CRICOS-registered course that fits your past study, work and future plans. See [Admission in Australia](/study-australia/admission-in-australia)."
+       },
+       {
+        "x": "**Get your Confirmation of Enrolment (CoE).** Your provider issues it after you accept your offer. See [New CoE](/study-australia/new-coe)."
+       },
+       {
+        "x": "**Apply for the Subclass 500 student visa.** You need your CoE, health cover, English, funds and a clear Genuine Student statement. See [Student visa information](/study-australia/student-visa-information)."
+       },
+       {
+        "x": "**Study within your visa conditions.** Student visas have work limits during study periods."
+       },
+       {
+        "x": "**Graduate and look at your next visa.** Some graduates may qualify for the [Temporary Graduate visa 485](/migrate-to-australia/temporary-graduate-visa-subclass-485). The rules and age limits have changed recently."
+       },
+       {
+        "x": "**Consider skilled migration.** If your occupation, skills assessment and points are right, you may be able to apply for a skilled visa. Use the [PR Points Calculator](/migrate-to-australia/pr-point-calculator). A Professional Year can add points for some graduates."
+       }
+      ]
+     },
+     {
+      "t": "note",
+      "label": "Note",
+      "x": "Choosing a course only to reach PR is a risk. The Department looks at whether your study makes sense for you."
+     }
+    ]
+   },
+   "everything-we-cover-for-students": {
+    "h2": "All our study guides",
+    "blocks": [
+     {
+      "t": "table",
+      "head": [
+       "Guide",
+       "What it covers"
+      ],
+      "rows": [
+       [
+        "[Admission in Australia](/study-australia/admission-in-australia)",
+        "Choose a course, meet entry and English requirements, get your offer"
+       ],
+       [
+        "[New CoE](/study-australia/new-coe)",
+        "When you need one, how to ask and how to match your health cover"
+       ],
+       [
+        "[Course change](/study-australia/course-change-in-australia)",
+        "Switch courses or providers without breaching your visa"
+       ],
+       [
+        "[Recognition of Prior Learning](/study-australia/what-is-recognized-prior-learning-rpl-australia)",
+        "Turn work experience into credit, and what it means for your visa"
+       ],
+       [
+        "[Professional Year](/study-australia/professional-year-program)",
+        "A job-readiness program for some graduates"
+       ],
+       [
+        "[Defer your studies](/study-australia/request-to-defer-your-studies)",
+        "Postpone your start date and keep your visa on track"
+       ],
+       [
+        "[Student visa journey](/study-australia/student-visa-journey)",
+        "The whole process in one view"
+       ],
+       [
+        "[Student visa information](/study-australia/student-visa-information)",
+        "Requirements, documents and conditions after grant"
+       ],
+       [
+        "[Student visa extension](/study-australia/student-visa-extension)",
+        "Apply again from inside Australia"
+       ],
+       [
+        "[Student dependant visa 500](/study-australia/student-dependent-visa-500)",
+        "Bring a partner or children"
+       ],
+       [
+        "[Student guardian visa 590](/study-australia/student-guardian-visa-590)",
+        "For a parent or guardian of a student under 18"
+       ],
+       [
+        "[Our registrations](/study-australia/our-affiliations)",
+        "Who gives visa advice and how to check us"
+       ]
+      ]
+     }
+    ]
+   },
+   "student-visa-financial-calculator": {
+    "h2": "Student visa funds calculator",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Estimate the funds you may need to show for a Subclass 500 visa. The result is an estimate only."
+     },
+     {
+      "t": "buttons",
+      "items": [
+       {
+        "label": "Open the funds calculator",
+        "href": "/study-australia/student-visa-financial-calculator"
+       }
+      ]
+     }
+    ]
+   },
+   "how-we-help": {
+    "h2": "How we help",
+    "blocks": [
+     {
+      "t": "ol",
+      "items": [
+       {
+        "x": "**Talk.** Tell us your background, budget and goals."
+       },
+       {
+        "x": "**Plan.** We explain your course options and what the visa will ask of you."
+       },
+       {
+        "x": "**Apply.** We help with admission documents and your visa application, as set out in your written service agreement."
+       },
+       {
+        "x": "**Follow up.** We help you meet your conditions, respond to Department requests and plan the next visa."
+       }
+      ]
+     },
+     {
+      "t": "p",
+      "x": "Visa advice is given by registered migration agents. You can check each agent on the OMARA register. See [our registrations](/study-australia/our-affiliations). [Book a study consultation](/book-an-appointment)."
+     }
+    ]
+   }
+  }
+ },
+ "/study-australia/new-coe": {
+  "replace": {
+   "enquiry-form": {
+    "h2": "Need help with your CoE and visa timing?",
+    "blocks": []
+   },
+   "related-and-final-cta": {
+    "h2": "Related pages",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[Student visa extension](/study-australia/student-visa-extension)"
+       },
+       {
+        "x": "[Admission in Australia](/study-australia/admission-in-australia)"
+       },
+       {
+        "x": "[Student visa information](/study-australia/student-visa-information)"
+       }
+      ]
+     },
+     {
+      "t": "note",
+      "label": "Note",
+      "x": "Requirements vary by provider and visa. General information only. Visa decisions are made by the Department of Home Affairs."
+     }
+    ]
+   }
+  }
+ },
+ "/study-australia/course-change-in-australia": {
+  "replace": {
+   "enquiry-form": {
+    "h2": "Tell us what you want to change",
+    "blocks": []
+   },
+   "related-and-final-cta": {
+    "h2": "Related pages",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[Student visa information](/study-australia/student-visa-information)"
+       },
+       {
+        "x": "[Admission in Australia](/study-australia/admission-in-australia)"
+       },
+       {
+        "x": "[Recognition of Prior Learning](/study-australia/what-is-recognized-prior-learning-rpl-australia)"
+       }
+      ]
+     },
+     {
+      "t": "note",
+      "label": "Note",
+      "x": "General information only. Rules change and depend on your case."
+     }
+    ]
+   }
+  }
+ },
+ "/study-australia/what-is-recognized-prior-learning-rpl-australia": {
+  "replace": {
+   "enquiry-form": {
+    "h2": "Ask about RPL and your visa",
+    "blocks": []
+   },
+   "related-and-final-cta": {
+    "h2": "Related pages",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[Admission in Australia](/study-australia/admission-in-australia)"
+       },
+       {
+        "x": "[Professional Year](/study-australia/professional-year-program)"
+       },
+       {
+        "x": "[Occupation Finder](/occupation-finder)"
+       }
+      ]
+     },
+     {
+      "t": "note",
+      "label": "Note",
+      "x": "General information only."
+     }
+    ]
+   }
+  }
+ },
+ "/study-australia/admission-in-australia": {
+  "replace": {
+   "ready-to-choose-your-course-buttons-book-a-study-consultation-book-an-appointment-and-call-61-3-9602-1330": {
+    "h2": "Related pages",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[New CoE](/study-australia/new-coe)"
+       },
+       {
+        "x": "[Student visa journey](/study-australia/student-visa-journey)"
+       },
+       {
+        "x": "[Student visa information](/study-australia/student-visa-information)"
+       },
+       {
+        "x": "[Funds calculator](/study-australia/student-visa-financial-calculator)"
+       }
+      ]
+     },
+     {
+      "t": "note",
+      "label": "Note",
+      "x": "This page is general information. Visa decisions are made by the Department of Home Affairs."
+     }
+    ]
+   }
+  }
+ },
+ "/study-australia/professional-year-program": {
+  "replace": {
+   "related-and-final-cta": {
+    "h2": "Related pages",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[Temporary Graduate visa 485](/migrate-to-australia/temporary-graduate-visa-subclass-485)"
+       },
+       {
+        "x": "[Skilled Nominated 190](/migrate-to-australia/skilled-nominated-visa-subclass-190)"
+       },
+       {
+        "x": "[Skilled Work Regional 491](/migrate-to-australia/skilled-work-regional-provisional-visa-subclass-491)"
+       },
+       {
+        "x": "[Study in Australia](/study-australia)"
+       }
+      ]
+     },
+     {
+      "t": "note",
+      "label": "Note",
+      "x": "General information only. Points and rules change."
+     }
+    ]
+   },
+   "common-mistakes": {
+    "h2": "Common mistakes",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "Paying for a program before checking points and occupation settings."
+       },
+       {
+        "x": "Choosing a provider that is not approved by the professional body."
+       },
+       {
+        "x": "Starting too late and running out of visa time."
+       },
+       {
+        "x": "Counting the 5 points without checking when they expire."
+       },
+       {
+        "x": "Treating the program as a guarantee of a job."
+       }
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "/study-australia/request-to-defer-your-studies": {
+  "replace": {
+   "related-and-final-cta": {
+    "h2": "Related pages",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[New CoE](/study-australia/new-coe)"
+       },
+       {
+        "x": "[Admission in Australia](/study-australia/admission-in-australia)"
+       },
+       {
+        "x": "[Student visa information](/study-australia/student-visa-information)"
+       },
+       {
+        "x": "[Course change](/study-australia/course-change-in-australia)"
+       }
+      ]
+     },
+     {
+      "t": "note",
+      "label": "Note",
+      "x": "General information only. Follow your provider's instructions."
+     }
+    ]
+   }
+  },
+  "faqs_remove": [
+   "Enquiry form:"
+  ]
+ },
+ "/study-australia/student-dependent-visa-500": {
+  "faqs_remove": [
+   "refund if my visa is refused"
+  ],
+  "faqs_add": [
+   {
+    "q": "Does my family get a refund if my visa is refused?",
+    "a": "Visa charges are generally not refunded."
+   }
+  ]
+ },
+ "/study-australia/student-visa-extension": {
+  "faqs_remove": [
+   "Do you guarantee approval?"
+  ],
+  "faqs_add": [
+   {
+    "q": "Do you guarantee approval?",
+    "a": "No. The Department of Home Affairs decides every application."
+   }
+  ]
+ },
+ "/study-australia/student-guardian-visa-590": {
+  "faqs_remove": [
+   "Do you guarantee a grant?"
+  ],
+  "faqs_add": [
+   {
+    "q": "Do you guarantee a grant?",
+    "a": "No. The Department of Home Affairs decides every application."
+   }
+  ]
+ },
+ "/study-australia/student-visa-journey": {
+  "faqs_remove": [
+   "What if my visa is refused?"
+  ],
+  "faqs_add": [
+   {
+    "q": "What if my visa is refused?",
+    "a": "You may have review options with strict deadlines. Contact us quickly. See [Visa refusal](/appeals/visa-refusal). The Department of Home Affairs decides visa applications."
+   }
+  ]
+ },
+ "/study-australia/student-visa-information": {
+  "faqs_remove": [
+   "What if I am under 18?"
+  ],
+  "faqs_add": [
+   {
+    "q": "What if I am under 18?",
+    "a": "You also need welfare arrangements, and a parent may [apply for a guardian visa](/study-australia/student-guardian-visa-590). The Department of Home Affairs decides visa applications."
+   }
+  ]
+ },
+ "/study-australia/our-affiliations": {
+  "remove": [
+   "professional-memberships",
+   "education-provider-relationships"
+  ],
+  "replace": {
+   "registered-migration-agents": {
+    "h2": "Registered migration agents",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Visa advice at Bansal Immigration is given by registered migration agents. Each agent is registered with the Office of the Migration Agents Registration Authority (OMARA) and works under the Migration Agents Code of Conduct."
+     },
+     {
+      "t": "table",
+      "head": [
+       "Agent",
+       "Role",
+       "MARN"
+      ],
+      "rows": [
+       [
+        "Arun Bansal",
+        "Director and Registered Migration Agent",
+        "2418466"
+       ],
+       [
+        "Vipul Goyal",
+        "Managing Director and Registered Migration Agent",
+        "2418571"
+       ],
+       [
+        "Mamta Puri",
+        "Registered Migration Agent",
+        "2418481"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "x": "[Meet the whole team](/team). Celesty Parmar is a Senior Migration Consultant."
+     }
+    ]
+   },
+   "how-we-are-paid-and-how-we-choose-courses": {
+    "h2": "ICEF accreditation",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Our website footer shows our ICEF Industry Agent Status (IAS) accreditation badge, which links to our ICEF agency listing. ICEF is an international education industry body. The badge does not affect your visa. The Department of Home Affairs assesses every application on its merits."
+     }
+    ]
+   },
+   "how-to-check-us-yourself": {
+    "h2": "How to check us yourself",
+    "blocks": [
+     {
+      "t": "ol",
+      "items": [
+       {
+        "x": "Search the agent's name or MARN on the official register of migration agents."
+       },
+       {
+        "x": "Ask for our written service agreement before you pay any fee."
+       },
+       {
+        "x": "Check any course on the official CRICOS register."
+       },
+       {
+        "x": "Ask us how we are paid, and which provider we recommend and why."
+       }
+      ]
+     }
+    ]
+   }
+  }
+ }
+}

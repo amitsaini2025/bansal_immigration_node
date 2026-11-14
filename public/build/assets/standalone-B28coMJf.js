@@ -1,0 +1,1 @@
+import"./ui-CV4-XOMI.js";window.addEventListener(`load`,function(){document.body.classList.add(`loaded`)});

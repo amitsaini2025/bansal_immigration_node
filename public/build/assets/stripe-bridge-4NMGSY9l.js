@@ -1,0 +1,1 @@
+import{t as e}from"./vendor-stripe-C4UGFUEQ.js";var t=new Map;function n(n){return n?(t.has(n)||t.set(n,e(n)),t.get(n)):Promise.resolve(null)}window.loadStripeClient=n,window.whenStripeReady=e=>{if(window.__stripeBridgeReady){e();return}window.addEventListener(`stripe:ready`,e,{once:!0})},window.__stripeBridgeReady=!0,window.dispatchEvent(new Event(`stripe:ready`));

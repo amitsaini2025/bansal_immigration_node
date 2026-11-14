@@ -1,0 +1,592 @@
+{
+ "/family-visa/child-visa-subclass-802": {
+  "remove": [
+   "meet-us-in-person"
+  ],
+  "add": [
+   {
+    "after": "what-can-go-wrong",
+    "id": "how-we-help",
+    "h2": "How we help with the 802",
+    "kind": "prose",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "We check your child's current visa and its conditions, confirm the sponsor's status, list the documents you need and lodge the application. Bring your child's visa grant, passports and any court orders to your first appointment in Melbourne (Collins St) or Adelaide (Gawler Pl), or speak to us by phone or video."
+     }
+    ]
+   }
+  ]
+ },
+ "/family-visa/adoption-visa": {},
+ "/family-visa/dependent-child-visa": {
+  "replace": {
+   "what-happens-next": {
+    "h2": "What happens next?",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "The 445 is temporary. When the permanent partner visa stage is decided, the child's long-term position needs to be dealt with. See [Partner Provisional Visa 309](/family-visa/partner-provisional-visa-subclass-309), [Partner Provisional Visa 820](/family-visa/partner-provisional-visa-subclass-820), [Partner Permanent Visa 100](/family-visa/partner-permanent-visa-subclass-100) and [Partner Permanent Visa 801](/family-visa/partner-permanent-visa-subclass-801)."
+     }
+    ]
+   }
+  }
+ },
+ "/family-visa/new-zealand-citizen-family-relationship-visa-subclass-461": {
+  "replace": {
+   "what-can-go-wrong": {
+    "h2": "What can go wrong",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "**Applying under the wrong visa.** If your partner has become an Australian citizen, a partner visa may be needed."
+       },
+       {
+        "x": "**Weak relationship evidence.** Provide proof that the relationship is genuine and continuing."
+       },
+       {
+        "x": "**Visa expires before lodging.** Apply well before your current visa ends."
+       },
+       {
+        "x": "**Assuming the visa leads to permanent residence.** It does not on its own. See what happens after the 461 below."
+       }
+      ]
+     },
+     {
+      "t": "p",
+      "x": "If your application is refused, you may have review rights. See [Appeals](/appeals)."
+     }
+    ]
+   }
+  },
+  "add": [
+   {
+    "after": "what-is-the-subclass-461-visa",
+    "id": "461-or-partner-visa",
+    "h2": "461 or a partner visa?",
+    "kind": "prose",
+    "blocks": [
+     {
+      "t": "table",
+      "head": [
+       "Your partner or parent is",
+       "Usually the visa to look at"
+      ],
+      "rows": [
+       [
+        "A New Zealand citizen on a Special Category visa (subclass 444)",
+        "This page, the subclass 461"
+       ],
+       [
+        "An Australian citizen or permanent resident",
+        "[Partner Provisional Visa 820](/family-visa/partner-provisional-visa-subclass-820) or [309](/family-visa/partner-provisional-visa-subclass-309)"
+       ],
+       [
+        "Your child's other parent, and you are applying for a partner visa",
+        "[Dependent Child Visa 445](/family-visa/dependent-child-visa)"
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "faqs_add": [
+   {
+    "q": "Can my children apply with me?",
+    "a": "A dependent child of a New Zealand citizen may be able to apply for the 461 in their own right. Children may need consent from both parents. Book a consultation so we can check your family."
+   }
+  ]
+ },
+ "/family-visa/remaining-relative-visa-subclass-115": {
+  "replace": {
+   "offshore-or-onshore": {
+    "h2": "115 or 835?",
+    "blocks": [
+     {
+      "t": "table",
+      "head": [
+       "",
+       "Subclass 115 (this page)",
+       "Subclass 835"
+      ],
+      "rows": [
+       [
+        "Where you are",
+        "Outside Australia, and you stay outside until the decision",
+        "In Australia at application and decision"
+       ],
+       [
+        "While you wait",
+        "You wait overseas",
+        "You usually wait on a bridging visa"
+       ],
+       [
+        "What to check first",
+        "Your family map and the sponsor's status",
+        "Your current visa, its conditions and its end date"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "x": "If you are in Australia, read the [Remaining Relative Visa 835](/family-visa/remaining-relative-visa-subclass-835) page instead."
+     }
+    ]
+   },
+   "what-does-remaining-relative-mean": {
+    "h2": "What does \"remaining relative\" mean?",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "The test looks at your close family, which can include your parents, siblings, children and stepchildren. In broad terms, you must show that your closest family are all settled in Australia, or that you have no close family elsewhere. A single brother or sister overseas can stop your application."
+     },
+     {
+      "t": "p",
+      "x": "This test is the main reason applications fail. Do not rely on a quick online checklist. Book a consultation so we can map your whole family."
+     }
+    ]
+   }
+  }
+ },
+ "/family-visa/remaining-relative-visa-subclass-835": {
+  "replace": {
+   "what-happens-to-your-current-visa": {
+    "h2": "835 or 115? What happens to your current visa?",
+    "blocks": [
+     {
+      "t": "table",
+      "head": [
+       "",
+       "Subclass 835 (this page)",
+       "Subclass 115"
+      ],
+      "rows": [
+       [
+        "Where you are",
+        "In Australia at application and decision",
+        "Outside Australia"
+       ],
+       [
+        "While you wait",
+        "You usually wait on a bridging visa, which can limit work, study and travel",
+        "You wait overseas"
+       ],
+       [
+        "What to check first",
+        "Your current visa, its conditions and its end date",
+        "Your family map and the sponsor's status"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "x": "Your current visa may expire long before a decision. You can usually lodge a valid application while still holding a visa. Do not leave Australia without advice, as a bridging visa may not allow you back in. See [Bridging Visa A (010)](/bridging-return-visas/bridging-visa-a-010). For the offshore route, see the [Remaining Relative Visa 115](/family-visa/remaining-relative-visa-subclass-115)."
+     }
+    ]
+   },
+   "what-does-the-test-look-at": {
+    "h2": "What does the test look at?",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "The Department looks at your parents, brothers, sisters and children, and sometimes step-relatives. If a relative lives overseas, the test may not be met. If a relative has died, you will need proof."
+     },
+     {
+      "t": "p",
+      "x": "Because the test is so detailed, we draw up a family map with you before advising."
+     }
+    ]
+   },
+   "how-long-will-it-take": {
+    "h2": "How long will it take?",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Only a limited number of places are available each year. Many applicants live on a bridging visa for years. Ask yourself whether that suits your life, then talk to us."
+     }
+    ]
+   }
+  }
+ },
+ "/family-visa/orphan-reletive-visa-117": {
+  "replace": {
+   "which-orphan-relative-visa-applies": {
+    "h2": "117 or 837?",
+    "blocks": [
+     {
+      "t": "table",
+      "head": [
+       "",
+       "Subclass 117 (this page)",
+       "Subclass 837"
+      ],
+      "rows": [
+       [
+        "Where the child is",
+        "Outside Australia",
+        "In Australia"
+       ],
+       [
+        "Visa the child holds",
+        "None needed to apply, the child is overseas",
+        "The child's current visa matters, including its end date"
+       ],
+       [
+        "Extra planning",
+        "Guardianship and the child's travel to Australia",
+        "Keeping the child lawful while the application is decided"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "x": "If the child is already in Australia, read the [Orphan Relative Visa 837](/family-visa/orphan-relative-visa-837) page. The child's location when you lodge decides which one applies."
+     }
+    ]
+   }
+  }
+ },
+ "/family-visa/orphan-relative-visa-837": {
+  "replace": {
+   "keeping-the-child-lawful": {
+    "h2": "837 or 117? Keeping the child lawful",
+    "blocks": [
+     {
+      "t": "table",
+      "head": [
+       "",
+       "Subclass 837 (this page)",
+       "Subclass 117"
+      ],
+      "rows": [
+       [
+        "Where the child is",
+        "In Australia",
+        "Outside Australia"
+       ],
+       [
+        "Visa the child holds",
+        "The current visa matters, including its end date",
+        "None needed to apply, the child is overseas"
+       ],
+       [
+        "Extra planning",
+        "Keeping the child lawful while the application is decided",
+        "Guardianship and the child's travel to Australia"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "x": "A child's temporary visa can end while family arrangements are being sorted out. Tell us the visa end date at once. You can usually lodge a valid application while the child holds a visa, and a bridging visa may follow. See [Bridging Visa A (010)](/bridging-return-visas/bridging-visa-a-010). Do not travel overseas with the child without advice. For a child overseas, see the [Orphan Relative Visa 117](/family-visa/orphan-reletive-visa-117)."
+     }
+    ]
+   }
+  }
+ },
+ "/family-visa/carer-visa-offshore-subclass-116": {
+  "replace": {
+   "offshore-or-onshore": {
+    "h2": "116 or 836?",
+    "blocks": [
+     {
+      "t": "table",
+      "head": [
+       "",
+       "Subclass 116 (this page)",
+       "Subclass 836"
+      ],
+      "rows": [
+       [
+        "Where the carer is",
+        "Outside Australia until the decision",
+        "In Australia at application and decision"
+       ],
+       [
+        "While you wait",
+        "The carer waits overseas",
+        "The carer usually waits on a bridging visa"
+       ],
+       [
+        "What to check first",
+        "The medical case and the relationship",
+        "The carer's current visa, its conditions and its end date"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "x": "If the carer is already in Australia, read the [Carer Visa 836](/family-visa/carer-visa-onshore-subclass-836) page."
+     }
+    ]
+   },
+   "how-long-will-it-take": {
+    "h2": "How long will it take?",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Only a limited number of places are available each year. If the person's condition could change before a decision, tell us at the start."
+     }
+    ]
+   }
+  }
+ },
+ "/family-visa/carer-visa-onshore-subclass-836": {
+  "replace": {
+   "staying-lawfully": {
+    "h2": "836 or 116? Staying lawfully",
+    "blocks": [
+     {
+      "t": "table",
+      "head": [
+       "",
+       "Subclass 836 (this page)",
+       "Subclass 116"
+      ],
+      "rows": [
+       [
+        "Where the carer is",
+        "In Australia at application and decision",
+        "Outside Australia"
+       ],
+       [
+        "While you wait",
+        "Usually on a bridging visa",
+        "Waiting overseas"
+       ],
+       [
+        "What to check first",
+        "Current visa, conditions and end date",
+        "The medical case and the relationship"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "x": "Your current visa may expire before a decision. If you lodge a valid application before it ends, you may get a bridging visa. Check whether your visa has a \"No Further Stay\" condition. This can stop an onshore application. Do not leave Australia without advice. See [Bridging Visa A (010)](/bridging-return-visas/bridging-visa-a-010). For a carer overseas, see the [Carer Visa 116](/family-visa/carer-visa-offshore-subclass-116)."
+     }
+    ]
+   }
+  }
+ },
+ "/family-visa/aged-dependent-114": {
+  "remove": [
+   "the-short-version",
+   "what-to-expect",
+   "how-we-can-help"
+  ],
+  "replace": {
+   "an-older-relative-who-depends-on-family": {
+    "h2": "Two visas, one question: where is your relative?",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "The Aged Dependent Relative visa is for an older person who is single and relies on a relative in Australia. These are not general parent visas. If the older person is your parent, [check the parent visa options](/family-visa) first."
+     },
+     {
+      "t": "p",
+      "x": "The detailed requirements, costs, process and documents are on the page for each visa. This page only helps you choose."
+     }
+    ]
+   },
+   "which-page-should-you-read": {
+    "h2": "Which page should you read?",
+    "blocks": [
+     {
+      "t": "table",
+      "head": [
+       "Your relative is",
+       "Visa",
+       "What changes",
+       "Detailed page"
+      ],
+      "rows": [
+       [
+        "Outside Australia",
+        "Subclass 114",
+        "They wait overseas and the sponsor's evidence of support is central",
+        "[Aged Dependent Relative Visa 114 (Offshore)](/family-visa/aged-dependent-offshore-114)"
+       ],
+       [
+        "In Australia",
+        "Subclass 838",
+        "Their current visa and bridging visa matter from the first day",
+        "[Aged Dependent Relative Visa 838 (Onshore)](/family-visa/aged-dependent-onshore-838)"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "x": "The location when you lodge decides which visa applies. Not sure? [Book a consultation](/book-an-appointment) and bring your relative's passport and visa details."
+     }
+    ]
+   }
+  }
+ },
+ "/family-visa/aged-dependent-offshore-114": {
+  "replace": {
+   "offshore-or-onshore": {
+    "h2": "114 or 838?",
+    "blocks": [
+     {
+      "t": "table",
+      "head": [
+       "",
+       "Subclass 114 (this page)",
+       "Subclass 838"
+      ],
+      "rows": [
+       [
+        "Where your relative is",
+        "Outside Australia until the decision",
+        "In Australia at application and decision"
+       ],
+       [
+        "While they wait",
+        "They wait overseas",
+        "They usually wait on a bridging visa"
+       ],
+       [
+        "What to check first",
+        "Evidence of long-term support",
+        "Current visa, conditions and end date"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "x": "If your relative is in Australia, read the [Aged Dependent Relative Visa 838](/family-visa/aged-dependent-onshore-838) page. A visitor visa is not the same thing and does not give a right to stay. For a short comparison, see the [Aged Dependent Relative overview](/family-visa/aged-dependent-114)."
+     }
+    ]
+   }
+  }
+ },
+ "/family-visa/aged-dependent-onshore-838": {
+  "replace": {
+   "your-relative-s-visa": {
+    "h2": "838 or 114? Your relative's visa",
+    "blocks": [
+     {
+      "t": "table",
+      "head": [
+       "",
+       "Subclass 838 (this page)",
+       "Subclass 114"
+      ],
+      "rows": [
+       [
+        "Where your relative is",
+        "In Australia at application and decision",
+        "Outside Australia"
+       ],
+       [
+        "While they wait",
+        "Usually on a bridging visa",
+        "They wait overseas"
+       ],
+       [
+        "What to check first",
+        "Current visa, conditions and end date",
+        "Evidence of long-term support"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "x": "A visitor visa can end well before a decision. Ask us about the end date early. If your relative lodges a valid application before the visa ends, they may be given a bridging visa. Check for a \"No Further Stay\" condition, which can block an onshore application. Do not travel without advice. See [Bridging Visa A (010)](/bridging-return-visas/bridging-visa-a-010) and [Onshore Visitor Visa Extension](/visitor-visa/onshore-visitor-visa-extension). For a relative overseas, see the [Aged Dependent Relative Visa 114](/family-visa/aged-dependent-offshore-114)."
+     }
+    ]
+   }
+  }
+ },
+ "/family-visa/cost-for-contributory-visas": {
+  "replace": {
+   "the-short-answer": {
+    "h2": "What the costs are made of",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "A contributory parent visa has a government charge, usually paid in two parts, plus other costs such as health checks, assurance of support and professional fees. Check the Department of Home Affairs website for the current charge."
+     },
+     {
+      "t": "p",
+      "x": "We do not quote figures here because they change. Ask us for a current written cost sheet."
+     }
+    ]
+   },
+   "how-the-government-charge-works": {
+    "h2": "How the government charge works",
+    "blocks": [
+     {
+      "t": "table",
+      "head": [
+       "Stage",
+       "What you pay"
+      ],
+      "rows": [
+       [
+        "First instalment",
+        "Paid when you lodge the application"
+       ],
+       [
+        "Second instalment",
+        "Paid before the visa is granted, after the first stage is assessed"
+       ],
+       [
+        "Additional applicant charges",
+        "Extra for each included family member"
+       ],
+       [
+        "Temporary visa to permanent visa",
+        "Further charges may apply if you start on a temporary visa"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "x": "Check the Department of Home Affairs website for the current charge. Check the refund rules before you lodge."
+     }
+    ]
+   },
+   "costs-that-are-not-the-visa-charge": {
+    "h2": "Costs that are not the visa charge",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "**Assurance of support.** A sponsor, usually your child, may need to provide an assurance of support and a bond for several years."
+       },
+       {
+        "x": "**Health examinations.** Panel doctor fees vary by country and age."
+       },
+       {
+        "x": "**Health insurance.** Cover for the visa holder may be needed."
+       },
+       {
+        "x": "**Police certificates and translations.** Fees vary by country."
+       },
+       {
+        "x": "**Travel and living costs.** Plan for flights, housing and daily costs."
+       },
+       {
+        "x": "**Professional fees.** See our professional fees below."
+       }
+      ]
+     }
+    ]
+   },
+   "does-starting-on-a-temporary-visa-cost-more": {
+    "h2": "Does starting on a temporary visa cost more?",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "The temporary contributory visas allow a parent to stay in Australia for a limited period while the permanent application is being considered. Costs can add up if you apply for both stages. Ask us to add the stages together for your case. See also [Sponsored Parent Temporary Visa 870](/family-visa/sponsored-parent-temporary-visa-subclass-870) as a shorter option."
+     }
+    ]
+   }
+  }
+ }
+}

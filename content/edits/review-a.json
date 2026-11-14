@@ -1,0 +1,2658 @@
+{
+ "/migrate-to-australia": {
+  "replace": {
+   "is-skilled-migration-right-for-you": {
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Skilled migration suits you if you have a qualification and work experience in an occupation Australia needs. Most people fall into one of three groups. The requirements are set out in [how skilled migration works](/skilled-migration)."
+     },
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "**Graduates studying or working in Australia.** You may hold a Temporary Graduate visa (subclass 485). You can use Australian study points, regional study points and a state nomination. See [Temporary Graduate visa (485)](/migrate-to-australia/temporary-graduate-visa-subclass-485)."
+       },
+       {
+        "x": "**Skilled professionals overseas.** You have a degree and several years in fields such as health, engineering, IT, teaching or accounting. You will need a skills assessment before you can be invited."
+       },
+       {
+        "x": "**Tradespeople.** Electricians, chefs, mechanics, carpenters and plumbers need a trade skills assessment from the assessing authority for your occupation."
+       }
+      ]
+     },
+     {
+      "t": "p",
+      "x": "Not sure which group you are in? [Book a consultation](/book-an-appointment) and we will check."
+     }
+    ]
+   },
+   "your-skilled-visa-options": {
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Select a visa name to open its guide."
+     },
+     {
+      "t": "table",
+      "head": [
+       "Visa",
+       "What it is",
+       "Best for"
+      ],
+      "rows": [
+       [
+        "[Skilled Independent (subclass 189)](/migrate-to-australia/skilled-independent-visa-subclass-189)",
+        "Permanent visa. No state or employer sponsor. Invitation based on points.",
+        "High-scoring applicants in an in-demand occupation who want to live anywhere in Australia"
+       ],
+       [
+        "[Skilled Nominated (subclass 190)](/migrate-to-australia/skilled-nominated-visa-subclass-190)",
+        "Permanent visa. A state or territory nominates you.",
+        "Applicants whose occupation is on a state list and who are happy to settle in that state"
+       ],
+       [
+        "[Skilled Work Regional (subclass 491)](/migrate-to-australia/skilled-work-regional-provisional-visa-subclass-491)",
+        "Provisional visa for up to 5 years. State nomination or eligible relative sponsorship.",
+        "Applicants who want a lower-competition route and will live and work in regional Australia"
+       ],
+       [
+        "[PR Skilled Regional (subclass 191)](/migrate-to-australia/permanent-residence-skilled-regional-visa-subclass-191)",
+        "Permanent visa for eligible 491 holders",
+        "People who have lived and worked in a regional area on a 491"
+       ],
+       [
+        "[Skilled Regional (subclass 887)](/migrate-to-australia/skilled-regional-visa-subclass-887)",
+        "Permanent visa for holders of older regional provisional visas",
+        "People who hold an eligible older regional visa"
+       ],
+       [
+        "[Temporary Graduate (subclass 485)](/migrate-to-australia/temporary-graduate-visa-subclass-485)",
+        "Temporary post-study work visa. Not points-tested. See also [post-study work rights](/migrate-to-australia/post-study-work-visa-subclass-485).",
+        "Recent graduates who want Australian work experience"
+       ]
+      ]
+     }
+    ]
+   },
+   "free-tools": {
+    "h2": "Guides and tools",
+    "blocks": [
+     {
+      "t": "table",
+      "head": [
+       "Guide or tool",
+       "What it does"
+      ],
+      "rows": [
+       [
+        "[How skilled migration works](/skilled-migration)",
+        "Explains skills assessments, points, the Expression of Interest and invitations"
+       ],
+       [
+        "[Migration process step by step](/migrate-to-australia/migration)",
+        "Walks through each stage in order, with documents, costs and common delays"
+       ],
+       [
+        "[How points are calculated](/skilled-migration/how-points-are-calculated)",
+        "The full points table and a worked example"
+       ],
+       [
+        "[PR Points Calculator](/migrate-to-australia/pr-point-calculator)",
+        "Estimates your points for 189, 190 and 491"
+       ],
+       [
+        "[Occupation Finder](/occupation-finder)",
+        "Searches occupations, codes and assessing authorities"
+       ],
+       [
+        "[Postcode Checker](/postcode-checker)",
+        "Shows whether a postcode is regional"
+       ],
+       [
+        "[Victorian Points Test](/migrate-to-australia/victorian-points-test)",
+        "Checks your fit for Victorian nomination"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "x": "Tools give an estimate only. A registered agent can confirm your result."
+     }
+    ]
+   }
+  }
+ },
+ "/skilled-migration": {
+  "remove": [
+   "how-we-help"
+  ],
+  "add": [
+   {
+    "after": "common-mistakes",
+    "id": "next-steps",
+    "h2": "Next steps",
+    "kind": "prose",
+    "blocks": [
+     {
+      "t": "ol",
+      "items": [
+       {
+        "x": "Compare the visas in [skilled visa options](/migrate-to-australia)."
+       },
+       {
+        "x": "Check your occupation with the [Occupation Finder](/occupation-finder)."
+       },
+       {
+        "x": "Estimate your points with the [PR Points Calculator](/migrate-to-australia/pr-point-calculator)."
+       },
+       {
+        "x": "Read the [step-by-step migration process](/migrate-to-australia/migration) to plan documents and costs."
+       }
+      ]
+     },
+     {
+      "t": "p",
+      "x": "A registered agent can review your qualifications, points and evidence before you spend money on tests or assessments. We cannot promise an invitation or a visa."
+     },
+     {
+      "t": "buttons",
+      "items": [
+       {
+        "label": "Book a Consultation",
+        "href": "/book-an-appointment"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "cta": {
+   "title": "Get a realistic view of your skilled pathway",
+   "text": "Bring your qualifications, work history and English test result."
+  }
+ },
+ "/migrate-to-australia/migration": {
+  "remove": [
+   "roadmap-at-a-glance"
+  ],
+  "replace": {
+   "step-1-choose-your-pathway": {
+    "h2": "The process step by step",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "This is the general skilled route. Employer-sponsored and partner visas follow different steps. See [employer-sponsored visas](/employer-sponsored) and [family visas](/family-visa)."
+     },
+     {
+      "t": "ol",
+      "items": [
+       {
+        "x": "**Choose your pathway.** Decide between 189, 190 and 491. Your occupation, points and willingness to live regionally drive this choice. Read the [visa comparison](/migrate-to-australia)."
+       },
+       {
+        "x": "**Check your occupation.** Search the [Occupation Finder](/occupation-finder). Note the code and the assessing authority. If your occupation is not on any list, ask us about other options before you spend money."
+       },
+       {
+        "x": "**Take an English test.** Competent English is the minimum. Higher scores earn points. Book early, because results are valid for a limited time."
+       },
+       {
+        "x": "**Get a skills assessment.** Apply to the assessing authority for your occupation. You will usually provide identity documents, qualifications, transcripts, employment references and payslips or tax records. Processing times vary by authority."
+       },
+       {
+        "x": "**Calculate your points and lodge an EOI.** Use the [PR Points Calculator](/migrate-to-australia/pr-point-calculator) and read [how points are calculated](/skilled-migration/how-points-are-calculated). Lodge your Expression of Interest in SkillSelect. You need at least 65 points."
+       },
+       {
+        "x": "**Get nominated (190 and 491 only).** Apply to a state or territory under its own rules. See the [Victorian Points Test](/migrate-to-australia/victorian-points-test) and [South Australia state nomination](/south-australia-state-nomination)."
+       },
+       {
+        "x": "**Receive an invitation and lodge your visa.** You have a limited time after an invitation to lodge. Pay the visa application charge and upload your documents."
+       },
+       {
+        "x": "**Complete health and police checks.** You may need health examinations and police certificates for every country where you lived for a set period. See our [AFP police check](/afp-national-police-check) and [Indian police check](/indian-police-check) pages. After the decision, check your visa conditions and the date by which you must first enter Australia."
+       }
+      ]
+     }
+    ]
+   },
+   "when-to-get-an-agent": {
+    "h2": "Do you need an agent?",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "You can lodge applications yourself. People often ask for help when their occupation is borderline, they have a past refusal, their work history has gaps, or they want to compare 189, 190 and 491. Our registered agents explain the options and the risks. You decide whether to engage us."
+     }
+    ]
+   },
+   "timeline-and-cost-planning": {
+    "h2": "Costs and timing",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Time and cost depend on the pathway, so we do not give a single number."
+     },
+     {
+      "t": "table",
+      "head": [
+       "Item",
+       "What to plan for"
+      ],
+      "rows": [
+       [
+        "Skills assessment fee and time",
+        "Set by the assessing authority. Check its website."
+       ],
+       [
+        "English test fee",
+        "Paid to the test provider"
+       ],
+       [
+        "State nomination application fee",
+        "Check the Department of Home Affairs website for the current figure."
+       ],
+       [
+        "Visa application charge",
+        "Check the Department of Home Affairs website for the current figure."
+       ],
+       [
+        "Processing time",
+        "Check the Department of Home Affairs website for the current time."
+       ],
+       [
+        "Health and police checks",
+        "Paid separately"
+       ],
+       [
+        "Professional fees",
+        "Set out in our written service agreement"
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  "add": [
+   {
+    "after": "mistakes-that-cause-delay-or-refusal",
+    "id": "what-next",
+    "h2": "What next",
+    "kind": "prose",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Once you hold an invitation and a visa, see the guide for your visa: [189](/migrate-to-australia/skilled-independent-visa-subclass-189), [190](/migrate-to-australia/skilled-nominated-visa-subclass-190) or [491](/migrate-to-australia/skilled-work-regional-provisional-visa-subclass-491). Regional visa holders can later apply for the [191](/migrate-to-australia/permanent-residence-skilled-regional-visa-subclass-191)."
+     }
+    ]
+   }
+  ]
+ },
+ "/migrate-to-australia/temporary-graduate-visa-subclass-485": {
+  "remove": [
+   "melbourne-angle"
+  ],
+  "replace": {
+   "what-the-visa-is": {
+    "blocks": [
+     {
+      "t": "p",
+      "x": "The subclass 485 is a temporary visa for international students who recently finished an Australian course. It is not a permanent visa. It does not need a sponsor, a job offer or a points score. It gives you time to work and gain experience. This page covers eligibility and how to apply. For what you can do while you hold it, read [post-study work rights](/migrate-to-australia/post-study-work-visa-subclass-485)."
+     }
+    ]
+   },
+   "processing-times": {
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Processing times change often. Check the Department of Home Affairs website for the current time."
+     },
+     {
+      "t": "p",
+      "x": "You are normally allowed to stay in Australia while an in-time application is processed, usually on a bridging visa. See [Bridging Visa A](/bridging-return-visas/bridging-visa-a-010)."
+     }
+    ]
+   },
+   "what-next": {
+    "h2": "What comes after the 485",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Use the 485 period to gain skilled work experience, a skills assessment and, if relevant, a [Professional Year](/study-australia/professional-year-program). Then consider [189](/migrate-to-australia/skilled-independent-visa-subclass-189), [190](/migrate-to-australia/skilled-nominated-visa-subclass-190) or [491](/migrate-to-australia/skilled-work-regional-provisional-visa-subclass-491). Victoria publishes its own criteria: see the [Victorian Points Test](/migrate-to-australia/victorian-points-test). Read [post-study work rights](/migrate-to-australia/post-study-work-visa-subclass-485) for how to plan your time on the visa, and the [skilled migration options](/migrate-to-australia)."
+     }
+    ]
+   },
+   "related-visas-and-cta": {
+    "h2": "Related visas",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[Post-study work rights (485)](/migrate-to-australia/post-study-work-visa-subclass-485)"
+       },
+       {
+        "x": "[Skilled Independent (189)](/migrate-to-australia/skilled-independent-visa-subclass-189)"
+       },
+       {
+        "x": "[Skilled Nominated (190)](/migrate-to-australia/skilled-nominated-visa-subclass-190)"
+       },
+       {
+        "x": "[Skilled Work Regional (491)](/migrate-to-australia/skilled-work-regional-provisional-visa-subclass-491)"
+       },
+       {
+        "x": "[Professional Year](/study-australia/professional-year-program)"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "/migrate-to-australia/post-study-work-visa-subclass-485": {
+  "remove": [
+   "melbourne-angle"
+  ],
+  "replace": {
+   "how-long-you-can-stay": {
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Stay length depends on your stream and qualification. Check the Department of Home Affairs website for the exact length before you rely on any number."
+     },
+     {
+      "t": "table",
+      "head": [
+       "Stream",
+       "What decides the stay"
+      ],
+      "rows": [
+       [
+        "Post-Higher Education Work",
+        "Your degree level and whether you studied in a regional area"
+       ],
+       [
+        "Post-Vocational Education Work",
+        "Your vocational qualification"
+       ],
+       [
+        "Graduate Work",
+        "Your eligible trade qualification"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "x": "Not sure which stream you apply under? See the [485 eligibility guide](/migrate-to-australia/temporary-graduate-visa-subclass-485)."
+     }
+    ]
+   },
+   "visa-conditions-to-respect": {
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "Keep valid health insurance for the whole stay."
+       },
+       {
+        "x": "Check the conditions on your visa grant letter and in VEVO."
+       },
+       {
+        "x": "Plan your next visa well before the 485 ends, so you do not let your visa lapse."
+       }
+      ]
+     },
+     {
+      "t": "p",
+      "x": "Breaching a condition can lead to cancellation. See [visa cancellation](/appeals/visa-cancellation) if you receive a notice."
+     }
+    ]
+   },
+   "related-and-cta": {
+    "h2": "Related visas",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[485 eligibility and how to apply](/migrate-to-australia/temporary-graduate-visa-subclass-485)"
+       },
+       {
+        "x": "[Skilled migration options](/migrate-to-australia)"
+       },
+       {
+        "x": "[Study in Australia](/study-australia)"
+       },
+       {
+        "x": "[Professional Year](/study-australia/professional-year-program)"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "/migrate-to-australia/skilled-independent-visa-subclass-189": {
+  "remove": [
+   "melbourne-angle"
+  ],
+  "replace": {
+   "processing-times": {
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Check the Department of Home Affairs website for the current processing time. The wait for an invitation is separate and can be longer than visa processing."
+     }
+    ]
+   },
+   "after-the-visa": {
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Permanent residents can live and work in Australia, use Medicare and may apply for citizenship when they meet the residence rules. The travel facility on your visa is time-limited, so check your grant letter. If it ends, see [Resident Return visas](/bridging-return-visas/resident-return-visa-155-157)."
+     }
+    ]
+   },
+   "is-this-right-for-you": {
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "My occupation is on the list for 189."
+       },
+       {
+        "x": "I have a positive skills assessment, or I can get one."
+       },
+       {
+        "x": "I am under 45."
+       },
+       {
+        "x": "I have at least competent English."
+       },
+       {
+        "x": "My points are 65 or more, and I understand invitations usually need more."
+       },
+       {
+        "x": "I do not need or want state sponsorship."
+       },
+       {
+        "x": "I want to live anywhere in Australia."
+       }
+      ]
+     },
+     {
+      "t": "p",
+      "x": "If your points are close to the minimum, read about the [190](/migrate-to-australia/skilled-nominated-visa-subclass-190) and [491](/migrate-to-australia/skilled-work-regional-provisional-visa-subclass-491). Victoria also publishes its own criteria: see the [Victorian Points Test](/migrate-to-australia/victorian-points-test)."
+     }
+    ]
+   },
+   "related-visas-and-cta": {
+    "h2": "Related visas",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[Skilled Nominated (190)](/migrate-to-australia/skilled-nominated-visa-subclass-190)"
+       },
+       {
+        "x": "[Skilled Work Regional (491)](/migrate-to-australia/skilled-work-regional-provisional-visa-subclass-491)"
+       },
+       {
+        "x": "[Temporary Graduate (485)](/migrate-to-australia/temporary-graduate-visa-subclass-485)"
+       },
+       {
+        "x": "[PR Points Calculator](/migrate-to-australia/pr-point-calculator)"
+       },
+       {
+        "x": "[Skilled migration options](/migrate-to-australia)"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "/migrate-to-australia/skilled-nominated-visa-subclass-190": {
+  "remove": [
+   "victoria-and-south-australia"
+  ],
+  "replace": {
+   "processing-times": {
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Check the Department of Home Affairs website for the current processing time. State nomination has its own waiting period."
+     }
+    ]
+   },
+   "after-the-visa": {
+    "blocks": [
+     {
+      "t": "p",
+      "x": "You are expected to live in the nominating state for a period. Check your grant letter and the state's conditions before you move."
+     }
+    ]
+   },
+   "related-and-cta": {
+    "h2": "Related visas",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[Skilled Independent (189)](/migrate-to-australia/skilled-independent-visa-subclass-189)"
+       },
+       {
+        "x": "[Skilled Work Regional (491)](/migrate-to-australia/skilled-work-regional-provisional-visa-subclass-491)"
+       },
+       {
+        "x": "[Temporary Graduate (485)](/migrate-to-australia/temporary-graduate-visa-subclass-485)"
+       },
+       {
+        "x": "[Skilled migration options](/migrate-to-australia)"
+       }
+      ]
+     }
+    ]
+   },
+   "how-state-nomination-works": {
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Each state and territory has an allocation of places and a list of occupations. Many require you to register an interest through SkillSelect or their own portal, meet extra rules such as work experience in the state, and score above their own thresholds."
+     },
+     {
+      "t": "p",
+      "x": "States can pause, change or close programs without much notice. Check the state website or ask us before you rely on one."
+     },
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "Victoria: [Victorian Points Test](/migrate-to-australia/victorian-points-test)"
+       },
+       {
+        "x": "South Australia: [South Australia state nomination](/south-australia-state-nomination)"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "/migrate-to-australia/skilled-work-regional-provisional-visa-subclass-491": {
+  "replace": {
+   "processing-times": {
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Check the Department of Home Affairs website for the current processing time. State nomination has its own wait."
+     }
+    ]
+   },
+   "two-routes-to-a-491": {
+    "blocks": [
+     {
+      "t": "p",
+      "x": "**State or territory nomination.** A state invites eligible EOIs and applies its own criteria. Check the [Victorian Points Test](/migrate-to-australia/victorian-points-test) and [South Australia nomination](/south-australia-state-nomination)."
+     },
+     {
+      "t": "p",
+      "x": "**Eligible relative sponsorship.** A qualifying relative who lives in a designated regional area can sponsor you."
+     }
+    ]
+   },
+   "pathway-to-pr": {
+    "blocks": [
+     {
+      "t": "p",
+      "x": "After enough time in the region and meeting the income test, you may apply for the [191](/migrate-to-australia/permanent-residence-skilled-regional-visa-subclass-191). If you hold an older regional visa, see the [887](/migrate-to-australia/skilled-regional-visa-subclass-887)."
+     }
+    ]
+   },
+   "melbourne-and-victoria-angle": {
+    "h2": "Is Melbourne regional?",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Greater Melbourne is not regional for this visa, but many other Victorian towns and cities are. Use the [Postcode Checker](/postcode-checker) before you accept a job or sign a lease."
+     }
+    ]
+   },
+   "related-and-cta": {
+    "h2": "Related visas",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[Permanent Residence Regional (191)](/migrate-to-australia/permanent-residence-skilled-regional-visa-subclass-191)"
+       },
+       {
+        "x": "[Skilled Nominated (190)](/migrate-to-australia/skilled-nominated-visa-subclass-190)"
+       },
+       {
+        "x": "[Skilled Independent (189)](/migrate-to-australia/skilled-independent-visa-subclass-189)"
+       },
+       {
+        "x": "[Skilled Regional (887)](/migrate-to-australia/skilled-regional-visa-subclass-887)"
+       },
+       {
+        "x": "[Skilled migration options](/migrate-to-australia)"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "/migrate-to-australia/permanent-residence-skilled-regional-visa-subclass-191": {
+  "replace": {
+   "melbourne-angle": {
+    "h2": "Is Melbourne regional?",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Parts of Victoria outside metropolitan Melbourne are designated regional. Check the postcode before you accept a job or sign a lease. Greater Melbourne itself is usually not regional."
+     }
+    ]
+   },
+   "related-and-cta": {
+    "h2": "Related visas",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[Skilled Work Regional (491)](/migrate-to-australia/skilled-work-regional-provisional-visa-subclass-491)"
+       },
+       {
+        "x": "[Skilled Regional (887)](/migrate-to-australia/skilled-regional-visa-subclass-887)"
+       },
+       {
+        "x": "[Skilled Nominated (190)](/migrate-to-australia/skilled-nominated-visa-subclass-190)"
+       },
+       {
+        "x": "[Skilled Independent (189)](/migrate-to-australia/skilled-independent-visa-subclass-189)"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "/migrate-to-australia/skilled-regional-visa-subclass-887": {
+  "replace": {
+   "related-and-cta": {
+    "h2": "Related visas",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[Permanent Residence Regional (191)](/migrate-to-australia/permanent-residence-skilled-regional-visa-subclass-191)"
+       },
+       {
+        "x": "[Skilled Work Regional (491)](/migrate-to-australia/skilled-work-regional-provisional-visa-subclass-491)"
+       },
+       {
+        "x": "[Skilled Independent (189)](/migrate-to-australia/skilled-independent-visa-subclass-189)"
+       },
+       {
+        "x": "[Skilled Nominated (190)](/migrate-to-australia/skilled-nominated-visa-subclass-190)"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "/skilled-migration/how-points-are-calculated": {
+  "replace": {
+   "related-and-cta": {
+    "h2": "Related guides",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[How skilled migration works](/skilled-migration)"
+       },
+       {
+        "x": "[Skilled Independent (189)](/migrate-to-australia/skilled-independent-visa-subclass-189)"
+       },
+       {
+        "x": "[Skilled Nominated (190)](/migrate-to-australia/skilled-nominated-visa-subclass-190)"
+       },
+       {
+        "x": "[Skilled Work Regional (491)](/migrate-to-australia/skilled-work-regional-provisional-visa-subclass-491)"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "/bridging-return-visas": {
+  "remove": [
+   "is-this-the-right-page-for-you",
+   "choose-your-visa",
+   "how-we-help",
+   "our-four-steps"
+  ],
+  "replace": {
+   "which-one-fits-your-situation": {
+    "h2": "Which visa do you need?",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Bridging visa rules depend on the exact date you lodged and the status of your last visa. If your visa ends soon, call us now."
+     },
+     {
+      "t": "table",
+      "head": [
+       "Your situation",
+       "Visa to read first"
+      ],
+      "rows": [
+       [
+        "I lodged a new visa application in Australia and my current visa is still valid",
+        "[Bridging Visa A (010)](/bridging-return-visas/bridging-visa-a-010)"
+       ],
+       [
+        "I hold a bridging visa and need to leave Australia and come back, for example for a family emergency",
+        "[Bridging Visa B (020)](/bridging-return-visas/bridging-visa-b-020)"
+       ],
+       [
+        "My last visa ended before I lodged my new application in Australia",
+        "[Bridging Visa C (030)](/bridging-return-visas/bridging-visa-c-030)"
+       ],
+       [
+        "I have no valid visa, my visa was cancelled, or I have a review or intervention request in progress and need to stay lawfully",
+        "[Bridging Visa E (050/051)](/bridging-return-visas/bridging-visa-e-050-051)"
+       ],
+       [
+        "I am a permanent resident and my travel facility has ended",
+        "[Resident Return visa (155/157)](/bridging-return-visas/resident-return-visa-155-157)"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "x": "This table is a starting point only. Your real situation may be different, and a wrong assumption can cost you your lawful status. A registered migration agent can confirm which visa applies. If a refusal or cancellation is involved, see [Appeals and Tribunal Review](/appeals)."
+     }
+    ]
+   }
+  },
+  "add": [
+   {
+    "after": "which-one-fits-your-situation",
+    "id": "what-to-bring",
+    "h2": "What to bring to a consultation",
+    "kind": "docs",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "Your passport"
+       },
+       {
+        "x": "Your current visa grant letter"
+       },
+       {
+        "x": "Any Department emails or notices"
+       },
+       {
+        "x": "Your travel history and the dates you lodged applications"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "/bridging-return-visas/bridging-visa-a-010": {
+  "remove": [
+   "who-can-get-a-bridging-visa-a"
+  ],
+  "replace": {
+   "is-a-bridging-visa-a-right-for-you": {
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Tick the ones that apply:"
+     },
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "I am in Australia now."
+       },
+       {
+        "x": "I hold a substantive visa today, not a bridging visa."
+       },
+       {
+        "x": "I have lodged, or am about to lodge, a valid application for another substantive visa in Australia."
+       },
+       {
+        "x": "I do not plan to leave Australia while I wait."
+       },
+       {
+        "x": "I meet health and character requirements."
+       }
+      ]
+     },
+     {
+      "t": "p",
+      "x": "If you ticked all of these, a BVA is very likely your bridging visa. A substantive visa is any visa that is not a bridging, criminal justice or enforcement visa. Some applications do not trigger a BVA, and a registered agent can confirm which rule applies. If you need to travel, read [Bridging Visa B](/bridging-return-visas/bridging-visa-b-020). If your last visa ended before you lodged, read [Bridging Visa C](/bridging-return-visas/bridging-visa-c-030)."
+     }
+    ]
+   },
+   "how-long-does-it-take-and-how-long-does-it-last": {
+    "h2": "How long does it last?",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "A BVA is generally granted when you lodge your valid application, so there is no separate wait. It stays in effect until your main application is decided, then for a short period afterwards (for example, 28 days after a refusal in many cases). The end date is on your grant notice and in VEVO."
+     }
+    ]
+   },
+   "related-visas": {
+    "h2": "Related visas",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[Bridging Visa B (020)](/bridging-return-visas/bridging-visa-b-020)"
+       },
+       {
+        "x": "[Bridging Visa C (030)](/bridging-return-visas/bridging-visa-c-030)"
+       },
+       {
+        "x": "[Bridging Visa E (050/051)](/bridging-return-visas/bridging-visa-e-050-051)"
+       },
+       {
+        "x": "[Resident Return (155/157)](/bridging-return-visas/resident-return-visa-155-157)"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "/bridging-return-visas/bridging-visa-b-020": {
+  "remove": [
+   "who-can-apply"
+  ],
+  "replace": {
+   "is-a-bridging-visa-b-right-for-you": {
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "I am in Australia now."
+       },
+       {
+        "x": "I hold a current bridging visa and my main application is still undecided."
+       },
+       {
+        "x": "I have a real reason to travel, such as illness, a funeral, a wedding or essential work."
+       },
+       {
+        "x": "I can show evidence for that reason."
+       },
+       {
+        "x": "I plan to come back to Australia before my BVB ends."
+       },
+       {
+        "x": "I meet character requirements."
+       }
+      ]
+     },
+     {
+      "t": "p",
+      "x": "Some groups have limits on applying for a BVB, so a registered agent should confirm your case. If you hold a substantive visa, you may not need a BVB at all. Read the [Bridging Visa A page](/bridging-return-visas/bridging-visa-a-010)."
+     }
+    ]
+   },
+   "what-does-it-cost": {
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "**Government fee.** Check the Department of Home Affairs website for the current figure. The fee is generally not refunded if the application is refused."
+       },
+       {
+        "x": "**Our professional fee.** Quoted in writing before work starts."
+       },
+       {
+        "x": "**Other costs.** Flights, translations and certified copies."
+       }
+      ]
+     }
+    ]
+   },
+   "when-should-you-apply": {
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Apply as early as you can, and leave enough time for a decision before your flight. Do not rely on a quick decision. If your travel is urgent, tell us when you book."
+     }
+    ]
+   },
+   "related-visas": {
+    "h2": "Related visas",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[Bridging Visa A (010)](/bridging-return-visas/bridging-visa-a-010)"
+       },
+       {
+        "x": "[Bridging Visa C (030)](/bridging-return-visas/bridging-visa-c-030)"
+       },
+       {
+        "x": "[Bridging Visa E (050/051)](/bridging-return-visas/bridging-visa-e-050-051)"
+       },
+       {
+        "x": "[Resident Return (155/157)](/bridging-return-visas/resident-return-visa-155-157)"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "/bridging-return-visas/bridging-visa-c-030": {
+  "remove": [
+   "who-can-get-a-bridging-visa-c",
+   "how-long-does-it-last"
+  ],
+  "replace": {
+   "is-a-bridging-visa-c-right-for-you": {
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "My last visa has ended."
+       },
+       {
+        "x": "I have lodged a valid application for a new substantive visa in Australia."
+       },
+       {
+        "x": "I am still in Australia."
+       },
+       {
+        "x": "I was lawful when my last substantive visa ended, in most cases."
+       },
+       {
+        "x": "I need to stay lawfully while I wait."
+       }
+      ]
+     },
+     {
+      "t": "p",
+      "x": "Each case is different, and application rules depend on the visa you apply for. A registered agent can confirm. If your visa was cancelled or you have no valid application, see the [Bridging Visa E page](/bridging-return-visas/bridging-visa-e-050-051) and [Visa Cancellation](/appeals/visa-cancellation)."
+     }
+    ]
+   },
+   "what-does-it-cost": {
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "**Government fee.** Generally part of your main application."
+       },
+       {
+        "x": "**Our professional fee.** Written quote and agreement first."
+       },
+       {
+        "x": "**Other costs.** Medicals, police certificates and translations."
+       }
+      ]
+     }
+    ]
+   },
+   "what-to-do-now": {
+    "blocks": [
+     {
+      "t": "ol",
+      "items": [
+       {
+        "x": "**Check your status.** Look at VEVO and confirm your last visa end date."
+       },
+       {
+        "x": "**Lodge a valid application quickly.** Delay can leave you unlawful."
+       },
+       {
+        "x": "**Receive your BVC grant notice.** Read every condition. It lasts until your main application is decided, plus a short period after. The end date is on the notice."
+       },
+       {
+        "x": "**Ask for work rights if you need them.**"
+       },
+       {
+        "x": "**Respond to Department requests on time.**"
+       }
+      ]
+     }
+    ]
+   },
+   "after-the-bridging-visa": {
+    "blocks": [
+     {
+      "t": "p",
+      "x": "When your main application is decided, the new visa replaces the BVC. If it is refused, you may have review rights with strict deadlines. See [Visa Refusal](/appeals/visa-refusal)."
+     }
+    ]
+   },
+   "visa-ended-and-not-sure-what-to-do": {
+    "h2": "Related visas",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[Bridging Visa A (010)](/bridging-return-visas/bridging-visa-a-010)"
+       },
+       {
+        "x": "[Bridging Visa B (020)](/bridging-return-visas/bridging-visa-b-020)"
+       },
+       {
+        "x": "[Bridging Visa E (050/051)](/bridging-return-visas/bridging-visa-e-050-051)"
+       },
+       {
+        "x": "[Resident Return (155/157)](/bridging-return-visas/resident-return-visa-155-157)"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "/bridging-return-visas/bridging-visa-e-050-051": {
+  "replace": {
+   "what-does-it-cost": {
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "**Government fee.** Check the Department of Home Affairs website for the current figure."
+       },
+       {
+        "x": "**Our professional fee.** A written quote and service agreement first."
+       },
+       {
+        "x": "**Other costs.** Copies of records, translations and flights if you depart."
+       }
+      ]
+     }
+    ]
+   },
+   "no-valid-visa-speak-to-us-today": {
+    "h2": "Related visas",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[Bridging Visa A (010)](/bridging-return-visas/bridging-visa-a-010)"
+       },
+       {
+        "x": "[Bridging Visa B (020)](/bridging-return-visas/bridging-visa-b-020)"
+       },
+       {
+        "x": "[Bridging Visa C (030)](/bridging-return-visas/bridging-visa-c-030)"
+       },
+       {
+        "x": "[Resident Return (155/157)](/bridging-return-visas/resident-return-visa-155-157)"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "/bridging-return-visas/resident-return-visa-155-157": {
+  "remove": [
+   "who-can-apply"
+  ],
+  "replace": {
+   "subclass-155-or-157-which-applies": {
+    "blocks": [
+     {
+      "t": "table",
+      "head": [
+       "",
+       "Subclass 155",
+       "Subclass 157"
+      ],
+      "rows": [
+       [
+        "For",
+        "Permanent residents who meet the residence test",
+        "Those who do not meet the residence test but have other grounds"
+       ],
+       [
+        "Residence test",
+        "Generally two years in Australia in the last five",
+        "Not required in the same way. Some lawful time in Australia in the last five years"
+       ],
+       [
+        "Other grounds",
+        "Not needed",
+        "You may need compelling reasons for the absence and a continuing connection"
+       ],
+       [
+        "Validity",
+        "Longer, up to five years",
+        "Short. Cannot usually be extended"
+       ],
+       [
+        "Best for",
+        "Residents who have spent enough time here",
+        "People who spent most of their time overseas and need to return"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "x": "Both visas need you to meet health and character requirements. Dates matter, so count the days from your passport stamps and travel history. The Department assesses the facts in each case, and a registered agent can confirm which applies to you."
+     }
+    ]
+   },
+   "what-does-it-cost": {
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "**Government fee.** Check the Department of Home Affairs website for the current figure."
+       },
+       {
+        "x": "**Our professional fee.** Quoted in writing first."
+       },
+       {
+        "x": "**Other costs.** Police certificates and certified copies, if needed."
+       }
+      ]
+     }
+    ]
+   },
+   "how-long-does-it-take": {
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Check the Department of Home Affairs website for the current processing time. If you are overseas and need to return soon, tell us when you book. Do not book non-refundable flights until the visa is granted."
+     }
+    ]
+   },
+   "need-to-return-to-australia": {
+    "h2": "Related visas",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[Bridging Visa A (010)](/bridging-return-visas/bridging-visa-a-010)"
+       },
+       {
+        "x": "[Bridging Visa B (020)](/bridging-return-visas/bridging-visa-b-020)"
+       },
+       {
+        "x": "[Bridging Visa C (030)](/bridging-return-visas/bridging-visa-c-030)"
+       },
+       {
+        "x": "[Bridging Visa E (050/051)](/bridging-return-visas/bridging-visa-e-050-051)"
+       },
+       {
+        "x": "[Australian citizenship](/citizenship)"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "/citizenship": {
+  "remove": [
+   "is-this-the-right-page-for-you",
+   "how-we-help"
+  ],
+  "replace": {
+   "three-pathways-to-australian-citizenship": {
+    "h2": "Pathways to Australian citizenship",
+    "blocks": [
+     {
+      "t": "table",
+      "head": [
+       "Pathway",
+       "Best for",
+       "What it involves"
+      ],
+      "rows": [
+       [
+        "Citizenship by conferral",
+        "Permanent residents",
+        "Meet the residence requirements, pass the citizenship test, show good character and attend a ceremony"
+       ],
+       [
+        "Citizenship by descent",
+        "People born outside Australia to an Australian citizen parent",
+        "Prove the parent's citizenship and your relationship to them"
+       ],
+       [
+        "Evidence of citizenship",
+        "Existing Australian citizens",
+        "Apply for a certificate, or replace a lost one"
+       ]
+      ]
+     }
+    ]
+   },
+   "how-it-works": {
+    "h2": "How the application works",
+    "blocks": [
+     {
+      "t": "ol",
+      "items": [
+       {
+        "x": "**Book a consultation.** Bring your visa grant notices and passport."
+       },
+       {
+        "x": "**Check eligibility.** We count your residence time and absences against the rules."
+       },
+       {
+        "x": "**Prepare documents.** We collect identity and evidence of residence."
+       },
+       {
+        "x": "**Lodge the application.**"
+       },
+       {
+        "x": "**Sit the test and attend the ceremony.** Conferral applicants are invited after approval."
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "add": [
+   {
+    "after": "which-pathway-fits-me",
+    "id": "costs",
+    "h2": "Costs",
+    "kind": "costs",
+    "blocks": [
+     {
+      "t": "table",
+      "head": [
+       "Item",
+       "What to plan for"
+      ],
+      "rows": [
+       [
+        "Citizenship application fee",
+        "Check the Department of Home Affairs website for the current figure."
+       ],
+       [
+        "Citizenship test",
+        "Check the Department of Home Affairs website for any charge."
+       ],
+       [
+        "Certified copies, translations and police certificates",
+        "Paid separately"
+       ],
+       [
+        "Professional fees",
+        "Set out in our written service agreement"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "after": "how-it-works",
+    "id": "documents-to-prepare",
+    "h2": "Documents to prepare",
+    "kind": "docs",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "Passport and any previous passports"
+       },
+       {
+        "x": "Visa grant notices and your permanent visa evidence"
+       },
+       {
+        "x": "Travel history, so we can count your absences"
+       },
+       {
+        "x": "Proof of identity and of your address in Australia"
+       },
+       {
+        "x": "Evidence for good character, such as police certificates where requested"
+       },
+       {
+        "x": "For descent and evidence applications: your parent's citizenship documents and your birth certificate"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "after": "documents-to-prepare",
+    "id": "common-mistakes",
+    "h2": "Common mistakes",
+    "kind": "mistakes",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "Applying before you meet the residence requirement."
+       },
+       {
+        "x": "Miscounting days spent outside Australia."
+       },
+       {
+        "x": "Counting time spent as an unlawful non-citizen."
+       },
+       {
+        "x": "Not declaring a past conviction or visa breach."
+       },
+       {
+        "x": "Assuming your home country allows dual citizenship."
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "/other-countries": {
+  "remove": [
+   "how-we-help"
+  ],
+  "replace": {
+   "thinking-about-another-country": {
+    "blocks": []
+   },
+   "which-country-fits-your-plan": {
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "**Staying or moving to Australia?** Use our Australian visa pages: [Skilled Migration](/migrate-to-australia), [Family](/family-visa) or [Study](/study-australia)."
+       },
+       {
+        "x": "**Thinking of Canada?** Tell us your age, work history, English and education. We explain the main routes in general terms."
+       },
+       {
+        "x": "**Thinking of New Zealand?** Tell us your occupation and job offer status."
+       },
+       {
+        "x": "**Visiting the USA?** Tell us your purpose, travel history and ties to home."
+       }
+      ]
+     },
+     {
+      "t": "p",
+      "x": "If you need a licensed adviser in another country, we will refer you on. We also check that a move or trip does not harm your Australian visa."
+     }
+    ]
+   }
+  }
+ },
+ "/maritime-crew": {
+  "remove": [
+   "three-steps-to-get-started"
+  ],
+  "replace": {
+   "is-this-the-right-category-for-you": {
+    "h2": "Who this section is for",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "A seafarer joining or working on a cargo ship or cruise ship that will visit Australia"
+       },
+       {
+        "x": "A crewing manager or ship agent who needs to organise visas for a whole crew"
+       },
+       {
+        "x": "An airline crew member, positioning crew member or aircraft safety inspector travelling to Australia for work"
+       },
+       {
+        "x": "A family member trying to understand why a crew member cannot simply travel on a visitor visa"
+       }
+      ]
+     },
+     {
+      "t": "p",
+      "x": "If you are an Australian resident looking for a work visa, see [employer-sponsored visas](/employer-sponsored). If you are a tourist, see [visitor and tourist visas](/visitor-visa)."
+     }
+    ]
+   },
+   "choose-the-crew-document-that-matches-how-you-travel": {
+    "h2": "Choose the document that matches how you travel",
+    "blocks": [
+     {
+      "t": "table",
+      "head": [
+       "Document",
+       "Best for",
+       "In short"
+      ],
+      "rows": [
+       [
+        "[Maritime Crew visa (988)](/maritime-crew/maritime-crew-visa-988)",
+        "Foreign crew of cargo ships and cruise ships who arrive in Australia by sea",
+        "A visa you apply for before the ship arrives, from outside Australia"
+       ],
+       [
+        "[Crew Travel Authority (942)](/maritime-crew/crew-travel-authority-942)",
+        "Airline crew, positioning crew and aircraft safety inspectors who are not Australian or New Zealand citizens",
+        "A travel authority usually registered through the airline rather than applied for by the individual"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "x": "Despite the name of the 942, the Crew Travel Authority is for air crew, not ship crew. This is the most common mix-up we see."
+     }
+    ]
+   },
+   "where-a-registered-migration-agent-adds-value": {
+    "h2": "When an agent can help",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "You are not sure which document applies to your role or vessel."
+       },
+       {
+        "x": "A shipping company or airline has asked for documents you do not have."
+       },
+       {
+        "x": "You have had a previous visa refusal or cancellation, or a character concern."
+       },
+       {
+        "x": "A crew member wants to leave the ship or change to another visa. This is a separate decision with serious consequences, so speak to us first."
+       },
+       {
+        "x": "You manage a crew roster and want a consistent process."
+       }
+      ]
+     },
+     {
+      "t": "p",
+      "x": "We will tell you honestly if you do not need an agent."
+     }
+    ]
+   }
+  },
+  "faqs_add": [
+   {
+    "q": "What is the difference between a Maritime Crew visa and a Crew Travel Authority?",
+    "a": "A Maritime Crew visa (988) is for crew arriving by sea on eligible ships. A Crew Travel Authority (942) is for airline crew and aircraft safety inspectors arriving by air. They are separate documents for separate kinds of travel."
+   },
+   {
+    "q": "Does crew need a visa to enter Australia?",
+    "a": "Foreign crew generally need an appropriate visa or authority before arriving. Which one depends on how and why you travel, and on your citizenship. New Zealand citizens are treated differently. See our [Special Category visa (444)](/transit-special-purpose/special-category-visa-444) page."
+   },
+   {
+    "q": "Can I apply for a Maritime Crew visa from inside Australia?",
+    "a": "No. You generally must be outside Australia when you apply for subclass 988."
+   },
+   {
+    "q": "Is there a fee?",
+    "a": "Fees depend on the document and can change. Our own fees are set out in a written agreement before any work starts."
+   },
+   {
+    "q": "Can yacht crew use the 988 visa?",
+    "a": "Generally not. Yacht crew usually do not qualify for the Maritime Crew visa. Contact us to check your situation."
+   },
+   {
+    "q": "Can I stay in Australia after my ship leaves?",
+    "a": "Crew visas are made for crew work, not for staying on. If you want to stay, you would need to qualify for a different visa. Get advice before you act, as leaving the ship without the right visa can affect your future visa options."
+   }
+  ],
+  "faqs_remove": [
+   "Q1. What is the difference between a Maritime Crew visa and a Crew Travel Authority?",
+   "Q2. Does crew need a visa to enter Australia?",
+   "Q3. Can I apply for a Maritime Crew visa from inside Australia?",
+   "Q4. Is there a fee?",
+   "Q5. Can yacht crew use the 988 visa?",
+   "Q6. Can I stay in Australia after my ship leaves?"
+  ],
+  "cta": {
+   "title": "Not sure which crew document applies?",
+   "text": "Speak with a registered migration agent at our Melbourne or Adelaide office, by phone or online."
+  }
+ },
+ "/maritime-crew/crew-travel-authority-942": {
+  "replace": {
+   "related-and-final-cta": {
+    "h2": "Related visas",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[Maritime Crew visa (988)](/maritime-crew/maritime-crew-visa-988)"
+       },
+       {
+        "x": "[Transit visa (771)](/transit-special-purpose/transit-visa-771)"
+       },
+       {
+        "x": "[Special Purpose visa](/transit-special-purpose/special-purpose-visa)"
+       },
+       {
+        "x": "[eVisitor (651)](/visitor-visa/evisitor-651)"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "faqs_add": [
+   {
+    "q": "Is the Crew Travel Authority for ship crew?",
+    "a": "No. It is for airline crew and aircraft safety inspectors. Ship crew generally need the Maritime Crew visa (988)."
+   },
+   {
+    "q": "Who applies for the 942?",
+    "a": "Usually the airline registers its crew rather than each person lodging an application."
+   },
+   {
+    "q": "Can my family come with me?",
+    "a": "The authority is generally for the crew member only. Family would need their own visa, such as a visitor visa."
+   },
+   {
+    "q": "How long can I stay?",
+    "a": "It depends on your role."
+   },
+   {
+    "q": "Can I work on domestic flights?",
+    "a": "Only in limited cases, tied to an international arrival or departure."
+   },
+   {
+    "q": "Can I use it for a holiday?",
+    "a": "No. If you want a holiday, you would need a visitor visa or eVisitor, where eligible."
+   }
+  ],
+  "faqs_remove": [
+   "Q1. Is the Crew Travel Authority for ship crew?",
+   "Q2. Who applies for the 942?",
+   "Q3. Can my family come with me?",
+   "Q4. How long can I stay?",
+   "Q5. Can I work on domestic flights?",
+   "Q6. Can I use it for a holiday?"
+  ],
+  "cta": {
+   "title": "Talk to a registered migration agent",
+   "text": "Tell us your situation and we will explain your options and the next step."
+  }
+ },
+ "/maritime-crew/maritime-crew-visa-988": {
+  "remove": [
+   "melbourne-angle"
+  ],
+  "replace": {
+   "how-to-apply": {
+    "blocks": [
+     {
+      "t": "ol",
+      "items": [
+       {
+        "x": "**Confirm eligibility.** Check your role, ship type and passport."
+       },
+       {
+        "x": "**Gather documents.** See the checklist below."
+       },
+       {
+        "x": "**Lodge from outside Australia.** Check the Department of Home Affairs website for how to lodge."
+       },
+       {
+        "x": "**Respond to requests.** Answer any request for information quickly."
+       },
+       {
+        "x": "**Wait for the decision before the ship arrives.** Do not board expecting the visa to be sorted out on arrival."
+       },
+       {
+        "x": "**Follow the conditions.** Stay within the visa conditions while in Australia."
+       }
+      ]
+     }
+    ]
+   },
+   "costs-and-processing": {
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "**Government fee:** Check the Department of Home Affairs website for the current figure."
+       },
+       {
+        "x": "**Processing time:** Check the Department of Home Affairs website for the current time. Allow extra time for documents and any health or character checks."
+       },
+       {
+        "x": "**Other costs:** You may pay for a police certificate, a medical exam where required, or biometrics."
+       },
+       {
+        "x": "**Our fee:** Written in a service agreement before work starts."
+       }
+      ]
+     }
+    ]
+   },
+   "related-and-final-cta": {
+    "h2": "Related visas",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[Crew Travel Authority (942)](/maritime-crew/crew-travel-authority-942)"
+       },
+       {
+        "x": "[Transit visa (771)](/transit-special-purpose/transit-visa-771)"
+       },
+       {
+        "x": "[Visitor visa (600)](/visitor-visa/visitor-visa-600)"
+       },
+       {
+        "x": "[Appeals](/appeals)"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "faqs_add": [
+   {
+    "q": "Who needs a Maritime Crew visa?",
+    "a": "Foreign crew of eligible cargo ships and cruise ships who arrive by sea."
+   },
+   {
+    "q": "Can I apply in Australia?",
+    "a": "No. You must apply from outside Australia."
+   },
+   {
+    "q": "Can my family travel with me?",
+    "a": "Family members would need their own application or visa."
+   },
+   {
+    "q": "Can I stay if I leave the ship?",
+    "a": "No. The visa is for crew duties. Leaving the ship without the right visa can lead to cancellation. Speak to us before making any decision."
+   },
+   {
+    "q": "Is the 988 the same as the Special Purpose visa?",
+    "a": "No. The Special Purpose visa is a different type of visa that applies automatically to certain groups. See our [Special Purpose visa](/transit-special-purpose/special-purpose-visa) page."
+   }
+  ],
+  "faqs_remove": [
+   "Q1. Who needs a Maritime Crew visa?",
+   "Q2. Can I apply in Australia?",
+   "Q4. Can my family travel with me?",
+   "Q5. Can I stay if I leave the ship?",
+   "Q6. Is the 988 the same as the Special Purpose visa?"
+  ],
+  "cta": {
+   "title": "Talk to a registered migration agent",
+   "text": "Tell us your situation and we will explain your options and the next step."
+  }
+ },
+ "/medical-humanitarian": {
+  "remove": [
+   "who-this-page-is-for",
+   "how-we-help",
+   "how-it-works"
+  ],
+  "replace": {
+   "visa-options": {
+    "h2": "Your visa options",
+    "blocks": [
+     {
+      "t": "table",
+      "head": [
+       "Visa",
+       "What it is",
+       "Best for"
+      ],
+      "rows": [
+       [
+        "[Medical Treatment visa (602)](/medical-humanitarian/medical-treatment-visa-602)",
+        "A temporary visa. You must show how treatment costs will be covered.",
+        "People who need medical treatment or consultations in Australia, carers, organ donors and people who need time to settle affairs"
+       ],
+       [
+        "[Pacific Engagement visa (192)](/medical-humanitarian/pacific-engagement-visa-192)",
+        "A permanent visa for people selected by ballot, with limited yearly places.",
+        "Citizens of eligible Pacific countries and Timor-Leste who are selected in the annual ballot"
+       ],
+       [
+        "[Former Resident visa (151)](/medical-humanitarian/former-resident-visa-151)",
+        "A permanent visa with its own tests.",
+        "People who used to hold Australian permanent residence or citizenship and have strong past ties to Australia"
+       ]
+      ]
+     }
+    ]
+   },
+   "how-to-choose": {
+    "blocks": [
+     {
+      "t": "table",
+      "head": [
+       "Your situation",
+       "Likely starting point"
+      ],
+      "rows": [
+       [
+        "I need treatment in Australia for a set period",
+        "[Medical Treatment (602)](/medical-humanitarian/medical-treatment-visa-602)"
+       ],
+       [
+        "I am supporting a patient or donating an organ",
+        "[Medical Treatment (602)](/medical-humanitarian/medical-treatment-visa-602)"
+       ],
+       [
+        "I am a Pacific citizen and want to move permanently",
+        "[Pacific Engagement (192)](/medical-humanitarian/pacific-engagement-visa-192) ballot"
+       ],
+       [
+        "I lost my PR status and want to return",
+        "[Former Resident (151)](/medical-humanitarian/former-resident-visa-151), or [Resident Return (155/157)](/bridging-return-visas/resident-return-visa-155-157) if you still hold PR"
+       ],
+       [
+        "I want a holiday only",
+        "[Visitor visa](/visitor-visa)"
+       ],
+       [
+        "My visa was refused or cancelled",
+        "[Appeals](/appeals)"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "x": "If you are looking for a refugee or protection visa, this is not the right page. [Contact us](/contact) and we will explain what we can and cannot do."
+     }
+    ]
+   }
+  },
+  "faqs_add": [
+   {
+    "q": "Can I come to Australia for medical treatment on a tourist visa?",
+    "a": "Visitor visas are not designed for planned treatment. The Medical Treatment visa (602) is made for that purpose. A registered agent can check what suits you."
+   },
+   {
+    "q": "Does the Medical Treatment visa give me access to Medicare?",
+    "a": "Generally no. You are expected to pay for treatment in advance."
+   },
+   {
+    "q": "Is the Pacific Engagement visa a lottery?",
+    "a": "You first register in a ballot, and if you are selected you can then apply. Selection is not a guarantee of a visa."
+   },
+   {
+    "q": "Can I apply for the Former Resident visa if I lost my PR status?",
+    "a": "It depends on your past residence and ties to Australia. An assessment is needed."
+   },
+   {
+    "q": "Can someone in Melbourne sponsor my treatment visit?",
+    "a": "You do not need a sponsor for the 602 itself, but you must show how costs will be paid. Family in Melbourne can help with letters and support."
+   }
+  ],
+  "faqs_remove": [
+   "Q1. Can I come to Australia for medical treatment on a tourist visa?",
+   "Q2. Does the Medical Treatment visa give me access to Medicare?",
+   "Q3. Is the Pacific Engagement visa a lottery?",
+   "Q4. Can I apply for the Former Resident visa if I lost my PR status?",
+   "Q6. Can someone in Melbourne sponsor my treatment visit?"
+  ],
+  "cta": {
+   "title": "Not sure which visa fits your situation?",
+   "text": "Tell us who needs the visa and why. We will explain your options and the risks."
+  }
+ },
+ "/medical-humanitarian/medical-treatment-visa-602": {
+  "remove": [
+   "melbourne-angle"
+  ],
+  "replace": {
+   "processing": {
+    "h2": "Processing time",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Check the Department of Home Affairs website for the current processing time. Urgent cases may be dealt with faster if you give clear medical evidence. We cannot promise a time."
+     }
+    ]
+   },
+   "related-and-final-cta": {
+    "h2": "Related visas",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[Pacific Engagement (192)](/medical-humanitarian/pacific-engagement-visa-192)"
+       },
+       {
+        "x": "[Former Resident (151)](/medical-humanitarian/former-resident-visa-151)"
+       },
+       {
+        "x": "[Visitor visa (600)](/visitor-visa/visitor-visa-600)"
+       },
+       {
+        "x": "[Bridging visas](/bridging-return-visas)"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "faqs_add": [
+   {
+    "q": "Can I get Medicare with a 602 visa?",
+    "a": "Generally no. You are expected to pay for treatment."
+   },
+   {
+    "q": "Can a family member come with me?",
+    "a": "A support person may apply for their own 602 if they meet the requirements."
+   },
+   {
+    "q": "Can I work on a 602?",
+    "a": "Work is generally restricted."
+   },
+   {
+    "q": "Can I extend my 602?",
+    "a": "Usually you must make a new application."
+   },
+   {
+    "q": "How long does it take?",
+    "a": "Times vary. Check the Department of Home Affairs website for the current time, and provide complete evidence to avoid delays."
+   },
+   {
+    "q": "Can I study on this visa?",
+    "a": "This visa is for medical treatment. For [study, see study in Australia](/study-australia)."
+   },
+   {
+    "q": "Is it for organ donors?",
+    "a": "Yes, donors and recipients can be considered."
+   }
+  ],
+  "faqs_remove": [
+   "Q1. Can I get Medicare with a 602 visa?",
+   "Q2. Can a family member come with me?",
+   "Q3. Can I work on a 602?",
+   "Q4. Can I extend my 602?",
+   "Q5. How long does it take?",
+   "Q6. Can I study on this visa?",
+   "Q7. Is it for organ donors?"
+  ],
+  "cta": {
+   "title": "Talk to a registered migration agent",
+   "text": "Tell us your situation and we will explain your options and the next step."
+  }
+ },
+ "/medical-humanitarian/pacific-engagement-visa-192": {
+  "remove": [
+   "melbourne-angle"
+  ],
+  "replace": {
+   "key-facts": {
+    "blocks": [
+     {
+      "t": "table",
+      "head": [
+       "Item",
+       "Detail"
+      ],
+      "rows": [
+       [
+        "Type",
+        "Permanent visa"
+       ],
+       [
+        "Places",
+        "A limited number each year, including partners and dependent children. Check the Department of Home Affairs website for the current number."
+       ],
+       [
+        "First step",
+        "Register in the ballot, then apply only if selected"
+       ],
+       [
+        "Ballot registration fee",
+        "Check the Department of Home Affairs website for the current figure."
+       ],
+       [
+        "Visa fee",
+        "Check the Department of Home Affairs website for the current figure."
+       ],
+       [
+        "Where you apply",
+        "Generally from outside Australia"
+       ],
+       [
+        "Eligible countries",
+        "Check the Department of Home Affairs website for the current list."
+       ],
+       [
+        "Age and other requirements",
+        "Your adviser will confirm this"
+       ]
+      ]
+     }
+    ]
+   },
+   "how-it-works-in-two-steps": {
+    "blocks": [
+     {
+      "t": "h3",
+      "x": "Step 1: Ballot registration"
+     },
+     {
+      "t": "ol",
+      "items": [
+       {
+        "x": "Check the registration window on the Home Affairs site. It opens once a year for a short period."
+       },
+       {
+        "x": "Prepare your identity details and passport."
+       },
+       {
+        "x": "Register and pay the registration fee."
+       },
+       {
+        "x": "Wait for the ballot result. Unsuccessful registrants may be able to register again in a later year."
+       }
+      ]
+     },
+     {
+      "t": "h3",
+      "x": "Step 2: Visa application, if selected"
+     },
+     {
+      "t": "ol",
+      "items": [
+       {
+        "x": "Read your invitation and deadlines carefully."
+       },
+       {
+        "x": "Gather identity, health, character and job-offer documents."
+       },
+       {
+        "x": "Lodge the visa application."
+       },
+       {
+        "x": "Respond to any request for more information."
+       },
+       {
+        "x": "If granted, plan your move and your first job."
+       }
+      ]
+     }
+    ]
+   },
+   "costs-and-timing": {
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "**Ballot registration:** Check the Department of Home Affairs website for the current figure."
+       },
+       {
+        "x": "**Visa application charge:** Check the Department of Home Affairs website for the current figure."
+       },
+       {
+        "x": "**Other costs:** medical checks, police certificates, translations, travel."
+       },
+       {
+        "x": "**Processing time:** Check the Department of Home Affairs website for the current time."
+       },
+       {
+        "x": "**Our fee:** Set out in writing before any work starts."
+       }
+      ]
+     },
+     {
+      "t": "p",
+      "x": "Beware of anyone who promises to improve your chance in the ballot. Selection is random. Be wary of unofficial websites that charge for registration."
+     }
+    ]
+   },
+   "related-and-final-cta": {
+    "h2": "Related visas",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[Medical Treatment (602)](/medical-humanitarian/medical-treatment-visa-602)"
+       },
+       {
+        "x": "[Former Resident (151)](/medical-humanitarian/former-resident-visa-151)"
+       },
+       {
+        "x": "[Skilled migration](/migrate-to-australia)"
+       },
+       {
+        "x": "[Employer-sponsored visas](/employer-sponsored)"
+       },
+       {
+        "x": "[Citizenship](/citizenship)"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "faqs_add": [
+   {
+    "q": "Is the Pacific Engagement visa free?",
+    "a": "No. There is a small registration fee for the ballot and a visa application charge if you are selected."
+   },
+   {
+    "q": "Can I apply without being selected?",
+    "a": "No. You must be selected in the ballot first."
+   },
+   {
+    "q": "Can my family come with me?",
+    "a": "Partners and dependent children are usually included in the same application."
+   },
+   {
+    "q": "If I am not selected, can I try again?",
+    "a": "Generally yes, in a later ballot if you still meet the requirements."
+   },
+   {
+    "q": "Can an agent improve my chances in the ballot?",
+    "a": "No. Selection is random. We can help you register correctly and prepare if you are selected."
+   }
+  ],
+  "faqs_remove": [
+   "Q1. Is the Pacific Engagement visa free?",
+   "Q2. Can I apply without being selected?",
+   "Q4. Can my family come with me?",
+   "Q6. If I am not selected, can I try again?",
+   "Q7. Can an agent improve my chances in the ballot?"
+  ],
+  "cta": {
+   "title": "Talk to a registered migration agent",
+   "text": "Tell us your situation and we will explain your options and the next step."
+  }
+ },
+ "/medical-humanitarian/former-resident-visa-151": {
+  "replace": {
+   "costs-and-timing": {
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "**Government fee:** Check the Department of Home Affairs website for the current figure."
+       },
+       {
+        "x": "**Processing time:** Check the Department of Home Affairs website for the current time. Paper applications can take longer."
+       },
+       {
+        "x": "**Other costs:** certificates, translations, medicals, postage."
+       },
+       {
+        "x": "**Our fee:** Written agreement before work begins."
+       }
+      ]
+     }
+    ]
+   },
+   "related-and-final-cta": {
+    "h2": "Related visas",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[Resident Return (155/157)](/bridging-return-visas/resident-return-visa-155-157)"
+       },
+       {
+        "x": "[Medical Treatment (602)](/medical-humanitarian/medical-treatment-visa-602)"
+       },
+       {
+        "x": "[Pacific Engagement (192)](/medical-humanitarian/pacific-engagement-visa-192)"
+       },
+       {
+        "x": "[Family visas](/family-visa)"
+       },
+       {
+        "x": "[Citizenship](/citizenship)"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "faqs_add": [
+   {
+    "q": "What is the difference between the 151 and a Resident Return visa?",
+    "a": "A Resident Return visa is for people who still hold permanent residence and want to keep travelling. The Former Resident visa is for those who no longer hold PR."
+   },
+   {
+    "q": "How is the visa assessed?",
+    "a": "Against a points test and requirements such as past residence and ties."
+   },
+   {
+    "q": "What if I am an Australian citizen?",
+    "a": "You do not need a visa. Contact us if you need help with proof of citizenship. See [citizenship](/citizenship)."
+   }
+  ],
+  "faqs_remove": [
+   "Q1. What is the difference between the 151 and a Resident Return visa?",
+   "Q3. How is the visa assessed?",
+   "Q6. What if I am an Australian citizen?"
+  ],
+  "cta": {
+   "title": "Talk to a registered migration agent",
+   "text": "Tell us your situation and we will explain your options and the next step."
+  }
+ },
+ "/transit-special-purpose": {
+  "remove": [
+   "who-this-page-is-for",
+   "how-we-help",
+   "how-it-works"
+  ],
+  "replace": {
+   "your-options": {
+    "h2": "Your options",
+    "blocks": [
+     {
+      "t": "table",
+      "head": [
+       "Visa or authority",
+       "Best for"
+      ],
+      "rows": [
+       [
+        "[Transit visa (771)](/transit-special-purpose/transit-visa-771)",
+        "People passing through Australia to a third country, for up to 72 hours"
+       ],
+       [
+        "[Special Category visa (444)](/transit-special-purpose/special-category-visa-444)",
+        "New Zealand citizens, who usually receive this visa on arrival"
+       ],
+       [
+        "[Special Purpose visa](/transit-special-purpose/special-purpose-visa)",
+        "Certain official, military and crew visitors who hold the status automatically. You do not apply for it."
+       ],
+       [
+        "[Special Purpose Travel Authority (945)](/transit-special-purpose/special-purpose-travel-authority-945)",
+        "Eligible military personnel, and some family members named on travel orders, from certain countries"
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  "faqs_add": [
+   {
+    "q": "Do I need a transit visa to change planes in Australia?",
+    "a": "It depends on your passport and route. Some travellers can transit without a visa. Others need a Transit visa (771)."
+   },
+   {
+    "q": "Do New Zealand citizens need a visa?",
+    "a": "They usually get a Special Category visa (444) on arrival with a valid passport."
+   },
+   {
+    "q": "Can I apply for a Special Purpose visa?",
+    "a": "No. It applies automatically to certain people."
+   },
+   {
+    "q": "Is a transit stop a good way to see Melbourne?",
+    "a": "For a short stay up to 72 hours some people use a transit visa, but it is only for travellers passing through. For sightseeing, see visitor visas."
+   },
+   {
+    "q": "Do these visas lead to permanent residence?",
+    "a": "No, except that some 444 holders have a pathway to citizenship. See [citizenship](/citizenship)."
+   },
+   {
+    "q": "I am transiting and have a visa refusal in my past. What should I do?",
+    "a": "Speak with us before you travel. A past refusal or cancellation can affect transit."
+   }
+  ],
+  "faqs_remove": [
+   "Q1. Do I need a transit visa to change planes in Australia?",
+   "Q2. Do New Zealand citizens need a visa?",
+   "Q3. Can I apply for a Special Purpose visa?",
+   "Q4. Is a transit stop a good way to see Melbourne?",
+   "Q5. Do these visas lead to permanent residence?",
+   "Q6. I am transiting and have a visa refusal in my past. What should I do?"
+  ],
+  "cta": {
+   "title": "Not sure which applies?",
+   "text": "Tell us your passport, route and purpose. We will tell you whether you need a visa at all."
+  }
+ },
+ "/transit-special-purpose/transit-visa-771": {
+  "remove": [
+   "melbourne-angle"
+  ],
+  "replace": {
+   "key-facts": {
+    "blocks": [
+     {
+      "t": "table",
+      "head": [
+       "Item",
+       "Detail"
+      ],
+      "rows": [
+       [
+        "Who it is for",
+        "People passing through Australia on the way to another country"
+       ],
+       [
+        "Maximum stay",
+        "Up to 72 hours for most transit travellers"
+       ],
+       [
+        "Where you apply",
+        "Outside Australia"
+       ],
+       [
+        "Onward travel",
+        "You need confirmed travel out of Australia within the period"
+       ],
+       [
+        "Extensions",
+        "Not granted"
+       ],
+       [
+        "Government fee",
+        "Check the Department of Home Affairs website for the current figure."
+       ],
+       [
+        "Processing time",
+        "Check the Department of Home Affairs website for the current time."
+       ]
+      ]
+     }
+    ]
+   },
+   "do-you-need-a-transit-visa": {
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Not everyone does. Check these in order:"
+     },
+     {
+      "t": "ol",
+      "items": [
+       {
+        "x": "**Do you already hold a valid Australian visa that lets you enter?** If so, you may not need a transit visa. Check your visa on VEVO. Be careful, because a new visa grant can affect an existing one."
+       },
+       {
+        "x": "**Is your passport on the list of countries allowed to transit without a visa?** A short airport transit may not need a visa."
+       },
+       {
+        "x": "**Do you need to leave the airport or change airports?** You may need a visa even if the stay is short."
+       }
+      ]
+     },
+     {
+      "t": "p",
+      "x": "If none of these apply, you likely need the 771. Travellers on some passports usually need a visa even for a short stay."
+     }
+    ]
+   },
+   "costs-and-timing": {
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "**Government fee:** Check the Department of Home Affairs website for the current figure."
+       },
+       {
+        "x": "**Processing time:** Check the Department of Home Affairs website for the current time. Apply well before you fly."
+       },
+       {
+        "x": "**Our fee:** Written agreement before work starts. For a straightforward transit visa you may not need an agent."
+       }
+      ]
+     }
+    ]
+   },
+   "steps": {
+    "blocks": [
+     {
+      "t": "ol",
+      "items": [
+       {
+        "x": "Check whether you need a visa, using the questions above."
+       },
+       {
+        "x": "Book flights with a confirmed onward ticket."
+       },
+       {
+        "x": "Gather documents."
+       },
+       {
+        "x": "Apply online from outside Australia."
+       },
+       {
+        "x": "Wait for the grant before you travel."
+       },
+       {
+        "x": "Carry the grant notice and onward ticket."
+       },
+       {
+        "x": "Leave on time."
+       }
+      ]
+     }
+    ]
+   },
+   "related-and-final-cta": {
+    "h2": "Related visas",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[Special Category (444)](/transit-special-purpose/special-category-visa-444)"
+       },
+       {
+        "x": "[Special Purpose visa](/transit-special-purpose/special-purpose-visa)"
+       },
+       {
+        "x": "[Visitor visa (600)](/visitor-visa/visitor-visa-600)"
+       },
+       {
+        "x": "[eVisitor (651)](/visitor-visa/evisitor-651)"
+       },
+       {
+        "x": "[Maritime Crew (988)](/maritime-crew/maritime-crew-visa-988)"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "faqs_add": [
+   {
+    "q": "How long can I stay on a Transit visa?",
+    "a": "Usually up to 72 hours."
+   },
+   {
+    "q": "Can I apply inside Australia?",
+    "a": "No. You apply from outside Australia."
+   },
+   {
+    "q": "Can I change my flight after the grant?",
+    "a": "Possibly, but you must still leave within the time allowed. Speak to us before you change plans."
+   },
+   {
+    "q": "Can I visit family in Melbourne during transit?",
+    "a": "Only within the allowed stay and conditions. For more time, a visitor visa is better."
+   },
+   {
+    "q": "What if I already have another Australian visa?",
+    "a": "Check your visa conditions first. Home Affairs warns that a new grant may affect an existing visa."
+   }
+  ],
+  "faqs_remove": [
+   "Q1. How long can I stay on a Transit visa?",
+   "Q3. Can I apply inside Australia?",
+   "Q4. Can I change my flight after the grant?",
+   "Q5. Can I visit family in Melbourne during transit?",
+   "Q6. What if I already have another Australian visa?"
+  ],
+  "cta": {
+   "title": "Talk to a registered migration agent",
+   "text": "Tell us your situation and we will explain your options and the next step."
+  }
+ },
+ "/transit-special-purpose/special-category-visa-444": {
+  "remove": [
+   "melbourne-angle"
+  ],
+  "replace": {
+   "family": {
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Family members who are not New Zealand citizens do not receive a 444. They need their own visa. Options may include a [partner visa](/family-visa), a [skilled visa](/migrate-to-australia) or a [visitor visa](/visitor-visa)."
+     }
+    ]
+   },
+   "related-and-final-cta": {
+    "h2": "Related visas",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[Citizenship](/citizenship)"
+       },
+       {
+        "x": "[NZ Citizen Family visa (461)](/family-visa/new-zealand-citizen-family-relationship-visa-subclass-461)"
+       },
+       {
+        "x": "[Transit visa (771)](/transit-special-purpose/transit-visa-771)"
+       },
+       {
+        "x": "[Special Purpose visa](/transit-special-purpose/special-purpose-visa)"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "faqs_add": [
+   {
+    "q": "Do New Zealanders need to apply for a visa?",
+    "a": "Most receive a 444 on arrival and do not apply in advance."
+   },
+   {
+    "q": "Is a 444 the same as permanent residency?",
+    "a": "No. It is a temporary visa with long-term rights. Citizenship may be possible without PR first."
+   },
+   {
+    "q": "Can I get citizenship without PR?",
+    "a": "Eligible 444 holders can apply directly."
+   },
+   {
+    "q": "Can my partner join me?",
+    "a": "A non-New Zealand partner needs their own visa."
+   },
+   {
+    "q": "Can the 444 be cancelled?",
+    "a": "Yes, for example for character reasons."
+   },
+   {
+    "q": "Can I vote?",
+    "a": "Voting rules depend on citizenship and enrolment. Please ask us if you are unsure."
+   }
+  ],
+  "faqs_remove": [
+   "Q1. Do New Zealanders need to apply for a visa?",
+   "Q2. Is a 444 the same as permanent residency?",
+   "Q3. Can I get citizenship without PR?",
+   "Q4. Can my partner join me?",
+   "Q5. Can the 444 be cancelled?",
+   "Q6. Can I vote?"
+  ],
+  "cta": {
+   "title": "Talk to a registered migration agent",
+   "text": "Tell us your situation and we will explain your options and the next step."
+  }
+ },
+ "/transit-special-purpose/special-purpose-visa": {
+  "replace": {
+   "what-next": {
+    "blocks": [
+     {
+      "t": "p",
+      "x": "If you want to live in Australia after official duty, a different visa is needed. Options might include [skilled migration](/migrate-to-australia), [employer sponsorship](/employer-sponsored) or [study](/study-australia). If your status has ended and you hold no visa, get advice quickly, as you may be unlawful. See [bridging visas](/bridging-return-visas)."
+     }
+    ]
+   },
+   "related-and-final-cta": {
+    "h2": "Related visas",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[Special Purpose Travel Authority (945)](/transit-special-purpose/special-purpose-travel-authority-945)"
+       },
+       {
+        "x": "[Transit visa (771)](/transit-special-purpose/transit-visa-771)"
+       },
+       {
+        "x": "[Special Category (444)](/transit-special-purpose/special-category-visa-444)"
+       },
+       {
+        "x": "[Bridging visas](/bridging-return-visas)"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "faqs_add": [
+   {
+    "q": "Can I apply for a Special Purpose visa?",
+    "a": "No. It is held automatically by people in certain categories."
+   },
+   {
+    "q": "Is there a fee?",
+    "a": "No application charge."
+   },
+   {
+    "q": "How do I know if I hold one?",
+    "a": "Check your travel orders and your VEVO record, or ask your employer."
+   },
+   {
+    "q": "What happens when my duty ends?",
+    "a": "The visa ends with the status. Leave, or apply for a different visa before then."
+   },
+   {
+    "q": "Can I work or study on it?",
+    "a": "Depends on the category."
+   },
+   {
+    "q": "Is it the same as the 945?",
+    "a": "No. The 945 is a travel authority registered for certain military personnel. See the [945 page](/transit-special-purpose/special-purpose-travel-authority-945)."
+   }
+  ],
+  "faqs_remove": [
+   "Q1. Can I apply for a Special Purpose visa?",
+   "Q2. Is there a fee?",
+   "Q3. How do I know if I hold one?",
+   "Q4. What happens when my duty ends?",
+   "Q5. Can I work or study on it?",
+   "Q6. Is it the same as the 945?"
+  ],
+  "cta": {
+   "title": "Talk to a registered migration agent",
+   "text": "Tell us your situation and we will explain your options and the next step."
+  }
+ },
+ "/transit-special-purpose/special-purpose-travel-authority-945": {
+  "replace": {
+   "costs": {
+    "blocks": [
+     {
+      "t": "p",
+      "x": "The authority has a fee set by the Department. Check the Department of Home Affairs website for the current figure. If you ask us for advice, our fee is set out in writing before we start."
+     }
+    ]
+   },
+   "what-next": {
+    "blocks": [
+     {
+      "t": "p",
+      "x": "If you want to stay in Australia after your posting, you need a visa that allows it. Options could include [skilled migration](/migrate-to-australia), [family visas](/family-visa) or [employer sponsorship](/employer-sponsored). Get advice well before your duty ends."
+     }
+    ]
+   },
+   "related-and-final-cta": {
+    "h2": "Related visas",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[Special Purpose visa](/transit-special-purpose/special-purpose-visa)"
+       },
+       {
+        "x": "[Transit visa (771)](/transit-special-purpose/transit-visa-771)"
+       },
+       {
+        "x": "[Crew Travel Authority (942)](/maritime-crew/crew-travel-authority-942)"
+       },
+       {
+        "x": "[Visitor visas](/visitor-visa)"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "faqs_add": [
+   {
+    "q": "Can I apply for the 945 myself?",
+    "a": "Generally no. It is arranged through official channels."
+   },
+   {
+    "q": "Which countries are covered?",
+    "a": "Canada, Singapore, the United Kingdom and the United States have been reported."
+   },
+   {
+    "q": "Can my spouse come with me?",
+    "a": "Eligible family members named on your orders may be covered."
+   },
+   {
+    "q": "Can I work in Australia on a 945?",
+    "a": "Only for your official duties."
+   },
+   {
+    "q": "Can I take a holiday in Australia?",
+    "a": "Private travel is a different matter. A visitor visa or eVisitor may apply."
+   },
+   {
+    "q": "What is the difference between this and the Special Purpose visa?",
+    "a": "The Special Purpose visa is held automatically. The 945 is a registered authority for particular military personnel."
+   }
+  ],
+  "faqs_remove": [
+   "Q1. Can I apply for the 945 myself?",
+   "Q2. Which countries are covered?",
+   "Q3. Can my spouse come with me?",
+   "Q4. Can I work in Australia on a 945?",
+   "Q5. Can I take a holiday in Australia?",
+   "Q6. What is the difference between this and the Special Purpose visa?"
+  ],
+  "cta": {
+   "title": "Talk to a registered migration agent",
+   "text": "Tell us your situation and we will explain your options and the next step."
+  }
+ }
+}

@@ -1,0 +1,2628 @@
+{
+ "/visitor-visa": {
+  "remove": [
+   "compare-australian-visitor-visa-options",
+   "which-visitor-visa-is-right-for-you-four-quick-questions",
+   "how-our-registered-migration-agents-help",
+   "our-5-step-visitor-visa-process",
+   "travelling-somewhere-other-than-australia"
+  ],
+  "replace": {
+   "start-with-the-reason-for-your-trip": {
+    "h2": "Which visa is right for you?",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Start with your reason for travelling. Then check your passport and where you will be when you apply. Fees, processing times and eligible passports change, so check the Department of Home Affairs website before you lodge."
+     },
+     {
+      "t": "table",
+      "head": [
+       "If you want to...",
+       "Read"
+      ],
+      "rows": [
+       [
+        "Holiday, sightsee or visit friends on any passport",
+        "[Visitor visa 600](/visitor-visa/visitor-visa-600)"
+       ],
+       [
+        "Have a parent, sibling or other relative visit you",
+        "[Sponsored Family stream](/visitor-visa/sponsored-family)"
+       ],
+       [
+        "Attend meetings, a conference or a trade fair",
+        "[Visitor visa 600](/visitor-visa/visitor-visa-600), or the ETA or eVisitor if your passport is eligible"
+       ],
+       [
+        "Make a short trip on an eligible non-European passport",
+        "[ETA 601](/visitor-visa/electronic-travel-authority-601)"
+       ],
+       [
+        "Make a short trip on an eligible European passport",
+        "[eVisitor 651](/visitor-visa/evisitor-651)"
+       ],
+       [
+        "Travel and work for up to 12 months while you are young (417 countries)",
+        "[Working Holiday 417](/visitor-visa/work-holiday-417)"
+       ],
+       [
+        "Travel and work for up to 12 months while you are young (462 countries)",
+        "[Work and Holiday 462](/visitor-visa/work-holiday-462)"
+       ],
+       [
+        "Stay longer while you are in Australia",
+        "[Onshore visitor visa extension](/visitor-visa/onshore-visitor-visa-extension)"
+       ],
+       [
+        "Come back for another visit or a longer stay from overseas",
+        "[Visiting again from outside Australia](/visitor-visa/offshore-extension)"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "x": "An ETA or eVisitor covers stays of up to 3 months at a time. A visitor visa (600) can be granted for longer. A visitor visa is not extended. You usually apply for a new one."
+     }
+    ]
+   },
+   "the-test-behind-every-visitor-visa-a-genuine-temporary-stay": {
+    "h2": "The test behind every visitor visa",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "The Department of Home Affairs must be satisfied that you intend to visit Australia temporarily and then leave. This is the genuine temporary stay test in clause 600.211 of Schedule 2 to the Migration Regulations. The decision maker looks at your whole situation. No single document guarantees a grant."
+     },
+     {
+      "t": "table",
+      "head": [
+       "What they look at",
+       "Evidence that helps"
+      ],
+      "rows": [
+       [
+        "Your ties to home",
+        "Employer letter with approved leave and return date, recent payslips and tax returns, business registration if self-employed, proof of study"
+       ],
+       [
+        "Your money",
+        "Recent bank statements showing steady funds, an explanation for any large or recent deposits, evidence of assets"
+       ],
+       [
+        "Your family and commitments",
+        "Close family who stay at home, a travel history that shows you followed visa conditions"
+       ]
+      ]
+     }
+    ]
+   },
+   "visa-conditions-that-catch-visitors-out": {
+    "h2": "Visa conditions that catch visitors out",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "**Condition 8101 (no work).** You cannot work in Australia on a standard visitor visa."
+       },
+       {
+        "x": "**Condition 8201 (study limit).** Study is limited to 3 months."
+       },
+       {
+        "x": "**Condition 8503 (no further stay).** You cannot apply for most other visas while you are in Australia. A waiver is only given in limited, compelling cases."
+       },
+       {
+        "x": "**Condition 8558 (stay limit).** You cannot stay more than 12 months in any 18-month period."
+       }
+      ]
+     },
+     {
+      "t": "p",
+      "x": "Breaking a condition can lead to cancellation and make later visa applications harder. Check your grant letter for the conditions on your visa."
+     }
+    ]
+   },
+   "common-reasons-visitor-visas-are-refused": {
+    "h2": "Common reasons visitor visas are refused",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "Weak ties to home, such as no job, no leave approval or no close family there."
+       },
+       {
+        "x": "Savings that do not match the trip, or unexplained deposits."
+       },
+       {
+        "x": "A vague itinerary, or one that does not match the stated purpose."
+       },
+       {
+        "x": "A history of overstays, refusals or breaches that was not explained."
+       },
+       {
+        "x": "A sponsor or host who has not shown their own status or relationship."
+       },
+       {
+        "x": "Answers on the form that do not match your documents."
+       }
+      ]
+     },
+     {
+      "t": "p",
+      "x": "A refusal stays on your record and is asked about in later applications. If you were refused, read our [visa refusal page](/appeals/visa-refusal) before you reapply. Our registered migration agents review your evidence, tell you honestly if it is thin and prepare a cover submission that addresses the genuine temporary stay test. We cannot guarantee any visa outcome."
+     }
+    ]
+   }
+  },
+  "faqs_remove": [
+   "Does Bansal Immigration guarantee"
+  ],
+  "faqs_add": [
+   {
+    "q": "Does each family member need their own application?",
+    "a": "Generally yes. Each traveller, including children, needs their own visa or authority. Check the Department of Home Affairs website for how to apply for children, or ask us."
+   }
+  ]
+ },
+ "/visitor-visa/visitor-visa-600": {
+  "remove": [
+   "melbourne-and-adelaide-angle"
+  ],
+  "replace": {
+   "is-this-the-right-visa-for-you": {
+    "h2": "Is this the right visa for you?",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "I want to visit for a holiday, to see family or friends, or for short business activities."
+       },
+       {
+        "x": "I want to stay for more than 3 months, or my passport cannot use an ETA or eVisitor."
+       },
+       {
+        "x": "I can show a home, a job or study, and family to return to."
+       },
+       {
+        "x": "I can pay for my trip, or someone can support me."
+       }
+      ]
+     },
+     {
+      "t": "p",
+      "x": "If your passport is eligible and you only need a short trip, read about the [ETA 601](/visitor-visa/electronic-travel-authority-601) or [eVisitor 651](/visitor-visa/evisitor-651). If you want to work, look at the [Working Holiday 417](/visitor-visa/work-holiday-417) or the [Skills in Demand 482](/employer-sponsored/sid-visa-482). If you want to study for more than 3 months, see [Study in Australia](/study-australia)."
+     }
+    ]
+   },
+   "costs": {
+    "h2": "Costs",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "The government visa application charge depends on the stream and on whether you lodge inside or outside Australia. Check the Department of Home Affairs website for the current figure. The charge is not refunded if your application is refused. It is indexed each year, so do not rely on older figures you see online."
+     },
+     {
+      "t": "h3",
+      "x": "Other costs to plan for"
+     },
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "Medical examinations and police certificates, if requested"
+       },
+       {
+        "x": "Biometrics collection fees, where charged"
+       },
+       {
+        "x": "Translation of documents that are not in English"
+       },
+       {
+        "x": "Travel insurance (recommended, not required for the 600)"
+       },
+       {
+        "x": "Our professional fees, set out in a written agreement before work starts"
+       }
+      ]
+     }
+    ]
+   },
+   "related-visas-and-final-cta": {
+    "h2": "Related pages",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[Sponsored Family stream](/visitor-visa/sponsored-family)"
+       },
+       {
+        "x": "[ETA 601](/visitor-visa/electronic-travel-authority-601)"
+       },
+       {
+        "x": "[eVisitor 651](/visitor-visa/evisitor-651)"
+       },
+       {
+        "x": "[Onshore visitor visa extension](/visitor-visa/onshore-visitor-visa-extension)"
+       },
+       {
+        "x": "[Visiting again from outside Australia](/visitor-visa/offshore-extension)"
+       },
+       {
+        "x": "[Working Holiday 417](/visitor-visa/work-holiday-417)"
+       },
+       {
+        "x": "[Work and Holiday 462](/visitor-visa/work-holiday-462)"
+       }
+      ]
+     },
+     {
+      "t": "note",
+      "label": "Note",
+      "x": "This page is general information, not legal advice. Rules and fees change. We cannot guarantee a visa outcome."
+     }
+    ]
+   }
+  },
+  "faqs_add": [
+   {
+    "q": "Can my family travel with me?",
+    "a": "Each traveller generally needs their own visa application. Check the Department of Home Affairs website for how family members apply together, or ask us."
+   }
+  ]
+ },
+ "/visitor-visa/work-holiday-462": {
+  "remove": [
+   "melbourne-and-victoria-angle"
+  ],
+  "replace": {
+   "costs": {
+    "h2": "Costs",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "The government visa application charge is not refunded if your application is refused or invalid. Check the Department of Home Affairs website for the current figure."
+     },
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "**English test.** The cost varies by provider."
+       },
+       {
+        "x": "**Health examination, biometrics and police certificates.** Only if requested."
+       },
+       {
+        "x": "**Your own savings.** You need enough funds for your first months and your return fare."
+       },
+       {
+        "x": "**Our professional fees.** Set out in a written agreement before work starts."
+       }
+      ]
+     }
+    ]
+   },
+   "second-year-third-year-and-what-next": {
+    "h2": "Second year, third year and what next",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Eligible 462 holders may be able to apply for a second and third year after doing specified work in regional areas. Check that your work and postcode count before you start. Use our [Postcode Checker](/postcode-checker) as a first guide, then confirm on the Department of Home Affairs list."
+     },
+     {
+      "t": "p",
+      "x": "After your working holiday, you might move to a student visa, an employer-sponsored visa or a skilled visa, if you qualify. Read about [Skills in Demand 482](/employer-sponsored/sid-visa-482), [Study in Australia](/study-australia) or [skilled migration](/migrate-to-australia). A registered agent can tell you what is realistic for you."
+     }
+    ]
+   },
+   "related-visas-and-final-cta": {
+    "h2": "Related pages",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[Working Holiday 417](/visitor-visa/work-holiday-417)"
+       },
+       {
+        "x": "[Visitor visa 600](/visitor-visa/visitor-visa-600)"
+       },
+       {
+        "x": "[Skills in Demand 482](/employer-sponsored/sid-visa-482)"
+       },
+       {
+        "x": "[Study in Australia](/study-australia)"
+       }
+      ]
+     },
+     {
+      "t": "note",
+      "label": "Note",
+      "x": "This page is general information, not legal advice. Eligibility, fees and country lists change. We cannot guarantee a visa outcome."
+     }
+    ]
+   }
+  }
+ },
+ "/visitor-visa/work-holiday-417": {
+  "remove": [
+   "melbourne-and-victoria-angle"
+  ],
+  "replace": {
+   "age-limits": {
+    "h2": "Age limits",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "The age limit depends on your country. It is 18 to 30 for most partner countries and 18 to 35 for some. Check the Department of Home Affairs website for your passport."
+     },
+     {
+      "t": "p",
+      "x": "Age is checked on the day you lodge. If you are too old on that day, the Department can treat the application as invalid. Lodge well before your birthday, not on the last possible day. A technical problem on the day can push you over the limit."
+     }
+    ]
+   },
+   "costs": {
+    "h2": "Costs",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "The government charge is not refunded if your application is refused or invalid. The second and third visa applications have their own charge. Check the Department of Home Affairs website for the current figure."
+     },
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "**Health check and police certificates.** Only if requested."
+       },
+       {
+        "x": "**Your own savings.** You need enough funds for your first months and a ticket home."
+       },
+       {
+        "x": "**Our professional fees.** Set out in a written agreement before work starts."
+       }
+      ]
+     }
+    ]
+   },
+   "second-and-third-year-and-what-next": {
+    "h2": "Second and third year, and what next",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "If you do specified work in an eligible area and industry, you may be able to apply for a second and then a third year. Rules for what counts have changed in recent years. Check that the work and postcode count before you start, because work that does not count cannot be added later. Keep your payslips and employer letters."
+     },
+     {
+      "t": "p",
+      "x": "If you want to stay longer, possible paths include a sponsored job, a student visa or a skilled visa, if you qualify. See [Skills in Demand 482](/employer-sponsored/sid-visa-482), [Study in Australia](/study-australia) and [skilled migration](/migrate-to-australia). A registered agent can tell you what is realistic."
+     }
+    ]
+   },
+   "related-visas-and-final-cta": {
+    "h2": "Related pages",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[Work and Holiday 462](/visitor-visa/work-holiday-462)"
+       },
+       {
+        "x": "[Visitor visa 600](/visitor-visa/visitor-visa-600)"
+       },
+       {
+        "x": "[Skills in Demand 482](/employer-sponsored/sid-visa-482)"
+       },
+       {
+        "x": "[Study in Australia](/study-australia)"
+       }
+      ]
+     },
+     {
+      "t": "note",
+      "label": "Note",
+      "x": "This page is general information, not legal advice. Eligibility, fees and age limits change. We cannot guarantee a visa outcome."
+     }
+    ]
+   }
+  }
+ },
+ "/visitor-visa/sponsored-family": {
+  "remove": [
+   "melbourne-angle"
+  ],
+  "replace": {
+   "is-this-right-for-you": {
+    "h2": "Is this right for you?",
+    "blocks": [
+     {
+      "t": "h3",
+      "x": "For sponsors"
+     },
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "I am an Australian citizen, permanent resident or eligible New Zealand citizen."
+       },
+       {
+        "x": "I am aged 18 or over and usually live in Australia."
+       },
+       {
+        "x": "I can show my relationship with the visitor."
+       },
+       {
+        "x": "I can host or financially support the visit."
+       }
+      ]
+     },
+     {
+      "t": "h3",
+      "x": "For visitors"
+     },
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "I am applying from outside Australia."
+       },
+       {
+        "x": "I am an eligible relative of the sponsor."
+       },
+       {
+        "x": "I have ties at home that show I will return."
+       }
+      ]
+     },
+     {
+      "t": "p",
+      "x": "If a parent plans to stay in Australia for years, this stream is not suitable. See the other options below."
+     }
+    ]
+   },
+   "costs": {
+    "h2": "Costs",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "The government visa application charge is not refunded if the application is refused. Check the Department of Home Affairs website for the current figure."
+     },
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "**Security bond.** Only if requested."
+       },
+       {
+        "x": "**Health examination.** Only if requested."
+       },
+       {
+        "x": "**Translation and certified copies.** As needed."
+       },
+       {
+        "x": "**Travel and health insurance.** Recommended."
+       },
+       {
+        "x": "**Our professional fees.** Set out in a written agreement before work starts."
+       }
+      ]
+     }
+    ]
+   },
+   "other-options-if-this-stream-does-not-fit": {
+    "h2": "Other options if this stream does not fit",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "**Tourist stream (600).** If you do not need a sponsor. See [Visitor visa 600](/visitor-visa/visitor-visa-600)."
+       },
+       {
+        "x": "**Parent visas.** If your parent wants to move to Australia, they need a parent visa. Some are queued for years and cost a lot. See [Family visas](/family-visa)."
+       },
+       {
+        "x": "**Contributory and aged parent visas.** See [Contributory Parent visa 143](/family-visa/contributory-parent-visa-subclass-143) and [Aged Parent visa 804](/family-visa/aged-parent-visa-subclass-804)."
+       },
+       {
+        "x": "**If the application was refused.** See [Visa refusal](/appeals/visa-refusal)."
+       }
+      ]
+     }
+    ]
+   },
+   "related-visas-and-final-cta": {
+    "h2": "Related pages",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[Visitor visa 600](/visitor-visa/visitor-visa-600)"
+       },
+       {
+        "x": "[Onshore visitor visa extension](/visitor-visa/onshore-visitor-visa-extension)"
+       },
+       {
+        "x": "[Family visas](/family-visa)"
+       },
+       {
+        "x": "[Visitor visa hub](/visitor-visa)"
+       }
+      ]
+     },
+     {
+      "t": "note",
+      "label": "Note",
+      "x": "This page is general information, not legal advice. Rules and fees change. We cannot guarantee a visa outcome."
+     }
+    ]
+   }
+  }
+ },
+ "/visitor-visa/offshore-extension": {
+  "remove": [
+   "melbourne-angle"
+  ],
+  "replace": {
+   "is-this-the-right-page-for-you": {
+    "h2": "Is this the right page for you?",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "I am outside Australia now, or I will leave before my visa ends."
+       },
+       {
+        "x": "I want to return for another visit, or a longer visit than before."
+       },
+       {
+        "x": "I want to know if I can apply again, and what the Department will look at."
+       }
+      ]
+     },
+     {
+      "t": "p",
+      "x": "If you are in Australia and your visa is about to end, use our [onshore page](/visitor-visa/onshore-visitor-visa-extension) instead. If you want to move to Australia, see the pathways below."
+     }
+    ]
+   },
+   "your-options-from-outside-australia": {
+    "h2": "Your options from outside Australia",
+    "blocks": [
+     {
+      "t": "table",
+      "head": [
+       "Option",
+       "Best for",
+       "Things to know"
+      ],
+      "rows": [
+       [
+        "[ETA 601](/visitor-visa/electronic-travel-authority-601)",
+        "Eligible passports, trips up to 3 months",
+        "Quick app-based application"
+       ],
+       [
+        "[eVisitor 651](/visitor-visa/evisitor-651)",
+        "Eligible European passports, trips up to 3 months",
+        "Free"
+       ],
+       [
+        "[Visitor visa 600, Tourist](/visitor-visa/visitor-visa-600)",
+        "Longer trips, or passports that cannot use an ETA or eVisitor",
+        "Needs detailed evidence"
+       ],
+       [
+        "[Visitor visa 600, Sponsored Family](/visitor-visa/sponsored-family)",
+        "Relatives invited by an Australian citizen or permanent resident",
+        "Sponsor and visitor both prepare evidence"
+       ]
+      ]
+     }
+    ]
+   },
+   "costs": {
+    "h2": "Costs",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "The visa application charge for a new application from outside Australia is not refunded if the application is refused. Check the Department of Home Affairs website for the current figure."
+     },
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "**ETA.** A service charge applies. The eVisitor is free."
+       },
+       {
+        "x": "**Health and biometrics.** Only if requested."
+       },
+       {
+        "x": "**Our professional fees.** Set out in a written agreement before work starts."
+       }
+      ]
+     }
+    ]
+   },
+   "processing-times": {
+    "h2": "Processing times",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Processing times vary. Check the Department of Home Affairs website for current estimates. Do not book non-refundable flights until the visa is granted."
+     }
+    ]
+   },
+   "pathways-if-you-want-to-live-in-australia": {
+    "h2": "If you want to live in Australia",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "A visitor visa is not a stepping stone to permanent residence. If you want to move here, look at the visa that fits your situation. See [skilled migration](/migrate-to-australia), [employer-sponsored visas](/employer-sponsored), [family visas](/family-visa) or [Study in Australia](/study-australia). Frequent or long visits can lead the Department to ask whether you are really living here, so explain the purpose of each trip."
+     }
+    ]
+   },
+   "related-visas-and-final-cta": {
+    "h2": "Related pages",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[Onshore visitor visa extension](/visitor-visa/onshore-visitor-visa-extension)"
+       },
+       {
+        "x": "[Visitor visa 600](/visitor-visa/visitor-visa-600)"
+       },
+       {
+        "x": "[ETA 601](/visitor-visa/electronic-travel-authority-601)"
+       },
+       {
+        "x": "[eVisitor 651](/visitor-visa/evisitor-651)"
+       }
+      ]
+     },
+     {
+      "t": "note",
+      "label": "Note",
+      "x": "This page is general information, not legal advice. Rules and fees change. We cannot guarantee a visa outcome."
+     }
+    ]
+   }
+  }
+ },
+ "/visitor-visa/electronic-travel-authority-601": {
+  "replace": {
+   "is-this-right-for-you": {
+    "h2": "Is this right for you?",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "My passport is on the ETA list."
+       },
+       {
+        "x": "I am outside Australia when I apply."
+       },
+       {
+        "x": "My visit is for tourism, family visits, short study of up to 3 months, or business visitor activities."
+       },
+       {
+        "x": "I plan to stay up to 3 months at a time."
+       },
+       {
+        "x": "I do not plan to work in Australia."
+       }
+      ]
+     },
+     {
+      "t": "p",
+      "x": "If your passport is from a European country on the eVisitor list, see [eVisitor 651](/visitor-visa/evisitor-651). If your passport is not eligible, see [Visitor visa 600](/visitor-visa/visitor-visa-600)."
+     }
+    ]
+   },
+   "costs": {
+    "h2": "Costs",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "The ETA has a service charge. Check the Department of Home Affairs website for the current figure. The charge is not refunded if you are refused. Use only the official app. Some websites charge extra fees."
+     },
+     {
+      "t": "p",
+      "x": "Most people apply themselves. If you want us to review a more complex case, our fee is set out in a written agreement before work starts."
+     }
+    ]
+   },
+   "after-the-eta": {
+    "h2": "After the ETA",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "An ETA is not a path to permanent residence or a work visa. If you want to live or work in Australia, you need a different visa. See [skilled migration](/migrate-to-australia), [employer-sponsored visas](/employer-sponsored) or [Study in Australia](/study-australia)."
+     }
+    ]
+   },
+   "related-visas-and-final-cta": {
+    "h2": "Related pages",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[eVisitor 651](/visitor-visa/evisitor-651)"
+       },
+       {
+        "x": "[Visitor visa 600](/visitor-visa/visitor-visa-600)"
+       },
+       {
+        "x": "[Onshore visitor visa extension](/visitor-visa/onshore-visitor-visa-extension)"
+       },
+       {
+        "x": "[Visitor visa hub](/visitor-visa)"
+       }
+      ]
+     },
+     {
+      "t": "note",
+      "label": "Note",
+      "x": "This page is general information, not legal advice. Rules and fees change. We cannot guarantee a visa outcome."
+     }
+    ]
+   }
+  }
+ },
+ "/visitor-visa/evisitor-651": {
+  "replace": {
+   "is-this-right-for-you": {
+    "h2": "Is this right for you?",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "I hold a passport from an eligible European country."
+       },
+       {
+        "x": "I am outside Australia when I apply."
+       },
+       {
+        "x": "I want to visit for tourism, family, short study or business meetings."
+       },
+       {
+        "x": "I plan to stay up to 3 months at a time."
+       },
+       {
+        "x": "I do not plan to work."
+       }
+      ]
+     },
+     {
+      "t": "p",
+      "x": "If you hold a passport from the US, Canada, Japan, Singapore or a similar country, look at the [ETA 601](/visitor-visa/electronic-travel-authority-601). If you are not on either list, see [Visitor visa 600](/visitor-visa/visitor-visa-600)."
+     }
+    ]
+   },
+   "costs": {
+    "h2": "Costs",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "The eVisitor has no government charge. Use only the official Home Affairs website. Some third-party sites charge a fee for the same free application."
+     },
+     {
+      "t": "p",
+      "x": "If you want us to review a complex case, our fee is set out in a written agreement before work starts."
+     }
+    ]
+   },
+   "after-the-evisitor": {
+    "h2": "After the eVisitor",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "The eVisitor is for short visits only. For a longer stay, work or study, you need another visa. See [skilled migration](/migrate-to-australia), [Study in Australia](/study-australia) or [Working Holiday 417](/visitor-visa/work-holiday-417) if you are young and eligible."
+     }
+    ]
+   },
+   "related-visas-and-final-cta": {
+    "h2": "Related pages",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[ETA 601](/visitor-visa/electronic-travel-authority-601)"
+       },
+       {
+        "x": "[Visitor visa 600](/visitor-visa/visitor-visa-600)"
+       },
+       {
+        "x": "[Sponsored Family stream](/visitor-visa/sponsored-family)"
+       },
+       {
+        "x": "[Visitor visa hub](/visitor-visa)"
+       }
+      ]
+     },
+     {
+      "t": "note",
+      "label": "Note",
+      "x": "This page is general information, not legal advice. Rules and fees change. We cannot guarantee a visa outcome."
+     }
+    ]
+   }
+  }
+ },
+ "/visitor-visa/onshore-visitor-visa-extension": {
+  "remove": [
+   "melbourne-angle"
+  ],
+  "add": [
+   {
+    "after": "how-staying-longer-works",
+    "id": "in-or-outside-australia",
+    "h2": "Inside or outside Australia?",
+    "kind": "prose",
+    "blocks": [
+     {
+      "t": "table",
+      "head": [
+       "Where you are",
+       "What you usually do"
+      ],
+      "rows": [
+       [
+        "In Australia on a visitor visa",
+        "Lodge a new visitor visa (600) before your current visa ends. Condition 8503 may need a waiver first. This page covers it."
+       ],
+       [
+        "Outside Australia",
+        "Apply for a new visa from overseas. See [visiting again from outside Australia](/visitor-visa/offshore-extension)."
+       ],
+       [
+        "In Australia and want to apply for a different visa",
+        "Condition 8503 may stop you. See [waiver request](/appeals/waiver-request)."
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "replace": {
+   "costs": {
+    "h2": "Costs",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Onshore applications cost more than offshore ones. The charge is not refunded if the application is refused. Check the Department of Home Affairs website for the current figure."
+     },
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "**Waiver request.** Check the Department of Home Affairs website for the current figure."
+       },
+       {
+        "x": "**Health examination.** Only if requested."
+       },
+       {
+        "x": "**Our professional fees.** Set out in a written agreement before work starts."
+       }
+      ]
+     }
+    ]
+   },
+   "related-visas-and-final-cta": {
+    "h2": "Related pages",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[Offshore options](/visitor-visa/offshore-extension)"
+       },
+       {
+        "x": "[Visitor visa 600](/visitor-visa/visitor-visa-600)"
+       },
+       {
+        "x": "[Bridging Visa A](/bridging-return-visas/bridging-visa-a-010)"
+       },
+       {
+        "x": "[Waiver request](/appeals/waiver-request)"
+       },
+       {
+        "x": "[Visa refusal](/appeals/visa-refusal)"
+       }
+      ]
+     },
+     {
+      "t": "note",
+      "label": "Note",
+      "x": "This page is general information, not legal advice. Rules and fees change. We cannot guarantee a visa outcome."
+     }
+    ]
+   }
+  }
+ },
+ "/business-visa": {
+  "remove": [
+   "how-to-choose",
+   "melbourne-and-victoria-angle",
+   "how-it-works"
+  ],
+  "replace": {
+   "visa-option-cards": {
+    "h2": "Which page is right for you?",
+    "blocks": [
+     {
+      "t": "table",
+      "head": [
+       "Your situation",
+       "Read"
+      ],
+      "rows": [
+       [
+        "I hold a 188 and want permanent residence",
+        "[Subclass 888 permanent visa](/business-visa/business-innovation-and-investment-permanent-visa-subclass-888)"
+       ],
+       [
+        "I hold a 188, or lodged one before the program closed",
+        "[Subclass 188 provisional visa](/business-visa/business-innovation-and-investment-provisional-visa-subclass-188)"
+       ],
+       [
+        "I hold a 132, or was invited before it closed",
+        "[Subclass 132 Business Talent visa](/business-visa/business-talent-permanent-visa-subclass-132)"
+       ],
+       [
+        "I am new and want to start or invest in a business in Australia",
+        "See the options below"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "x": "If you lodged an application or were invited before closure, speak to us about your application."
+     }
+    ]
+   },
+   "if-you-are-new-what-now": {
+    "h2": "If you are new, what now?",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "The 188 and 132 are not open to new applicants, so there is no business or investor visa to apply for under those programs. Which visa suits you depends on your skills, age, family and plans. Options include:"
+     },
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "**Skilled visa.** If your occupation is on a relevant list. See [skilled migration](/migrate-to-australia)."
+       },
+       {
+        "x": "**Employer-sponsored visa.** See [employer-sponsored visas](/employer-sponsored). A business-owner route may suit some people."
+       },
+       {
+        "x": "**Partner or family visa.** If you have a qualifying relationship. See [family visas](/family-visa)."
+       },
+       {
+        "x": "**Student visa, then a graduate visa.** If you plan to study first. See [Study in Australia](/study-australia)."
+       },
+       {
+        "x": "**National Innovation Visa (subclass 858).** It replaced the Global Talent visa and is invitation-only, for people with a record of outstanding achievement."
+       }
+      ]
+     },
+     {
+      "t": "p",
+      "x": "We do not promise a pathway. A registered agent can tell you what is realistic."
+     }
+    ]
+   },
+   "how-we-help": {
+    "h2": "How we help",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "We check your 188 holding, time requirements and business or investment evidence."
+       },
+       {
+        "x": "We prepare and lodge 888 applications for eligible clients."
+       },
+       {
+        "x": "We explain how state nomination fits in. Victoria nominates 188 holders for the 888 through the Victorian Government, and each state sets its own rules."
+       },
+       {
+        "x": "We tell you honestly if a current option is not a good fit."
+       }
+      ]
+     },
+     {
+      "t": "p",
+      "x": "We do not guarantee outcomes. State governments decide nomination. The Department of Home Affairs decides visas."
+     }
+    ]
+   }
+  },
+  "faqs_add": []
+ },
+ "/business-visa/business-innovation-and-investment-permanent-visa-subclass-888": {
+  "replace": {
+   "status-notice": {
+    "h2": "Who can still apply",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "The 188 program closed to new applications on 31 July 2024. You can only apply for the 888 if you hold a 188, or hold one granted from an application made before closure. If you are new, see our [Business and Investor Visas page](/business-visa) for current options."
+     }
+    ]
+   },
+   "eligibility-and-streams": {
+    "h2": "Eligibility and streams",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "The tests differ by stream. Check the Department of Home Affairs website for the current requirements for your stream before you lodge."
+     },
+     {
+      "t": "table",
+      "head": [
+       "Stream",
+       "What you usually need"
+      ],
+      "rows": [
+       [
+        "Business Innovation",
+        "Operated a qualifying business in Australia for the required period, and met turnover, assets, ownership and employee tests"
+       ],
+       [
+        "Investor",
+        "Maintained a designated investment for the required period"
+       ],
+       [
+        "Significant Investor",
+        "Maintained a complying significant investment for the required period"
+       ],
+       [
+        "Premium Investor",
+        "Maintained a complying premium investment for the required period"
+       ],
+       [
+        "Entrepreneur",
+        "Operated the entrepreneurial activity for the required period"
+       ]
+      ]
+     }
+    ]
+   },
+   "costs": {
+    "h2": "Costs",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "The government visa application charge is not refunded if the application is refused. Check the Department of Home Affairs website for the current figure."
+     },
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "**State nomination fee.** Set by the state or territory. Check with it."
+       },
+       {
+        "x": "**Medical examination and police certificates.** Only if requested."
+       },
+       {
+        "x": "**Our professional fees.** Set out in a written agreement before work starts."
+       }
+      ]
+     }
+    ]
+   },
+   "related-visas-and-final-cta": {
+    "h2": "Related pages",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[188 Provisional](/business-visa/business-innovation-and-investment-provisional-visa-subclass-188)"
+       },
+       {
+        "x": "[Business Talent 132](/business-visa/business-talent-permanent-visa-subclass-132)"
+       },
+       {
+        "x": "[Business and investor visas](/business-visa)"
+       },
+       {
+        "x": "[Citizenship](/citizenship)"
+       }
+      ]
+     },
+     {
+      "t": "note",
+      "label": "Note",
+      "x": "This page is general information, not legal advice. Rules and fees change. We cannot guarantee a visa outcome."
+     }
+    ]
+   }
+  }
+ },
+ "/business-visa/business-innovation-and-investment-provisional-visa-subclass-188": {
+  "remove": [
+   "former-streams-reference-only",
+   "processing-times",
+   "victoria-angle"
+  ],
+  "replace": {
+   "status-notice": {
+    "h2": "This visa is closed",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "The 188 program closed to new applications on 31 July 2024. Existing holders keep their visas. Eligible holders can continue towards the permanent 888 visa, and some can apply for extension streams."
+     }
+    ]
+   },
+   "key-facts": {
+    "h2": "Key facts",
+    "blocks": [
+     {
+      "t": "table",
+      "head": [
+       "Item",
+       "Detail"
+      ],
+      "rows": [
+       [
+        "Visa type",
+        "Provisional business and investor visa (stage one)"
+       ],
+       [
+        "New applications",
+        "Closed"
+       ],
+       [
+        "Validity",
+        "Usually up to 5 years"
+       ],
+       [
+        "Next stage",
+        "Permanent visa 888"
+       ],
+       [
+        "Nomination",
+        "The visa required state or territory nomination"
+       ],
+       [
+        "Fees",
+        "No new applications. For extension and 888 charges, check the Department of Home Affairs website."
+       ],
+       [
+        "Work and study",
+        "Live and work in Australia while the visa is valid"
+       ]
+      ]
+     }
+    ]
+   },
+   "which-of-these-is-you": {
+    "h2": "Which of these is you?",
+    "blocks": [
+     {
+      "t": "table",
+      "head": [
+       "Your situation",
+       "What to do"
+      ],
+      "rows": [
+       [
+        "I hold a 188",
+        "Read the section for current holders below, then the [888 page](/business-visa/business-innovation-and-investment-permanent-visa-subclass-888)."
+       ],
+       [
+        "I lodged a 188 or an EOI before closure",
+        "Book a consultation. Your application is handled under the rules in place when you lodged, and the Department decides the outcome."
+       ],
+       [
+        "I am new",
+        "The 188 is not available. See the options below."
+       ]
+      ]
+     }
+    ]
+   },
+   "costs": {
+    "h2": "Costs",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "There is no new 188 application. For the extension and the 888, check the Department of Home Affairs website for the current charges. State nomination for the 888 is set by your state or territory, so check with it. Our fees are set out in a written agreement before work starts."
+     }
+    ]
+   },
+   "if-you-are-new": {
+    "h2": "If you are new",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "The 188 is not available. Skilled, employer-sponsored, family and student routes may suit you instead, and the invitation-only National Innovation Visa (858) is for people with outstanding achievements. See [business and investor visas](/business-visa) for the full list, or [skilled migration](/migrate-to-australia). We cannot promise any of these will suit you. A registered agent can assess your case."
+     }
+    ]
+   },
+   "related-visas-and-final-cta": {
+    "h2": "Related pages",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[888 Permanent](/business-visa/business-innovation-and-investment-permanent-visa-subclass-888)"
+       },
+       {
+        "x": "[132 Business Talent](/business-visa/business-talent-permanent-visa-subclass-132)"
+       },
+       {
+        "x": "[Business and investor visas](/business-visa)"
+       },
+       {
+        "x": "[Skilled migration](/migrate-to-australia)"
+       }
+      ]
+     },
+     {
+      "t": "note",
+      "label": "Note",
+      "x": "This page is general information, not legal advice. Program rules and fees change. We cannot guarantee a visa outcome."
+     }
+    ]
+   }
+  }
+ },
+ "/business-visa/business-talent-permanent-visa-subclass-132": {
+  "remove": [
+   "victoria-angle"
+  ],
+  "replace": {
+   "status-notice": {
+    "h2": "This visa is closed",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "The Business Talent program no longer accepts new applications. Existing holders keep their permanent residence."
+     }
+    ]
+   },
+   "which-of-these-is-you": {
+    "h2": "Which of these is you?",
+    "blocks": [
+     {
+      "t": "table",
+      "head": [
+       "Your situation",
+       "What to do"
+      ],
+      "rows": [
+       [
+        "I hold a 132",
+        "See the section for existing holders below."
+       ],
+       [
+        "I was invited, or applied, before closure",
+        "See the section on invitations and earlier applications below."
+       ],
+       [
+        "I am new",
+        "The 132 is not available. See the current options below."
+       ]
+      ]
+     }
+    ]
+   },
+   "the-two-former-streams": {
+    "h2": "The two former streams",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "The 132 had two streams: Significant Business History, for established business owners, and Venture Capital Entrepreneur, for founders backed by venture capital. Both needed state or territory nomination and an invitation. The eligibility tests are no longer relevant to new applicants, so we do not list them here."
+     }
+    ]
+   },
+   "if-you-are-new-current-options": {
+    "h2": "If you are new: current options",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "The 132 is not available. Skilled, employer-sponsored, family and student routes may suit you instead, and the invitation-only National Innovation Visa (858) is for people with outstanding achievements. See [business and investor visas](/business-visa) for the full list, or [skilled migration](/migrate-to-australia). We cannot promise any of these will suit you."
+     }
+    ]
+   },
+   "related-visas-and-final-cta": {
+    "h2": "Related pages",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[888 Permanent](/business-visa/business-innovation-and-investment-permanent-visa-subclass-888)"
+       },
+       {
+        "x": "[188 Provisional](/business-visa/business-innovation-and-investment-provisional-visa-subclass-188)"
+       },
+       {
+        "x": "[Business and investor visas](/business-visa)"
+       },
+       {
+        "x": "[Resident Return visa](/bridging-return-visas/resident-return-visa-155-157)"
+       },
+       {
+        "x": "[Citizenship](/citizenship)"
+       }
+      ]
+     },
+     {
+      "t": "note",
+      "label": "Note",
+      "x": "This page is general information, not legal advice. Program rules change. We cannot guarantee a visa outcome."
+     }
+    ]
+   }
+  }
+ },
+ "/appeals": {
+  "remove": [
+   "how-a-review-works-in-five-steps"
+  ],
+  "replace": {
+   "the-deadline-is-in-your-decision-letter-find-it-first": {
+    "h2": "The deadline is in your decision letter. Find it first.",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "**Check the letter.** It says whether you can ask for review, who can review the decision and how long you have."
+       },
+       {
+        "x": "**The clock may already be running.** Time is counted from when you are taken to have received the notice, not from when you read it."
+       },
+       {
+        "x": "**Different decisions have different limits.** Refusals, cancellations, decisions made in immigration detention and court review each have their own time limit. Your letter, or an agent, can tell you which applies to you."
+       },
+       {
+        "x": "**Do not assume a late application will be accepted.** Call us as soon as you have the letter."
+       }
+      ]
+     },
+     {
+      "t": "note",
+      "label": "Note",
+      "x": "Do not wait until the last week. Evidence takes time to collect."
+     }
+    ]
+   },
+   "what-to-do-in-the-first-48-hours": {
+    "h2": "What to do in the first 48 hours",
+    "blocks": [
+     {
+      "t": "ol",
+      "items": [
+       {
+        "x": "**Find the deadline.** Read your decision letter and write the date and time limit where you can see it."
+       },
+       {
+        "x": "**Call us on +61 3 9602 1330.** Do this today, even if you have not gathered everything. A registered migration agent will read your letter and tell you what to do next."
+       },
+       {
+        "x": "**Keep every letter and email** from the Department of Home Affairs. Do not ignore anything."
+       },
+       {
+        "x": "**Check your visa status.** Look at your visa expiry, any bridging visa and your work or study conditions. Do not travel, sign anything or change your plans before you speak to an agent."
+       },
+       {
+        "x": "**Gather your paperwork.** Decision letter, copy of your application, passport pages, evidence you sent and emails from the Department."
+       },
+       {
+        "x": "**Do not rely on social media advice.** Forum answers are often out of date or wrong for your visa type."
+       }
+      ]
+     }
+    ]
+   },
+   "choose-your-situation": {
+    "h2": "Find your situation",
+    "blocks": [
+     {
+      "t": "table",
+      "head": [
+       "Your situation",
+       "Read"
+      ],
+      "rows": [
+       [
+        "Your application was refused",
+        "[Visa refusal](/appeals/visa-refusal)"
+       ],
+       [
+        "Your visa was cancelled, or may be",
+        "[Visa cancellation](/appeals/visa-cancellation)"
+       ],
+       [
+        "The Department says it is thinking of cancelling your visa and gave you a date to reply",
+        "[Notice of intention to consider cancellation](/appeals/notice-of-intention-to-consider-cancellation)"
+       ],
+       [
+        "You want the Administrative Review Tribunal to look at a decision again",
+        "[ART appeals](/appeals/art-appeals)"
+       ],
+       [
+        "You lost at the ART and think the law was applied wrongly",
+        "[Federal Court appeals](/appeals/federal-court-appeals)"
+       ],
+       [
+        "You have no other review option left",
+        "[Ministerial Intervention](/appeals/ministerial-intervention)"
+       ],
+       [
+        "You want to see how the steps fit together",
+        "[Review process](/appeals/review-process)"
+       ],
+       [
+        "Your visa has a No Further Stay condition and you want to apply for another visa in Australia",
+        "[Waiver request](/appeals/waiver-request)"
+       ],
+       [
+        "You are on a bridging visa or have a no-work condition",
+        "[Applying for work rights](/appeals/applying-for-work-rights)"
+       ],
+       [
+        "You need permission to study, or a Student visa",
+        "[Applying for study rights](/appeals/applying-for-study-rights)"
+       ]
+      ]
+     }
+    ]
+   },
+   "how-bansal-immigration-helps": {
+    "h2": "How we help",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "A registered migration agent reads your decision and explains it in plain language."
+       },
+       {
+        "x": "We check your deadline and your review rights."
+       },
+       {
+        "x": "We prepare your application, evidence and written submissions."
+       },
+       {
+        "x": "We explain each letter you receive."
+       },
+       {
+        "x": "We give you a written fee agreement before work starts."
+       }
+      ]
+     },
+     {
+      "t": "p",
+      "x": "No agent can promise the outcome of a review. We tell you plainly if your case is weak so you can make an informed choice."
+     }
+    ]
+   },
+   "contact-form": {
+    "h2": "Talk to us today",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Send us your decision letter details. We will get back to you as soon as we can. You can also call **+61 3 9602 1330**."
+     }
+    ]
+   }
+  },
+  "faqs_remove": [
+   "How long do I have to appeal",
+   "I am in Melbourne or Adelaide"
+  ],
+  "faqs_add": [
+   {
+    "q": "How long do I have to apply for review?",
+    "a": "It depends on the decision and where you are. Your decision letter states the time limit, and some limits are only days. Call us as soon as you receive the letter."
+   },
+   {
+    "q": "Can I visit you in Melbourne or Adelaide?",
+    "a": "Yes. [Book an appointment](/book-an-appointment) or call +61 3 9602 1330. We also work by phone and video."
+   }
+  ]
+ },
+ "/appeals/art-appeals": {
+  "replace": {
+   "deadline-box-highlighted": {
+    "h2": "Your deadline comes first",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "**Find the time limit in your decision letter today.**"
+       },
+       {
+        "x": "Do not assume a late application will be accepted."
+       },
+       {
+        "x": "Call us now so we can check the limit that applies to you."
+       }
+      ]
+     }
+    ]
+   },
+   "your-first-48-hours": {
+    "h2": "Your first 48 hours",
+    "blocks": [
+     {
+      "t": "ol",
+      "items": [
+       {
+        "x": "**Find the deadline** stated in your letter."
+       },
+       {
+        "x": "**Call us on +61 3 9602 1330** with your letter in hand."
+       },
+       {
+        "x": "**Save the letter**, the envelope or email, and proof of when it arrived."
+       },
+       {
+        "x": "**Check your current visa or bridging visa.**"
+       },
+       {
+        "x": "**Start collecting evidence** that answers each reason for refusal."
+       }
+      ]
+     }
+    ]
+   },
+   "contact-form": {
+    "h2": "Tell us about your decision",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Send us your decision letter details. We will get back to you as soon as we can. You can also call **+61 3 9602 1330**."
+     }
+    ]
+   },
+   "if-the-art-does-not-change-the-decision": {
+    "h2": "If the ART does not change the decision",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "You may have other options, depending on the case. These include [Federal Court appeals](/appeals/federal-court-appeals) if the ART made a legal error, [Ministerial Intervention](/appeals/ministerial-intervention) in rare cases, or a new visa application where the law allows. Each path has strict limits and no guarantee."
+     }
+    ]
+   },
+   "related-pages-and-final-cta": {
+    "h2": "Related pages",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[Visa refusal](/appeals/visa-refusal)"
+       },
+       {
+        "x": "[Visa cancellation](/appeals/visa-cancellation)"
+       },
+       {
+        "x": "[Review process](/appeals/review-process)"
+       },
+       {
+        "x": "[Federal Court appeals](/appeals/federal-court-appeals)"
+       },
+       {
+        "x": "[Ministerial Intervention](/appeals/ministerial-intervention)"
+       }
+      ]
+     },
+     {
+      "t": "note",
+      "label": "Note",
+      "x": "General information only. It is not legal advice for your situation. The ART, the Department of Home Affairs, the Minister and the courts decide outcomes."
+     }
+    ]
+   }
+  },
+  "faqs_remove": [
+   "What does ART stand for",
+   "Can the ART extend"
+  ],
+  "faqs_add": [
+   {
+    "q": "Can the ART extend the deadline?",
+    "a": "Do not assume it can. Call us immediately so we can check your deadline."
+   }
+  ]
+ },
+ "/appeals/federal-court-appeals": {
+  "replace": {
+   "deadline-box": {
+    "h2": "Your deadline comes first",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "**Court time limits are short.** Check the decision and any notice of it for the date."
+       },
+       {
+        "x": "Do not wait for further paperwork before you call."
+       },
+       {
+        "x": "Do not assume a late application will be accepted."
+       }
+      ]
+     }
+    ]
+   },
+   "your-first-48-hours": {
+    "h2": "Your first 48 hours",
+    "blocks": [
+     {
+      "t": "ol",
+      "items": [
+       {
+        "x": "**Call us on +61 3 9602 1330.** We will count your deadline."
+       },
+       {
+        "x": "Find the date of the ART decision and write it down."
+       },
+       {
+        "x": "Save the full decision and written reasons."
+       },
+       {
+        "x": "Do not file anything yourself until you know your grounds."
+       },
+       {
+        "x": "Check your visa or bridging visa and any departure date."
+       },
+       {
+        "x": "We will assess whether there is an arguable legal error, or whether a different path is better."
+       }
+      ]
+     }
+    ]
+   },
+   "costs-timing-and-risks": {
+    "h2": "Costs, timing and risks",
+    "blocks": [
+     {
+      "t": "table",
+      "head": [
+       "Item",
+       "Detail"
+      ],
+      "rows": [
+       [
+        "Court filing fee",
+        "Check the court's website for the current fee."
+       ],
+       [
+        "Likely timeframe",
+        "We will explain this once we have read your decision."
+       ],
+       [
+        "Risk",
+        "The court may order you to pay the Minister's costs if you lose."
+       ],
+       [
+        "Legal representation",
+        "Court appeals are usually run by a lawyer."
+       ]
+      ]
+     }
+    ]
+   },
+   "form": {
+    "h2": "Send us your decision date",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Tell us the date of your decision. We will get back to you as soon as we can. You can also call **+61 3 9602 1330**."
+     }
+    ]
+   },
+   "related-and-cta": {
+    "h2": "Related pages",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[ART appeals](/appeals/art-appeals)"
+       },
+       {
+        "x": "[Ministerial Intervention](/appeals/ministerial-intervention)"
+       },
+       {
+        "x": "[Review process](/appeals/review-process)"
+       },
+       {
+        "x": "[Visa refusal](/appeals/visa-refusal)"
+       }
+      ]
+     },
+     {
+      "t": "note",
+      "label": "Note",
+      "x": "General information only. It is not legal advice for your situation. The ART, the Department of Home Affairs, the Minister and the courts decide outcomes."
+     }
+    ]
+   }
+  }
+ },
+ "/appeals/ministerial-intervention": {
+  "replace": {
+   "urgency-box": {
+    "h2": "Act now",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "Do not assume a request will stop removal while it is considered."
+       },
+       {
+        "x": "Any review deadlines for earlier steps still apply."
+       },
+       {
+        "x": "Call us the day you decide to consider this path."
+       }
+      ]
+     }
+    ]
+   },
+   "your-first-48-hours": {
+    "h2": "Your first 48 hours",
+    "blocks": [
+     {
+      "t": "ol",
+      "items": [
+       {
+        "x": "**Call us on +61 3 9602 1330.** We check whether Ministerial Intervention is open to you and whether another step must come first."
+       },
+       {
+        "x": "List your decisions, dates and any departure date."
+       },
+       {
+        "x": "Gather your decision letters and any ART or court decisions."
+       },
+       {
+        "x": "Write down the personal circumstances you think are compelling, such as health, family and length of stay."
+       }
+      ]
+     }
+    ]
+   },
+   "form": {
+    "h2": "Tell us your situation",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Tell us your situation in a few lines. We will get back to you as soon as we can. You can also call **+61 3 9602 1330**."
+     }
+    ]
+   },
+   "other-options": {
+    "h2": "Other options",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Check whether you can still go to the [ART](/appeals/art-appeals), ask a court to review a [legal error](/appeals/federal-court-appeals), make a new visa application or lodge a [waiver request](/appeals/waiver-request). An agent compares them with you."
+     }
+    ]
+   },
+   "related-and-cta": {
+    "h2": "Related pages",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[ART appeals](/appeals/art-appeals)"
+       },
+       {
+        "x": "[Federal Court appeals](/appeals/federal-court-appeals)"
+       },
+       {
+        "x": "[Review process](/appeals/review-process)"
+       },
+       {
+        "x": "[Visa cancellation](/appeals/visa-cancellation)"
+       }
+      ]
+     },
+     {
+      "t": "note",
+      "label": "Note",
+      "x": "General information only. It is not legal advice for your situation. The ART, the Department of Home Affairs, the Minister and the courts decide outcomes."
+     }
+    ]
+   }
+  }
+ },
+ "/appeals/review-process": {
+  "remove": [
+   "the-path-at-a-glance"
+  ],
+  "replace": {
+   "deadlines-first": {
+    "h2": "Deadlines first",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Each stage has its own time limit. Your decision notice states the deadline for your case, and it depends on the type of decision and where you are. Call us before you rely on any figure you read online."
+     },
+     {
+      "t": "table",
+      "head": [
+       "Stage",
+       "Who decides",
+       "Time limit"
+      ],
+      "rows": [
+       [
+        "Review by the Administrative Review Tribunal (ART)",
+        "ART",
+        "See your decision letter"
+       ],
+       [
+        "Court review for legal error",
+        "Federal Circuit and Family Court",
+        "Short. Call us as soon as the ART decides"
+       ],
+       [
+        "Ministerial Intervention request",
+        "Minister",
+        "Ask us. Earlier deadlines still apply"
+       ],
+       [
+        "Response to a notice of intention to cancel",
+        "Department of Home Affairs",
+        "The date in the notice. See the [notice page](/appeals/notice-of-intention-to-consider-cancellation)"
+       ]
+      ]
+     }
+    ]
+   },
+   "your-first-48-hours": {
+    "h2": "Your first 48 hours",
+    "blocks": [
+     {
+      "t": "ol",
+      "items": [
+       {
+        "x": "**Call us on +61 3 9602 1330.** We will match you to the right step."
+       },
+       {
+        "x": "Find the deadline in your letter."
+       },
+       {
+        "x": "Save the letter and proof of the date you received it."
+       },
+       {
+        "x": "Check your visa and bridging visa."
+       },
+       {
+        "x": "Gather your application and evidence."
+       }
+      ]
+     }
+    ]
+   },
+   "costs-and-timing": {
+    "h2": "Costs and timing",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "**ART fee and processing time:** Check the Department of Home Affairs website for the current figure."
+       },
+       {
+        "x": "**Court fees:** check the court's website for the current fee."
+       },
+       {
+        "x": "**Our fees:** set out in a written agreement before work starts."
+       }
+      ]
+     }
+    ]
+   },
+   "form": {
+    "h2": "Send us your decision details",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Tell us what your decision says. We will get back to you as soon as we can. You can also call **+61 3 9602 1330**."
+     }
+    ]
+   },
+   "related-and-cta": {
+    "h2": "Related pages",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[ART appeals](/appeals/art-appeals)"
+       },
+       {
+        "x": "[Federal Court appeals](/appeals/federal-court-appeals)"
+       },
+       {
+        "x": "[Ministerial Intervention](/appeals/ministerial-intervention)"
+       },
+       {
+        "x": "[Visa refusal](/appeals/visa-refusal)"
+       },
+       {
+        "x": "[Visa cancellation](/appeals/visa-cancellation)"
+       },
+       {
+        "x": "[Notice of intention to consider cancellation](/appeals/notice-of-intention-to-consider-cancellation)"
+       }
+      ]
+     },
+     {
+      "t": "note",
+      "label": "Note",
+      "x": "General information only. It is not legal advice for your situation. The ART, the Department of Home Affairs, the Minister and the courts decide outcomes."
+     }
+    ]
+   }
+  }
+ },
+ "/appeals/visa-refusal": {
+  "replace": {
+   "deadline-box": {
+    "h2": "Your deadline comes first",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "**Your refusal letter states whether you can apply for review and the time limit.** Find it today."
+       },
+       {
+        "x": "Many limits are counted in days from when you are taken to have received the letter."
+       },
+       {
+        "x": "If your letter has no review rights, other options may exist. Call us."
+       }
+      ]
+     }
+    ]
+   },
+   "your-first-48-hours": {
+    "h2": "Your first 48 hours",
+    "blocks": [
+     {
+      "t": "ol",
+      "items": [
+       {
+        "x": "**Call us on +61 3 9602 1330** with the letter. We will tell you if a review makes sense."
+       },
+       {
+        "x": "Read the letter and find the refusal reasons and any review rights."
+       },
+       {
+        "x": "Note your deadline."
+       },
+       {
+        "x": "Check your current visa status and expiry."
+       },
+       {
+        "x": "Ask us before you lodge a new application. It may affect your review rights."
+       }
+      ]
+     }
+    ]
+   },
+   "costs-and-timing": {
+    "h2": "Costs and timing",
+    "blocks": [
+     {
+      "t": "table",
+      "head": [
+       "Item",
+       "Detail"
+      ],
+      "rows": [
+       [
+        "ART application fee",
+        "Check the Department of Home Affairs website for the current figure."
+       ],
+       [
+        "ART timeframe",
+        "We will explain this once we have read your letter."
+       ],
+       [
+        "New visa application fee",
+        "Check the Department of Home Affairs website for the current figure."
+       ],
+       [
+        "Our fees",
+        "Set out in a written agreement before work starts."
+       ]
+      ]
+     }
+    ]
+   },
+   "form": {
+    "h2": "Send us your refusal letter details",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Tell us what your refusal letter says. We will get back to you as soon as we can. You can also call **+61 3 9602 1330**."
+     }
+    ]
+   },
+   "related-and-cta": {
+    "h2": "Related pages",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[ART appeals](/appeals/art-appeals)"
+       },
+       {
+        "x": "[Review process](/appeals/review-process)"
+       },
+       {
+        "x": "[Visa cancellation](/appeals/visa-cancellation)"
+       },
+       {
+        "x": "[Ministerial Intervention](/appeals/ministerial-intervention)"
+       },
+       {
+        "x": "[Federal Court appeals](/appeals/federal-court-appeals)"
+       }
+      ]
+     },
+     {
+      "t": "note",
+      "label": "Note",
+      "x": "General information only. It is not legal advice for your situation. The ART, the Department of Home Affairs, the Minister and the courts decide outcomes."
+     }
+    ]
+   }
+  }
+ },
+ "/appeals/visa-cancellation": {
+  "replace": {
+   "deadline-box": {
+    "h2": "Your deadline comes first",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "**Review time limits for cancellation decisions are strict and vary by type.**"
+       },
+       {
+        "x": "A notice of intention to consider cancellation has its own response date. See the [notice page](/appeals/notice-of-intention-to-consider-cancellation)."
+       },
+       {
+        "x": "Your letter states the limit. Find it first."
+       }
+      ]
+     }
+    ]
+   },
+   "your-first-48-hours": {
+    "h2": "Your first 48 hours",
+    "blocks": [
+     {
+      "t": "ol",
+      "items": [
+       {
+        "x": "**Call us on +61 3 9602 1330.**"
+       },
+       {
+        "x": "Read the letter. Is it a final cancellation or a notice of intention?"
+       },
+       {
+        "x": "Write down the date and the deadline."
+       },
+       {
+        "x": "Do not leave Australia or sign anything without advice."
+       },
+       {
+        "x": "Check any bridging visa you were granted."
+       }
+      ]
+     }
+    ]
+   },
+   "costs-and-timing": {
+    "h2": "Costs and timing",
+    "blocks": [
+     {
+      "t": "table",
+      "head": [
+       "Item",
+       "Detail"
+      ],
+      "rows": [
+       [
+        "ART fee",
+        "Check the Department of Home Affairs website for the current figure."
+       ],
+       [
+        "Timeframe",
+        "We will explain this once we have read your letter."
+       ],
+       [
+        "Our fees",
+        "Set out in a written agreement before work starts."
+       ]
+      ]
+     }
+    ]
+   },
+   "form": {
+    "h2": "Tell us what your letter says",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Tell us what your cancellation letter or notice says. We will get back to you as soon as we can. You can also call **+61 3 9602 1330**."
+     }
+    ]
+   },
+   "related-and-cta": {
+    "h2": "Related pages",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[Notice of intention to consider cancellation](/appeals/notice-of-intention-to-consider-cancellation)"
+       },
+       {
+        "x": "[Visa refusal](/appeals/visa-refusal)"
+       },
+       {
+        "x": "[ART appeals](/appeals/art-appeals)"
+       },
+       {
+        "x": "[Review process](/appeals/review-process)"
+       },
+       {
+        "x": "[Applying for work rights](/appeals/applying-for-work-rights)"
+       }
+      ]
+     },
+     {
+      "t": "note",
+      "label": "Note",
+      "x": "General information only. It is not legal advice for your situation. The ART, the Department of Home Affairs, the Minister and the courts decide outcomes."
+     }
+    ]
+   }
+  }
+ },
+ "/appeals/notice-of-intention-to-consider-cancellation": {
+  "replace": {
+   "deadline-box": {
+    "h2": "Your deadline comes first",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "**The notice states the exact date and time by which you must respond.**"
+       },
+       {
+        "x": "Do not wait for the last day. Evidence takes time to collect."
+       },
+       {
+        "x": "If you need more time, call us straight away."
+       }
+      ]
+     }
+    ]
+   },
+   "your-first-48-hours": {
+    "h2": "Your first 48 hours",
+    "blocks": [
+     {
+      "t": "ol",
+      "items": [
+       {
+        "x": "**Call us on +61 3 9602 1330.** We will plan the response with you."
+       },
+       {
+        "x": "Find the response date on your notice."
+       },
+       {
+        "x": "Read what the Department says you did or did not do."
+       },
+       {
+        "x": "Check your visa conditions."
+       },
+       {
+        "x": "Collect every document that answers the allegation."
+       },
+       {
+        "x": "Get advice before you reply to the Department."
+       }
+      ]
+     }
+    ]
+   },
+   "form": {
+    "h2": "Send us the date on your notice",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Tell us the response date on your notice. We will get back to you as soon as we can. You can also call **+61 3 9602 1330**."
+     }
+    ]
+   },
+   "related-and-cta": {
+    "h2": "Related pages",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[Visa cancellation](/appeals/visa-cancellation)"
+       },
+       {
+        "x": "[ART appeals](/appeals/art-appeals)"
+       },
+       {
+        "x": "[Review process](/appeals/review-process)"
+       },
+       {
+        "x": "[Applying for work rights](/appeals/applying-for-work-rights)"
+       },
+       {
+        "x": "[Applying for study rights](/appeals/applying-for-study-rights)"
+       }
+      ]
+     },
+     {
+      "t": "note",
+      "label": "Note",
+      "x": "General information only. It is not legal advice for your situation. The ART, the Department of Home Affairs, the Minister and the courts decide outcomes."
+     }
+    ]
+   }
+  },
+  "faqs_remove": [
+   "Can I ask for more time"
+  ],
+  "faqs_add": [
+   {
+    "q": "Can I ask for more time?",
+    "a": "You can ask. More time is not always given, so call us straight away."
+   }
+  ]
+ },
+ "/appeals/waiver-request": {
+  "replace": {
+   "time-sensitive-box": {
+    "h2": "Act now",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "Do not wait until your visa expires. If it expires, you may become unlawful."
+       },
+       {
+        "x": "Check the date on your visa grant notice today."
+       },
+       {
+        "x": "Call us before you lodge anything."
+       }
+      ]
+     }
+    ]
+   },
+   "your-first-48-hours": {
+    "h2": "Your first 48 hours",
+    "blocks": [
+     {
+      "t": "ol",
+      "items": [
+       {
+        "x": "**Call us on +61 3 9602 1330.**"
+       },
+       {
+        "x": "Check your visa grant notice for a No Further Stay condition, such as 8503, 8534 or 8535."
+       },
+       {
+        "x": "Write down the expiry date."
+       },
+       {
+        "x": "Gather evidence of why your circumstances changed or are compelling."
+       },
+       {
+        "x": "Do not lodge another visa application without advice."
+       }
+      ]
+     }
+    ]
+   },
+   "form": {
+    "h2": "Tell us your visa and expiry date",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Tell us which visa you hold and when it ends. We will get back to you as soon as we can. You can also call **+61 3 9602 1330**."
+     }
+    ]
+   },
+   "related-and-cta": {
+    "h2": "Related pages",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[Ministerial Intervention](/appeals/ministerial-intervention)"
+       },
+       {
+        "x": "[Visa refusal](/appeals/visa-refusal)"
+       },
+       {
+        "x": "[Review process](/appeals/review-process)"
+       },
+       {
+        "x": "[Bridging visas](/bridging-return-visas)"
+       }
+      ]
+     },
+     {
+      "t": "note",
+      "label": "Note",
+      "x": "General information only. It is not legal advice for your situation. The ART, the Department of Home Affairs, the Minister and the courts decide outcomes."
+     }
+    ]
+   }
+  },
+  "faqs_remove": [
+   "Can I ask after my visa expires"
+  ],
+  "faqs_add": [
+   {
+    "q": "Can I ask after my visa expires?",
+    "a": "Do not wait for that. Call us before your visa ends so we can check your position."
+   }
+  ]
+ },
+ "/appeals/applying-for-work-rights": {
+  "replace": {
+   "time-sensitive-box": {
+    "h2": "Act now",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "Do not start work until the Department confirms your visa allows it."
+       },
+       {
+        "x": "Working in breach of a condition can lead to visa cancellation. See [Visa cancellation](/appeals/visa-cancellation)."
+       },
+       {
+        "x": "If money is running out now, call us today. Evidence of hardship takes time to collect."
+       }
+      ]
+     }
+    ]
+   },
+   "your-first-48-hours": {
+    "h2": "Your first 48 hours",
+    "blocks": [
+     {
+      "t": "ol",
+      "items": [
+       {
+        "x": "**Call us on +61 3 9602 1330.** We will tell you whether to apply and how."
+       },
+       {
+        "x": "Check your visa grant notice or VEVO for a no-work condition."
+       },
+       {
+        "x": "Stop any work that your conditions do not allow."
+       },
+       {
+        "x": "Gather bank statements, rent, bills and debts."
+       }
+      ]
+     }
+    ]
+   },
+   "evidence-for-hardship": {
+    "h2": "Evidence for hardship",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "Recent bank statements"
+       },
+       {
+        "x": "Rent and utility bills"
+       },
+       {
+        "x": "Loan and credit card statements"
+       },
+       {
+        "x": "Evidence you cannot rely on family support"
+       },
+       {
+        "x": "Letters from a landlord or community organisation"
+       },
+       {
+        "x": "Your visa and ID"
+       }
+      ]
+     }
+    ]
+   },
+   "other-routes-to-work-rights": {
+    "h2": "Other routes to work rights",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "**Employer-sponsored visa.** If an employer sponsors you, work rights come with the visa. See [Skills in Demand visa (482)](/employer-sponsored/sid-visa-482) and [Employer sponsored visas](/employer-sponsored)."
+       },
+       {
+        "x": "**Student visa work rights.** Student visas have set work limits. See [Student visa information](/study-australia/student-visa-information)."
+       },
+       {
+        "x": "**Bridging visa with work rights.** Some come with work rights automatically. See [Bridging visas](/bridging-return-visas)."
+       }
+      ]
+     }
+    ]
+   },
+   "form": {
+    "h2": "Tell us your visa type",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Tell us which visa you hold. We will get back to you as soon as we can. You can also call **+61 3 9602 1330**."
+     }
+    ]
+   },
+   "related-and-cta": {
+    "h2": "Related pages",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[Bridging visas](/bridging-return-visas)"
+       },
+       {
+        "x": "[Visa cancellation](/appeals/visa-cancellation)"
+       },
+       {
+        "x": "[Applying for study rights](/appeals/applying-for-study-rights)"
+       },
+       {
+        "x": "[Review process](/appeals/review-process)"
+       },
+       {
+        "x": "[Employer sponsored visas](/employer-sponsored)"
+       }
+      ]
+     },
+     {
+      "t": "note",
+      "label": "Note",
+      "x": "General information only. It is not legal advice for your situation. The ART, the Department of Home Affairs, the Minister and the courts decide outcomes."
+     }
+    ]
+   }
+  }
+ },
+ "/appeals/applying-for-study-rights": {
+  "replace": {
+   "time-sensitive-box": {
+    "h2": "Act now",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "Do not start or keep studying if your conditions do not allow it. Breaching a study condition can lead to cancellation."
+       },
+       {
+        "x": "If your Student visa was refused or cancelled, review time limits can be short. Find the date in your letter."
+       },
+       {
+        "x": "Your CoE and visa dates matter. Check them today."
+       }
+      ]
+     }
+    ]
+   },
+   "your-first-48-hours": {
+    "h2": "Your first 48 hours",
+    "blocks": [
+     {
+      "t": "ol",
+      "items": [
+       {
+        "x": "**Call us on +61 3 9602 1330** if a letter says your visa was refused or cancelled."
+       },
+       {
+        "x": "Read your visa grant notice for study conditions."
+       },
+       {
+        "x": "Check your Confirmation of Enrolment (CoE) dates."
+       },
+       {
+        "x": "If a letter says your visa was refused or cancelled, find the deadline."
+       }
+      ]
+     }
+    ]
+   },
+   "form": {
+    "h2": "Tell us your visa and course plans",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Tell us which visa you hold and what you want to study. We will get back to you as soon as we can. You can also call **+61 3 9602 1330**."
+     }
+    ]
+   },
+   "related-and-cta": {
+    "h2": "Related pages",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[Student visa information](/study-australia/student-visa-information)"
+       },
+       {
+        "x": "[Student visa extension](/study-australia/student-visa-extension)"
+       },
+       {
+        "x": "[Visa refusal](/appeals/visa-refusal)"
+       },
+       {
+        "x": "[Visa cancellation](/appeals/visa-cancellation)"
+       },
+       {
+        "x": "[Applying for work rights](/appeals/applying-for-work-rights)"
+       }
+      ]
+     },
+     {
+      "t": "note",
+      "label": "Note",
+      "x": "General information only. It is not legal advice for your situation. The ART, the Department of Home Affairs, the Minister and the courts decide outcomes."
+     }
+    ]
+   }
+  }
+ }
+}

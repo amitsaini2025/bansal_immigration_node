@@ -1,0 +1,1588 @@
+{
+ "/family-visa/partner-provisional-visa-subclass-309": {
+  "remove": [
+   "related-visas-and-final-cta",
+   "partner-visas-for-melbourne-couples"
+  ],
+  "add": [
+   {
+    "after": "end",
+    "id": "compare-partner-visas",
+    "h2": "Compare the partner visas",
+    "kind": "prose",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "The 309 is for applicants who are outside Australia and already married or in a de facto relationship. If your partner is in Australia, look at the 820. If you are engaged and not yet married, look at the 300."
+     },
+     {
+      "t": "table",
+      "head": [
+       "Visa",
+       "Stage",
+       "Where the applicant is",
+       "Page"
+      ],
+      "rows": [
+       [
+        "Subclass 309",
+        "Temporary, stage 1",
+        "Outside Australia",
+        "Offshore partner visa. [Read the 309 guide](/family-visa/partner-provisional-visa-subclass-309)"
+       ],
+       [
+        "Subclass 100",
+        "Permanent, stage 2",
+        "Applied outside Australia",
+        "[Read the 100 guide](/family-visa/partner-permanent-visa-subclass-100)"
+       ],
+       [
+        "Subclass 820",
+        "Temporary, stage 1",
+        "In Australia",
+        "[Read the 820 guide](/family-visa/partner-provisional-visa-subclass-820)"
+       ],
+       [
+        "Subclass 801",
+        "Permanent, stage 2",
+        "Applied in Australia",
+        "[Read the 801 guide](/family-visa/partner-permanent-visa-subclass-801)"
+       ],
+       [
+        "Subclass 300",
+        "Temporary, before marriage",
+        "Outside Australia, engaged",
+        "[Read the 300 guide](/family-visa/prospective-marriage-visa-subclass-300)"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "x": "Not sure which applies? [Book a consultation](/book-an-appointment) and a registered agent will check where you are, your visa conditions and your relationship history."
+     }
+    ]
+   },
+   {
+    "after": "after-the-309-your-path-to-permanent-residence",
+    "id": "visa-conditions-309",
+    "h2": "Can I work or study on the 309?",
+    "kind": "prose",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Yes. You have full work and study rights once the 309 is granted. Medicare access follows the grant too. Before the grant, you usually wait outside Australia. You may visit on a visitor visa, but its conditions apply and you must not stay beyond your permitted time. See our [visitor visa page](/visitor-visa)."
+     }
+    ]
+   },
+   {
+    "after": "visa-conditions-309",
+    "id": "disclaimer",
+    "h2": "General information",
+    "kind": "prose",
+    "blocks": [
+     {
+      "t": "note",
+      "label": "Note",
+      "x": "This page is general information, not legal advice. A registered migration agent must assess your case. The Department of Home Affairs makes all visa decisions."
+     }
+    ]
+   }
+  ],
+  "cta": {
+   "title": "Planning a partner visa from overseas?",
+   "text": "Book a consultation or call +61 3 9602 1330."
+  },
+  "replace": {
+   "309-visa-requirements": {
+    "h2": "309 visa requirements",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "**The applicant must:**"
+     },
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "be the spouse or de facto partner of the sponsor"
+       },
+       {
+        "x": "be outside Australia when applying and when the visa is decided"
+       },
+       {
+        "x": "meet health and character requirements, including police certificates from countries where you lived for 12 months or more in the last 10 years"
+       },
+       {
+        "x": "meet Australian values requirements and sign the Australian values statement"
+       },
+       {
+        "x": "have no debts to the Australian Government, or an arrangement in place"
+       }
+      ]
+     },
+     {
+      "t": "p",
+      "x": "**The relationship must be:**"
+     },
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "genuine and continuing"
+       },
+       {
+        "x": "to the exclusion of all others"
+       },
+       {
+        "x": "for de facto couples, a relationship of at least 12 months, unless the relationship was registered or a compelling reason applies"
+       }
+      ]
+     },
+     {
+      "t": "p",
+      "x": "**The sponsor must:**"
+     },
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "be 18 or over and an Australian citizen, permanent resident or eligible NZ citizen"
+       },
+       {
+        "x": "be approved as a sponsor, including a police check"
+       },
+       {
+        "x": "meet any sponsorship limits (see the next section)"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "/family-visa/partner-permanent-visa-subclass-100": {
+  "remove": [
+   "related-visas-and-final-cta"
+  ],
+  "add": [
+   {
+    "after": "end",
+    "id": "compare-partner-visas",
+    "h2": "Compare the partner visas",
+    "kind": "prose",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "The 100 is the permanent stage for people who applied from outside Australia and hold a 309. If you applied inside Australia, your permanent stage is the 801."
+     },
+     {
+      "t": "table",
+      "head": [
+       "Visa",
+       "Stage",
+       "Where the applicant is",
+       "Page"
+      ],
+      "rows": [
+       [
+        "Subclass 309",
+        "Temporary, stage 1",
+        "Outside Australia",
+        "Offshore partner visa. [Read the 309 guide](/family-visa/partner-provisional-visa-subclass-309)"
+       ],
+       [
+        "Subclass 100",
+        "Permanent, stage 2",
+        "Applied outside Australia",
+        "[Read the 100 guide](/family-visa/partner-permanent-visa-subclass-100)"
+       ],
+       [
+        "Subclass 820",
+        "Temporary, stage 1",
+        "In Australia",
+        "[Read the 820 guide](/family-visa/partner-provisional-visa-subclass-820)"
+       ],
+       [
+        "Subclass 801",
+        "Permanent, stage 2",
+        "Applied in Australia",
+        "[Read the 801 guide](/family-visa/partner-permanent-visa-subclass-801)"
+       ],
+       [
+        "Subclass 300",
+        "Temporary, before marriage",
+        "Outside Australia, engaged",
+        "[Read the 300 guide](/family-visa/prospective-marriage-visa-subclass-300)"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "x": "Not sure which applies? [Book a consultation](/book-an-appointment) and a registered agent will check where you are, your visa conditions and your relationship history."
+     }
+    ]
+   },
+   {
+    "after": "compare-partner-visas",
+    "id": "disclaimer",
+    "h2": "General information",
+    "kind": "prose",
+    "blocks": [
+     {
+      "t": "note",
+      "label": "Note",
+      "x": "This page is general information, not legal advice. A registered migration agent must assess your case. The Department of Home Affairs makes all visa decisions."
+     }
+    ]
+   }
+  ],
+  "cta": {
+   "title": "About to reach stage 2 of your partner visa?",
+   "text": "Book a consultation or call +61 3 9602 1330."
+  }
+ },
+ "/family-visa/partner-provisional-visa-subclass-820": {
+  "remove": [
+   "related-visas-and-final-cta",
+   "partner-visas-for-couples-in-melbourne"
+  ],
+  "add": [
+   {
+    "after": "end",
+    "id": "compare-partner-visas",
+    "h2": "Compare the partner visas",
+    "kind": "prose",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "The 820 is for applicants who are in Australia when they apply. If your partner is outside Australia, look at the 309. After the 820, the permanent stage is the 801."
+     },
+     {
+      "t": "table",
+      "head": [
+       "Visa",
+       "Stage",
+       "Where the applicant is",
+       "Page"
+      ],
+      "rows": [
+       [
+        "Subclass 309",
+        "Temporary, stage 1",
+        "Outside Australia",
+        "Offshore partner visa. [Read the 309 guide](/family-visa/partner-provisional-visa-subclass-309)"
+       ],
+       [
+        "Subclass 100",
+        "Permanent, stage 2",
+        "Applied outside Australia",
+        "[Read the 100 guide](/family-visa/partner-permanent-visa-subclass-100)"
+       ],
+       [
+        "Subclass 820",
+        "Temporary, stage 1",
+        "In Australia",
+        "[Read the 820 guide](/family-visa/partner-provisional-visa-subclass-820)"
+       ],
+       [
+        "Subclass 801",
+        "Permanent, stage 2",
+        "Applied in Australia",
+        "[Read the 801 guide](/family-visa/partner-permanent-visa-subclass-801)"
+       ],
+       [
+        "Subclass 300",
+        "Temporary, before marriage",
+        "Outside Australia, engaged",
+        "[Read the 300 guide](/family-visa/prospective-marriage-visa-subclass-300)"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "x": "Not sure which applies? [Book a consultation](/book-an-appointment) and a registered agent will check where you are, your visa conditions and your relationship history."
+     }
+    ]
+   },
+   {
+    "after": "after-the-820-subclass-801",
+    "id": "students-and-graduates",
+    "h2": "If you hold a student or graduate visa",
+    "kind": "prose",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "If you hold a student or graduate visa, we plan the lodging date around your course end date and visa expiry. See our [study pages](/study-australia)."
+     }
+    ]
+   },
+   {
+    "after": "students-and-graduates",
+    "id": "disclaimer",
+    "h2": "General information",
+    "kind": "prose",
+    "blocks": [
+     {
+      "t": "note",
+      "label": "Note",
+      "x": "This page is general information, not legal advice. The Department of Home Affairs makes all visa decisions."
+     }
+    ]
+   }
+  ],
+  "cta": {
+   "title": "In Australia and thinking of lodging?",
+   "text": "Book a consultation or call +61 3 9602 1330."
+  },
+  "replace": {
+   "key-facts-box": {
+    "h2": "Key facts box",
+    "blocks": [
+     {
+      "t": "table",
+      "head": [
+       "Fact",
+       "Detail"
+      ],
+      "rows": [
+       [
+        "Visa type",
+        "Temporary partner visa, stage 1 of 2. [Leads to the permanent Subclass 801](/family-visa/partner-permanent-visa-subclass-801)"
+       ],
+       [
+        "Where you must be",
+        "In Australia when you apply, and when the visa is decided"
+       ],
+       [
+        "Sponsor",
+        "Australian citizen, permanent resident or eligible NZ citizen partner"
+       ],
+       [
+        "Bridging visa",
+        "Usually granted when you apply, so you can stay lawfully while waiting"
+       ],
+       [
+        "Government charge",
+        "Check the Department of Home Affairs website for the current figure."
+       ],
+       [
+        "Processing time",
+        "Check the Department of Home Affairs website for the current figure."
+       ],
+       [
+        "Rights while waiting",
+        "Depend on your bridging visa. See the bridging visa section below"
+       ],
+       [
+        "Watch out for",
+        "Condition 8503 (no further stay) on your current visa"
+       ]
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "/family-visa/partner-permanent-visa-subclass-801": {
+  "remove": [
+   "related-visas-and-final-cta"
+  ],
+  "add": [
+   {
+    "after": "end",
+    "id": "compare-partner-visas",
+    "h2": "Compare the partner visas",
+    "kind": "prose",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "The 801 is the permanent stage for people who applied inside Australia and hold an 820. If you applied from outside Australia, your permanent stage is the 100."
+     },
+     {
+      "t": "table",
+      "head": [
+       "Visa",
+       "Stage",
+       "Where the applicant is",
+       "Page"
+      ],
+      "rows": [
+       [
+        "Subclass 309",
+        "Temporary, stage 1",
+        "Outside Australia",
+        "Offshore partner visa. [Read the 309 guide](/family-visa/partner-provisional-visa-subclass-309)"
+       ],
+       [
+        "Subclass 100",
+        "Permanent, stage 2",
+        "Applied outside Australia",
+        "[Read the 100 guide](/family-visa/partner-permanent-visa-subclass-100)"
+       ],
+       [
+        "Subclass 820",
+        "Temporary, stage 1",
+        "In Australia",
+        "[Read the 820 guide](/family-visa/partner-provisional-visa-subclass-820)"
+       ],
+       [
+        "Subclass 801",
+        "Permanent, stage 2",
+        "Applied in Australia",
+        "[Read the 801 guide](/family-visa/partner-permanent-visa-subclass-801)"
+       ],
+       [
+        "Subclass 300",
+        "Temporary, before marriage",
+        "Outside Australia, engaged",
+        "[Read the 300 guide](/family-visa/prospective-marriage-visa-subclass-300)"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "x": "Not sure which applies? [Book a consultation](/book-an-appointment) and a registered agent will check where you are, your visa conditions and your relationship history."
+     }
+    ]
+   },
+   {
+    "after": "compare-partner-visas",
+    "id": "disclaimer",
+    "h2": "General information",
+    "kind": "prose",
+    "blocks": [
+     {
+      "t": "note",
+      "label": "Note",
+      "x": "This page is general information, not legal advice. A registered migration agent must assess your case. The Department of Home Affairs makes all visa decisions."
+     }
+    ]
+   }
+  ],
+  "cta": {
+   "title": "Getting close to stage 2 of your partner visa?",
+   "text": "Book a consultation or call +61 3 9602 1330."
+  }
+ },
+ "/family-visa/prospective-marriage-visa-subclass-300": {
+  "remove": [
+   "related-visas-and-final-cta"
+  ],
+  "add": [
+   {
+    "after": "end",
+    "id": "compare-partner-visas",
+    "h2": "Compare the partner visas",
+    "kind": "prose",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "The 300 is for couples who are not yet married and plan to marry in Australia. If you are already married or in a de facto relationship, look at the 309 or 820. The 300 adds a second step and a second government charge."
+     },
+     {
+      "t": "table",
+      "head": [
+       "Visa",
+       "Stage",
+       "Where the applicant is",
+       "Page"
+      ],
+      "rows": [
+       [
+        "Subclass 309",
+        "Temporary, stage 1",
+        "Outside Australia",
+        "Offshore partner visa. [Read the 309 guide](/family-visa/partner-provisional-visa-subclass-309)"
+       ],
+       [
+        "Subclass 100",
+        "Permanent, stage 2",
+        "Applied outside Australia",
+        "[Read the 100 guide](/family-visa/partner-permanent-visa-subclass-100)"
+       ],
+       [
+        "Subclass 820",
+        "Temporary, stage 1",
+        "In Australia",
+        "[Read the 820 guide](/family-visa/partner-provisional-visa-subclass-820)"
+       ],
+       [
+        "Subclass 801",
+        "Permanent, stage 2",
+        "Applied in Australia",
+        "[Read the 801 guide](/family-visa/partner-permanent-visa-subclass-801)"
+       ],
+       [
+        "Subclass 300",
+        "Temporary, before marriage",
+        "Outside Australia, engaged",
+        "[Read the 300 guide](/family-visa/prospective-marriage-visa-subclass-300)"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "x": "Not sure which applies? [Book a consultation](/book-an-appointment) and a registered agent will check where you are, your visa conditions and your relationship history."
+     }
+    ]
+   },
+   {
+    "after": "compare-partner-visas",
+    "id": "disclaimer",
+    "h2": "General information",
+    "kind": "prose",
+    "blocks": [
+     {
+      "t": "note",
+      "label": "Note",
+      "x": "This page is general information, not legal advice. A registered migration agent must assess your case. The Department of Home Affairs makes all visa decisions."
+     }
+    ]
+   }
+  ],
+  "cta": {
+   "title": "Planning a wedding in Australia?",
+   "text": "Book a consultation or call +61 3 9602 1330."
+  }
+ },
+ "/family-visa/contributory-parent-visa-subclass-143": {
+  "replace": {
+   "related-visas-and-final-cta": {
+    "h2": "Other parent visas",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[Subclass 864](/family-visa/contributory-aged-parent-visa-subclass-864): the onshore version, for a parent of pension age already in Australia"
+       },
+       {
+        "x": "[Subclass 173](/family-visa/contributory-parent-temporary-visa-subclass-173): a temporary stay linked to the 143"
+       },
+       {
+        "x": "[Subclass 103](/family-visa/parent-visa-subclass-103): lower government charge, extremely long wait"
+       },
+       {
+        "x": "[Subclass 870](/family-visa/sponsored-parent-temporary-visa-subclass-870): long temporary stays, no permanent residence"
+       }
+      ]
+     },
+     {
+      "t": "p",
+      "x": "See the [family visa hub](/family-visa) for a table comparing every parent visa."
+     }
+    ]
+   },
+   "what-does-the-143-cost": {
+    "h2": "What does the 143 cost?",
+    "blocks": [
+     {
+      "t": "table",
+      "head": [
+       "Cost",
+       "Detail"
+      ],
+      "rows": [
+       [
+        "First instalment (at lodgement)",
+        "Check the Department of Home Affairs website for the current charge."
+       ],
+       [
+        "Second instalment (before grant)",
+        "Check the Department of Home Affairs website for the current charge."
+       ],
+       [
+        "Additional applicant charges",
+        "Your adviser will confirm this"
+       ],
+       [
+        "Assurance of Support bond",
+        "Your adviser will confirm this"
+       ],
+       [
+        "Health examinations, police certificates",
+        "Per person"
+       ],
+       [
+        "Private health insurance and travel costs",
+        "Your own arrangement"
+       ],
+       [
+        "Our professional fees",
+        "Your adviser will confirm this"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "x": "The second instalment is much larger than the first. Charges change, usually each 1 July."
+     },
+     {
+      "t": "p",
+      "x": "**Think about the total.** Add both instalments, the bond, health checks and professional fees. We give the total in writing at the start."
+     },
+     {
+      "t": "p",
+      "x": "**Who pays.** The parent, the sponsor and the assurer may all contribute. Make sure everyone agrees before lodging. If you withdraw after lodging, refunds are limited."
+     }
+    ]
+   }
+  },
+  "cta": {
+   "title": "Weighing up parent visa options?",
+   "text": "Book a consultation or call +61 3 9602 1330."
+  },
+  "remove": [
+   "parent-visas-for-melbourne-families"
+  ],
+  "add": [
+   {
+    "after": "related-visas-and-final-cta",
+    "id": "disclaimer",
+    "h2": "General information",
+    "kind": "prose",
+    "blocks": [
+     {
+      "t": "note",
+      "label": "Note",
+      "x": "General information only, not legal advice. The Department of Home Affairs makes all visa decisions."
+     }
+    ]
+   }
+  ],
+  "faqs_remove": []
+ },
+ "/family-visa/parent-visa-subclass-103": {
+  "replace": {
+   "related-visas-and-final-cta": {
+    "h2": "Other parent visas",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[Subclass 143](/family-visa/contributory-parent-visa-subclass-143): permanent, higher cost, shorter queue"
+       },
+       {
+        "x": "[Subclass 173](/family-visa/contributory-parent-temporary-visa-subclass-173): temporary stay linked to the 143"
+       },
+       {
+        "x": "[Subclass 870](/family-visa/sponsored-parent-temporary-visa-subclass-870): long stays without permanent residence"
+       },
+       {
+        "x": "[Subclass 804](/family-visa/aged-parent-visa-subclass-804): the onshore version, for a parent of pension age already in Australia"
+       },
+       {
+        "x": "[Visitor visas](/visitor-visa): shorter visits"
+       }
+      ]
+     },
+     {
+      "t": "p",
+      "x": "See the [family visa hub](/family-visa) for a table comparing every parent visa."
+     }
+    ]
+   },
+   "how-the-103-works": {
+    "h2": "How the 103 works",
+    "blocks": [
+     {
+      "t": "ol",
+      "items": [
+       {
+        "x": "**Consultation.** We test the Balance of Family and compare options."
+       },
+       {
+        "x": "**Lodge.** Submit the application and pay the charge."
+       },
+       {
+        "x": "**Wait.** Keep your contact details current and tell the Department about any change in your family."
+       },
+       {
+        "x": "**Assessment.** Health, character and sponsor checks happen when your turn comes."
+       },
+       {
+        "x": "**Assurance of Support.** The assurer lodges the bond and forms."
+       },
+       {
+        "x": "**Decision.** If approved, your parent becomes a permanent resident."
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "cta": {
+   "title": "Want a realistic plan for your parents?",
+   "text": "Book a consultation or call +61 3 9602 1330."
+  },
+  "remove": [
+   "if-you-cannot-wait"
+  ],
+  "add": [
+   {
+    "after": "related-visas-and-final-cta",
+    "id": "disclaimer",
+    "h2": "General information",
+    "kind": "prose",
+    "blocks": [
+     {
+      "t": "note",
+      "label": "Note",
+      "x": "General information only, not legal advice. The Department of Home Affairs makes all visa decisions."
+     }
+    ]
+   }
+  ]
+ },
+ "/family-visa/contributory-aged-parent-temporary-visa-subclass-884": {
+  "replace": {
+   "related-visas-and-final-cta": {
+    "h2": "Other parent visas",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[Subclass 864](/family-visa/contributory-aged-parent-visa-subclass-864): the permanent visa this one leads to"
+       },
+       {
+        "x": "[Subclass 173](/family-visa/contributory-parent-temporary-visa-subclass-173): the offshore equivalent, for a parent outside Australia"
+       },
+       {
+        "x": "[Subclass 804](/family-visa/aged-parent-visa-subclass-804): lower charge, extremely long wait"
+       },
+       {
+        "x": "[Subclass 870](/family-visa/sponsored-parent-temporary-visa-subclass-870): temporary stays, usually from outside Australia"
+       }
+      ]
+     },
+     {
+      "t": "p",
+      "x": "See the [family visa hub](/family-visa) for a table comparing every parent visa."
+     }
+    ]
+   },
+   "living-in-australia-on-the-884": {
+    "h2": "Living in Australia on the 884",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Check the Department of Home Affairs website for the current stay period, work rights, Medicare access, travel rules and processing time for the 884. We confirm each point for your parent in your consultation, because they depend on the visa your parent holds when you lodge."
+     }
+    ]
+   },
+   "how-the-884-works": {
+    "h2": "How the 884 works",
+    "blocks": [
+     {
+      "t": "ol",
+      "items": [
+       {
+        "x": "**Consultation.** Check age, Balance of Family and current visa status."
+       },
+       {
+        "x": "**Prepare evidence.** Collect identity, family and sponsor documents."
+       },
+       {
+        "x": "**Lodge** the application and pay the charge, while the current visa is still valid."
+       },
+       {
+        "x": "**Bridging visa.** Check its conditions as soon as you receive it."
+       },
+       {
+        "x": "**Health and character checks.** Complete them when the Department asks."
+       },
+       {
+        "x": "**Assurance of Support.** The assurer lodges the bond and forms."
+       },
+       {
+        "x": "**Decision.** If approved, your parent can stay for the visa period."
+       },
+       {
+        "x": "**Plan for the 864.** The permanent visa follows, with a further charge."
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "cta": {
+   "title": "Is your parent already in Australia?",
+   "text": "Book a consultation or call +61 3 9602 1330."
+  },
+  "add": [
+   {
+    "after": "related-visas-and-final-cta",
+    "id": "disclaimer",
+    "h2": "General information",
+    "kind": "prose",
+    "blocks": [
+     {
+      "t": "note",
+      "label": "Note",
+      "x": "General information only, not legal advice. The Department of Home Affairs makes all visa decisions."
+     }
+    ]
+   }
+  ]
+ },
+ "/family-visa/contributory-aged-parent-visa-subclass-864": {
+  "replace": {
+   "related-visas-and-final-cta": {
+    "h2": "Other parent visas",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[Subclass 884](/family-visa/contributory-aged-parent-temporary-visa-subclass-884): a temporary stay linked to the 864"
+       },
+       {
+        "x": "[Subclass 804](/family-visa/aged-parent-visa-subclass-804): lower charge, extremely long wait"
+       },
+       {
+        "x": "[Subclass 143](/family-visa/contributory-parent-visa-subclass-143): the offshore version, for a parent outside Australia"
+       },
+       {
+        "x": "[Subclass 870](/family-visa/sponsored-parent-temporary-visa-subclass-870): temporary stays, no permanent residence"
+       }
+      ]
+     },
+     {
+      "t": "p",
+      "x": "See the [family visa hub](/family-visa) for a table comparing every parent visa."
+     }
+    ]
+   },
+   "how-the-864-works": {
+    "h2": "How the 864 works",
+    "blocks": [
+     {
+      "t": "ol",
+      "items": [
+       {
+        "x": "**Consultation.** Check age, Balance of Family and current visa."
+       },
+       {
+        "x": "**Lodge before the current visa ends.** A lapsed visa can end onshore eligibility."
+       },
+       {
+        "x": "**Bridging visa.** Check its conditions as soon as you receive it."
+       },
+       {
+        "x": "**Wait.** The 864 is processed in queue order."
+       },
+       {
+        "x": "**Health, character and sponsor checks.** They happen when your turn comes."
+       },
+       {
+        "x": "**Assurance of Support and second instalment.** Both are due before the decision."
+       },
+       {
+        "x": "**Decision.** If approved, your parent becomes a permanent resident. The [884](/family-visa/contributory-aged-parent-temporary-visa-subclass-884) is a temporary option while you wait."
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "cta": {
+   "title": "Parent already in Australia?",
+   "text": "Book a consultation or call +61 3 9602 1330."
+  },
+  "remove": [
+   "the-temporary-option-subclass-884"
+  ],
+  "add": [
+   {
+    "after": "related-visas-and-final-cta",
+    "id": "disclaimer",
+    "h2": "General information",
+    "kind": "prose",
+    "blocks": [
+     {
+      "t": "note",
+      "label": "Note",
+      "x": "General information only, not legal advice. The Department of Home Affairs makes all visa decisions."
+     }
+    ]
+   }
+  ]
+ },
+ "/family-visa/contributory-parent-temporary-visa-subclass-173": {
+  "replace": {
+   "related-visas-and-final-cta": {
+    "h2": "Other parent visas",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[Subclass 143](/family-visa/contributory-parent-visa-subclass-143): the permanent visa this one leads to"
+       },
+       {
+        "x": "[Subclass 884](/family-visa/contributory-aged-parent-temporary-visa-subclass-884): the onshore equivalent, for a parent already in Australia"
+       },
+       {
+        "x": "[Subclass 870](/family-visa/sponsored-parent-temporary-visa-subclass-870): long stays without permanent residence"
+       },
+       {
+        "x": "[Subclass 103](/family-visa/parent-visa-subclass-103): lower charge, extremely long wait"
+       }
+      ]
+     },
+     {
+      "t": "p",
+      "x": "See the [family visa hub](/family-visa) for a table comparing every parent visa."
+     }
+    ]
+   },
+   "how-the-173-works": {
+    "h2": "How the 173 works",
+    "blocks": [
+     {
+      "t": "ol",
+      "items": [
+       {
+        "x": "**Consultation.** Check the Balance of Family test and compare options."
+       },
+       {
+        "x": "**Lodge** with the first charge."
+       },
+       {
+        "x": "**Health and character checks.** Complete them when the Department asks."
+       },
+       {
+        "x": "**Assurance of Support.** The assurer lodges the bond and forms."
+       },
+       {
+        "x": "**Decision and travel.** If approved, your parent travels to Australia within the visa conditions."
+       },
+       {
+        "x": "**Move toward the 143.** The permanent visa follows, with a second charge."
+       }
+      ]
+     }
+    ]
+   },
+   "sponsor-and-assurer": {
+    "h2": "Sponsor and assurer",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "The sponsor and Assurance of Support rules are the same as for the [143](/family-visa/contributory-parent-visa-subclass-143)."
+     }
+    ]
+   }
+  },
+  "cta": {
+   "title": "Compare your parent visa options in one meeting.",
+   "text": "Book a consultation or call +61 3 9602 1330."
+  },
+  "add": [
+   {
+    "after": "after-the-173-the-143",
+    "id": "faq-note",
+    "h2": "What is the difference between the 173 and the 870?",
+    "kind": "prose",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "The 173 sits ahead of a permanent visa, the 143. The [870](/family-visa/sponsored-parent-temporary-visa-subclass-870) is temporary only and does not lead to permanent residence. Choose by whether your parent wants to settle in Australia or visit for long periods."
+     }
+    ]
+   },
+   {
+    "after": "related-visas-and-final-cta",
+    "id": "disclaimer",
+    "h2": "General information",
+    "kind": "prose",
+    "blocks": [
+     {
+      "t": "note",
+      "label": "Note",
+      "x": "General information only, not legal advice. The Department of Home Affairs makes all visa decisions."
+     }
+    ]
+   }
+  ],
+  "faqs_add": [
+   {
+    "q": "Can my parent work on the 173?",
+    "a": "Check the Department of Home Affairs website for the current work rights on the 173. We confirm them for your parent in your consultation."
+   },
+   {
+    "q": "Is the 173 the same as the 884?",
+    "a": "They are the same stage for different applicants. The 173 is for a parent outside Australia. The 884 is for a parent of pension age who is already in Australia."
+   },
+   {
+    "q": "How much does the 173 cost?",
+    "a": "Check the Department of Home Affairs website for the current charge. We confirm the total, including the later 143 charge, in writing at the start."
+   }
+  ]
+ },
+ "/family-visa/aged-parent-visa-subclass-804": {
+  "replace": {
+   "related-visas-and-final-cta": {
+    "h2": "Other parent visas",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[Subclass 864](/family-visa/contributory-aged-parent-visa-subclass-864): contributory, shorter queue"
+       },
+       {
+        "x": "[Subclass 884](/family-visa/contributory-aged-parent-temporary-visa-subclass-884): a temporary stay linked to the 864"
+       },
+       {
+        "x": "[Subclass 103](/family-visa/parent-visa-subclass-103): the offshore version, for a parent outside Australia"
+       },
+       {
+        "x": "[Subclass 870](/family-visa/sponsored-parent-temporary-visa-subclass-870): temporary long stays, usually from outside Australia"
+       }
+      ]
+     },
+     {
+      "t": "p",
+      "x": "See the [family visa hub](/family-visa) for a table comparing every parent visa."
+     }
+    ]
+   },
+   "how-the-804-works": {
+    "h2": "How the 804 works",
+    "blocks": [
+     {
+      "t": "ol",
+      "items": [
+       {
+        "x": "**Consultation.** Check age, Balance of Family and current visa."
+       },
+       {
+        "x": "**Lodge before the current visa ends.**"
+       },
+       {
+        "x": "**Bridging visa.** Check its conditions as soon as you receive it."
+       },
+       {
+        "x": "**Long wait.** Keep your details current and tell the Department about changes."
+       },
+       {
+        "x": "**Health, character and Assurance of Support checks.** They happen when your turn comes."
+       },
+       {
+        "x": "**Decision.** If approved, your parent becomes a permanent resident."
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "cta": {
+   "title": "Get a realistic plan for your parent.",
+   "text": "Book a consultation or call +61 3 9602 1330."
+  },
+  "remove": [
+   "if-you-want-an-earlier-decision"
+  ],
+  "add": [
+   {
+    "after": "related-visas-and-final-cta",
+    "id": "disclaimer",
+    "h2": "General information",
+    "kind": "prose",
+    "blocks": [
+     {
+      "t": "note",
+      "label": "Note",
+      "x": "General information only, not legal advice. The Department of Home Affairs makes all visa decisions."
+     }
+    ]
+   }
+  ]
+ },
+ "/family-visa/sponsored-parent-temporary-visa-subclass-870": {
+  "replace": {
+   "related-visas-and-final-cta": {
+    "h2": "Other parent visas",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[Subclass 143](/family-visa/contributory-parent-visa-subclass-143): permanent, contributory"
+       },
+       {
+        "x": "[Subclass 103](/family-visa/parent-visa-subclass-103): permanent, lower charge, extremely long wait"
+       },
+       {
+        "x": "[Subclass 173](/family-visa/contributory-parent-temporary-visa-subclass-173): temporary stay linked to the 143"
+       },
+       {
+        "x": "[Subclass 864](/family-visa/contributory-aged-parent-visa-subclass-864) and [Subclass 804](/family-visa/aged-parent-visa-subclass-804): permanent, for a parent of pension age in Australia"
+       },
+       {
+        "x": "[Visitor visas](/visitor-visa): shorter visits"
+       }
+      ]
+     },
+     {
+      "t": "p",
+      "x": "See the [family visa hub](/family-visa) for a table comparing every parent visa."
+     }
+    ]
+   },
+   "key-facts-box": {
+    "h2": "Key facts box",
+    "blocks": [
+     {
+      "t": "table",
+      "head": [
+       "Fact",
+       "Detail"
+      ],
+      "rows": [
+       [
+        "Visa type",
+        "Temporary"
+       ],
+       [
+        "Stay",
+        "Up to 3 or 5 years at a time. Check the Department of Home Affairs website for the total time allowed."
+       ],
+       [
+        "Where the parent applies",
+        "Usually outside Australia"
+       ],
+       [
+        "Sponsorship",
+        "Approved first, then the parent applies"
+       ],
+       [
+        "Balance of Family test",
+        "Not required"
+       ],
+       [
+        "Sponsorship fee",
+        "Check the Department of Home Affairs website for the current figure."
+       ],
+       [
+        "Visa charge",
+        "Check the Department of Home Affairs website for the current figure."
+       ],
+       [
+        "Work",
+        "No work rights"
+       ],
+       [
+        "Health insurance",
+        "Private health insurance is required"
+       ],
+       [
+        "Processing time",
+        "Check the Department of Home Affairs website for the current figure."
+       ]
+      ]
+     }
+    ]
+   },
+   "870-processing-time": {
+    "h2": "870 processing time",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "The 870 is usually decided much faster than the permanent parent visas, but times change with demand and caps. Check the Department of Home Affairs website for the current processing time, and remember the sponsor is approved first."
+     }
+    ]
+   }
+  },
+  "cta": {
+   "title": "Planning long stays for your parents?",
+   "text": "Book a consultation or call +61 3 9602 1330."
+  },
+  "add": [
+   {
+    "after": "related-visas-and-final-cta",
+    "id": "disclaimer",
+    "h2": "General information",
+    "kind": "prose",
+    "blocks": [
+     {
+      "t": "note",
+      "label": "Note",
+      "x": "General information only, not legal advice. The Department of Home Affairs makes all visa decisions."
+     }
+    ]
+   }
+  ]
+ },
+ "/family-visa/child-visa-subclass-101": {
+  "remove": [
+   "local-help-for-australian-families",
+   "related-visas-and-tools"
+  ],
+  "replace": {
+   "quick-check": {
+    "h2": "Is the 101 right for you?",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Tick each statement that is true:"
+     },
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "My child is outside Australia and will be outside Australia when the decision is made."
+       },
+       {
+        "x": "I am an Australian citizen, a permanent resident or an eligible New Zealand citizen."
+       },
+       {
+        "x": "I am my child's parent, or my partner is, and we want to sponsor."
+       },
+       {
+        "x": "My child is under 18, or aged 18 to under 25 and still depends on me, or has a long-term incapacity."
+       },
+       {
+        "x": "My child is not married or in a de facto relationship."
+       },
+       {
+        "x": "I can show the family relationship with documents."
+       }
+      ]
+     },
+     {
+      "t": "p",
+      "x": "If you ticked most boxes, the 101 is probably the visa to look at. If one or two are unclear, that is common. A registered agent can check your facts before you pay any government charge."
+     },
+     {
+      "t": "table",
+      "head": [
+       "Your situation",
+       "Visa to look at"
+      ],
+      "rows": [
+       [
+        "Your child is in Australia",
+        "[Child visa 802](/family-visa/child-visa-subclass-802)"
+       ],
+       [
+        "Your child was adopted overseas",
+        "[Adoption visa](/family-visa/adoption-visa)"
+       ],
+       [
+        "Your child is a dependent of a partner visa applicant",
+        "[Dependent child visa](/family-visa/dependent-child-visa)"
+       ],
+       [
+        "You are bringing a partner as well",
+        "[Partner visa 309](/family-visa/partner-provisional-visa-subclass-309) if overseas, [820](/family-visa/partner-provisional-visa-subclass-820) if in Australia"
+       ]
+      ]
+     }
+    ]
+   },
+   "how-long-does-it-take": {
+    "h2": "Processing time",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Check the Department of Home Affairs website for the current processing time. Do not book travel for your child until the visa is granted. Delays in health checks or missing documents slow the decision."
+     }
+    ]
+   }
+  },
+  "cta": {
+   "title": "Talk to a registered migration agent about your child's visa",
+   "text": "Tell us your child's age, where they live and who is sponsoring. We explain your options in plain English."
+  }
+ },
+ "/family-visa": {
+  "remove": [
+   "find-the-right-family-visa",
+   "partner-visas-onshore-or-offshore",
+   "parent-visas-the-honest-picture",
+   "child-and-other-relative-visas",
+   "how-we-help-with-your-family-visa"
+  ],
+  "replace": {
+   "who-are-family-visas-for": {
+    "h2": "Who are family visas for?",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "You may need a family visa if you are:"
+     },
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "an Australian citizen, permanent resident or eligible New Zealand citizen who wants your husband, wife or de facto partner to live with you in Australia"
+       },
+       {
+        "x": "engaged and planning to marry in Australia"
+       },
+       {
+        "x": "an adult child who wants your parents to live in Australia"
+       },
+       {
+        "x": "a parent or carer with a child overseas who needs a visa"
+       },
+       {
+        "x": "an applicant with a relative in Australia who may qualify under a relative or carer category"
+       }
+      ]
+     },
+     {
+      "t": "p",
+      "x": "Start with who you want to bring to Australia, then pick the group below. If you are not sure where you fit, [book a consultation](/book-an-appointment). A registered agent will tell you which options exist, and which do not."
+     }
+    ]
+   },
+   "what-a-family-visa-costs-and-how-long-it-takes": {
+    "h2": "Costs and waiting times",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "**Government charges.** Home Affairs sets these and changes them, usually each 1 July. A partner visa is one of the most expensive visas to lodge. Check the Department of Home Affairs website for the current charge."
+     },
+     {
+      "t": "p",
+      "x": "**Other costs.** Budget for health examinations, police certificates, document translations and, for parent visas, private health insurance and the Assurance of Support. Our professional fees are separate and set out in a written agreement."
+     },
+     {
+      "t": "p",
+      "x": "**Waiting times.** A partner visa decision commonly takes more than a year. Parent visas vary from a few months (870) to many years (103 and 804)."
+     },
+     {
+      "t": "p",
+      "x": "For the two-instalment parent visas, see our [cost for contributory visas page](/family-visa/cost-for-contributory-visas)."
+     }
+    ]
+   }
+  },
+  "add": [
+   {
+    "after": "who-are-family-visas-for",
+    "id": "partner-visas",
+    "h2": "Partner and fiancé(e) visas",
+    "kind": "prose",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "A partner visa has two stages. You apply once and pay once. First you receive a temporary visa. About two years after you applied, you provide updated evidence for the permanent visa. The deciding question is where the applicant is when you lodge."
+     },
+     {
+      "t": "table",
+      "head": [
+       "Visa",
+       "Who it is for",
+       "Where the applicant is"
+      ],
+      "rows": [
+       [
+        "[Subclass 309, provisional partner](/family-visa/partner-provisional-visa-subclass-309)",
+        "Married or de facto partner, temporary stage",
+        "Outside Australia"
+       ],
+       [
+        "[Subclass 100, permanent partner](/family-visa/partner-permanent-visa-subclass-100)",
+        "The permanent stage that follows the 309",
+        "Applied outside Australia"
+       ],
+       [
+        "[Subclass 820, provisional partner](/family-visa/partner-provisional-visa-subclass-820)",
+        "Married or de facto partner, temporary stage",
+        "In Australia, usually on a substantive visa"
+       ],
+       [
+        "[Subclass 801, permanent partner](/family-visa/partner-permanent-visa-subclass-801)",
+        "The permanent stage that follows the 820",
+        "Applied in Australia"
+       ],
+       [
+        "[Subclass 300, prospective marriage](/family-visa/prospective-marriage-visa-subclass-300)",
+        "Engaged and planning to marry in Australia",
+        "Outside Australia"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "x": "Some visas carry condition 8503 (no further stay). An applicant with that condition usually cannot apply onshore unless the condition is waived. Check this before you lodge. While you wait onshore you are usually on a bridging visa. See our [Bridging Visa A guide](/bridging-return-visas/bridging-visa-a-010)."
+     }
+    ]
+   },
+   {
+    "after": "partner-visas",
+    "id": "parent-visas",
+    "h2": "Parent visas: which one is right for me?",
+    "kind": "prose",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Australia caps the number of parent visas each year. That is why parent visas cost more, wait longer, or both. All permanent parent visas must pass the **Balance of Family test**: at least half of the parent's children must live permanently in Australia, or more of them than in any other single country."
+     },
+     {
+      "t": "table",
+      "head": [
+       "Visa",
+       "Permanent?",
+       "Where the parent is",
+       "Cost and wait in plain terms"
+      ],
+      "rows": [
+       [
+        "[Subclass 143, contributory parent](/family-visa/contributory-parent-visa-subclass-143)",
+        "Yes",
+        "Outside Australia",
+        "Two payments, the second one large. Long wait, shorter than the 103. Assurance of Support bond needed"
+       ],
+       [
+        "[Subclass 864, contributory aged parent](/family-visa/contributory-aged-parent-visa-subclass-864)",
+        "Yes",
+        "In Australia, pension age",
+        "Same cost pattern as the 143. Shorter queue than the 804"
+       ],
+       [
+        "[Subclass 103, parent](/family-visa/parent-visa-subclass-103)",
+        "Yes",
+        "Outside Australia",
+        "Lower charge, extremely long queue"
+       ],
+       [
+        "[Subclass 804, aged parent](/family-visa/aged-parent-visa-subclass-804)",
+        "Yes",
+        "In Australia, pension age",
+        "Lower charge, extremely long queue"
+       ],
+       [
+        "[Subclass 173, contributory parent temporary](/family-visa/contributory-parent-temporary-visa-subclass-173)",
+        "No, leads to the 143",
+        "Outside Australia",
+        "Pay the first charge now to stay in Australia while the 143 follows"
+       ],
+       [
+        "[Subclass 884, contributory aged parent temporary](/family-visa/contributory-aged-parent-temporary-visa-subclass-884)",
+        "No, leads to the 864",
+        "In Australia, pension age",
+        "Pay the first charge now to stay while the 864 follows"
+       ],
+       [
+        "[Subclass 870, sponsored parent temporary](/family-visa/sponsored-parent-temporary-visa-subclass-870)",
+        "No",
+        "Usually outside Australia",
+        "Stays of 3 or 5 years at a time. Faster decision, no work rights, private health insurance needed"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "x": "**Quick guide.** Want permanent residence sooner and can pay more: the 143 or 864. Want the lower charge and can accept a very long wait: the 103 or 804. Want your parents here now: the 173, 884 or 870. Parents of pension age already in Australia use the onshore visas (864, 804, 884). Check the Department of Home Affairs website for current charges and processing times."
+     }
+    ]
+   },
+   {
+    "after": "parent-visas",
+    "id": "child-visas",
+    "h2": "Child visas",
+    "kind": "prose",
+    "blocks": [
+     {
+      "t": "table",
+      "head": [
+       "Visa",
+       "Who it is for"
+      ],
+      "rows": [
+       [
+        "[Child visa 101](/family-visa/child-visa-subclass-101)",
+        "A dependent child outside Australia of a citizen, permanent resident or eligible New Zealand citizen"
+       ],
+       [
+        "[Child visa 802](/family-visa/child-visa-subclass-802)",
+        "The same child, already in Australia"
+       ],
+       [
+        "[Adoption visa](/family-visa/adoption-visa)",
+        "A child adopted overseas"
+       ],
+       [
+        "[Dependent child visa](/family-visa/dependent-child-visa)",
+        "A dependent child of a visa applicant"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "after": "child-visas",
+    "id": "other-relative-visas",
+    "h2": "Other relatives",
+    "kind": "prose",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "These visas have strict tests and some have very long queues. We check your facts before you spend any money."
+     },
+     {
+      "t": "table",
+      "head": [
+       "Visa",
+       "Who it is for"
+      ],
+      "rows": [
+       [
+        "[Remaining Relative, offshore 115](/family-visa/remaining-relative-visa-subclass-115)",
+        "Applicants outside Australia whose close relatives (parents, siblings, children) are all in Australia"
+       ],
+       [
+        "[Remaining Relative, onshore 835](/family-visa/remaining-relative-visa-subclass-835)",
+        "The same applicants, already in Australia"
+       ],
+       [
+        "[Orphan Relative, offshore 117](/family-visa/orphan-reletive-visa-117)",
+        "A child outside Australia with no parent who can care for them, cared for by a relative in Australia"
+       ],
+       [
+        "[Orphan Relative, onshore 837](/family-visa/orphan-relative-visa-837)",
+        "The same child, already in Australia"
+       ],
+       [
+        "[Carer visa, offshore 116](/family-visa/carer-visa-offshore-subclass-116)",
+        "Someone outside Australia who cares for an Australian relative with a long-term medical condition"
+       ],
+       [
+        "[Carer visa, onshore 836](/family-visa/carer-visa-onshore-subclass-836)",
+        "The same carer, already in Australia"
+       ],
+       [
+        "[Aged Dependent Relative overview](/family-visa/aged-dependent-114)",
+        "An aged relative who depends on a relative in Australia"
+       ],
+       [
+        "[Aged Dependent Relative, offshore 114](/family-visa/aged-dependent-offshore-114)",
+        "The aged relative, outside Australia"
+       ],
+       [
+        "[Aged Dependent Relative, onshore 838](/family-visa/aged-dependent-onshore-838)",
+        "The aged relative, already in Australia"
+       ],
+       [
+        "[New Zealand citizen family relationship, 461](/family-visa/new-zealand-citizen-family-relationship-visa-subclass-461)",
+        "The partner or dependent child of a New Zealand citizen, on a temporary visa"
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "faqs_remove": [],
+  "cta": {
+   "title": "Talk to a registered migration agent about your family visa",
+   "text": "Tell us your situation and we will explain the options, the costs and the wait."
+  }
+ }
+}

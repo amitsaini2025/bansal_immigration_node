@@ -1,0 +1,17 @@
+<svg width="400" height="500" viewBox="0 0 400 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="500" fill="#F1F5F9"/>
+  <rect x="0" y="0" width="400" height="500" fill="url(#grad)"/>
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="400" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E2E8F0"/>
+      <stop offset="1" stop-color="#CBD5E1"/>
+    </linearGradient>
+  </defs>
+  <!-- Abstract Professional Silhouette / Monogram -->
+  <circle cx="200" cy="180" r="70" fill="#94A3B8"/>
+  <path d="M90 380C90 310 140 280 200 280C260 280 310 310 310 380V450H90V380Z" fill="#94A3B8"/>
+  <circle cx="200" cy="180" r="60" fill="#64748B"/>
+  <text x="200" y="195" font-family="system-ui, sans-serif" font-size="36" font-weight="700" fill="#FFFFFF" text-anchor="middle">CP</text>
+  <text x="200" y="420" font-family="system-ui, sans-serif" font-size="16" font-weight="600" fill="#475569" text-anchor="middle">Celesty Parmar</text>
+  <text x="200" y="440" font-family="system-ui, sans-serif" font-size="12" font-weight="500" fill="#64748B" text-anchor="middle">Senior Migration Consultant</text>
+</svg>
