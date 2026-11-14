@@ -30,6 +30,80 @@ export interface Profile {
 const REGISTER_URL = 'https://portal.mara.gov.au/search-the-register-of-migration-agents/';
 export const omaraUrl = REGISTER_URL;
 
+function placeholderAgent(input: {
+  slug: string;
+  first: string;
+  name: string;
+  pronoun: 'His' | 'Her';
+  languages: string;
+}): Profile {
+  const { slug, first, name, pronoun, languages } = input;
+  const possessive = pronoun === 'His' ? 'his' : 'her';
+  return {
+    slug,
+    first,
+    name,
+    h1: `${name}, Registered Migration Agent`,
+    role: 'Registered Migration Agent',
+    seoTitle: `${name}, Registered Migration Agent | Melbourne`,
+    seoDescription: `${name} is a registered migration agent at Bansal Immigration in Melbourne.`,
+    keywords: [`${name} migration agent`, 'registered migration agent Melbourne', 'Bansal Immigration'],
+    line: `${name} is a registered migration agent at Bansal Immigration in Melbourne.`,
+    image: `/img/team/${slug}.svg`,
+    facts: [
+      { label: 'Role', value: 'Registered Migration Agent' },
+      { label: 'Office', value: 'Level 8, 278 Collins Street, Melbourne VIC 3000' },
+      { label: 'Languages', value: languages },
+    ],
+    helps: [
+      'People who want to talk through an Australian visa with a registered migration agent.',
+      'Individuals and families planning to study, work or settle in Australia.',
+      'Anyone who wants advice before lodging an application.',
+    ],
+    experience: [
+      `${name} is a registered migration agent at Bansal Immigration.`,
+    ],
+    howWorks: [
+      `${first} starts with your situation, then explains the options that may fit and what each one needs.`,
+      'Our fees are service-based and explained upfront, and we do not charge success fees. The first consultation is free.',
+    ],
+    qualifications: ['Registered migration agent'],
+    registrationNote: `${first} is a registered migration agent, so ${pronoun === 'His' ? 'he' : 'she'} has to follow the Code of Conduct for registered migration agents. The MARN will be published on this page so you can check it on the OMARA register. You can read the Code of Conduct and our Consumer Guide before you book.`,
+    registrationLinks: [
+      {
+        href: 'https://www.legislation.gov.au/F2021L01856/2026-04-01/2026-04-01/text/original/pdf',
+        label: 'Code of Conduct',
+      },
+      { href: '/consumer_guide_english.pdf', label: 'Consumer Guide' },
+    ],
+    areas: [{ name: 'Book a consultation', href: '/book-an-appointment' }],
+    bookText: `Book online, call +61 3 9602 1330 or email info@bansalimmigration.com.au. You can meet ${first} at Level 8, 278 Collins Street, Melbourne, or by phone or video.`,
+    bookLinks: [
+      { href: '/contact', label: 'Contact our team for a call back' },
+      { href: '/terms-conditions', label: 'Read our consultation Terms and Conditions' },
+    ],
+    faqs: [
+      {
+        q: 'Is the first consultation free?',
+        a: 'Yes. We offer a free first consultation so you can understand your options before you decide.',
+      },
+      {
+        q: 'Do you charge a success fee?',
+        a: 'No. Our fees are service-based, and we do not charge a success fee.',
+      },
+      {
+        q: `Is ${first} a registered migration agent?`,
+        a: `Yes. ${first} is registered with OMARA. The MARN will be published on this profile so you can check it on the register.`,
+      },
+      { q: `Which languages does ${first} speak?`, a: languages.endsWith('.') ? languages : `${languages}.` },
+      {
+        q: `Can ${first} guarantee my visa?`,
+        a: 'No. The Department of Home Affairs decides.',
+      },
+    ],
+  };
+}
+
 export const PROFILES: Record<string, Profile> = {
   'arun-bansal': {
     slug: 'arun-bansal',
@@ -360,15 +434,36 @@ export const PROFILES: Record<string, Profile> = {
       },
     ],
   },
+  'shubam-kumar': placeholderAgent({
+    slug: 'shubam-kumar',
+    first: 'Shubam',
+    name: 'Shubam Kumar',
+    pronoun: 'His',
+    languages: 'English, Hindi, Punjabi',
+  }),
+  shaveena: placeholderAgent({
+    slug: 'shaveena',
+    first: 'Shaveena',
+    name: 'Shaveena',
+    pronoun: 'Her',
+    languages: 'English, Hindi, Punjabi',
+  }),
+  'vijay-patel': placeholderAgent({
+    slug: 'vijay-patel',
+    first: 'Vijay',
+    name: 'Vijay Patel',
+    pronoun: 'His',
+    languages: 'English, Hindi, Gujarati',
+  }),
   'celesty-parmar': {
     slug: 'celesty-parmar',
     first: 'Celesty',
     name: 'Celesty Parmar',
-    h1: 'Celesty Parmar, Senior Migration Consultant',
-    role: 'Senior Migration Consultant',
-    seoTitle: 'Celesty Parmar, Senior Migration Consultant | Melbourne',
+    h1: 'Celesty Parmar, Registered Migration Agent',
+    role: 'Registered Migration Agent',
+    seoTitle: 'Celesty Parmar, Registered Migration Agent | Melbourne',
     seoDescription:
-      'Celesty Parmar is a Senior Migration Consultant in Melbourne. She guides students and graduates on student, graduate and skilled visa pathways.',
+      'Celesty Parmar is a registered migration agent in Melbourne. She guides students and graduates on student, graduate and skilled visa pathways.',
     keywords: [
       'Celesty Parmar migration consultant',
       'student visa consultant Melbourne',
@@ -380,7 +475,8 @@ export const PROFILES: Record<string, Profile> = {
     line: 'Celesty guides international students and graduates from course choice to graduate and skilled visa options.',
     image: '/img/team/celesty-parmar.svg',
     facts: [
-      { label: 'Role', value: 'Senior Migration Consultant' },
+      { label: 'Role', value: 'Registered Migration Agent' },
+      { label: 'Registration', value: 'Registered with OMARA. MARN to be published on this page.' },
       { label: 'Office', value: 'Melbourne' },
       { label: 'Languages', value: 'English, Hindi, Gujarati' },
       { label: 'Focus', value: 'Australian migration law and education' },
@@ -392,13 +488,20 @@ export const PROFILES: Record<string, Profile> = {
       'Skilled graduates who want to understand permanent residency options (189, 190, 491).',
     ],
     experience: [
-      'Celesty is a Senior Migration Consultant at Bansal Immigration. She is an Australian migration law and education specialist.',
+      'Celesty Parmar is a registered migration agent at Bansal Immigration. She is an Australian migration law and education specialist.',
       'She gives practical, step-by-step guidance to international graduates and technical professionals who are in Australia. Her work covers Student visas (500), Temporary Graduate visas (485) and skills assessment planning for permanent residency.',
       'She works with clients to build a timeline, so that study choices and work experience line up with current Australian state and territory priorities.',
     ],
     qualifications: [],
     registrationNote:
-      'Where a matter needs advice from a registered migration agent, it is handled or reviewed by one of the agents listed on our team page.',
+      'Celesty is a registered migration agent, so she has to follow the Code of Conduct for registered migration agents. The MARN will be published on this page so you can check it on the OMARA register. You can read the Code of Conduct and our Consumer Guide before you book.',
+    registrationLinks: [
+      {
+        href: 'https://www.legislation.gov.au/F2021L01856/2026-04-01/2026-04-01/text/original/pdf',
+        label: 'Code of Conduct',
+      },
+      { href: '/consumer_guide_english.pdf', label: 'Consumer Guide' },
+    ],
     areas: [
       { name: 'Student visa (500)', href: '/study-australia' },
       { name: 'Temporary Graduate visa (485)', href: '/study-australia' },

@@ -133,7 +133,10 @@ const expertTeam = [
   { name: "Arun Bansal", title: "Director and Registered Migration Agent", marn: "2418466", profileHref: "/team/arun-bansal", image: "/img/team/arun-bansal.avif" },
   { name: "Vipul Goyal", title: "Managing Director and Migration Consultant", marn: "2418571", profileHref: "/team/vipul-goyal", image: "/img/team/vipul-goyal.avif" },
   { name: "Mamta Puri", title: "Registered Migration Agent", marn: "2418481", profileHref: "/team/mamta-puri", image: "/img/team/mamta-puri.avif" },
-  { name: "Celesty Parmar", title: "Senior Migration Consultant", marn: "", profileHref: "/team/celesty-parmar", image: "/img/team/celesty-parmar.svg" },
+  { name: "Shubam Kumar", title: "Registered Migration Agent", marn: "", profileHref: "/team/shubam-kumar", image: "/img/team/shubam-kumar.svg" },
+  { name: "Shaveena", title: "Registered Migration Agent", marn: "", profileHref: "/team/shaveena", image: "/img/team/shaveena.svg" },
+  { name: "Vijay Patel", title: "Registered Migration Agent", marn: "", profileHref: "/team/vijay-patel", image: "/img/team/vijay-patel.svg" },
+  { name: "Celesty Parmar", title: "Registered Migration Agent", marn: "", profileHref: "/team/celesty-parmar", image: "/img/team/celesty-parmar.svg" },
 ];
 
 const verifiedReviews = [
@@ -271,7 +274,7 @@ export default function HomePage() {
               <div className="mt-8">
                 <p className="text-sm font-bold text-slate-900">Your advisers</p>
                 <ul className="mt-3 flex flex-wrap gap-x-6 gap-y-4">
-                  {expertTeam.slice(0, 3).map((a) => (
+                  {expertTeam.map((a) => (
                     <li key={a.name}>
                       <Link href={a.profileHref} className={`group flex items-center gap-3 rounded-lg ${focusRing}`}>
                         <span className="relative w-12 h-12 rounded-full overflow-hidden bg-brand-100 border border-slate-200 shrink-0">
@@ -281,7 +284,7 @@ export default function HomePage() {
                           <span className="block text-sm font-bold text-slate-900 group-hover:underline underline-offset-4 decoration-gold-400 decoration-2">
                             {a.name}
                           </span>
-                          <span className="block text-xs text-slate-600">MARN {a.marn}</span>
+                          {a.marn && <span className="block text-xs text-slate-600">MARN {a.marn}</span>}
                         </span>
                       </Link>
                     </li>

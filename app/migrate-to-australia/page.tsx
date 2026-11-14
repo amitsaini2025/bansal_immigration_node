@@ -246,6 +246,10 @@ const agents = [
   { name: 'Arun Bansal', marn: '2418466', href: '/team/arun-bansal' },
   { name: 'Vipul Goyal', marn: '2418571', href: '/team/vipul-goyal' },
   { name: 'Mamta Puri', marn: '2418481', href: '/team/mamta-puri' },
+  { name: 'Shubam Kumar', marn: '', href: '/team/shubam-kumar' },
+  { name: 'Shaveena', marn: '', href: '/team/shaveena' },
+  { name: 'Vijay Patel', marn: '', href: '/team/vijay-patel' },
+  { name: 'Celesty Parmar', marn: '', href: '/team/celesty-parmar' },
 ];
 
 const whyUs = [
@@ -676,7 +680,7 @@ export default function Page() {
                     <Link href={a.href} className={`group flex items-center justify-between gap-3 py-3 ${focusRing}`}>
                       <span>
                         <span className="block text-base font-bold text-slate-900 group-hover:underline underline-offset-4 decoration-gold-400 decoration-2">{a.name}</span>
-                        <span className="block text-sm text-slate-600">MARN {a.marn}</span>
+                        {a.marn && <span className="block text-sm text-slate-600">MARN {a.marn}</span>}
                       </span>
                       <ArrowRight className="w-4 h-4 text-brand-800" aria-hidden="true" />
                     </Link>

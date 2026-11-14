@@ -116,8 +116,23 @@ const teamStructuredData = {
       },
       {
         '@type': 'Person',
+        name: 'Shubam Kumar',
+        jobTitle: 'Registered Migration Agent',
+      },
+      {
+        '@type': 'Person',
+        name: 'Shaveena',
+        jobTitle: 'Registered Migration Agent',
+      },
+      {
+        '@type': 'Person',
+        name: 'Vijay Patel',
+        jobTitle: 'Registered Migration Agent',
+      },
+      {
+        '@type': 'Person',
         name: 'Celesty Parmar',
-        jobTitle: 'Senior Migration Consultant',
+        jobTitle: 'Registered Migration Agent',
       },
     ],
   },
