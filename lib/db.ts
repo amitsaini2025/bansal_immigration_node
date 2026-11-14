@@ -5,11 +5,12 @@ let pool: mysql.Pool | null = null;
 export function getDb() {
   if (!pool) {
     pool = mysql.createPool({
-      host: process.env.DB_HOST || '127.0.0.1',
-      user: process.env.DB_USERNAME || 'bansal',
-      password: process.env.DB_PASSWORD ?? 'bansal',
-      database: process.env.DB_DATABASE || 'bansal',
-      port: Number(process.env.DB_PORT) || 3306,
+      // Prefer DB_*; fall back to MYSQL_* so .env.local configs keep working
+      host: process.env.DB_HOST || process.env.MYSQL_HOST || '127.0.0.1',
+      user: process.env.DB_USERNAME || process.env.MYSQL_USER || 'bansal',
+      password: process.env.DB_PASSWORD ?? process.env.MYSQL_PASSWORD ?? 'bansal',
+      database: process.env.DB_DATABASE || process.env.MYSQL_DATABASE || 'bansal',
+      port: Number(process.env.DB_PORT || process.env.MYSQL_PORT) || 3306,
       waitForConnections: true,
       connectionLimit: 10,
       queueLimit: 0,
