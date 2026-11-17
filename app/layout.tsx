@@ -40,8 +40,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} h-full scroll-smooth`}>
-      <body className="min-h-full flex flex-col font-sans antialiased text-gray-900 bg-white">
+    <html
+      lang="en"
+      className={`${inter.variable} h-full scroll-smooth`}
+      suppressHydrationWarning
+    >
+      <body
+        className="min-h-full flex flex-col font-sans antialiased text-gray-900 bg-white"
+        suppressHydrationWarning
+      >
         <Header />
         <main id="main-content" className="flex-1">
           {children}

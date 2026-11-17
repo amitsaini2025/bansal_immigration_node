@@ -45,7 +45,7 @@ import { GOOGLE_RATING, GOOGLE_REVIEW_COUNT, GOOGLE_PROFILE_URL } from "@/lib/si
 export const metadata: Metadata = {
   title: "Registered Migration Agents Melbourne | Bansal Immigration",
   description:
-    "MARA registered migration agents in Melbourne and Adelaide for skilled, student, partner and employer visas. Book a consultation today.",
+    "OMARA registered migration agents in Melbourne and Adelaide for skilled, student, partner and employer visas. Book a consultation today.",
   alternates: {
     canonical: "https://bansalimmigration.com.au",
   },
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     "immigration consultants Melbourne",
     "Australian visa assistance",
     "registered migration agents Adelaide",
-    "MARA registered migration agent",
+    "OMARA registered migration agent",
     "skilled migration Melbourne",
     "student visa agent Melbourne",
     "partner visa agent Melbourne",

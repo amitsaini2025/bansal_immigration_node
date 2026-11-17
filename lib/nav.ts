@@ -27,9 +27,11 @@ export const VISA_GROUPS: NavGroup[] = [
         heading: 'Permanent and regional visas',
         links: [
           { label: 'Skilled Independent (189)', href: '/migrate-to-australia/skilled-independent-visa-subclass-189', desc: 'No sponsor or nomination' },
+          { label: '189 Hong Kong stream', href: '/migrate-to-australia/skilled-independent-189-hong-kong', desc: 'No points test or invitation' },
           { label: 'Skilled Nominated (190)', href: '/migrate-to-australia/skilled-nominated-visa-subclass-190', desc: 'State or territory nomination' },
           { label: 'Skilled Work Regional (491)', href: '/migrate-to-australia/skilled-work-regional-provisional-visa-subclass-491', desc: 'Regional provisional visa' },
           { label: 'Permanent Residence Regional (191)', href: '/migrate-to-australia/permanent-residence-skilled-regional-visa-subclass-191' },
+          { label: '191 Hong Kong stream', href: '/migrate-to-australia/permanent-residence-191-hong-kong', desc: 'Three years in regional Australia' },
           { label: 'Skilled Regional (887)', href: '/migrate-to-australia/skilled-regional-visa-subclass-887' },
         ],
       },
@@ -38,6 +40,7 @@ export const VISA_GROUPS: NavGroup[] = [
         links: [
           { label: 'Temporary Graduate (485)', href: '/migrate-to-australia/temporary-graduate-visa-subclass-485' },
           { label: 'Post Study Work (485)', href: '/migrate-to-australia/post-study-work-visa-subclass-485' },
+          { label: 'Second Temporary Graduate (485)', href: '/skilled-migration/temporary-graduate-visa-extension', desc: 'Extra stay for regional graduates' },
           { label: 'How points are calculated', href: '/skilled-migration/how-points-are-calculated' },
           { label: 'Points for an English score', href: '/migrate-to-australia/points-for-english-score' },
           { label: 'Regional points', href: '/migrate-to-australia/how-to-claim-regional-points' },
@@ -100,10 +103,15 @@ export const VISA_GROUPS: NavGroup[] = [
         heading: 'Main sponsored visas',
         links: [
           { label: 'Skills in Demand (482)', href: '/employer-sponsored/sid-visa-482', desc: 'Temporary, up to 4 years' },
+          { label: '482 Core Skills', href: '/employer-sponsored/sid-482-core-skills', desc: 'Occupations on the Core Skills list' },
+          { label: '482 Specialist Skills', href: '/employer-sponsored/sid-482-specialist-skills', desc: 'High-salary roles' },
           { label: 'ENS 186 Transition (TRT)', href: '/employer-sponsored/ens-186-trt', desc: 'Permanent, from a 482' },
           { label: 'ENS 186 Direct Entry', href: '/employer-sponsored/ens-186-direct' },
+          { label: 'ENS 186 Labour Agreement', href: '/employer-sponsored/ens-186-labour-agreement', desc: 'Permanent, under a labour agreement' },
           { label: 'Regional Sponsored (494)', href: '/employer-sponsored/skilled-regional-494' },
           { label: 'DAMA labour agreements', href: '/employer-sponsored/dama' },
+          { label: 'DAMA South Australia', href: '/employer-sponsored/dama-south-australia', desc: 'Adelaide and regional SA' },
+          { label: 'DAMA Victoria', href: '/employer-sponsored/dama-victoria', desc: 'Goulburn Valley and Great South Coast' },
           { label: 'Global Talent Employer Sponsored (closed)', href: '/employer-sponsored/gtes', desc: 'No new agreements' },
         ],
       },
@@ -114,6 +122,7 @@ export const VISA_GROUPS: NavGroup[] = [
           { label: 'Short Stay Specialist (400)', href: '/employer-sponsored/short-stay-400' },
           { label: 'Training visa (407)', href: '/employer-sponsored/training-visa-407' },
           { label: 'International Relations (403)', href: '/employer-sponsored/temporary-work-international-relations-403' },
+          { label: 'PALM scheme (403)', href: '/employer-sponsored/palm-scheme-403', desc: 'Pacific workers and Timor-Leste' },
         ],
       },
       {
@@ -281,6 +290,7 @@ export const VISA_GROUPS: NavGroup[] = [
         links: [
           { label: 'Australian citizenship', href: '/citizenship' },
           { label: 'Citizenship by conferral', href: '/citizenship/citizenship-by-conferral' },
+          { label: 'NZ citizens on a 444 visa', href: '/citizenship/new-zealand-citizens-subclass-444', desc: 'Citizenship without a permanent visa first' },
           { label: 'Citizenship by descent', href: '/citizenship/citizenship-by-descent' },
           { label: 'Citizenship by birth', href: '/citizenship/citizenship-by-birth' },
           { label: 'Dual citizenship', href: '/citizenship/dual-citizenship' },

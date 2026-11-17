@@ -971,5 +971,68 @@
   "category": "migrate-to-australia",
   "isHub": false,
   "order": 138
+ },
+ {
+  "path": "/employer-sponsored/ens-186-labour-agreement",
+  "name": "ENS 186 Labour Agreement Stream",
+  "category": "employer-sponsored",
+  "isHub": false,
+  "order": 139
+ },
+ {
+  "path": "/employer-sponsored/sid-482-core-skills",
+  "name": "Skills in Demand 482 Core Skills Stream",
+  "category": "employer-sponsored",
+  "isHub": false,
+  "order": 140
+ },
+ {
+  "path": "/employer-sponsored/sid-482-specialist-skills",
+  "name": "Skills in Demand 482 Specialist Skills Stream",
+  "category": "employer-sponsored",
+  "isHub": false,
+  "order": 141
+ },
+ {
+  "path": "/migrate-to-australia/skilled-independent-189-hong-kong",
+  "name": "Skilled Independent 189 Hong Kong Stream",
+  "category": "migrate-to-australia",
+  "isHub": false,
+  "order": 142
+ },
+ {
+  "path": "/migrate-to-australia/permanent-residence-191-hong-kong",
+  "name": "Permanent Residence 191 Hong Kong Stream",
+  "category": "migrate-to-australia",
+  "isHub": false,
+  "order": 143
+ },
+ {
+  "path": "/citizenship/new-zealand-citizens-subclass-444",
+  "name": "Citizenship for New Zealand Citizens on Subclass 444",
+  "category": "citizenship",
+  "isHub": false,
+  "order": 144
+ },
+ {
+  "path": "/employer-sponsored/dama-south-australia",
+  "name": "DAMA South Australia",
+  "category": "employer-sponsored",
+  "isHub": false,
+  "order": 145
+ },
+ {
+  "path": "/employer-sponsored/dama-victoria",
+  "name": "DAMA Victoria",
+  "category": "employer-sponsored",
+  "isHub": false,
+  "order": 146
+ },
+ {
+  "path": "/employer-sponsored/palm-scheme-403",
+  "name": "PALM Scheme Subclass 403",
+  "category": "employer-sponsored",
+  "isHub": false,
+  "order": 147
  }
 ]
