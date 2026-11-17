@@ -1,5 +1,8 @@
 import type { NextConfig } from "next";
-import legacyRedirects from "./lib/legacy-redirects.json" with { type: "json" };
+import { createRequire } from "module";
+
+const require = createRequire(import.meta.url);
+const legacyRedirects = require("./lib/legacy-redirects.json") as Record<string, string>;
 
 const nextConfig: NextConfig = {
   turbopack: {
