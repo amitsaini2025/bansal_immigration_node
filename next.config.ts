@@ -1,5 +1,5 @@
 import type { NextConfig } from "next";
-import legacyRedirects from "./lib/legacy-redirects.json";
+import legacyRedirects from "./lib/legacy-redirects.json" with { type: "json" };
 
 const nextConfig: NextConfig = {
   turbopack: {
