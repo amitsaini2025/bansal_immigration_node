@@ -191,11 +191,19 @@ const FAQS = [
 
 const RELATED = [
   { href: '/migrate-to-australia', t: 'Skilled migration' },
+  { href: '/migrate-to-australia/skilled-nominated-visa-subclass-190', t: 'Skilled Nominated (190)' },
+  { href: '/migrate-to-australia/skilled-work-regional-provisional-visa-subclass-491', t: 'Skilled Work Regional (491)' },
   { href: '/migrate-to-australia/pr-point-calculator', t: 'PR Points Calculator' },
-  { href: '/migrate-to-australia/victorian-points-test', t: 'Victorian Points Test' },
+  { href: '/migrate-to-australia/victoria-state-nomination', t: 'Victoria nomination' },
+  { href: '/migrate-to-australia/nsw-state-nomination', t: 'New South Wales nomination' },
+  { href: '/migrate-to-australia/queensland-state-nomination', t: 'Queensland nomination' },
+  { href: '/migrate-to-australia/western-australia-state-nomination', t: 'Western Australia nomination' },
+  { href: '/migrate-to-australia/tasmania-state-nomination', t: 'Tasmania nomination' },
+  { href: '/migrate-to-australia/act-state-nomination', t: 'ACT nomination' },
+  { href: '/migrate-to-australia/northern-territory-state-nomination', t: 'Northern Territory nomination' },
   { href: '/postcode-checker', t: 'Postcode Checker' },
   { href: '/occupation-finder', t: 'Occupation Finder' },
-  { href: '/employer-sponsored/skilled-regional-494', t: 'Skilled Employer Sponsored Regional (494)' },
+  { href: '/employer-sponsored/dama-south-australia', t: 'DAMA South Australia' },
   { href: '/team/vipul-goyal', t: 'Vipul Goyal, South Australian nominations' },
 ];
 

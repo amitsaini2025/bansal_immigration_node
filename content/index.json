@@ -1034,5 +1034,89 @@
   "category": "employer-sponsored",
   "isHub": false,
   "order": 147
+ },
+ {
+  "path": "/skill-assessment/skills-assessment-for-teachers",
+  "name": "Skills assessment for teachers (AITSL)",
+  "category": "skill-assessment",
+  "isHub": false,
+  "order": 148
+ },
+ {
+  "path": "/skill-assessment/skills-assessment-for-doctors",
+  "name": "Skills assessment for doctors",
+  "category": "skill-assessment",
+  "isHub": false,
+  "order": 149
+ },
+ {
+  "path": "/skill-assessment/skills-assessment-for-social-workers",
+  "name": "Skills assessment for social workers",
+  "category": "skill-assessment",
+  "isHub": false,
+  "order": 150
+ },
+ {
+  "path": "/migrate-to-australia/victoria-state-nomination",
+  "name": "Victoria state nomination",
+  "category": "migrate-to-australia",
+  "isHub": false,
+  "order": 151
+ },
+ {
+  "path": "/migrate-to-australia/nsw-state-nomination",
+  "name": "New South Wales state nomination",
+  "category": "migrate-to-australia",
+  "isHub": false,
+  "order": 152
+ },
+ {
+  "path": "/migrate-to-australia/queensland-state-nomination",
+  "name": "Queensland state nomination",
+  "category": "migrate-to-australia",
+  "isHub": false,
+  "order": 153
+ },
+ {
+  "path": "/migrate-to-australia/western-australia-state-nomination",
+  "name": "Western Australia state nomination",
+  "category": "migrate-to-australia",
+  "isHub": false,
+  "order": 154
+ },
+ {
+  "path": "/migrate-to-australia/tasmania-state-nomination",
+  "name": "Tasmania state nomination",
+  "category": "migrate-to-australia",
+  "isHub": false,
+  "order": 155
+ },
+ {
+  "path": "/migrate-to-australia/act-state-nomination",
+  "name": "ACT state nomination",
+  "category": "migrate-to-australia",
+  "isHub": false,
+  "order": 156
+ },
+ {
+  "path": "/migrate-to-australia/northern-territory-state-nomination",
+  "name": "Northern Territory state nomination",
+  "category": "migrate-to-australia",
+  "isHub": false,
+  "order": 157
+ },
+ {
+  "path": "/visitor-visa/visitor-600-business-visitor",
+  "name": "Visitor visa 600 Business Visitor stream",
+  "category": "visitor-visa",
+  "isHub": false,
+  "order": 158
+ },
+ {
+  "path": "/visitor-visa/visitor-600-frequent-traveller",
+  "name": "Visitor visa 600 Frequent Traveller stream",
+  "category": "visitor-visa",
+  "isHub": false,
+  "order": 159
  }
 ]

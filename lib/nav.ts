@@ -49,6 +49,19 @@ export const VISA_GROUPS: NavGroup[] = [
         ],
       },
       {
+        heading: 'State nomination',
+        links: [
+          { label: 'Victoria', href: '/migrate-to-australia/victoria-state-nomination', desc: '190 ROIs open, 491 not open' },
+          { label: 'New South Wales', href: '/migrate-to-australia/nsw-state-nomination', desc: '190 by invitation, 491 closed' },
+          { label: 'Queensland', href: '/migrate-to-australia/queensland-state-nomination', desc: 'New ROI for 2026–27' },
+          { label: 'Western Australia', href: '/migrate-to-australia/western-australia-state-nomination', desc: 'Selected from SkillSelect' },
+          { label: 'South Australia', href: '/south-australia-state-nomination', desc: 'Migration SA streams' },
+          { label: 'Tasmania', href: '/migrate-to-australia/tasmania-state-nomination', desc: 'ROI ranked Gold, Green, Orange' },
+          { label: 'Australian Capital Territory', href: '/migrate-to-australia/act-state-nomination', desc: 'Canberra Matrix' },
+          { label: 'Northern Territory', href: '/migrate-to-australia/northern-territory-state-nomination', desc: 'Most streams closed' },
+        ],
+      },
+      {
         heading: 'Talent visas',
         links: [
           { label: 'National Innovation visa (858)', href: '/migrate-to-australia/national-innovation-visa-858' },
@@ -68,6 +81,9 @@ export const VISA_GROUPS: NavGroup[] = [
       {
         heading: 'Professional assessments',
         links: [
+          { label: 'Teachers (AITSL)', href: '/skill-assessment/skills-assessment-for-teachers', desc: 'School teacher skills assessment' },
+          { label: 'Doctors', href: '/skill-assessment/skills-assessment-for-doctors', desc: 'Medical Board registration' },
+          { label: 'Social workers', href: '/skill-assessment/skills-assessment-for-social-workers', desc: 'AASW skills assessment' },
           { label: 'ACS (ICT)', href: '/skill-assessment/acs-skill-assessment' },
           { label: 'VETASSESS', href: '/skill-assessment/vetassess-skill-assessment' },
           { label: 'Engineers Australia', href: '/skill-assessment/ea-skill-assessment' },
@@ -220,6 +236,8 @@ export const VISA_GROUPS: NavGroup[] = [
         heading: 'Visitor and holiday visas',
         links: [
           { label: 'Visitor visa (600)', href: '/visitor-visa/visitor-visa-600' },
+          { label: 'Business Visitor (600)', href: '/visitor-visa/visitor-600-business-visitor', desc: 'Meetings and conferences, not work' },
+          { label: 'Frequent Traveller (600)', href: '/visitor-visa/visitor-600-frequent-traveller', desc: 'Up to 10 years for selected passports' },
           { label: 'eVisitor (651)', href: '/visitor-visa/evisitor-651' },
           { label: 'Electronic Travel Authority (601)', href: '/visitor-visa/electronic-travel-authority-601' },
           { label: 'Sponsored family visitor', href: '/visitor-visa/sponsored-family' },

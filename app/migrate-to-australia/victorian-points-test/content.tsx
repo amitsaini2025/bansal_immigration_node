@@ -35,6 +35,7 @@ const faqs = [
 ];
 
 const related = [
+  { t: 'Victoria state nomination', d: 'How to lodge a Victorian Registration of Interest, and whether the 491 is open.', href: '/migrate-to-australia/victoria-state-nomination' },
   { t: 'Skilled migration', d: 'Visas for skilled workers and graduates.', href: '/migrate-to-australia' },
   { t: 'PR Points Calculator', d: 'Estimate your federal points for the 189, 190 and 491.', href: '/migrate-to-australia/pr-point-calculator' },
   { t: 'Postcode Checker', d: 'See whether a postcode counts as regional.', href: '/postcode-checker' },
