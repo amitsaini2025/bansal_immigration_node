@@ -238,9 +238,9 @@ function RatingLine({ className = "" }: { className?: string }) {
       {GOOGLE_PROFILE_URL && <ExternalLink className="w-3.5 h-3.5 text-brand-800" aria-hidden="true" />}
     </>
   );
-  const base = `inline-flex items-center gap-2.5 rounded-xl bg-gold-100 border border-gold-300/60 px-4 py-2.5 ${className}`;
+  const base = `inline-flex items-center gap-2.5 rounded-xl bg-brand-50 border border-brand-200 px-4 py-2.5 ${className}`;
   return GOOGLE_PROFILE_URL ? (
-    <a href={GOOGLE_PROFILE_URL} target="_blank" rel="noopener noreferrer" className={`${base} hover:bg-gold-300/40 ${focusRing}`}>
+    <a href={GOOGLE_PROFILE_URL} target="_blank" rel="noopener noreferrer" className={`${base} hover:bg-brand-100 ${focusRing}`}>
       {inner}
       <span className="sr-only"> (opens in a new tab)</span>
     </a>
@@ -259,9 +259,9 @@ export default function HomePage() {
         <div className={`${container} pt-12 pb-24 lg:pt-16 lg:pb-32`}>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
             <div className="lg:col-span-7">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.08]">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.08] text-brand-900">
                 Registered Migration Agents in{" "}
-                <span className="underline decoration-gold-400 decoration-4 underline-offset-[10px]">Melbourne</span>
+                <span className="underline decoration-brand-600 decoration-4 underline-offset-[10px]">Melbourne</span>
               </h1>
               <p className="mt-6 text-lg leading-relaxed text-slate-600 max-w-xl">
                 Straight answers on skilled, student, partner and employer visas from registered migration agents in
@@ -278,7 +278,7 @@ export default function HomePage() {
                           <Image src={a.image} alt="" fill sizes="48px" className="object-cover object-top" />
                         </span>
                         <span className="leading-tight">
-                          <span className="block text-sm font-bold text-slate-900 group-hover:underline underline-offset-4 decoration-gold-400 decoration-2">
+                          <span className="block text-sm font-bold text-slate-900 group-hover:underline underline-offset-4 decoration-brand-600 decoration-2">
                             {a.name}
                           </span>
                           <span className="block text-xs text-slate-600">MARN {a.marn}</span>
@@ -319,11 +319,11 @@ export default function HomePage() {
                 <p className="mt-1 text-sm text-slate-600 leading-relaxed">
                   {GOOGLE_REVIEW_COUNT ? `From ${GOOGLE_REVIEW_COUNT} client reviews. ` : ""}
                   {GOOGLE_PROFILE_URL ? (
-                    <a href={GOOGLE_PROFILE_URL} target="_blank" rel="noopener noreferrer" className="font-semibold text-brand-800 underline underline-offset-4 decoration-gold-400 decoration-2">
+                    <a href={GOOGLE_PROFILE_URL} target="_blank" rel="noopener noreferrer" className="font-semibold text-brand-800 underline underline-offset-4 decoration-brand-600 decoration-2">
                       Read them on Google<span className="sr-only"> (opens in a new tab)</span>
                     </a>
                   ) : (
-                    <Link href="/testimonials" className="font-semibold text-brand-800 underline underline-offset-4 decoration-gold-400 decoration-2">
+                    <Link href="/testimonials" className="font-semibold text-brand-800 underline underline-offset-4 decoration-brand-600 decoration-2">
                       Read client reviews
                     </Link>
                   )}
@@ -395,7 +395,7 @@ export default function HomePage() {
             <div aria-hidden="true" className="hidden md:block absolute top-6 left-[8%] right-[8%] h-px bg-brand-200" />
             {processSteps.map((step, idx) => (
               <li key={step.heading} className="relative">
-                <div className="relative z-10 w-12 h-12 rounded-full bg-gold-400 text-brand-950 font-extrabold text-lg flex items-center justify-center ring-8 ring-slate-50">
+                <div className="relative z-10 w-12 h-12 rounded-full bg-brand-700 text-white font-extrabold text-lg flex items-center justify-center ring-8 ring-slate-50">
                   {idx + 1}
                 </div>
                 <h3 className="mt-5 text-lg font-bold text-slate-900">{step.heading}</h3>
@@ -427,7 +427,7 @@ export default function HomePage() {
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
             {verifiedReviews.map((rev) => (
               <figure key={rev.name} className={`${card} p-7 flex flex-col`}>
-                <Quote className="w-9 h-9 text-gold-400" aria-hidden="true" />
+                <Quote className="w-9 h-9 text-brand-600" aria-hidden="true" />
                 <blockquote className="mt-4 text-base text-slate-700 leading-relaxed flex-1">{rev.excerpt}</blockquote>
                 <figcaption className="mt-6 pt-5 border-t border-slate-100 flex items-center gap-3">
                   <div className="w-11 h-11 rounded-full bg-brand-900 text-white font-bold text-sm flex items-center justify-center shrink-0">
@@ -463,7 +463,7 @@ export default function HomePage() {
                           <PlayCircle className="w-14 h-14 text-white drop-shadow" aria-hidden="true" />
                         </span>
                       </span>
-                      <span className="mt-3 block text-base font-semibold text-slate-900 leading-snug group-hover:underline underline-offset-4 decoration-gold-400 decoration-2">
+                      <span className="mt-3 block text-base font-semibold text-slate-900 leading-snug group-hover:underline underline-offset-4 decoration-brand-600 decoration-2">
                         {v.title}
                       </span>
                     </Link>
@@ -590,7 +590,7 @@ export default function HomePage() {
                     href={`https://maps.google.com/?q=${encodeURIComponent(o.map)}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-brand-800 hover:text-brand-950 underline underline-offset-4 decoration-gold-400 decoration-2 rounded ${focusRing}`}
+                    className={`mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-brand-800 hover:text-brand-950 underline underline-offset-4 decoration-brand-600 decoration-2 rounded ${focusRing}`}
                   >
                     Get directions<span className="sr-only"> to the {o.name} (opens in a new tab)</span>
                     <ExternalLink className="w-3.5 h-3.5" aria-hidden="true" />
@@ -623,7 +623,7 @@ export default function HomePage() {
               <SectionHeader title="Frequently asked questions" lede="Straight answers to the questions we hear most." />
               <p className="mt-6 text-sm text-slate-600">
                 Still have a question?{" "}
-                <Link href="/contact" className={`font-bold text-brand-800 underline underline-offset-4 decoration-gold-400 decoration-2 rounded ${focusRing}`}>
+                <Link href="/contact" className={`font-bold text-brand-800 underline underline-offset-4 decoration-brand-600 decoration-2 rounded ${focusRing}`}>
                   Send us an enquiry
                 </Link>
                 .

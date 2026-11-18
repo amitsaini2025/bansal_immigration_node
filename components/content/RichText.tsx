@@ -10,7 +10,7 @@ export default function RichText({ text, linkClass }: { text: string; linkClass?
   let k = 0;
   const cls =
     linkClass ??
-    'font-semibold text-brand-800 underline underline-offset-4 decoration-gold-400 decoration-2 hover:text-brand-950 rounded focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700';
+    'font-semibold text-brand-800 underline underline-offset-4 decoration-brand-600 decoration-2 hover:text-brand-950 rounded focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700';
   while ((m = re.exec(text))) {
     if (m.index > last) parts.push(text.slice(last, m.index));
     if (m[1] !== undefined) {

@@ -413,7 +413,7 @@ export default function PRPointCalculatorPage() {
                   <button
                     type="button"
                     onClick={resetCalculator}
-                    className="text-sm font-semibold text-brand-100 hover:text-white flex items-center gap-1.5 min-h-12 px-2 -my-2 rounded transition-colors cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-400"
+                    className="text-sm font-semibold text-brand-100 hover:text-white flex items-center gap-1.5 min-h-12 px-2 -my-2 rounded transition-colors cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-300"
                   >
                     <RefreshCw className="w-3.5 h-3.5" aria-hidden="true" />
                     Reset

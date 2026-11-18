@@ -379,7 +379,7 @@ export default function VictorianPointsTestClient({ children }: { children?: Rea
             <li>This calculator is for indicative purposes only and is based on the Victorian Points Test for the 2026-27 program year.</li>
             <li>There is no pass mark. Invitation rounds select the highest VPT totals overall and within priority industries.</li>
             <li>You must still meet the Australian Government points test minimum (typically 65 points) for skilled migration.</li>
-            <li>For official criteria, refer to <a href="https://liveinmelbourne.vic.gov.au/" target="_blank" rel="noopener noreferrer" className="font-bold text-brand-800 hover:text-brand-950 underline underline-offset-4 decoration-gold-400 decoration-2">Live in Melbourne</a> guidance on the Victorian Points Test.</li>
+            <li>For official criteria, refer to <a href="https://liveinmelbourne.vic.gov.au/" target="_blank" rel="noopener noreferrer" className="font-bold text-brand-800 hover:text-brand-950 underline underline-offset-4 decoration-brand-600 decoration-2">Live in Melbourne</a> guidance on the Victorian Points Test.</li>
           </ul>
         </div>
       </div>

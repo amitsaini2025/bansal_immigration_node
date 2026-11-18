@@ -72,7 +72,7 @@ const ABOUT_CARDS: Rich[] = [
 const focus =
   'focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700';
 const focusDark =
-  'focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-400';
+  'focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-300';
 
 const logoImg = (
   <Image
@@ -307,7 +307,7 @@ export default function Header() {
   const triggerCls = (active: boolean, open: boolean) =>
     `inline-flex items-center gap-1 min-h-12 px-3 rounded-lg text-[15px] font-semibold whitespace-nowrap transition-colors motion-reduce:transition-none ${focus} ${
       active || open ? 'text-brand-900 bg-brand-50' : 'text-slate-800 hover:text-brand-900 hover:bg-slate-50'
-    } ${active ? 'underline decoration-gold-400 decoration-2 underline-offset-8' : ''}`;
+    } ${active ? 'underline decoration-brand-600 decoration-2 underline-offset-8' : ''}`;
 
   const group = VISA_GROUPS[activeGroup];
 
@@ -328,7 +328,7 @@ export default function Header() {
     <>
       <a
         href="#main-content"
-        className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:px-4 focus:py-3 focus:rounded-lg focus:bg-gold-400 focus:text-brand-950 focus:font-bold"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:px-4 focus:py-3 focus:rounded-lg focus:bg-brand-700 focus:text-white focus:font-bold"
       >
         Skip to main content
       </a>
@@ -437,7 +437,7 @@ export default function Header() {
               </a>
               <Link
                 href="/book-an-appointment"
-                className={`hidden sm:inline-flex items-center justify-center min-h-12 px-5 rounded-xl bg-gold-400 hover:bg-gold-300 text-brand-950 font-bold text-sm whitespace-nowrap shadow-sm transition-colors motion-reduce:transition-none ${focus}`}
+                className={`hidden sm:inline-flex items-center justify-center min-h-12 px-5 rounded-xl bg-brand-700 hover:bg-brand-800 text-white font-bold text-sm whitespace-nowrap shadow-sm transition-colors motion-reduce:transition-none ${focus}`}
               >
                 Book a Consultation
               </Link>
@@ -484,7 +484,7 @@ export default function Header() {
                     >
                       <span className="flex items-center justify-between gap-2 text-sm font-bold text-brand-900">
                         {g.label}
-                        <ArrowRight aria-hidden="true" className={`w-4 h-4 text-gold-500 ${i === activeGroup ? 'opacity-100' : 'opacity-0'}`} />
+                        <ArrowRight aria-hidden="true" className={`w-4 h-4 text-brand-600 ${i === activeGroup ? 'opacity-100' : 'opacity-0'}`} />
                       </span>
                       <span className="block text-xs text-slate-600 leading-snug mt-0.5">{g.blurb}</span>
                     </button>
@@ -497,7 +497,7 @@ export default function Header() {
                   <Link
                     href={group.hub.href}
                     onClick={closeAll}
-                    className={`inline-flex items-center gap-1.5 min-h-10 text-sm font-bold text-brand-800 hover:text-brand-950 underline underline-offset-4 decoration-gold-400 decoration-2 rounded ${focus}`}
+                    className={`inline-flex items-center gap-1.5 min-h-10 text-sm font-bold text-brand-800 hover:text-brand-950 underline underline-offset-4 decoration-brand-600 decoration-2 rounded ${focus}`}
                   >
                     View all: {group.hub.label}
                     <ArrowRight aria-hidden="true" className="w-4 h-4" />
@@ -550,7 +550,7 @@ export default function Header() {
                 <Link
                   href="/book-an-appointment"
                   onClick={closeAll}
-                  className={`mt-auto pt-6 inline-flex items-center gap-2 text-sm font-bold text-gold-300 hover:text-gold-400 ${focusDark} rounded`}
+                  className={`mt-auto pt-6 inline-flex items-center gap-2 text-sm font-bold text-brand-200 hover:text-white ${focusDark} rounded`}
                 >
                   Book a consultation
                   <ArrowRight aria-hidden="true" className="w-4 h-4" />
@@ -606,7 +606,7 @@ export default function Header() {
                 </p>
                 <a
                   href={CONTACT.phoneHref}
-                  className={`mt-auto pt-6 inline-flex items-center gap-2 text-sm font-bold text-gold-300 hover:text-gold-400 ${focusDark} rounded`}
+                  className={`mt-auto pt-6 inline-flex items-center gap-2 text-sm font-bold text-brand-200 hover:text-white ${focusDark} rounded`}
                 >
                   <Phone aria-hidden="true" className="w-4 h-4" />
                   {CONTACT.phone}
@@ -670,7 +670,7 @@ export default function Header() {
                 href="/"
                 onClick={closeAll}
                 aria-current={pathname === '/' ? 'page' : undefined}
-                className={`flex items-center min-h-12 px-1 py-2 text-base font-bold text-brand-950 ${focus} ${pathname === '/' ? 'underline decoration-gold-400 decoration-2 underline-offset-8' : ''}`}
+                className={`flex items-center min-h-12 px-1 py-2 text-base font-bold text-brand-950 ${focus} ${pathname === '/' ? 'underline decoration-brand-600 decoration-2 underline-offset-8' : ''}`}
               >
                 Home
               </Link>
@@ -690,7 +690,7 @@ export default function Header() {
                         {g.label}
                         <ChevronDown aria-hidden="true" className={`w-5 h-5 shrink-0 text-brand-800 transition-transform motion-reduce:transition-none ${open ? 'rotate-180' : ''}`} />
                       </button>
-                      <div id={`m-${g.id}`} hidden={!open} className="pb-3 pl-3 border-l-2 border-gold-400 ml-1">
+                      <div id={`m-${g.id}`} hidden={!open} className="pb-3 pl-3 border-l-2 border-brand-700 ml-1">
                         <Link
                           href={g.hub.href}
                           onClick={closeAll}
@@ -742,7 +742,7 @@ export default function Header() {
                       {s.label}
                       <ChevronDown aria-hidden="true" className={`w-5 h-5 shrink-0 text-brand-800 transition-transform motion-reduce:transition-none ${open ? 'rotate-180' : ''}`} />
                     </button>
-                    <ul id={`m-${s.id}`} hidden={!open} className="pb-3 pl-3 border-l-2 border-gold-400 ml-1">
+                    <ul id={`m-${s.id}`} hidden={!open} className="pb-3 pl-3 border-l-2 border-brand-700 ml-1">
                       {s.links.map((l) => (
                         <li key={l.href}>
                           <Link
@@ -782,7 +782,7 @@ export default function Header() {
             <Link
               href="/book-an-appointment"
               onClick={closeAll}
-              className={`inline-flex items-center justify-center min-h-12 px-4 rounded-xl bg-gold-400 hover:bg-gold-300 text-brand-950 font-bold text-base ${focus}`}
+              className={`inline-flex items-center justify-center min-h-12 px-4 rounded-xl bg-brand-700 hover:bg-brand-800 text-white font-bold text-base ${focus}`}
             >
               Book a Consultation
             </Link>

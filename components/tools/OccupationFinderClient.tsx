@@ -324,7 +324,7 @@ export default function OccupationFinderClient() {
                       setQuery(`${pop.code}: ${pop.title}`);
                       loadOccupationByCode(pop.code);
                     }}
-                    className="min-h-10 px-4 py-2 rounded-full bg-white border border-slate-300 hover:bg-gold-400 hover:border-gold-400 hover:text-brand-950 text-brand-900 text-sm font-semibold border border-white/25 transition-colors flex items-center gap-1.5 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-400"
+                    className="min-h-10 px-4 py-2 rounded-full bg-white border border-slate-300 hover:bg-brand-700 hover:border-brand-700 hover:text-white text-brand-900 text-sm font-semibold border border-white/25 transition-colors flex items-center gap-1.5 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700"
                   >
                     <span>{pop.title}</span>
                     <span className="opacity-80 text-xs">({pop.code})</span>

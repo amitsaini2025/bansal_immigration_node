@@ -328,7 +328,7 @@ export default function StudentVisaFinancialCalculatorClient({ content }: { cont
                     {schoolPct > 0 && (
                       <div style={{ width: `${schoolPct}%` }} className="bg-slate-400 transition-all duration-300" title="Schooling" />
                     )}
-                    <div style={{ width: `${travelPct}%` }} className="bg-gold-400 transition-all duration-300" title="Travel" />
+                    <div style={{ width: `${travelPct}%` }} className="bg-brand-400 transition-all duration-300" title="Travel" />
                   </div>
                 </div>
 
@@ -362,7 +362,7 @@ export default function StudentVisaFinancialCalculatorClient({ content }: { cont
 
                   <div className="py-2.5 flex items-center justify-between gap-3">
                     <div className="flex items-center gap-2">
-                      <span className="w-2.5 h-2.5 rounded-full bg-gold-400 shrink-0" />
+                      <span className="w-2.5 h-2.5 rounded-full bg-brand-400 shrink-0" />
                       <span className="text-slate-600">Return Travel Expenses</span>
                     </div>
                     <span className="font-bold text-slate-900 tabular-nums">{formatCurrency(totalTravel)}</span>

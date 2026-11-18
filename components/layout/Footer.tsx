@@ -25,7 +25,7 @@ const SOCIALS = [
 
 const focus =
   'focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700';
-const linkCls = `inline-flex items-center min-h-8 py-1 text-sm text-slate-700 hover:text-brand-950 underline-offset-4 decoration-gold-400 decoration-2 hover:underline rounded transition-colors motion-reduce:transition-none ${focus}`;
+const linkCls = `inline-flex items-center min-h-8 py-1 text-sm text-slate-700 hover:text-brand-950 underline-offset-4 decoration-brand-600 decoration-2 hover:underline rounded transition-colors motion-reduce:transition-none ${focus}`;
 const headingCls = 'text-xs font-bold uppercase tracking-[0.14em] text-brand-900 mb-3';
 
 function Column({ title, links }: { title: string; links: NavLink[] }) {
@@ -79,7 +79,7 @@ export default function Footer() {
   }, []);
 
   return (
-    <footer className="bg-slate-100 text-slate-700 border-t-4 border-gold-400">
+    <footer className="bg-slate-100 text-slate-700 border-t-4 border-brand-700">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-14 pb-8">
         {/* Brand, contact and registration */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 pb-12 border-b border-slate-300">
@@ -103,7 +103,7 @@ export default function Footer() {
             </p>
             <Link
               href="/book-an-appointment"
-              className={`mt-5 inline-flex items-center justify-center min-h-12 px-6 rounded-xl bg-gold-400 hover:bg-gold-300 text-brand-950 font-bold text-sm transition-colors motion-reduce:transition-none ${focus}`}
+              className={`mt-5 inline-flex items-center justify-center min-h-12 px-6 rounded-xl bg-brand-700 hover:bg-brand-800 text-white font-bold text-sm transition-colors motion-reduce:transition-none ${focus}`}
             >
               Book a Consultation
             </Link>
@@ -183,7 +183,7 @@ export default function Footer() {
                     <h3 id={`f-${g.id}`} className="sm:mb-2">
                       <Link
                         href={g.hub.href}
-                        className={`inline-flex items-center min-h-11 sm:min-h-0 text-sm font-bold text-brand-900 underline underline-offset-4 decoration-gold-400 decoration-2 hover:text-brand-950 rounded ${focus}`}
+                        className={`inline-flex items-center min-h-11 sm:min-h-0 text-sm font-bold text-brand-900 underline underline-offset-4 decoration-brand-600 decoration-2 hover:text-brand-950 rounded ${focus}`}
                       >
                         {g.label}
                       </Link>
@@ -206,7 +206,7 @@ export default function Footer() {
                         className={`mt-2 sm:mt-4 pt-4 ${ci === 0 && g.columns.length === 1 ? 'sm:pt-0 pt-0' : 'border-t border-slate-300'}`}
                       >
                         <p className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-brand-800 mb-1.5">
-                          <span aria-hidden="true" className="w-1.5 h-1.5 rounded-full bg-gold-500 shrink-0" />
+                          <span aria-hidden="true" className="w-1.5 h-1.5 rounded-full bg-brand-600 shrink-0" />
                           {c.heading}
                         </p>
                         <ul>
@@ -261,7 +261,7 @@ export default function Footer() {
                   target="_blank"
                   rel={s.id === 'threads' ? 'noopener noreferrer nofollow' : 'noopener noreferrer'}
                   aria-label={`${s.label} (opens in a new tab)`}
-                  className={`inline-flex items-center justify-center w-11 h-11 rounded-full bg-brand-900 text-white hover:bg-gold-400 hover:text-brand-950 transition-colors motion-reduce:transition-none ${focus}`}
+                  className={`inline-flex items-center justify-center w-11 h-11 rounded-full bg-brand-900 text-white hover:bg-brand-700 hover:text-white transition-colors motion-reduce:transition-none ${focus}`}
                 >
                   <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" className="w-[18px] h-[18px]">
                     {SOCIAL_ICONS[s.id]}

@@ -167,13 +167,13 @@ export default function RequestCallbackSection() {
                 <p className="text-xs text-slate-300">Direct Office Contacts:</p>
                 <div className="text-xs text-slate-200">
                   <span className="font-semibold text-white">Melbourne:</span>{' '}
-                  <a href="tel:+61396021330" className="hover:text-gold-300 underline font-medium">
+                  <a href="tel:+61396021330" className="hover:text-brand-200 underline font-medium">
                     +61 3 9602 1330
                   </a>
                 </div>
                 <div className="text-xs text-slate-200">
                   <span className="font-semibold text-white">Adelaide:</span>{' '}
-                  <a href="tel:+61883171340" className="hover:text-gold-300 underline font-medium">
+                  <a href="tel:+61883171340" className="hover:text-brand-200 underline font-medium">
                     +61 8 8317 1340
                   </a>
                 </div>

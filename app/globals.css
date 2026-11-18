@@ -1,28 +1,28 @@
 @import "tailwindcss";
 
-/* Brand palette sampled from the Bansal Immigration logo (navy #1b1464, gold #f8b810) */
+/* Live site palette: navy #1e3a8a, button blue #1d4ed8, sky #60a5fa. Gold is star ratings only. */
 @theme {
-  /* Softened from the logo navy: charcoal ink with warm neutral tints. Gold stays as the accent. */
-  --color-brand-50: #f7f6f2;
-  --color-brand-100: #eeece5;
-  --color-brand-200: #dcd9cf;
-  --color-brand-300: #bcb8aa;
-  --color-brand-500: #5d5b74;
-  --color-brand-600: #4a4962;
-  --color-brand-700: #3b3a52;
-  --color-brand-800: #2f2e45;
-  --color-brand-900: #26253a;
-  --color-brand-950: #1b1b2b;
-  --color-gold-100: #fef3d0;
-  --color-gold-300: #fbcf55;
-  --color-gold-400: #f8b810;
-  --color-gold-500: #e0a206;
+  --color-brand-50: #eff6ff;
+  --color-brand-100: #dbeafe;
+  --color-brand-200: #bfdbfe;
+  --color-brand-300: #93c5fd;
+  --color-brand-400: #60a5fa;
+  --color-brand-500: #3b82f6;
+  --color-brand-600: #2563eb;
+  --color-brand-700: #1d4ed8;
+  --color-brand-800: #1e40af;
+  --color-brand-900: #1e3a8a;
+  --color-brand-950: #172554;
+  --color-gold-100: #fef9c3;
+  --color-gold-300: #fde047;
+  --color-gold-400: #facc15;
+  --color-gold-500: #eab308;
 }
 
 :root {
-  --sg-navy: #26253a;
-  --sg-light-blue: #3b3a52;
-  --sg-sky-blue: #5d5b74;
+  --sg-navy: #1e3a8a;
+  --sg-light-blue: #1d4ed8;
+  --sg-sky-blue: #60a5fa;
   --sg-light-gray: #f8fafc;
   --sg-dark-gray: #374151;
   --sg-medium-gray: #4b5563;
@@ -230,7 +230,7 @@ body {
 }
 
 .cms-content a {
-  color: #3b3a52;
+  color: #1d4ed8;
   font-weight: 600;
   text-decoration: underline;
   text-underline-offset: 3px;

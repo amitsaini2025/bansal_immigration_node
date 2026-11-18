@@ -478,7 +478,7 @@ export default function BookAppointmentPage() {
                                 isCompleted
                                   ? 'bg-brand-900 text-white'
                                   : isActive
-                                  ? 'bg-gold-400 text-brand-950 ring-4 ring-gold-400/30'
+                                  ? 'bg-brand-700 text-white ring-4 ring-brand-700/30'
                                   : 'bg-slate-100 text-slate-600'
                               }`}
                             >
@@ -731,7 +731,7 @@ export default function BookAppointmentPage() {
                                   <span
                                     className={`w-16 h-14 rounded-xl flex items-center justify-center font-extrabold text-base shrink-0 ${
                                       tier.id === 'consultation'
-                                        ? 'bg-gold-400 text-brand-950'
+                                        ? 'bg-brand-700 text-white'
                                         : 'bg-brand-50 text-brand-900 border border-brand-100'
                                     }`}
                                   >
@@ -1085,7 +1085,7 @@ export default function BookAppointmentPage() {
                 ))}
               </ul>
             </div>
-            <div className="lg:col-span-5 rounded-2xl border border-gold-300 bg-gold-100 p-6 sm:p-7">
+            <div className="lg:col-span-5 rounded-2xl border border-brand-200 bg-brand-50 p-6 sm:p-7">
               <h3 className="flex items-center gap-2 text-lg font-bold text-brand-950">
                 <AlertCircle className="w-5 h-5" aria-hidden="true" />
                 Urgent?

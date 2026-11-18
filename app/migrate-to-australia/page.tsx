@@ -285,7 +285,7 @@ const whyUs = [
   'We keep you updated on requests, deadlines and decisions as they happen.',
 ];
 
-const textLink = `font-bold text-brand-800 hover:text-brand-950 underline underline-offset-4 decoration-gold-400 decoration-2 rounded ${focusRing}`;
+const textLink = `font-bold text-brand-800 hover:text-brand-950 underline underline-offset-4 decoration-brand-600 decoration-2 rounded ${focusRing}`;
 
 function formatDate(iso: string) {
   return new Date(`${iso}T00:00:00Z`).toLocaleDateString('en-AU', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
@@ -511,7 +511,7 @@ export default function Page() {
             {readiness.map((r, i) => (
               <li key={r.title} className={`${card} p-6 flex flex-col`}>
                 <span className="flex items-center gap-3">
-                  <span className="w-9 h-9 rounded-full bg-gold-400 text-brand-950 font-extrabold text-sm flex items-center justify-center" aria-hidden="true">
+                  <span className="w-9 h-9 rounded-full bg-brand-700 text-white font-extrabold text-sm flex items-center justify-center" aria-hidden="true">
                     {i + 1}
                   </span>
                   <h3 className="text-base font-bold text-slate-900">{r.title}</h3>
@@ -541,7 +541,7 @@ export default function Page() {
             <div aria-hidden="true" className="hidden lg:block absolute top-5 left-[6%] right-[6%] h-px bg-brand-200" />
             {timeline.map((t, i) => (
               <li key={t.title} className="relative">
-                <span className="relative z-10 w-10 h-10 rounded-full bg-gold-400 text-brand-950 font-extrabold flex items-center justify-center ring-8 ring-white">
+                <span className="relative z-10 w-10 h-10 rounded-full bg-brand-700 text-white font-extrabold flex items-center justify-center ring-8 ring-white">
                   {i + 1}
                 </span>
                 <h3 className="mt-4 text-base font-bold text-slate-900">{t.title}</h3>
@@ -706,7 +706,7 @@ export default function Page() {
                   <li key={a.name}>
                     <Link href={a.href} className={`group flex items-center justify-between gap-3 py-3 ${focusRing}`}>
                       <span>
-                        <span className="block text-base font-bold text-slate-900 group-hover:underline underline-offset-4 decoration-gold-400 decoration-2">{a.name}</span>
+                        <span className="block text-base font-bold text-slate-900 group-hover:underline underline-offset-4 decoration-brand-600 decoration-2">{a.name}</span>
                         <span className="block text-sm text-slate-600">MARN {a.marn}</span>
                       </span>
                       <ArrowRight className="w-4 h-4 text-brand-800" aria-hidden="true" />
