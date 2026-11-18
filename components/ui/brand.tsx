@@ -4,10 +4,10 @@ import { ArrowRight, ChevronDown, Phone, Calendar } from 'lucide-react';
 
 /**
  * Bansal Immigration design system (server-safe, no state).
- * Brand colours come from the logo: navy (brand-*) and gold (gold-*), defined in app/globals.css.
+ * Brand colours match the live site: navy (brand-900) and button blue (brand-700), defined in app/globals.css.
  * Rules: 8pt spacing, one card style, one primary action colour per background,
  * 48px minimum button height, visible keyboard focus, text contrast AA.
- * Gold is only ever a background with navy text (or a highlight on navy). Never gold text on white.
+ * Primary buttons are blue with white text. Gold is only used for star ratings.
  */
 
 /* ---------- Class tokens ---------- */
@@ -18,7 +18,7 @@ export const sectionY = 'py-16 lg:py-24';
 export const focusRing =
   'focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700';
 export const focusRingDark =
-  'focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-400';
+  'focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-300';
 
 export const card =
   'bg-white rounded-2xl border border-slate-200 shadow-[0_1px_2px_rgba(26,26,43,0.04)] transition-[box-shadow,border-color,transform] duration-200 motion-reduce:transition-none';
@@ -27,14 +27,14 @@ export const cardHover =
   'hover:border-brand-300 hover:shadow-[0_12px_32px_-12px_rgba(26,26,43,0.25)] hover:-translate-y-0.5 motion-reduce:hover:translate-y-0';
 
 /** Buttons: use on the background named in the suffix. */
-export const btnPrimaryDark = `inline-flex items-center justify-center gap-2 min-h-12 px-6 rounded-xl font-bold text-brand-950 bg-gold-400 hover:bg-gold-300 shadow-sm transition-colors text-base ${focusRingDark}`;
-export const btnPrimaryLight = `inline-flex items-center justify-center gap-2 min-h-12 px-6 rounded-xl font-bold text-white bg-brand-900 hover:bg-brand-800 shadow-sm transition-colors text-base ${focusRing}`;
+export const btnPrimaryDark = `inline-flex items-center justify-center gap-2 min-h-12 px-6 rounded-xl font-bold text-white bg-brand-700 hover:bg-brand-800 shadow-sm transition-colors text-base ${focusRingDark}`;
+export const btnPrimaryLight = `inline-flex items-center justify-center gap-2 min-h-12 px-6 rounded-xl font-bold text-white bg-brand-700 hover:bg-brand-800 shadow-sm transition-colors text-base ${focusRing}`;
 /** Ghost button that inherits the text colour of its section, so it works on light and dark backgrounds. */
 export const btnGhostDark = `inline-flex items-center justify-center gap-2 min-h-12 px-6 rounded-xl font-semibold text-inherit border border-current/35 hover:bg-current/10 transition-colors text-base ${focusRingDark}`;
 export const btnGhostLight = `inline-flex items-center justify-center gap-2 min-h-12 px-6 rounded-xl font-semibold text-brand-900 bg-white border border-slate-300 hover:border-brand-700 hover:bg-brand-50 transition-colors text-base ${focusRing}`;
 
 /** Inline text link (on light backgrounds). */
-export const linkText = `font-bold text-brand-800 hover:text-brand-950 underline underline-offset-4 decoration-gold-400 decoration-2 rounded ${focusRing}`;
+export const linkText = `font-bold text-brand-800 hover:text-brand-950 underline underline-offset-4 decoration-brand-600 decoration-2 rounded ${focusRing}`;
 
 /** Form controls (inputs, selects, textareas). */
 export const fieldInput = `w-full min-h-12 px-4 py-3 rounded-xl border border-slate-300 bg-white text-base text-slate-900 placeholder:text-slate-400 focus:border-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-700/25 transition`;
@@ -62,7 +62,7 @@ export function SectionHeader({
 
       <Tag
         className={`text-3xl sm:text-4xl font-extrabold tracking-tight leading-tight ${
-          dark ? 'text-white' : 'text-slate-900'
+          dark ? 'text-white' : 'text-brand-900'
         }`}
       >
         {title}
@@ -80,7 +80,7 @@ export function IconTile({ icon: Icon, dark = false }: { icon: React.ElementType
   return (
     <div
       className={`w-12 h-12 rounded-xl flex items-center justify-center shrink-0 ${
-        dark ? 'bg-white/10 text-gold-400' : 'bg-brand-50 text-brand-900 border border-brand-100'
+        dark ? 'bg-white/10 text-brand-300' : 'bg-brand-50 text-brand-900 border border-brand-100'
       }`}
     >
       <Icon className="w-6 h-6" aria-hidden="true" />
@@ -116,7 +116,7 @@ export function PageHero({
         <div className={aside ? 'grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start' : ''}>
           <div className={aside ? 'lg:col-span-7' : 'max-w-3xl'}>
 
-            <h1 className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.1]">
+            <h1 className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.1] text-brand-900">
               {title}
             </h1>
             {intro && <p className="mt-5 text-lg leading-relaxed text-slate-600 max-w-2xl">{intro}</p>}
@@ -178,7 +178,7 @@ export function FaqList({ items }: { items: { q: string; a: React.ReactNode }[] 
             className={`list-none cursor-pointer min-h-14 py-4 px-5 sm:px-6 flex items-center justify-between gap-4 rounded-2xl font-bold text-slate-900 text-base sm:text-lg leading-snug [&::-webkit-details-marker]:hidden ${focusRing}`}
           >
             <span>{f.q}</span>
-            <span className="w-8 h-8 shrink-0 rounded-full flex items-center justify-center bg-brand-50 text-brand-900 group-open:bg-gold-400 group-open:text-brand-950 transition-colors">
+            <span className="w-8 h-8 shrink-0 rounded-full flex items-center justify-center bg-brand-50 text-brand-900 group-open:bg-brand-700 group-open:text-white transition-colors">
               <ChevronDown
                 className="w-4 h-4 transition-transform duration-200 group-open:rotate-180 motion-reduce:transition-none"
                 aria-hidden="true"

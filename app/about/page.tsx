@@ -152,7 +152,7 @@ const teamMembers = [
   {
     name: 'Shubam Kumar',
     title: 'Registered Migration Agent',
-    marn: '',
+    marn: '2619683',
     slug: 'shubam-kumar',
     qualifications: 'Registered migration agent',
     image: '/img/team/shubam-kumar.svg',
@@ -160,7 +160,7 @@ const teamMembers = [
   {
     name: 'Shaveena',
     title: 'Registered Migration Agent',
-    marn: '',
+    marn: '2619533',
     slug: 'shaveena',
     qualifications: 'Registered migration agent',
     image: '/img/team/shaveena.svg',
@@ -176,9 +176,9 @@ const teamMembers = [
   {
     name: 'Celesty Parmar',
     title: 'Registered Migration Agent',
-    marn: '',
+    marn: '2619664',
     slug: 'celesty-parmar',
-    qualifications: 'Australian migration law and education specialist',
+    qualifications: 'Registered with OMARA',
     image: '/img/team/celesty-parmar.svg',
   },
 ];

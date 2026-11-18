@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { TurnstileSiteKeyProvider } from "@/components/forms/TurnstileSiteKey";
+import { getTurnstileSiteKey } from "@/lib/turnstile";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -11,6 +13,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://bansalimmigration.com.au"),
   title: "Registered Migration Agents Melbourne - Bansal Immigration Consultants",
   description:
     "MARN listed registered migration agents in Melbourne for skilled, partner, student, and employer-sponsored visas. Fast-track your Australian PR with Bansal Immigration.",
@@ -40,13 +43,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} h-full scroll-smooth`}>
-      <body className="min-h-full flex flex-col font-sans antialiased text-gray-900 bg-white">
-        <Header />
-        <main id="main-content" className="flex-1">
-          {children}
-        </main>
-        <Footer />
+    <html
+      lang="en"
+      className={`${inter.variable} h-full scroll-smooth`}
+      suppressHydrationWarning
+    >
+      <body
+        className="min-h-full flex flex-col font-sans antialiased text-gray-900 bg-white"
+        suppressHydrationWarning
+      >
+        <TurnstileSiteKeyProvider siteKey={getTurnstileSiteKey()}>
+          <Header />
+          <main id="main-content" className="flex-1">
+            {children}
+          </main>
+          <Footer />
+        </TurnstileSiteKeyProvider>
       </body>
     </html>
   );

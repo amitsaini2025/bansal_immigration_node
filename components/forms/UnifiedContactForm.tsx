@@ -1,7 +1,8 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useId, useState } from 'react';
 import PhoneField from '@/components/forms/PhoneField';
+import { TurnstileField, useTurnstileSiteKey } from '@/components/forms/TurnstileField';
 
 interface UnifiedContactFormProps {
   formSource?: string;
@@ -31,9 +32,25 @@ export default function UnifiedContactForm({
   const [national, setNational] = useState('');
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
   const [responseMsg, setResponseMsg] = useState('');
+  const turnstileSiteKey = useTurnstileSiteKey();
+  const [turnstileToken, setTurnstileToken] = useState('');
+  const [turnstileKey, setTurnstileKey] = useState(0);
+  const [honeypot, setHoneypot] = useState('');
+  const honeypotId = useId();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (honeypot) {
+      setStatus('success');
+      setResponseMsg('Thank you! Your message has been sent successfully. We will contact you soon.');
+      return;
+    }
+    if (turnstileSiteKey && !turnstileToken) {
+      setStatus('error');
+      setResponseMsg('Please complete the security check before sending.');
+      return;
+    }
+
     setStatus('loading');
     setResponseMsg('');
 
@@ -48,6 +65,8 @@ export default function UnifiedContactForm({
           ...formData,
           form_source: formSource,
           form_variant: formVariant,
+          website_honeypot: honeypot,
+          cf_turnstile_response: turnstileToken,
         }),
       });
 
@@ -57,11 +76,17 @@ export default function UnifiedContactForm({
         setResponseMsg(data.message || 'Thank you! Your message has been sent successfully. We will contact you soon.');
         setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
         setNational('');
+        setTurnstileToken('');
+        setTurnstileKey((key) => key + 1);
       } else {
+        setTurnstileToken('');
+        setTurnstileKey((key) => key + 1);
         setStatus('error');
         setResponseMsg(data.message || 'There was an error submitting your request. Please try again or call us directly.');
       }
     } catch {
+      setTurnstileToken('');
+      setTurnstileKey((key) => key + 1);
       setStatus('error');
       setResponseMsg('Unable to connect to the server. Please call us directly at +61 3 9602 1330.');
     }
@@ -88,6 +113,18 @@ export default function UnifiedContactForm({
       )}
 
       <form onSubmit={handleSubmit} className="space-y-6">
+        <div className="hidden" aria-hidden="true">
+          <label htmlFor={honeypotId}>Leave blank</label>
+          <input
+            type="text"
+            id={honeypotId}
+            name="website_honeypot"
+            tabIndex={-1}
+            autoComplete="off"
+            value={honeypot}
+            onChange={(e) => setHoneypot(e.target.value)}
+          />
+        </div>
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-2">
             Full Name <span className="text-red-500">*</span>
@@ -170,6 +207,8 @@ export default function UnifiedContactForm({
             placeholder="Please describe your inquiry in detail..."
           />
         </div>
+
+        <TurnstileField resetKey={turnstileKey} onToken={setTurnstileToken} />
 
         <div>
           <button

@@ -328,7 +328,7 @@ export default function StudentVisaFinancialCalculatorClient({ content }: { cont
                     {schoolPct > 0 && (
                       <div style={{ width: `${schoolPct}%` }} className="bg-slate-400 transition-all duration-300" title="Schooling" />
                     )}
-                    <div style={{ width: `${travelPct}%` }} className="bg-gold-400 transition-all duration-300" title="Travel" />
+                    <div style={{ width: `${travelPct}%` }} className="bg-brand-400 transition-all duration-300" title="Travel" />
                   </div>
                 </div>
 
@@ -362,7 +362,7 @@ export default function StudentVisaFinancialCalculatorClient({ content }: { cont
 
                   <div className="py-2.5 flex items-center justify-between gap-3">
                     <div className="flex items-center gap-2">
-                      <span className="w-2.5 h-2.5 rounded-full bg-gold-400 shrink-0" />
+                      <span className="w-2.5 h-2.5 rounded-full bg-brand-400 shrink-0" />
                       <span className="text-slate-600">Return Travel Expenses</span>
                     </div>
                     <span className="font-bold text-slate-900 tabular-nums">{formatCurrency(totalTravel)}</span>
@@ -435,7 +435,7 @@ export default function StudentVisaFinancialCalculatorClient({ content }: { cont
           <div className="max-w-3xl mx-auto bg-white rounded-2xl border border-slate-200 shadow-[0_1px_2px_rgba(26,26,43,0.04)] p-6 sm:p-10 space-y-6">
             <div className="space-y-3">
               <p className="text-xs font-bold uppercase tracking-[0.14em] text-brand-700">Student visa assistance</p>
-              <h2 className="text-3xl font-extrabold text-slate-900 tracking-tight">Send us an enquiry</h2>
+              <h2 className="text-3xl font-extrabold text-brand-900 tracking-tight">Send us an enquiry</h2>
               <p className="text-base text-slate-600 leading-relaxed">
                 Tell us about your course and family. We will come back to you about your funds and documents.
               </p>

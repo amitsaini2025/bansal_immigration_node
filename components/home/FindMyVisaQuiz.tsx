@@ -325,7 +325,7 @@ export default function FindMyVisaQuiz() {
             {result.tool && (
               <Link
                 href={result.tool.href}
-                className={`mt-4 inline-flex items-center gap-2 text-sm font-bold text-brand-800 hover:text-brand-950 underline underline-offset-4 decoration-gold-400 decoration-2 rounded ${focusRing}`}
+                className={`mt-4 inline-flex items-center gap-2 text-sm font-bold text-brand-800 hover:text-brand-950 underline underline-offset-4 decoration-brand-600 decoration-2 rounded ${focusRing}`}
               >
                 <Calculator className="w-4 h-4" aria-hidden="true" />
                 Try the {result.tool.label.toLowerCase()}

@@ -50,7 +50,7 @@ export default function QuotesSlider() {
         <Quote className="w-12 h-12 text-brand-300 mx-auto mb-6 opacity-60" />
         
         <div className="min-h-[160px] flex flex-col justify-center transition-all duration-700">
-          <blockquote className="text-2xl sm:text-3xl md:text-4xl font-bold italic text-[#26253a] mb-5 leading-tight">
+          <blockquote className="text-2xl sm:text-3xl md:text-4xl font-bold italic text-brand-900 mb-5 leading-tight">
             &ldquo;{quotes[current].text}&rdquo;
           </blockquote>
           <cite className="text-base text-gray-700 font-semibold not-italic">

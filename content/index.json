@@ -971,5 +971,152 @@
   "category": "migrate-to-australia",
   "isHub": false,
   "order": 138
+ },
+ {
+  "path": "/employer-sponsored/ens-186-labour-agreement",
+  "name": "ENS 186 Labour Agreement Stream",
+  "category": "employer-sponsored",
+  "isHub": false,
+  "order": 139
+ },
+ {
+  "path": "/employer-sponsored/sid-482-core-skills",
+  "name": "Skills in Demand 482 Core Skills Stream",
+  "category": "employer-sponsored",
+  "isHub": false,
+  "order": 140
+ },
+ {
+  "path": "/employer-sponsored/sid-482-specialist-skills",
+  "name": "Skills in Demand 482 Specialist Skills Stream",
+  "category": "employer-sponsored",
+  "isHub": false,
+  "order": 141
+ },
+ {
+  "path": "/migrate-to-australia/skilled-independent-189-hong-kong",
+  "name": "Skilled Independent 189 Hong Kong Stream",
+  "category": "migrate-to-australia",
+  "isHub": false,
+  "order": 142
+ },
+ {
+  "path": "/migrate-to-australia/permanent-residence-191-hong-kong",
+  "name": "Permanent Residence 191 Hong Kong Stream",
+  "category": "migrate-to-australia",
+  "isHub": false,
+  "order": 143
+ },
+ {
+  "path": "/citizenship/new-zealand-citizens-subclass-444",
+  "name": "Citizenship for New Zealand Citizens on Subclass 444",
+  "category": "citizenship",
+  "isHub": false,
+  "order": 144
+ },
+ {
+  "path": "/employer-sponsored/dama-south-australia",
+  "name": "DAMA South Australia",
+  "category": "employer-sponsored",
+  "isHub": false,
+  "order": 145
+ },
+ {
+  "path": "/employer-sponsored/dama-victoria",
+  "name": "DAMA Victoria",
+  "category": "employer-sponsored",
+  "isHub": false,
+  "order": 146
+ },
+ {
+  "path": "/employer-sponsored/palm-scheme-403",
+  "name": "PALM Scheme Subclass 403",
+  "category": "employer-sponsored",
+  "isHub": false,
+  "order": 147
+ },
+ {
+  "path": "/skill-assessment/skills-assessment-for-teachers",
+  "name": "Skills assessment for teachers (AITSL)",
+  "category": "skill-assessment",
+  "isHub": false,
+  "order": 148
+ },
+ {
+  "path": "/skill-assessment/skills-assessment-for-doctors",
+  "name": "Skills assessment for doctors",
+  "category": "skill-assessment",
+  "isHub": false,
+  "order": 149
+ },
+ {
+  "path": "/skill-assessment/skills-assessment-for-social-workers",
+  "name": "Skills assessment for social workers",
+  "category": "skill-assessment",
+  "isHub": false,
+  "order": 150
+ },
+ {
+  "path": "/migrate-to-australia/victoria-state-nomination",
+  "name": "Victoria state nomination",
+  "category": "migrate-to-australia",
+  "isHub": false,
+  "order": 151
+ },
+ {
+  "path": "/migrate-to-australia/nsw-state-nomination",
+  "name": "New South Wales state nomination",
+  "category": "migrate-to-australia",
+  "isHub": false,
+  "order": 152
+ },
+ {
+  "path": "/migrate-to-australia/queensland-state-nomination",
+  "name": "Queensland state nomination",
+  "category": "migrate-to-australia",
+  "isHub": false,
+  "order": 153
+ },
+ {
+  "path": "/migrate-to-australia/western-australia-state-nomination",
+  "name": "Western Australia state nomination",
+  "category": "migrate-to-australia",
+  "isHub": false,
+  "order": 154
+ },
+ {
+  "path": "/migrate-to-australia/tasmania-state-nomination",
+  "name": "Tasmania state nomination",
+  "category": "migrate-to-australia",
+  "isHub": false,
+  "order": 155
+ },
+ {
+  "path": "/migrate-to-australia/act-state-nomination",
+  "name": "ACT state nomination",
+  "category": "migrate-to-australia",
+  "isHub": false,
+  "order": 156
+ },
+ {
+  "path": "/migrate-to-australia/northern-territory-state-nomination",
+  "name": "Northern Territory state nomination",
+  "category": "migrate-to-australia",
+  "isHub": false,
+  "order": 157
+ },
+ {
+  "path": "/visitor-visa/visitor-600-business-visitor",
+  "name": "Visitor visa 600 Business Visitor stream",
+  "category": "visitor-visa",
+  "isHub": false,
+  "order": 158
+ },
+ {
+  "path": "/visitor-visa/visitor-600-frequent-traveller",
+  "name": "Visitor visa 600 Frequent Traveller stream",
+  "category": "visitor-visa",
+  "isHub": false,
+  "order": 159
  }
 ]

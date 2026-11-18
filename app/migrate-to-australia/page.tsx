@@ -200,21 +200,51 @@ const studyPath = [
 const states = [
   {
     name: 'Victoria',
-    desc: 'Check your fit against Victorian nomination with our Victorian Points Test.',
-    href: '/migrate-to-australia/victorian-points-test',
-    link: 'Victorian Points Test',
+    desc: '190 Registrations of Interest are open. The 491 is not. Rank yourself with the Victorian Points Test.',
+    href: '/migrate-to-australia/victoria-state-nomination',
+    link: 'Victoria state nomination',
+  },
+  {
+    name: 'New South Wales',
+    desc: 'The 190 is by invitation. New 491 applications are closed this program year.',
+    href: '/migrate-to-australia/nsw-state-nomination',
+    link: 'New South Wales state nomination',
+  },
+  {
+    name: 'Queensland',
+    desc: 'You need a new Registration of Interest for 2026–27, plus a current Expression of Interest.',
+    href: '/migrate-to-australia/queensland-state-nomination',
+    link: 'Queensland state nomination',
+  },
+  {
+    name: 'Western Australia',
+    desc: 'WA invites from SkillSelect. There is no separate Registration of Interest.',
+    href: '/migrate-to-australia/western-australia-state-nomination',
+    link: 'Western Australia state nomination',
   },
   {
     name: 'South Australia',
-    desc: 'Read how South Australian nomination works and who may qualify.',
+    desc: 'Read the graduate, employment and offshore streams Migration SA uses.',
     href: '/south-australia-state-nomination',
     link: 'South Australia state nomination',
   },
   {
-    name: 'Regional areas',
-    desc: 'See whether a suburb counts as regional for the 491 and for regional study points.',
-    href: '/postcode-checker',
-    link: 'Regional Postcode Checker',
+    name: 'Tasmania',
+    desc: 'A free Registration of Interest is ranked using Gold, Green and Orange attributes.',
+    href: '/migrate-to-australia/tasmania-state-nomination',
+    link: 'Tasmania state nomination',
+  },
+  {
+    name: 'Australian Capital Territory',
+    desc: 'Canberra uses the Canberra Matrix, which is separate from the Home Affairs points test.',
+    href: '/migrate-to-australia/act-state-nomination',
+    link: 'ACT state nomination',
+  },
+  {
+    name: 'Northern Territory',
+    desc: 'Most new applications are closed. A few onshore 491 cases can still apply.',
+    href: '/migrate-to-australia/northern-territory-state-nomination',
+    link: 'Northern Territory state nomination',
   },
 ];
 
@@ -246,10 +276,10 @@ const agents = [
   { name: 'Arun Bansal', marn: '2418466', href: '/team/arun-bansal' },
   { name: 'Vipul Goyal', marn: '2418571', href: '/team/vipul-goyal' },
   { name: 'Mamta Puri', marn: '2418481', href: '/team/mamta-puri' },
-  { name: 'Shubam Kumar', marn: '', href: '/team/shubam-kumar' },
-  { name: 'Shaveena', marn: '', href: '/team/shaveena' },
+  { name: 'Shubam Kumar', marn: '2619683', href: '/team/shubam-kumar' },
+  { name: 'Shaveena', marn: '2619533', href: '/team/shaveena' },
   { name: 'Vijay Patel', marn: '', href: '/team/vijay-patel' },
-  { name: 'Celesty Parmar', marn: '', href: '/team/celesty-parmar' },
+  { name: 'Celesty Parmar', marn: '2619664', href: '/team/celesty-parmar' },
 ];
 
 const whyUs = [
@@ -259,7 +289,7 @@ const whyUs = [
   'We keep you updated on requests, deadlines and decisions as they happen.',
 ];
 
-const textLink = `font-bold text-brand-800 hover:text-brand-950 underline underline-offset-4 decoration-gold-400 decoration-2 rounded ${focusRing}`;
+const textLink = `font-bold text-brand-800 hover:text-brand-950 underline underline-offset-4 decoration-brand-600 decoration-2 rounded ${focusRing}`;
 
 function formatDate(iso: string) {
   return new Date(`${iso}T00:00:00Z`).toLocaleDateString('en-AU', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
@@ -485,7 +515,7 @@ export default function Page() {
             {readiness.map((r, i) => (
               <li key={r.title} className={`${card} p-6 flex flex-col`}>
                 <span className="flex items-center gap-3">
-                  <span className="w-9 h-9 rounded-full bg-gold-400 text-brand-950 font-extrabold text-sm flex items-center justify-center" aria-hidden="true">
+                  <span className="w-9 h-9 rounded-full bg-brand-700 text-white font-extrabold text-sm flex items-center justify-center" aria-hidden="true">
                     {i + 1}
                   </span>
                   <h3 className="text-base font-bold text-slate-900">{r.title}</h3>
@@ -515,7 +545,7 @@ export default function Page() {
             <div aria-hidden="true" className="hidden lg:block absolute top-5 left-[6%] right-[6%] h-px bg-brand-200" />
             {timeline.map((t, i) => (
               <li key={t.title} className="relative">
-                <span className="relative z-10 w-10 h-10 rounded-full bg-gold-400 text-brand-950 font-extrabold flex items-center justify-center ring-8 ring-white">
+                <span className="relative z-10 w-10 h-10 rounded-full bg-brand-700 text-white font-extrabold flex items-center justify-center ring-8 ring-white">
                   {i + 1}
                 </span>
                 <h3 className="mt-4 text-base font-bold text-slate-900">{t.title}</h3>
@@ -569,7 +599,8 @@ export default function Page() {
             ))}
           </ul>
           <p className="mt-6 text-sm text-slate-600">
-            Other states and territories publish their own lists. State rules change, so check the state’s website or{' '}
+            State rules change. Check the state’s website, use the{' '}
+            <Link href="/postcode-checker" className={textLink}>Postcode Checker</Link> for regional areas, or{' '}
             <Link href="/book-an-appointment" className={textLink}>ask an adviser</Link>.
           </p>
         </div>

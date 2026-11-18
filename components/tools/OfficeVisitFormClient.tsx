@@ -1,7 +1,8 @@
 'use client';
 
 import PhoneField from '@/components/forms/PhoneField';
-import React, { useState } from 'react';
+import { TurnstileField, useTurnstileSiteKey } from '@/components/forms/TurnstileField';
+import React, { useId, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { AlertCircle, ArrowRight } from 'lucide-react';
@@ -48,6 +49,11 @@ export default function OfficeVisitFormClient() {
   const router = useRouter();
   const [submitting, setSubmitting] = useState(false);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
+  const turnstileSiteKey = useTurnstileSiteKey();
+  const [turnstileToken, setTurnstileToken] = useState('');
+  const [turnstileKey, setTurnstileKey] = useState(0);
+  const [honeypot, setHoneypot] = useState('');
+  const honeypotId = useId();
 
   // Form State
   const [formData, setFormData] = useState({
@@ -104,6 +110,11 @@ export default function OfficeVisitFormClient() {
     e.preventDefault();
     setErrorMsg(null);
 
+    if (honeypot) {
+      router.push('/office-visit-form/thank-you');
+      return;
+    }
+
     if (!formData.first_name || !formData.last_name || !formData.email || !formData.phone) {
       setErrorMsg('Please complete all required fields (First Name, Last Name, Email, and Phone).');
       return;
@@ -114,13 +125,18 @@ export default function OfficeVisitFormClient() {
       return;
     }
 
+    if (turnstileSiteKey && !turnstileToken) {
+      setErrorMsg('Please complete the security check before sending.');
+      return;
+    }
+
     setSubmitting(true);
 
     try {
       const res = await fetch('/api/office-visit-form/submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ ...formData, website_honeypot: honeypot, cf_turnstile_response: turnstileToken }),
       });
 
       const data = await res.json();
@@ -128,10 +144,14 @@ export default function OfficeVisitFormClient() {
       if (res.ok && data.success) {
         router.push(data.redirectUrl || '/office-visit-form/thank-you');
       } else {
+        setTurnstileToken('');
+        setTurnstileKey((key) => key + 1);
         setErrorMsg(data.message || 'Submission failed. Please check your details and try again.');
         setSubmitting(false);
       }
     } catch {
+      setTurnstileToken('');
+      setTurnstileKey((key) => key + 1);
       setErrorMsg('Network error. Please try again or call our office directly.');
       setSubmitting(false);
     }
@@ -142,6 +162,18 @@ export default function OfficeVisitFormClient() {
       {/* Main Form */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24" id="office-visit-form">
         <form onSubmit={handleSubmit} className={`${toolCard} p-6 sm:p-10 space-y-12`}>
+          <div className="hidden" aria-hidden="true">
+            <label htmlFor={honeypotId}>Leave blank</label>
+            <input
+              type="text"
+              id={honeypotId}
+              name="website_honeypot"
+              tabIndex={-1}
+              autoComplete="off"
+              value={honeypot}
+              onChange={(e) => setHoneypot(e.target.value)}
+            />
+          </div>
           {errorMsg && (
             <div role="alert" className="p-4 rounded-xl bg-red-50 border border-red-300 text-red-800 flex items-start gap-3 text-base">
               <AlertCircle className="w-5 h-5 text-red-700 shrink-0 mt-0.5" aria-hidden="true" />
@@ -422,6 +454,8 @@ export default function OfficeVisitFormClient() {
               </label>
             </div>
           </div>
+
+          <TurnstileField resetKey={turnstileKey} onToken={setTurnstileToken} />
 
           {/* Submit Button */}
           <div>

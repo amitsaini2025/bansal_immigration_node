@@ -29,9 +29,17 @@ export async function generateMetadata({
   const blog = await getBlog(slug);
   if (!blog) return { title: 'Blog Not Found | Bansal Immigration' };
 
+  const url = `https://bansalimmigration.com.au/blogs/${slug}`;
   return {
     title: blog.meta_title || `${blog.title} | Bansal Immigration`,
     description: blog.meta_description || blog.short_description || undefined,
+    alternates: { canonical: url },
+    openGraph: {
+      title: blog.meta_title || blog.title,
+      description: blog.meta_description || blog.short_description || undefined,
+      url,
+      type: 'article',
+    },
   };
 }
 
@@ -74,7 +82,7 @@ export default async function BlogDetailPage({
       ? 'Arun Bansal (MARN 2418466)'
       : blog.author;
 
-  const currentUrl = `https://www.bansalimmigration.com.au/blogs/${blog.slug}`;
+  const currentUrl = `https://bansalimmigration.com.au/blogs/${blog.slug}`;
 
   return (
     <div className="bg-slate-50/60 min-h-screen">
@@ -94,30 +102,30 @@ export default async function BlogDetailPage({
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl">
             {/* Regulatory Badge */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-bold bg-brand-50 text-[#3b3a52] border border-brand-200/80 mb-4 shadow-2xs">
-              <ShieldCheck className="w-4 h-4 text-[#3b3a52] shrink-0" />
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-bold bg-brand-50 text-brand-900 border border-brand-200/80 mb-4 shadow-2xs">
+              <ShieldCheck className="w-4 h-4 text-brand-900 shrink-0" />
               <span>Reviewed by Registered Migration Agent • Code of Conduct Compliant</span>
             </div>
 
             {/* Article Title */}
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 leading-tight tracking-tight mb-5">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-brand-900 leading-tight tracking-tight mb-5">
               {blog.title}
             </h1>
 
             {/* Metadata Bar */}
             <div className="flex flex-wrap items-center gap-y-2 gap-x-5 text-xs sm:text-sm text-slate-600">
               <div className="flex items-center gap-1.5 font-medium">
-                <User className="w-4 h-4 text-[#3b3a52] shrink-0" />
+                <User className="w-4 h-4 text-brand-900 shrink-0" />
                 <span>By <strong className="text-slate-900">{displayAuthor}</strong></span>
               </div>
               <span className="text-slate-300 hidden sm:inline">•</span>
               <div className="flex items-center gap-1.5">
-                <Calendar className="w-4 h-4 text-[#3b3a52] shrink-0" />
+                <Calendar className="w-4 h-4 text-brand-900 shrink-0" />
                 <span>{formatFullDate(blog.published_at || blog.created_at)}</span>
               </div>
               <span className="text-slate-300 hidden sm:inline">•</span>
               <div className="flex items-center gap-1.5">
-                <Clock className="w-4 h-4 text-[#3b3a52] shrink-0" />
+                <Clock className="w-4 h-4 text-brand-900 shrink-0" />
                 <span>{readingTime} min read</span>
               </div>
             </div>
@@ -151,7 +159,7 @@ export default async function BlogDetailPage({
                 <div
                   className="prose prose-slate prose-lg max-w-none [&_.flex.space-x-4]:flex-wrap [&_.flex.space-x-4]:gap-2
                     text-slate-800 leading-relaxed
-                    prose-headings:font-extrabold prose-headings:text-slate-900 prose-headings:tracking-tight
+                    prose-headings:font-extrabold prose-headings:text-brand-900 prose-headings:tracking-tight
                     prose-h2:text-2xl sm:prose-h2:text-3xl prose-h2:mt-10 prose-h2:mb-4 prose-h2:border-b prose-h2:border-slate-100 prose-h2:pb-3
                     prose-h3:text-xl sm:prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-3
                     prose-p:text-slate-700 prose-p:leading-relaxed prose-p:text-base sm:prose-p:text-lg prose-p:mb-5
@@ -160,8 +168,8 @@ export default async function BlogDetailPage({
                     prose-table:w-full prose-table:my-6 prose-table:border prose-table:border-slate-200 prose-table:text-sm
                     prose-th:bg-slate-100/80 prose-th:p-3 prose-th:text-slate-900 prose-th:font-bold
                     prose-td:p-3 prose-td:border-b prose-td:border-slate-100 prose-td:text-slate-700
-                    prose-a:text-[#3b3a52] prose-a:font-semibold prose-a:underline hover:prose-a:text-brand-900
-                    prose-blockquote:border-l-4 prose-blockquote:border-[#3b3a52] prose-blockquote:bg-brand-50/40 prose-blockquote:p-4 prose-blockquote:rounded-r-xl prose-blockquote:italic prose-blockquote:text-slate-700
+                    prose-a:text-brand-800 prose-a:font-semibold prose-a:underline hover:prose-a:text-brand-900
+                    prose-blockquote:border-l-4 prose-blockquote:border-brand-700 prose-blockquote:bg-brand-50/40 prose-blockquote:p-4 prose-blockquote:rounded-r-xl prose-blockquote:italic prose-blockquote:text-slate-700
                     prose-strong:text-slate-900 prose-strong:font-bold"
                   dangerouslySetInnerHTML={{ __html: blog.description }}
                 />
@@ -169,7 +177,7 @@ export default async function BlogDetailPage({
                 {/* Social Share Bar */}
                 <div className="mt-12 pt-8 border-t border-slate-100 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                   <div className="flex items-center gap-2 text-sm font-bold text-slate-800">
-                    <Share2 className="w-4 h-4 text-[#3b3a52]" />
+                    <Share2 className="w-4 h-4 text-brand-900" />
                     <span>Share this publication:</span>
                   </div>
                   <div className="flex flex-wrap items-center gap-2">
@@ -185,7 +193,7 @@ export default async function BlogDetailPage({
                       href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(currentUrl)}&text=${encodeURIComponent(blog.title)}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="px-3.5 py-1.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white text-xs font-semibold transition"
+                      className="px-3.5 py-1.5 rounded-xl bg-brand-700 hover:bg-brand-800 text-white text-xs font-semibold transition"
                     >
                       Twitter / X
                     </a>
@@ -193,7 +201,7 @@ export default async function BlogDetailPage({
                       href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(currentUrl)}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="px-3.5 py-1.5 rounded-xl bg-brand-900 hover:bg-brand-950 text-white text-xs font-semibold transition"
+                      className="px-3.5 py-1.5 rounded-xl bg-brand-700 hover:bg-brand-800 text-white text-xs font-semibold transition"
                     >
                       LinkedIn
                     </a>
@@ -211,7 +219,7 @@ export default async function BlogDetailPage({
 
               {/* Author & OMARA Legal Attestation Card */}
               <div className="bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-xs flex flex-col sm:flex-row items-start gap-5">
-                <div className="w-14 h-14 rounded-2xl bg-brand-50 text-[#3b3a52] border border-brand-200/80 flex items-center justify-center shrink-0">
+                <div className="w-14 h-14 rounded-2xl bg-brand-50 text-brand-900 border border-brand-200/80 flex items-center justify-center shrink-0">
                   <ShieldCheck className="w-7 h-7" />
                 </div>
                 <div className="space-y-2">
@@ -235,34 +243,34 @@ export default async function BlogDetailPage({
               {/* Related Practice Area Hubs */}
               <div className="bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-xs space-y-4">
                 <h3 className="font-bold text-slate-900 text-base flex items-center gap-2">
-                  <BookOpen className="w-4 h-4 text-[#3b3a52]" />
+                  <BookOpen className="w-4 h-4 text-brand-900" />
                   <span>Explore Australian Visa Categories</span>
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm">
                   <Link
                     href="/skilled-migration"
-                    className="p-3.5 rounded-2xl bg-slate-50 hover:bg-brand-50 text-slate-800 hover:text-[#3b3a52] font-semibold transition border border-slate-200 flex items-center justify-between"
+                    className="p-3.5 rounded-2xl bg-slate-50 hover:bg-brand-50 text-slate-800 hover:text-brand-900 font-semibold transition border border-slate-200 flex items-center justify-between"
                   >
                     <span>General Skilled Migration (189, 190, 491)</span>
                     <ArrowRight className="w-4 h-4 text-slate-400 shrink-0" />
                   </Link>
                   <Link
                     href="/study-australia"
-                    className="p-3.5 rounded-2xl bg-slate-50 hover:bg-brand-50 text-slate-800 hover:text-[#3b3a52] font-semibold transition border border-slate-200 flex items-center justify-between"
+                    className="p-3.5 rounded-2xl bg-slate-50 hover:bg-brand-50 text-slate-800 hover:text-brand-900 font-semibold transition border border-slate-200 flex items-center justify-between"
                   >
                     <span>Student Visa (Subclass 500)</span>
                     <ArrowRight className="w-4 h-4 text-slate-400 shrink-0" />
                   </Link>
                   <Link
                     href="/family-visa"
-                    className="p-3.5 rounded-2xl bg-slate-50 hover:bg-brand-50 text-slate-800 hover:text-[#3b3a52] font-semibold transition border border-slate-200 flex items-center justify-between"
+                    className="p-3.5 rounded-2xl bg-slate-50 hover:bg-brand-50 text-slate-800 hover:text-brand-900 font-semibold transition border border-slate-200 flex items-center justify-between"
                   >
                     <span>Partner &amp; Family Visas (820/801)</span>
                     <ArrowRight className="w-4 h-4 text-slate-400 shrink-0" />
                   </Link>
                   <Link
                     href="/visitor-visa"
-                    className="p-3.5 rounded-2xl bg-slate-50 hover:bg-brand-50 text-slate-800 hover:text-[#3b3a52] font-semibold transition border border-slate-200 flex items-center justify-between"
+                    className="p-3.5 rounded-2xl bg-slate-50 hover:bg-brand-50 text-slate-800 hover:text-brand-900 font-semibold transition border border-slate-200 flex items-center justify-between"
                   >
                     <span>Visitor Visas (Subclass 600)</span>
                     <ArrowRight className="w-4 h-4 text-slate-400 shrink-0" />
@@ -280,7 +288,7 @@ export default async function BlogDetailPage({
             <aside className="lg:col-span-4 space-y-6 lg:sticky lg:top-24">
               
               {/* Consultation Booking CTA Card */}
-              <div className="bg-gradient-to-br from-brand-950 via-brand-900 to-slate-900 rounded-3xl p-6 sm:p-7 text-white shadow-lg space-y-4">
+              <div className="bg-brand-950 rounded-3xl p-6 sm:p-7 text-white shadow-lg space-y-4">
                 <h3 className="text-xl font-extrabold leading-tight">
                   Need Help With Your Australian Visa?
                 </h3>
@@ -290,7 +298,7 @@ export default async function BlogDetailPage({
                 <div className="pt-2 space-y-2.5">
                   <Link
                     href="/book-an-appointment"
-                    className="block w-full py-3 px-4 rounded-xl text-center bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-slate-900 font-extrabold text-sm shadow-md transition"
+                    className="block w-full min-h-12 py-3 px-4 rounded-xl text-center bg-brand-700 hover:bg-brand-800 text-white font-bold text-sm shadow-sm transition-colors"
                   >
                     Book Consultation
                   </Link>
@@ -335,21 +343,21 @@ export default async function BlogDetailPage({
               {/* Office Locations Quick Card */}
               <div className="bg-white rounded-3xl p-6 border border-slate-200 shadow-xs space-y-3.5">
                 <h3 className="font-bold text-slate-900 text-sm flex items-center gap-2 pb-2 border-b border-slate-100">
-                  <Building className="w-4 h-4 text-[#3b3a52]" />
+                  <Building className="w-4 h-4 text-brand-900" />
                   <span>Our Offices</span>
                 </h3>
                 <div className="space-y-3 text-xs">
                   <div>
                     <h4 className="font-bold text-slate-900">Melbourne Head Office</h4>
                     <p className="text-slate-600 mt-0.5">Level 8/278 Collins St, Melbourne VIC 3000</p>
-                    <a href="tel:+61396021330" className="text-[#3b3a52] font-semibold mt-0.5 inline-block hover:underline">
+                    <a href="tel:+61396021330" className="text-brand-900 font-semibold mt-0.5 inline-block hover:underline">
                       +61 3 9602 1330
                     </a>
                   </div>
                   <div className="pt-2 border-t border-slate-100">
                     <h4 className="font-bold text-slate-900">Adelaide Office</h4>
                     <p className="text-slate-600 mt-0.5">Unit 5, 55 Gawler Pl, Adelaide SA 5000</p>
-                    <a href="tel:+61870798130" className="text-[#3b3a52] font-semibold mt-0.5 inline-block hover:underline">
+                    <a href="tel:+61870798130" className="text-brand-900 font-semibold mt-0.5 inline-block hover:underline">
                       +61 8 7079 8130
                     </a>
                   </div>
@@ -366,14 +374,14 @@ export default async function BlogDetailPage({
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between mb-8">
               <div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900">Related Articles</h2>
+                <h2 className="text-2xl sm:text-3xl font-extrabold text-brand-900">Related Articles</h2>
                 <p className="text-xs sm:text-sm text-slate-600 mt-1">
                   Continue exploring Australian visa updates and migration guidance.
                 </p>
               </div>
               <Link
                 href="/blogs"
-                className="hidden sm:inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-[#3b3a52] hover:underline"
+                className="hidden sm:inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-brand-900 hover:underline"
               >
                 <span>View All Articles</span>
                 <ArrowRight className="w-4 h-4" />
@@ -402,7 +410,7 @@ export default async function BlogDetailPage({
                         <div className="text-xs text-slate-500 mb-2 font-medium">
                           {formatDate(rel.published_at || rel.created_at)}
                         </div>
-                        <h3 className="font-extrabold text-slate-900 text-base mb-2 line-clamp-2 group-hover:text-[#3b3a52] transition-colors">
+                        <h3 className="font-extrabold text-slate-900 text-base mb-2 line-clamp-2 group-hover:text-brand-900 transition-colors">
                           <Link href={`/blogs/${rel.slug}`}>{rel.title}</Link>
                         </h3>
                         {rel.short_description && (
@@ -413,7 +421,7 @@ export default async function BlogDetailPage({
                       </div>
                       <Link
                         href={`/blogs/${rel.slug}`}
-                        className="inline-flex items-center gap-1.5 text-xs font-bold text-[#3b3a52] hover:underline pt-2 border-t border-slate-100"
+                        className="inline-flex items-center gap-1.5 text-xs font-bold text-brand-900 hover:underline pt-2 border-t border-slate-100"
                       >
                         <span>Read Full Guide</span>
                         <ArrowRight className="w-3.5 h-3.5" />

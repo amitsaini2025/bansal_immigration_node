@@ -30,9 +30,17 @@ export async function generateMetadata({
   const story = await getSuccessStory(slug);
   if (!story) return { title: 'Success Story | Bansal Immigration' };
 
+  const url = `https://bansalimmigration.com.au/success-stories/${slug}`;
   return {
     title: `${story.title} - Success Story | Bansal Immigration`,
     description: story.excerpt || undefined,
+    alternates: { canonical: url },
+    openGraph: {
+      title: `${story.title} - Success Story | Bansal Immigration`,
+      description: story.excerpt || undefined,
+      url,
+      type: 'article',
+    },
   };
 }
 
@@ -62,7 +70,7 @@ export default async function SuccessStoryDetailPage({
       </div>
 
       {/* Header Banner */}
-      <section className="bg-gradient-to-b from-slate-900 via-brand-950 to-slate-900 text-white py-12 lg:py-16">
+      <section className="bg-brand-950 text-white py-12 lg:py-16">
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="max-w-4xl">
             {/* Meta badges */}
@@ -160,7 +168,7 @@ export default async function SuccessStoryDetailPage({
 
               {/* Story Content Body */}
               <div className="bg-white p-6 sm:p-10 rounded-2xl border border-slate-200/90 shadow-2xs space-y-6">
-                <h2 className="text-2xl font-bold text-slate-900 tracking-tight pb-3 border-b border-slate-100">
+                <h2 className="text-2xl font-bold text-brand-900 tracking-tight pb-3 border-b border-slate-100">
                   Case Details &amp; Journey
                 </h2>
                 
@@ -191,7 +199,7 @@ export default async function SuccessStoryDetailPage({
                   <div className="flex flex-wrap items-center gap-3 pt-2">
                     <Link
                       href="/book-an-appointment"
-                      className="px-6 py-3 rounded-xl font-bold text-slate-900 bg-amber-400 hover:bg-amber-500 transition-colors text-sm shadow-sm"
+                      className="inline-flex items-center justify-center min-h-12 px-6 rounded-xl font-bold text-white bg-brand-700 hover:bg-brand-800 transition-colors text-sm shadow-sm"
                     >
                       Book a Consultation
                     </Link>
@@ -345,7 +353,7 @@ export default async function SuccessStoryDetailPage({
         <section className="py-16 bg-white border-t border-slate-200/80">
           <div className="container mx-auto px-4 max-w-6xl">
             <div className="text-center mb-12">
-              <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
+              <h2 className="text-2xl sm:text-3xl font-bold text-brand-900 tracking-tight">
                 More Success Stories
               </h2>
               <p className="text-sm text-slate-600 mt-2">

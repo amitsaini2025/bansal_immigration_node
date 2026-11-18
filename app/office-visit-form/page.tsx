@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     follow: false,
   },
   alternates: {
-    canonical: 'https://www.bansalimmigration.com.au/office-visit-form',
+    canonical: 'https://bansalimmigration.com.au/office-visit-form',
   },
 };
 
@@ -205,7 +205,7 @@ export default function OfficeVisitFormPage() {
       <section className={`${sectionY} bg-white`}>
         <div className={container}>
           <div className={`${card} ${cardPad} max-w-4xl`}>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">Questions?</h2>
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-brand-900 tracking-tight">Questions?</h2>
             <p className="mt-3 text-base text-slate-600 leading-relaxed max-w-2xl">
               Call{' '}
               <a href="tel:+61396021330" className={linkText}>

@@ -5,9 +5,21 @@ const legacyRedirects = require("./lib/legacy-redirects.json");
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  experimental: {
+    serverActions: {
+      bodySizeLimit: "8mb",
+    },
+  },
   async redirects() {
-    const list = [];
-    const seen = new Set();
+    const list = [
+      {
+        source: "/:path*",
+        destination: "https://bansalimmigration.com.au/:path*",
+        permanent: true,
+        has: [{ type: "host", value: "www.bansalimmigration.com.au" }],
+      },
+    ];
+    const seen = new Set(["/:path*"]);
 
     for (const [from, to] of Object.entries(legacyRedirects)) {
       if (from && to && from !== to) {

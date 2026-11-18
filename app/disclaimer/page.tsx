@@ -4,6 +4,7 @@ import LegalDocument from '@/components/legal/LegalDocument';
 export const metadata: Metadata = {
   title: 'Disclaimer - Bansal Immigration Consultants',
   description: 'Read our disclaimer to understand the limitations and scope of our immigration consulting services.',
+  alternates: { canonical: 'https://bansalimmigration.com.au/disclaimer' },
 };
 
 export default function DisclaimerPage() {

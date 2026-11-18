@@ -87,7 +87,7 @@ export default function HomeFaqAccordion() {
                 </span>
                 <span
                   className={`w-8 h-8 shrink-0 rounded-full flex items-center justify-center transition-colors ${
-                    isOpen ? 'bg-gold-400 text-brand-950' : 'bg-brand-50 text-brand-900'
+                    isOpen ? 'bg-brand-700 text-white' : 'bg-brand-50 text-brand-900'
                   }`}
                 >
                   <ChevronDown

@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     index: false,
     follow: false,
   },
+  alternates: { canonical: 'https://bansalimmigration.com.au/office-visit-form/thank-you' },
 };
 
 export default function OfficeVisitThankYouPage() {
@@ -32,7 +33,7 @@ export default function OfficeVisitThankYouPage() {
           <div className="w-16 h-16 mx-auto rounded-full bg-brand-50 border border-brand-100 flex items-center justify-center text-brand-900 mb-6">
             <CheckCircle2 className="w-8 h-8" aria-hidden="true" />
           </div>
-          <h1 className="text-3xl font-extrabold text-slate-900 mb-4 tracking-tight">
+          <h1 className="text-3xl font-extrabold text-brand-900 mb-4 tracking-tight">
             Thank You
           </h1>
           <p className="text-slate-600 text-base leading-relaxed mb-8 max-w-prose mx-auto">

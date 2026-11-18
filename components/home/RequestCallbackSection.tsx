@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import PhoneField from '@/components/forms/PhoneField';
+import { TurnstileField, useTurnstileSiteKey } from '@/components/forms/TurnstileField';
 import Link from 'next/link';
 import { PhoneCall, CheckCircle2, AlertCircle, ShieldCheck, ArrowRight, Lock } from 'lucide-react';
 
@@ -42,6 +43,9 @@ export default function RequestCallbackSection() {
   const [preferredTime, setPreferredTime] = useState('Morning (9:30 AM - 12:00 PM AEST)');
   const [message, setMessage] = useState('');
   const [honeypot, setHoneypot] = useState('');
+  const turnstileSiteKey = useTurnstileSiteKey();
+  const [turnstileToken, setTurnstileToken] = useState('');
+  const [turnstileKey, setTurnstileKey] = useState(0);
 
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
@@ -72,6 +76,11 @@ export default function RequestCallbackSection() {
       return;
     }
 
+    if (turnstileSiteKey && !turnstileToken) {
+      setErrorMessage('Please complete the security check before sending.');
+      return;
+    }
+
     const fullPhone = `${countryCode} ${phone.trim()}`;
 
     setLoading(true);
@@ -91,6 +100,8 @@ export default function RequestCallbackSection() {
           message: `Current Country: ${currentCountry}\nVisa / Service Enquiry: ${visaCategory}\nPreferred Contact Time & Time Zone: ${preferredTime}\nShort Message: ${message.trim() || 'No additional message provided.'}`,
           form_source: 'homepage_request_callback',
           form_variant: 'callback',
+          website_honeypot: honeypot,
+          cf_turnstile_response: turnstileToken,
         }),
       });
 
@@ -105,11 +116,15 @@ export default function RequestCallbackSection() {
           });
         }
       } else {
+        setTurnstileToken('');
+        setTurnstileKey((key) => key + 1);
         setErrorMessage(
           data.message || 'Unable to submit your request right now. Please call us directly on +61 3 9602 1330.'
         );
       }
     } catch {
+      setTurnstileToken('');
+      setTurnstileKey((key) => key + 1);
       setErrorMessage(
         'Connection error. Please call our Melbourne head office directly on +61 3 9602 1330.'
       );
@@ -167,13 +182,13 @@ export default function RequestCallbackSection() {
                 <p className="text-xs text-slate-300">Direct Office Contacts:</p>
                 <div className="text-xs text-slate-200">
                   <span className="font-semibold text-white">Melbourne:</span>{' '}
-                  <a href="tel:+61396021330" className="hover:text-gold-300 underline font-medium">
+                  <a href="tel:+61396021330" className="hover:text-brand-200 underline font-medium">
                     +61 3 9602 1330
                   </a>
                 </div>
                 <div className="text-xs text-slate-200">
                   <span className="font-semibold text-white">Adelaide:</span>{' '}
-                  <a href="tel:+61883171340" className="hover:text-gold-300 underline font-medium">
+                  <a href="tel:+61883171340" className="hover:text-brand-200 underline font-medium">
                     +61 8 8317 1340
                   </a>
                 </div>
@@ -187,7 +202,7 @@ export default function RequestCallbackSection() {
                   <div className="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 mx-auto flex items-center justify-center mb-5">
                     <CheckCircle2 className="w-9 h-9" />
                   </div>
-                  <h3 className="text-2xl font-bold text-slate-900 mb-2">
+                  <h3 className="text-2xl font-bold text-brand-900 mb-2">
                     Call Back Request Received
                   </h3>
                   <p className="text-slate-600 max-w-md mx-auto text-sm sm:text-base mb-6 leading-relaxed">
@@ -205,6 +220,8 @@ export default function RequestCallbackSection() {
                         setEmail('');
                         setPhone('');
                         setMessage('');
+                        setTurnstileToken('');
+                        setTurnstileKey((key) => key + 1);
                       }}
                       className="px-6 py-2.5 rounded-xl border border-slate-300 text-slate-700 font-semibold text-sm hover:bg-slate-50 transition-colors cursor-pointer"
                     >
@@ -349,6 +366,8 @@ export default function RequestCallbackSection() {
                       className="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-slate-900 text-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-700 focus:border-transparent transition-all resize-none"
                     />
                   </div>
+
+                  <TurnstileField resetKey={turnstileKey} onToken={setTurnstileToken} />
 
                   {/* Submit Button */}
                   <div>

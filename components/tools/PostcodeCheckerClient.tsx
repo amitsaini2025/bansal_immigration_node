@@ -225,7 +225,7 @@ export default function PostcodeCheckerClient() {
                     setQuery(`${chip.label}`);
                     handleCheck(chip.code);
                   }}
-                  className="min-h-10 px-4 py-2 rounded-full bg-white hover:bg-gold-400 hover:border-gold-400 hover:text-brand-950 border border-slate-300 text-brand-900 font-semibold transition-colors cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-400"
+                  className="min-h-10 px-4 py-2 rounded-full bg-white hover:bg-brand-700 hover:border-brand-700 hover:text-white border border-slate-300 text-brand-900 font-semibold transition-colors cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700"
                 >
                   {chip.label}
                 </button>

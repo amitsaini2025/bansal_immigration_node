@@ -1,7 +1,14 @@
 'use client';
 
-import React, { useState, useMemo } from 'react';
+import React, { useEffect, useState, useId } from 'react';
+import {
+  getEffectiveEnquiryTypeForBooking,
+  hideOverseasPackage,
+  isPaidService,
+  serviceRequiresPaidPackage,
+} from '@/lib/appointment/enquiryType';
 import Link from 'next/link';
+import { TurnstileField, useTurnstileSiteKey } from '@/components/forms/TurnstileField';
 import Image from 'next/image';
 import {
   Calendar,
@@ -38,38 +45,23 @@ import {
   FaqList,
 } from '@/components/ui/brand';
 
-const COUNTRY_CODES = [
-  { code: '+61', label: 'AU (+61)', flag: '🇦🇺' },
-  { code: '+91', label: 'IN (+91)', flag: '🇮🇳' },
-  { code: '+63', label: 'PH (+63)', flag: '🇵🇭' },
-  { code: '+64', label: 'NZ (+64)', flag: '🇳🇿' },
-  { code: '+44', label: 'UK (+44)', flag: '🇬🇧' },
-  { code: '+1', label: 'US/CA (+1)', flag: '🇺🇸' },
-  { code: '+971', label: 'UAE (+971)', flag: '🇦🇪' },
-  { code: '+65', label: 'SG (+65)', flag: '🇸🇬' },
-  { code: '+60', label: 'MY (+60)', flag: '🇲🇾' },
-  { code: '+880', label: 'BD (+880)', flag: '🇧🇩' },
-  { code: '+977', label: 'NP (+977)', flag: '🇳🇵' },
-  { code: '+92', label: 'PK (+92)', flag: '🇵🇰' },
-];
-
 const SERVICE_OPTIONS = [
-  { id: 'gsm', title: 'GSM Visas: 491, 190, 189, 191', tag: 'Skilled' },
-  { id: 'eoi-roi', title: 'EOI/ROI', tag: 'EOI' },
-  { id: 'tr-485', title: 'TR: 485 visa', tag: 'Graduate' },
-  { id: 'employer-sponsored', title: 'Employer Sponsored Visas: 494, 482, 186, DAMA', tag: 'Employer' },
-  { id: 'jrp-skills', title: 'JRP/Skill Assessment', tag: 'Skills' },
-  { id: 'tourist', title: 'Tourist Visa', tag: 'Visitor' },
+  { id: 'permanent-residency', title: 'GSM Visas: 491, 190, 189, 191' },
+  { id: 'eoi-roi', title: 'EOI/ROI' },
+  { id: 'temporary-residency', title: 'TR: 485 visa' },
+  { id: 'employer-sponsored-visas', title: 'Employer Sponsored Visas: 494, 482, 186, DAMA' },
+  { id: 'jrp-skill-assessment', title: 'JRP/Skill Assessment' },
+  { id: 'tourist-visa', title: 'Tourist Visa' },
   {
-    id: 'education',
-    title: 'Education/Course Change/Student Visa/Student Dependent Visa (for Australian onshore clients only)',
-    tag: 'Study',
+    id: 'education-visa',
+    title:
+      'Education/Course Change/Student Visa/Student Dependent Visa (for education selection for Australian onshore clients only)',
   },
-  { id: 'complex-matters', title: 'Complex matters: ART, Protection visa', tag: 'Appeals' },
-  { id: 'visa-cancellation', title: 'Visa Cancellation/ NOICC/ Visa refusals', tag: 'Urgent' },
-  { id: 'family-visas', title: 'Family Visas (Parent Visa, Partner Visa, Child Visa)', tag: 'Family' },
-  { id: 'citizenship', title: 'Citizenship', tag: 'PR/Citizen' },
-  { id: 'international-migration', title: 'Anyone who is outside Australia', tag: 'Overseas' },
+  { id: 'complex-matters', title: 'Complex matters: ART, Protection visa' },
+  { id: 'visa-cancellation', title: 'Visa Cancellation/ NOICC/ Visa refusals' },
+  { id: 'family-visas', title: 'Family Visas (Parent Visa, Partner Visa, Child Visa)' },
+  { id: 'citizenship', title: 'Citizenship' },
+  { id: 'international-migration', title: 'Anyone who is outside Australia' },
 ];
 
 const CONSULTATION_TIERS = [
@@ -108,20 +100,6 @@ const CONSULTATION_TIERS = [
   },
 ];
 
-const TIME_SLOTS = [
-  '10:00 AM',
-  '10:30 AM',
-  '11:00 AM',
-  '11:30 AM',
-  '02:00 PM',
-  '02:30 PM',
-  '03:00 PM',
-  '03:30 PM',
-  '04:00 PM',
-  '04:30 PM',
-  '05:00 PM',
-];
-
 const STEPS = [
   { num: 1, label: 'Location' },
   { num: 2, label: 'Service' },
@@ -129,65 +107,142 @@ const STEPS = [
   { num: 4, label: 'Confirm' },
 ];
 
+type Office = 'adelaide' | 'melbourne' | '';
+type Meeting = 'phone' | 'in-person' | 'video-call' | '';
+type Language = 'english' | 'hindi' | 'punjabi' | '';
+type Tier = 'consultation' | 'paid-consultation' | 'overseas-enquiry' | '';
+
+function ymd(date: Date) {
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const day = String(date.getDate()).padStart(2, '0');
+  return `${date.getFullYear()}-${month}-${day}`;
+}
+
 export default function BookAppointmentPage() {
-  const [step, setStep] = useState(1);
+  const [screen, setScreen] = useState(1);
 
-  // Step 1: Location, Meeting Type, Language
-  const [location, setLocation] = useState<'adelaide' | 'melbourne'>('melbourne');
-  const [meetingType, setMeetingType] = useState<'phone' | 'in-person' | 'video-call'>('phone');
-  const [preferredLanguage, setPreferredLanguage] = useState<'english' | 'hindi' | 'punjabi'>('english');
+  const [location, setLocation] = useState<Office>('');
+  const [meetingType, setMeetingType] = useState<Meeting>('');
+  const [preferredLanguage, setPreferredLanguage] = useState<Language>('');
 
-  // Step 2: Service Type & Consultation Package
-  const [selectedService, setSelectedService] = useState('gsm');
-  const [selectedTier, setSelectedTier] = useState<'consultation' | 'paid-consultation' | 'overseas-enquiry'>('consultation');
+  const [selectedService, setSelectedService] = useState('');
+  const [selectedTier, setSelectedTier] = useState<Tier>('');
 
-  // Step 3: Details & Date/Time
   const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
   const [countryCode, setCountryCode] = useState('+61');
   const [phone, setPhone] = useState('');
   const [enquiryDetails, setEnquiryDetails] = useState('');
   const [appointmentDate, setAppointmentDate] = useState('');
-  const [appointmentTime, setAppointmentTime] = useState(TIME_SLOTS[0]);
+  const [appointmentTime, setAppointmentTime] = useState('');
+  const [timeDisplay, setTimeDisplay] = useState('');
+  const [calendarCursor, setCalendarCursor] = useState(() => {
+    const now = new Date();
+    return new Date(now.getFullYear(), now.getMonth(), 1);
+  });
+  const [allowedDays, setAllowedDays] = useState<number[]>([1, 2, 3, 4, 5]);
+  const [blockedDates, setBlockedDates] = useState<string[]>([]);
+  const [slots, setSlots] = useState<{ time: string; display: string }[]>([]);
+  const [slotsLoading, setSlotsLoading] = useState(false);
+  const [slotMessage, setSlotMessage] = useState('');
+  const [paidMinutes, setPaidMinutes] = useState(30);
+  const [bookingMessage, setBookingMessage] = useState('');
+  const [paymentRequired, setPaymentRequired] = useState(false);
 
   // Status
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
+  const turnstileSiteKey = useTurnstileSiteKey();
+  const [turnstileToken, setTurnstileToken] = useState('');
+  const [turnstileKey, setTurnstileKey] = useState(0);
+  const [honeypot, setHoneypot] = useState('');
+  const honeypotId = useId();
 
-  // Generate the next 10 business days for quick date selection
-  const availableDates = useMemo(() => {
-    const dates: { dateStr: string; displayDay: string; displayDate: string }[] = [];
-    const today = new Date();
-    let count = 0;
-    let daysAhead = 1;
+  const paidBooking = isPaidService(selectedTier);
+  const mustPay = serviceRequiresPaidPackage(selectedService, meetingType);
+  const overseasHidden = hideOverseasPackage(selectedService);
+  const indicatorStep = screen <= 1 ? 1 : screen <= 3 ? 2 : screen === 4 ? 3 : 4;
 
-    while (count < 10) {
-      const d = new Date(today);
-      d.setDate(today.getDate() + daysAhead);
-      const dayOfWeek = d.getDay();
-      // Skip Saturday (6) and Sunday (0)
-      if (dayOfWeek !== 0 && dayOfWeek !== 6) {
-        const year = d.getFullYear();
-        const month = String(d.getMonth() + 1).padStart(2, '0');
-        const day = String(d.getDate()).padStart(2, '0');
-        const dateStr = `${year}-${month}-${day}`;
-        const displayDay = d.toLocaleDateString('en-US', { weekday: 'short' });
-        const displayDate = d.toLocaleDateString('en-US', { day: 'numeric', month: 'short' });
-        dates.push({ dateStr, displayDay, displayDate });
-        count++;
-      }
-      daysAhead++;
-    }
-    return dates;
-  }, []);
+  const scheduleQuery = (isPaid: boolean) => {
+    const params = new URLSearchParams({
+      location: location || 'melbourne',
+      service_type: selectedService,
+      specific_service: isPaid ? 'paid-consultation' : 'consultation',
+      is_paid: isPaid ? '1' : '0',
+      enquiry_type: getEffectiveEnquiryTypeForBooking(location || 'melbourne', selectedService, isPaid),
+    });
+    return params;
+  };
 
-  // Default appointment date to the first available business day on initial render
-  React.useEffect(() => {
-    if (!appointmentDate && availableDates.length > 0) {
-      setAppointmentDate(availableDates[0].dateStr);
-    }
-  }, [availableDates, appointmentDate]);
+  useEffect(() => {
+    if (!location || !selectedService) return;
+    const tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    const paidParams = scheduleQuery(true);
+    paidParams.set('date', ymd(tomorrow));
+    fetch(`/api/appointments/available-slots?${paidParams.toString()}`)
+      .then((res) => res.json())
+      .then((data) => {
+        if (data?.working_hours?.interval) setPaidMinutes(Number(data.working_hours.interval));
+      })
+      .catch(() => undefined);
+    const dayParams = scheduleQuery(paidBooking);
+    dayParams.set('date', ymd(tomorrow));
+    fetch(`/api/appointments/available-slots?${dayParams.toString()}`)
+      .then((res) => res.json())
+      .then((data) => {
+        if (Array.isArray(data?.days_of_week) && data.days_of_week.length > 0) {
+          setAllowedDays(data.days_of_week.map((day: number) => Number(day)));
+        } else {
+          setAllowedDays([1, 2, 3, 4, 5]);
+        }
+      })
+      .catch(() => setAllowedDays([1, 2, 3, 4, 5]));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [location, selectedService, selectedTier]);
+
+  useEffect(() => {
+    if (screen < 4 || !location || !selectedService || !selectedTier) return;
+    const start = new Date(calendarCursor.getFullYear(), calendarCursor.getMonth(), 1);
+    const end = new Date(calendarCursor.getFullYear(), calendarCursor.getMonth() + 1, 0);
+    const params = scheduleQuery(paidBooking);
+    params.set('start_date', ymd(start));
+    params.set('end_date', ymd(end));
+    fetch(`/api/appointments/check-blocked-dates?${params.toString()}`)
+      .then((res) => res.json())
+      .then((data) => {
+        if (Array.isArray(data?.blocked_dates)) setBlockedDates(data.blocked_dates);
+      })
+      .catch(() => setBlockedDates([]));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [screen, calendarCursor, location, selectedService, selectedTier, paidBooking]);
+
+  useEffect(() => {
+    if (!appointmentDate || screen < 4) return;
+    setSlotsLoading(true);
+    setSlotMessage('');
+    const params = scheduleQuery(paidBooking);
+    params.set('date', appointmentDate);
+    fetch(`/api/appointments/available-slots?${params.toString()}`)
+      .then((res) => res.json())
+      .then((data) => {
+        if (Array.isArray(data?.days_of_week) && data.days_of_week.length > 0) {
+          setAllowedDays(data.days_of_week.map((day: number) => Number(day)));
+        }
+        const nextSlots = Array.isArray(data?.available_slots) ? data.available_slots : [];
+        setSlots(nextSlots);
+        setSlotMessage(
+          nextSlots.length > 0 ? '' : 'No available time slots for this date. Please select another date.'
+        );
+      })
+      .catch(() => {
+        setSlots([]);
+        setSlotMessage('Error loading time slots. Please try again.');
+      })
+      .finally(() => setSlotsLoading(false));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [appointmentDate, location, selectedService, selectedTier, paidBooking, screen]);
 
   const scrollToWizard = () => {
     if (typeof window !== 'undefined') {
@@ -198,27 +253,33 @@ export default function BookAppointmentPage() {
     }
   };
 
-  // Auto-switch tier if user chooses Video Call or Overseas Service
-  const handleMeetingTypeSelect = (type: 'phone' | 'in-person' | 'video-call') => {
+  const clearSchedule = () => {
+    setAppointmentDate('');
+    setAppointmentTime('');
+    setTimeDisplay('');
+    setSlots([]);
+  };
+
+  const handleMeetingTypeSelect = (type: Meeting) => {
     setMeetingType(type);
-    if (type === 'video-call' && selectedTier === 'consultation') {
-      setSelectedTier('paid-consultation');
-    }
+    if (type === 'video-call' && selectedTier === 'consultation') setSelectedTier('');
   };
 
   const handleServiceSelect = (serviceId: string) => {
     setSelectedService(serviceId);
-    if (serviceId === 'international-migration') {
-      setSelectedTier('overseas-enquiry');
-    } else if (selectedTier === 'overseas-enquiry') {
+    const paidOnly = serviceRequiresPaidPackage(serviceId, meetingType);
+    const hideOverseas = hideOverseasPackage(serviceId);
+    if (hideOverseas) {
       setSelectedTier('paid-consultation');
+      return;
     }
+    if (paidOnly && selectedTier === 'consultation') setSelectedTier('');
   };
 
   const validateAndGoNext = () => {
     setErrorMessage('');
 
-    if (step === 1) {
+    if (screen === 1) {
       if (!location) {
         setErrorMessage('Please select an office location.');
         return;
@@ -231,34 +292,42 @@ export default function BookAppointmentPage() {
         setErrorMessage('Please select your preferred language.');
         return;
       }
-      setStep(2);
+      setScreen(2);
       setTimeout(scrollToWizard, 50);
-    } else if (step === 2) {
+    } else if (screen === 2) {
       if (!selectedService) {
         setErrorMessage('Please select a service category.');
         return;
       }
+      setScreen(3);
+      setTimeout(scrollToWizard, 50);
+    } else if (screen === 3) {
       if (!selectedTier) {
         setErrorMessage('Please select a consultation option.');
         return;
       }
-      setStep(3);
-      setTimeout(scrollToWizard, 50);
-    } else if (step === 3) {
-      if (!fullName.trim()) {
-        setErrorMessage('Please enter your full name.');
+      if (mustPay && selectedTier === 'consultation') {
+        setErrorMessage('This appointment is available as a paid consultation only.');
         return;
       }
-      if (!email.trim() || !email.includes('@')) {
+      clearSchedule();
+      setScreen(4);
+      setTimeout(scrollToWizard, 50);
+    } else if (screen === 4) {
+      if (!/^[a-zA-Z\s'-]{2,}$/.test(fullName.trim())) {
+        setErrorMessage('Full name can only contain letters, spaces, hyphens, and apostrophes.');
+        return;
+      }
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())) {
         setErrorMessage('Please enter a valid email address.');
         return;
       }
-      if (!phone.trim()) {
+      if (phone.replace(/\D/g, '').length < 8) {
         setErrorMessage('Please enter your contact phone number.');
         return;
       }
-      if (!enquiryDetails.trim()) {
-        setErrorMessage('Please provide details regarding your immigration enquiry.');
+      if (enquiryDetails.trim().length < 10) {
+        setErrorMessage('Please provide at least 10 characters describing your enquiry.');
         return;
       }
       if (!appointmentDate) {
@@ -269,73 +338,80 @@ export default function BookAppointmentPage() {
         setErrorMessage('Please select an appointment time slot.');
         return;
       }
-      setStep(4);
+      setScreen(5);
       setTimeout(scrollToWizard, 50);
     }
   };
 
   const handlePrevStep = () => {
     setErrorMessage('');
-    setStep((prev) => Math.max(prev - 1, 1));
+    if (screen === 4 || screen === 5) clearSchedule();
+    setScreen((prev) => Math.max(prev - 1, 1));
     setTimeout(scrollToWizard, 50);
   };
 
   const handleFinalSubmit = async (isPaidSubmission = false) => {
+    if (honeypot) {
+      setSubmitted(true);
+      return;
+    }
+
     setLoading(true);
     setErrorMessage('');
 
-    const fullPhone = `${countryCode} ${phone.trim()}`;
-    const locationName =
-      location === 'melbourne'
-        ? 'Melbourne Office (Level 8/278 Collins St)'
-        : 'Adelaide Office (Unit 5, 55 Gawler Pl)';
-    const meetingTypeName =
-      meetingType === 'phone'
-        ? 'Phone Call'
-        : meetingType === 'in-person'
-        ? 'In Person'
-        : 'Video Call';
-    const langName =
-      preferredLanguage === 'english'
-        ? 'English'
-        : preferredLanguage === 'hindi'
-        ? 'Hindi'
-        : 'Punjabi';
-
-    const currentService =
-      SERVICE_OPTIONS.find((s) => s.id === selectedService)?.title || selectedService;
-    const currentTier =
-      CONSULTATION_TIERS.find((t) => t.id === selectedTier)?.title || 'Consultation';
+    if (turnstileSiteKey && !turnstileToken) {
+      setLoading(false);
+      setErrorMessage('Please complete the security check before sending.');
+      return;
+    }
 
     try {
-      const res = await fetch('/contact/submit', {
+      const res = await fetch('/api/appointments/book', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
           Accept: 'application/json',
         },
         body: JSON.stringify({
-          name: fullName.trim(),
+          full_name: fullName.trim(),
           email: email.trim(),
-          phone: fullPhone,
-          subject: `Appointment Booking: ${currentTier} - ${currentService}`,
-          message: `Booking Details:\nLocation: ${locationName}\nMeeting Type: ${meetingTypeName}\nLanguage: ${langName}\nService: ${currentService}\nPackage: ${currentTier} (${isPaidSubmission ? '$150 AUD' : 'FREE'})\nDate: ${appointmentDate} at ${appointmentTime} (${location === 'melbourne' ? 'AEST' : 'ACST'})\nEnquiry Details:\n${enquiryDetails.trim()}`,
-          form_source: 'book_appointment_wizard_4step',
-          form_variant: isPaidSubmission ? 'appointment_paid' : 'appointment_free',
+          phone: `${countryCode} ${phone.trim()}`,
+          location,
+          meeting_type: meetingType,
+          preferred_language: preferredLanguage,
+          service_type: selectedService,
+          specific_service: selectedTier,
+          enquiry_details: enquiryDetails.trim(),
+          enquiry_type: getEffectiveEnquiryTypeForBooking(location, selectedService, isPaidSubmission),
+          appointment_date: appointmentDate,
+          appointment_time: appointmentTime,
+          is_paid: isPaidSubmission,
+          website_honeypot: honeypot,
+          cf_turnstile_response: turnstileToken,
         }),
       });
 
       const data = await res.json().catch(() => ({}));
 
       if (res.ok && data.success !== false) {
+        if (data.payment_required && data.redirect) {
+          window.location.href = data.redirect;
+          return;
+        }
+        setPaymentRequired(Boolean(data.payment_required));
+        setBookingMessage(data.message || 'Appointment booked successfully.');
         setSubmitted(true);
       } else {
+        setTurnstileToken('');
+        setTurnstileKey((key) => key + 1);
         setErrorMessage(
           data.message ||
             'There was an issue processing your booking. Please call our office directly on +61 3 9602 1330.'
         );
       }
     } catch {
+      setTurnstileToken('');
+      setTurnstileKey((key) => key + 1);
       setErrorMessage(
         'Unable to connect to the server. Please call us directly on +61 3 9602 1330.'
       );
@@ -359,11 +435,13 @@ export default function BookAppointmentPage() {
   const groupLabel = `${fieldLabel} !mb-3`;
   const btnBack = `${btnGhostLight} cursor-pointer`;
   const btnNext = `${btnPrimaryLight} cursor-pointer disabled:opacity-60`;
-  const stepTitle = 'text-xl sm:text-2xl font-bold text-slate-900';
+  const stepTitle = 'text-xl sm:text-2xl font-bold text-brand-900';
   const stepLede = 'mt-2 text-slate-600 leading-relaxed max-w-2xl';
   const meetingLabel =
-    meetingType === 'phone' ? 'Phone Call' : meetingType === 'in-person' ? 'In Person at Office' : 'Video Call (Online)';
-  const langLabel = preferredLanguage === 'english' ? 'English' : preferredLanguage === 'hindi' ? 'Hindi' : 'Punjabi';
+    meetingType === 'phone' ? 'Phone Call' : meetingType === 'in-person' ? 'In Person' : meetingType === 'video-call' ? 'Video Call' : '';
+  const langLabel = preferredLanguage === 'english' ? 'English' : preferredLanguage === 'hindi' ? 'Hindi' : preferredLanguage === 'punjabi' ? 'Punjabi' : '';
+  const locationLabel = location === 'melbourne' ? 'Melbourne Office' : location === 'adelaide' ? 'Adelaide Office' : '';
+  const timezoneLabel = location === 'adelaide' ? 'Adelaide Time (ACST)' : 'Melbourne Time (AEST)';
 
   const expectSteps: [string, string][] = [
     ['We confirm your time', 'An adviser confirms your appointment by email or phone, usually within one business day.'],
@@ -387,7 +465,7 @@ export default function BookAppointmentPage() {
   const faqs = [
     {
       q: 'Do I have to pay for the first appointment?',
-      a: 'It depends on the appointment type. A free 10-minute initial assessment is available for clients currently in Australia. Comprehensive migration advice and overseas applicant enquiries are 30-minute paid appointments. The prices and details are shown in the Service step.',
+      a: 'The free appointment is only for clients currently in Australia, and only one free consultation is provided per client. If you are outside Australia, or the matter needs more than 10 minutes (including ART, visa cancellation, or protection visas), choose the $150 migration advice option.',
     },
     {
       q: 'Can I have a video appointment?',
@@ -454,9 +532,9 @@ export default function BookAppointmentPage() {
                 <div className="border-b border-slate-200 pb-6 mb-8">
                   <ol className="grid grid-cols-4 gap-2" aria-label="Booking progress">
                     {STEPS.map((s) => {
-                      const isCompleted = step > s.num;
-                      const isActive = step === s.num;
-                      const isClickable = s.num < step;
+                      const isCompleted = indicatorStep > s.num;
+                      const isActive = indicatorStep === s.num;
+                      const isClickable = s.num < indicatorStep;
                       return (
                         <li key={s.num} className="flex justify-center">
                           <button
@@ -464,7 +542,9 @@ export default function BookAppointmentPage() {
                             disabled={!isClickable && !isActive}
                             onClick={() => {
                               if (isClickable) {
-                                setStep(s.num);
+                                const target = s.num === 1 ? 1 : s.num === 2 ? 2 : s.num === 3 ? 4 : 5;
+                                if (screen >= 4) clearSchedule();
+                                setScreen(target);
                                 setTimeout(scrollToWizard, 50);
                               }
                             }}
@@ -478,7 +558,7 @@ export default function BookAppointmentPage() {
                                 isCompleted
                                   ? 'bg-brand-900 text-white'
                                   : isActive
-                                  ? 'bg-gold-400 text-brand-950 ring-4 ring-gold-400/30'
+                                  ? 'bg-brand-700 text-white ring-4 ring-brand-700/30'
                                   : 'bg-slate-100 text-slate-600'
                               }`}
                             >
@@ -520,18 +600,18 @@ export default function BookAppointmentPage() {
                     <div className="w-16 h-16 rounded-full bg-green-100 text-green-700 mx-auto flex items-center justify-center mb-5">
                       <CheckCircle2 className="w-10 h-10" aria-hidden="true" />
                     </div>
-                    <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-3">
-                      Appointment Request Received!
+                    <h2 className="text-2xl sm:text-3xl font-extrabold text-brand-900 mb-3">
+                      {paymentRequired ? 'Appointment reserved' : 'Appointment booked'}
                     </h2>
                     <p className="text-slate-600 max-w-md mx-auto text-base mb-6 leading-relaxed">
-                      Thank you, <strong className="text-slate-900">{fullName}</strong>. An OMARA registered migration agent has received your booking request for{' '}
-                      <strong>{appointmentDate}</strong> at <strong>{appointmentTime}</strong>.
+                      Thank you, <strong className="text-slate-900">{fullName}</strong>. Your appointment is{' '}
+                      <strong>{appointmentDate}</strong> at <strong>{timeDisplay || appointmentTime}</strong>. {bookingMessage}
                     </p>
 
                     <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200 text-sm text-slate-700 max-w-md mx-auto mb-6 text-left space-y-2">
                       <p>
                         <strong>Location &amp; Format:</strong>{' '}
-                        {location === 'melbourne' ? 'Melbourne Office' : 'Adelaide Office'} (
+                        {locationLabel} (
                         {meetingType === 'phone' ? 'Phone Call' : meetingType === 'in-person' ? 'In Person' : 'Video Call'})
                       </p>
                       <p>
@@ -549,14 +629,16 @@ export default function BookAppointmentPage() {
                     </div>
 
                     <p className="text-sm text-slate-600 mb-6">
-                      Our office will confirm your appointment schedule and adviser credentials via email shortly.
+                      {paymentRequired
+                        ? 'This is a $150 consultation. Payment is required before the appointment is confirmed. Call +61 3 9602 1330 if you need help paying.'
+                        : 'Free bookings stay pending until our office or you confirm the time.'}
                     </p>
 
                     <button
                       type="button"
                       onClick={() => {
                         setSubmitted(false);
-                        setStep(1);
+                        setScreen(1);
                         setFullName('');
                         setEmail('');
                         setPhone('');
@@ -570,7 +652,7 @@ export default function BookAppointmentPage() {
                 ) : (
                   <div>
                     {/* STEP 1 */}
-                    {step === 1 && (
+                    {screen === 1 && (
                       <div className="space-y-8 animate-in fade-in duration-300">
                         <div>
                           <h2 className={stepTitle}>Choose Your Preferred Location</h2>
@@ -671,19 +753,15 @@ export default function BookAppointmentPage() {
                       </div>
                     )}
 
-                    {/* STEP 2 */}
-                    {step === 2 && (
+                    {screen === 2 && (
                       <div className="space-y-8 animate-in fade-in duration-300">
                         <div>
                           <h2 className={stepTitle}>Select Your Service</h2>
-                          <p className={stepLede}>
-                            Choose the visa category you require and select between free initial guidance or comprehensive legal strategy.
-                          </p>
+                          <p className={stepLede}>Choose the service you need. The consultation length is chosen on the next screen.</p>
                         </div>
-
                         <fieldset>
-                          <legend className={groupLabel}>Choose the Service You Need</legend>
-                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                          <legend className={groupLabel}>Choose the service you need</legend>
+                          <div className="grid grid-cols-1 gap-3">
                             {SERVICE_OPTIONS.map((srv) => {
                               const isSelected = selectedService === srv.id;
                               return (
@@ -697,69 +775,12 @@ export default function BookAppointmentPage() {
                                   <span className={`text-sm leading-snug ${isSelected ? 'font-bold text-brand-950' : 'font-medium text-slate-800'}`}>
                                     {srv.title}
                                   </span>
-                                  <span className="flex items-center gap-1.5 shrink-0">
-                                    <span
-                                      className={`text-xs font-semibold px-2 py-0.5 rounded-full ${
-                                        isSelected
-                                          ? 'bg-brand-900 text-white'
-                                          : 'bg-slate-100 text-slate-700 border border-slate-200'
-                                      }`}
-                                    >
-                                      {srv.tag}
-                                    </span>
-                                    {isSelected && tickBadge('w-4 h-4')}
-                                  </span>
+                                  {isSelected && tickBadge('w-5 h-5')}
                                 </button>
                               );
                             })}
                           </div>
                         </fieldset>
-
-                        <fieldset>
-                          <legend className={groupLabel}>Select Service</legend>
-                          <div className="space-y-3">
-                            {CONSULTATION_TIERS.map((tier) => {
-                              const isSelected = selectedTier === tier.id;
-                              return (
-                                <button
-                                  key={tier.id}
-                                  type="button"
-                                  aria-pressed={isSelected}
-                                  onClick={() => setSelectedTier(tier.id as any)}
-                                  className={`${choiceClass(isSelected)} p-5 flex flex-col sm:flex-row sm:items-start gap-4`}
-                                >
-                                  <span
-                                    className={`w-16 h-14 rounded-xl flex items-center justify-center font-extrabold text-base shrink-0 ${
-                                      tier.id === 'consultation'
-                                        ? 'bg-gold-400 text-brand-950'
-                                        : 'bg-brand-50 text-brand-900 border border-brand-100'
-                                    }`}
-                                  >
-                                    {tier.price}
-                                  </span>
-                                  <span className="flex-1 min-w-0">
-                                    <span className="flex items-center gap-2 flex-wrap">
-                                      <span className="font-bold text-slate-900 text-base">{tier.title}</span>
-                                      <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-700 border border-slate-200">
-                                        {tier.duration}
-                                      </span>
-                                    </span>
-                                    <span className="block text-sm text-slate-600 mt-1.5 leading-relaxed">{tier.description}</span>
-                                    <span className="block text-xs text-slate-600 mt-1.5">{tier.availability}</span>
-                                  </span>
-                                  <span
-                                    className={`shrink-0 self-start px-3 py-1.5 rounded-lg text-xs font-bold ${
-                                      isSelected ? 'bg-brand-900 text-white' : 'border border-slate-300 text-slate-700'
-                                    }`}
-                                  >
-                                    {isSelected ? 'Selected' : 'Select'}
-                                  </span>
-                                </button>
-                              );
-                            })}
-                          </div>
-                        </fieldset>
-
                         <div className="pt-2 flex flex-col-reverse sm:flex-row sm:items-center sm:justify-between gap-3">
                           <button type="button" onClick={handlePrevStep} className={`${btnBack} w-full sm:w-auto`}>
                             <ArrowLeft className="w-4 h-4" aria-hidden="true" />
@@ -773,8 +794,76 @@ export default function BookAppointmentPage() {
                       </div>
                     )}
 
-                    {/* STEP 3 */}
-                    {step === 3 && (
+                    {screen === 3 && (
+                      <div className="space-y-8 animate-in fade-in duration-300">
+                        <div>
+                          <h2 className={stepTitle}>Select Service</h2>
+                          <p className={stepLede}>
+                            Free 10-minute consultations are for clients currently in Australia. Video calls, complex matters, visa cancellations, and overseas enquiries use a paid consultation.
+                          </p>
+                        </div>
+                        <fieldset>
+                          <legend className={groupLabel}>Consultation</legend>
+                          <div className="space-y-3">
+                            {CONSULTATION_TIERS.filter((tier) => {
+                              if (tier.id === 'consultation' && mustPay) return false;
+                              if (tier.id === 'overseas-enquiry' && overseasHidden) return false;
+                              return true;
+                            }).map((tier) => {
+                              const isSelected = selectedTier === tier.id;
+                              const minutes = tier.id === 'consultation' ? '10' : String(paidMinutes);
+                              return (
+                                <button
+                                  key={tier.id}
+                                  type="button"
+                                  aria-pressed={isSelected}
+                                  onClick={() => {
+                                    setSelectedTier(tier.id as Tier);
+                                    clearSchedule();
+                                  }}
+                                  className={`${choiceClass(isSelected)} p-5 flex flex-col sm:flex-row sm:items-start gap-4`}
+                                >
+                                  <span
+                                    className={`w-16 h-14 rounded-xl flex items-center justify-center font-extrabold text-base shrink-0 ${
+                                      tier.id === 'consultation'
+                                        ? 'bg-brand-700 text-white'
+                                        : 'bg-brand-50 text-brand-900 border border-brand-100'
+                                    }`}
+                                  >
+                                    {tier.id === 'overseas-enquiry' ? 'OVERSEAS' : tier.price}
+                                  </span>
+                                  <span className="flex-1 min-w-0 text-left">
+                                    <span className="flex items-center gap-2 flex-wrap">
+                                      <span className="font-bold text-slate-900 text-base">{tier.title}</span>
+                                      <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-700 border border-slate-200">
+                                        {tier.id === 'consultation' ? tier.duration : `${minutes} minutes`}
+                                      </span>
+                                    </span>
+                                    <span className="block text-sm text-slate-600 mt-1.5 leading-relaxed">{tier.description}</span>
+                                    <span className="block text-xs text-slate-600 mt-1.5">
+                                      {tier.id === 'consultation' ? tier.availability : `${minutes}-minute time slots`}
+                                    </span>
+                                  </span>
+                                  {isSelected && tickBadge('w-5 h-5')}
+                                </button>
+                              );
+                            })}
+                          </div>
+                        </fieldset>
+                        <div className="pt-2 flex flex-col-reverse sm:flex-row sm:items-center sm:justify-between gap-3">
+                          <button type="button" onClick={handlePrevStep} className={`${btnBack} w-full sm:w-auto`}>
+                            <ArrowLeft className="w-4 h-4" aria-hidden="true" />
+                            <span>Previous</span>
+                          </button>
+                          <button type="button" onClick={validateAndGoNext} className={`${btnNext} w-full sm:w-auto`}>
+                            <span>Next Step</span>
+                            <ArrowRight className="w-4 h-4" aria-hidden="true" />
+                          </button>
+                        </div>
+                      </div>
+                    )}
+
+                    {screen === 4 && (
                       <div className="space-y-6 animate-in fade-in duration-300">
                         <div>
                           <h2 className={stepTitle}>Your Details &amp; Appointment Time</h2>
@@ -850,55 +939,120 @@ export default function BookAppointmentPage() {
                           <div className="p-3.5 rounded-xl bg-brand-50 border border-brand-100 text-brand-950 text-sm flex items-center gap-2.5">
                             <Clock className="w-4 h-4 text-brand-800 shrink-0" aria-hidden="true" />
                             <span>
-                              All times shown in{' '}
-                              <strong>{location === 'melbourne' ? 'Melbourne Time (AEST)' : 'Adelaide Time (ACST)'}</strong>
+                              All times shown in <strong>{timezoneLabel}</strong>
                             </span>
                           </div>
 
                           <fieldset>
-                            <legend className={groupLabel}>Select Date</legend>
-                            <div className="grid grid-cols-2 sm:grid-cols-5 gap-2.5">
-                              {availableDates.map((item) => {
-                                const isSelected = appointmentDate === item.dateStr;
-                                return (
+                            <legend className={groupLabel}>Select Date &amp; Time</legend>
+                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                              <div className="rounded-2xl border border-slate-200 p-4">
+                                <div className="flex items-center justify-between mb-3">
                                   <button
-                                    key={item.dateStr}
                                     type="button"
-                                    aria-pressed={isSelected}
-                                    onClick={() => setAppointmentDate(item.dateStr)}
-                                    className={`${choiceClass(isSelected)} min-h-14 px-2 py-2.5 text-center`}
+                                    className={`${btnGhostLight} !min-h-10 !px-3`}
+                                    onClick={() => setCalendarCursor(new Date(calendarCursor.getFullYear(), calendarCursor.getMonth() - 1, 1))}
                                   >
-                                    <span className="block text-xs font-semibold text-slate-600">{item.displayDay}</span>
-                                    <span className={`block text-sm font-bold ${isSelected ? 'text-brand-950' : 'text-slate-900'}`}>
-                                      {item.displayDate}
-                                    </span>
+                                    <ArrowLeft className="w-4 h-4" aria-hidden="true" />
+                                    <span className="sr-only">Previous month</span>
                                   </button>
-                                );
-                              })}
-                            </div>
-                          </fieldset>
-
-                          <fieldset>
-                            <legend className={groupLabel}>Select Time Slot</legend>
-                            <div className="grid grid-cols-3 sm:grid-cols-4 gap-2.5">
-                              {TIME_SLOTS.map((slot) => {
-                                const isSelected = appointmentTime === slot;
-                                return (
+                                  <p className="font-bold text-slate-900">
+                                    {calendarCursor.toLocaleDateString('en-AU', { month: 'long', year: 'numeric' })}
+                                  </p>
                                   <button
-                                    key={slot}
                                     type="button"
-                                    aria-pressed={isSelected}
-                                    onClick={() => setAppointmentTime(slot)}
-                                    className={`min-h-12 px-2 rounded-xl border-2 text-sm text-center transition-colors motion-reduce:transition-none cursor-pointer ${focusRing} ${
-                                      isSelected
-                                        ? 'bg-brand-900 border-brand-900 text-white font-bold'
-                                        : 'border-slate-200 bg-white hover:border-brand-300 text-slate-800 font-medium'
-                                    }`}
+                                    className={`${btnGhostLight} !min-h-10 !px-3`}
+                                    onClick={() => setCalendarCursor(new Date(calendarCursor.getFullYear(), calendarCursor.getMonth() + 1, 1))}
                                   >
-                                    {slot}
+                                    <ArrowRight className="w-4 h-4" aria-hidden="true" />
+                                    <span className="sr-only">Next month</span>
                                   </button>
-                                );
-                              })}
+                                </div>
+                                <div className="grid grid-cols-7 gap-1 text-center text-xs font-semibold text-slate-500 mb-1">
+                                  {['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'].map((d) => (
+                                    <span key={d}>{d}</span>
+                                  ))}
+                                </div>
+                                <div className="grid grid-cols-7 gap-1">
+                                  {Array.from({ length: new Date(calendarCursor.getFullYear(), calendarCursor.getMonth(), 1).getDay() }).map((_, i) => (
+                                    <span key={`pad-${i}`} />
+                                  ))}
+                                  {Array.from({ length: new Date(calendarCursor.getFullYear(), calendarCursor.getMonth() + 1, 0).getDate() }).map((_, index) => {
+                                    const day = index + 1;
+                                    const date = new Date(calendarCursor.getFullYear(), calendarCursor.getMonth(), day);
+                                    const dateStr = ymd(date);
+                                    const jsDay = date.getDay();
+                                    const iso = jsDay === 0 ? 7 : jsDay;
+                                    const today = new Date();
+                                    today.setHours(0, 0, 0, 0);
+                                    const disabled = date <= today || !allowedDays.includes(iso) || blockedDates.includes(dateStr);
+                                    const isSelected = appointmentDate === dateStr;
+                                    return (
+                                      <button
+                                        key={dateStr}
+                                        type="button"
+                                        disabled={disabled}
+                                        aria-pressed={isSelected}
+                                        onClick={() => {
+                                          setSlots([]);
+                                          setSlotsLoading(true);
+                                          setSlotMessage('');
+                                          setAppointmentDate(dateStr);
+                                          setAppointmentTime('');
+                                          setTimeDisplay('');
+                                        }}
+                                        className={`min-h-10 rounded-lg text-sm font-semibold ${focusRing} ${
+                                          isSelected
+                                            ? 'bg-brand-900 text-white'
+                                            : disabled
+                                            ? 'text-slate-300 cursor-not-allowed'
+                                            : 'text-slate-800 hover:bg-brand-50'
+                                        }`}
+                                      >
+                                        {day}
+                                      </button>
+                                    );
+                                  })}
+                                </div>
+                              </div>
+                              <div>
+                                <p className="font-semibold text-slate-900 mb-3">
+                                  {appointmentDate
+                                    ? new Date(`${appointmentDate}T00:00:00`).toLocaleDateString('en-AU')
+                                    : 'Select a date'}
+                                </p>
+                                {slotsLoading ? (
+                                  <p className="text-sm text-slate-600">Loading available time slots...</p>
+                                ) : slots.length > 0 ? (
+                                  <div className="grid grid-cols-2 gap-2">
+                                    {slots.map((slot) => {
+                                      const isSelected = appointmentTime === slot.time;
+                                      return (
+                                        <button
+                                          key={slot.time}
+                                          type="button"
+                                          aria-pressed={isSelected}
+                                          onClick={() => {
+                                            setAppointmentTime(slot.time);
+                                            setTimeDisplay(slot.display);
+                                          }}
+                                          className={`min-h-12 px-2 rounded-xl border-2 text-sm ${focusRing} ${
+                                            isSelected
+                                              ? 'bg-brand-900 border-brand-900 text-white font-bold'
+                                              : 'border-slate-200 bg-white hover:border-brand-300 text-slate-800 font-medium'
+                                          }`}
+                                        >
+                                          {slot.display}
+                                        </button>
+                                      );
+                                    })}
+                                  </div>
+                                ) : (
+                                  <p className="text-sm text-red-700">
+                                    {appointmentDate ? slotMessage || 'No available time slots for this date. Please select another date.' : 'Choose a date to see open times.'}
+                                  </p>
+                                )}
+                              </div>
                             </div>
                           </fieldset>
                         </div>
@@ -917,7 +1071,7 @@ export default function BookAppointmentPage() {
                     )}
 
                     {/* STEP 4 */}
-                    {step === 4 && (
+                    {screen === 5 && (
                       <div className="space-y-6 animate-in fade-in duration-300">
                         <div>
                           <h2 className={stepTitle}>Confirm Your Appointment</h2>
@@ -931,9 +1085,7 @@ export default function BookAppointmentPage() {
                             ['Phone', `${countryCode} ${phone}`, ''],
                             [
                               'Location',
-                              location === 'melbourne'
-                                ? 'Melbourne Office (Level 8/278 Collins St)'
-                                : 'Adelaide Office (Unit 5, 55 Gawler Pl)',
+                              locationLabel,
                               'font-medium',
                             ],
                             ['Meeting Type', meetingLabel, 'font-medium'],
@@ -942,7 +1094,7 @@ export default function BookAppointmentPage() {
                             ['Service Package', `${activeTierObj?.title} (${activeTierObj?.price})`, 'font-bold'],
                             [
                               'Date & Time',
-                              `${appointmentDate} at ${appointmentTime} (${location === 'melbourne' ? 'Melbourne AEST' : 'Adelaide ACST'})`,
+                              `${appointmentDate} at ${timeDisplay || appointmentTime} (${timezoneLabel})`,
                               'font-bold text-brand-800',
                             ],
                             ['Enquiry Details', enquiryDetails, 'whitespace-pre-wrap'],
@@ -965,10 +1117,25 @@ export default function BookAppointmentPage() {
                           <div className="p-4 rounded-xl bg-brand-50 border border-brand-100 text-brand-950 text-sm flex items-start gap-2.5">
                             <Info className="w-5 h-5 text-brand-800 shrink-0" aria-hidden="true" />
                             <span>
-                              <strong>Professional consultation fee ($150 AUD):</strong> Our team will confirm your booking and send secure payment instructions before the appointment.
+                              <strong>Professional consultation fee ($150 AUD):</strong> Pay &amp; Submit opens the secure payment page. The appointment is confirmed after payment.
                             </span>
                           </div>
                         )}
+
+                        <div className="hidden" aria-hidden="true">
+                          <label htmlFor={honeypotId}>Leave blank</label>
+                          <input
+                            type="text"
+                            id={honeypotId}
+                            name="website_honeypot"
+                            tabIndex={-1}
+                            autoComplete="off"
+                            value={honeypot}
+                            onChange={(e) => setHoneypot(e.target.value)}
+                          />
+                        </div>
+
+                        <TurnstileField eager resetKey={turnstileKey} onToken={setTurnstileToken} />
 
                         <div className="pt-2 flex flex-col-reverse sm:flex-row sm:items-center sm:justify-between gap-3">
                           <button type="button" onClick={handlePrevStep} className={`${btnBack} w-full sm:w-auto`}>
@@ -992,7 +1159,7 @@ export default function BookAppointmentPage() {
                               onClick={() => handleFinalSubmit(true)}
                               className={`${btnNext} w-full sm:w-auto`}
                             >
-                              {loading ? <span>Processing...</span> : <span>Pay &amp; Submit ($150)</span>}
+                              {loading ? <span>Preparing payment...</span> : <span>Pay &amp; Submit ($150)</span>}
                             </button>
                           )}
                         </div>
@@ -1085,7 +1252,7 @@ export default function BookAppointmentPage() {
                 ))}
               </ul>
             </div>
-            <div className="lg:col-span-5 rounded-2xl border border-gold-300 bg-gold-100 p-6 sm:p-7">
+            <div className="lg:col-span-5 rounded-2xl border border-brand-200 bg-brand-50 p-6 sm:p-7">
               <h3 className="flex items-center gap-2 text-lg font-bold text-brand-950">
                 <AlertCircle className="w-5 h-5" aria-hidden="true" />
                 Urgent?
@@ -1125,6 +1292,37 @@ export default function BookAppointmentPage() {
             <Link href="/contact" className={`${btnPrimaryLight} w-full sm:w-auto`}>
               Send an enquiry
             </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className={`${sectionY} bg-white`}>
+        <div className={container}>
+          <SectionHeader eyebrow="Before you book" title="Important booking information" />
+          <div className="mt-10 max-w-3xl space-y-3">
+            {[
+              [
+                'Migration Consultation (Free Option)',
+                'In-person or phone meetings can be free. A 10-minute free phone consultation is also available, but please put the relevant facts in the enquiry box so the adviser can use the time properly. If your matter is Australian permanent residency, choose the PR service and include the details in advance.',
+              ],
+              [
+                'Overseas Applicant Enquiry',
+                'The free first appointment is only for clients currently in Australia. If you are outside Australia, or asking for someone who is, choose Migration Advice and pay the $150 consultation fee. Send a detailed resume and your questions so they can be reviewed before the call.',
+              ],
+              [
+                'Migration Advice (Paid Service)',
+                'The fee is $150 for most migration advice, including ART, visa cancellation, and protection visa matters, or anything that needs more than 10 minutes. Only one free consultation is provided per client.',
+              ],
+              [
+                'Additional information and help',
+                'Appointments booked here are with an available agent registered with OMARA. If you want a specific person, name them in the enquiry. Ajay Bansal is no longer with Bansal Immigration; appointments with him are booked at Bansal Lawyers. If you are unsure which option to choose, call 03 9602 1330. If the required information is not provided, the appointment may be cancelled without prior notice.',
+              ],
+            ].map(([title, body]) => (
+              <details key={title} className={`${card} px-5 py-4`}>
+                <summary className="cursor-pointer font-bold text-slate-900">{title}</summary>
+                <p className="mt-3 text-slate-600 leading-relaxed">{body}</p>
+              </details>
+            ))}
           </div>
         </div>
       </section>

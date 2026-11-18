@@ -73,11 +73,11 @@ function BulletList({ items, icon }: { items: { x: string; c?: string[] }[]; ico
             </span>
           )}
           {icon === 'alert' && (
-            <span className="mt-1 w-5 h-5 shrink-0 rounded-full bg-gold-100 text-brand-900 border border-gold-300 flex items-center justify-center">
+            <span className="mt-1 w-5 h-5 shrink-0 rounded-full bg-brand-100 text-brand-900 border border-brand-200 flex items-center justify-center">
               <AlertTriangle className="w-3 h-3" aria-hidden="true" />
             </span>
           )}
-          {icon === 'dot' && <span className="mt-[11px] w-1.5 h-1.5 shrink-0 rounded-full bg-gold-400" aria-hidden="true" />}
+          {icon === 'dot' && <span className="mt-[11px] w-1.5 h-1.5 shrink-0 rounded-full bg-brand-600" aria-hidden="true" />}
           <span className="text-base sm:text-[17px] leading-[1.7] text-slate-700">
             <RichText text={it.x} />
             {it.c && (
@@ -125,7 +125,7 @@ function LabelRows({ items }: { items: { x: string }[] }) {
         return (
           <li key={i} className="py-5 grid grid-cols-1 md:grid-cols-12 gap-x-8 gap-y-1.5">
             <h3 className="md:col-span-4 flex items-start gap-3 text-base sm:text-lg font-bold text-slate-900 leading-snug">
-              <span aria-hidden="true" className="mt-2 w-2 h-2 rounded-full bg-gold-400 shrink-0" />
+              <span aria-hidden="true" className="mt-2 w-2 h-2 rounded-full bg-brand-600 shrink-0" />
               {m[1]}
             </h3>
             {m[2] && (
@@ -164,7 +164,7 @@ function WhyProcess({ b }: { b: Block }) {
         <ol className="mt-5 space-y-5">
           {b.steps!.map((st, i) => (
             <li key={st.title} className="flex items-start gap-3">
-              <span className="w-8 h-8 shrink-0 rounded-full bg-gold-400 text-brand-950 font-extrabold text-sm flex items-center justify-center">{i + 1}</span>
+              <span className="w-8 h-8 shrink-0 rounded-full bg-brand-700 text-white font-extrabold text-sm flex items-center justify-center">{i + 1}</span>
               <span>
                 <span className="block font-bold text-slate-900">{st.title}</span>
                 <span className="block mt-1 text-base leading-relaxed text-slate-600">{st.desc}</span>
@@ -222,7 +222,7 @@ function Steps({ items }: { items: { x: string; c?: string[] }[] }) {
             {i < items.length - 1 && (
               <span aria-hidden="true" className="absolute left-[19px] top-10 bottom-0 w-px bg-brand-200" />
             )}
-            <span className="absolute left-0 top-0 w-10 h-10 rounded-full bg-gold-400 text-brand-950 font-extrabold flex items-center justify-center ring-4 ring-white">
+            <span className="absolute left-0 top-0 w-10 h-10 rounded-full bg-brand-700 text-white font-extrabold flex items-center justify-center ring-4 ring-white">
               {i + 1}
             </span>
             {m ? (
@@ -295,7 +295,7 @@ function Blocks({ section }: { section: ContentSection }) {
             return <h3 key={i} className="pt-2 text-lg sm:text-xl font-bold text-slate-900">{b.x}</h3>;
           case 'quote':
             return (
-              <blockquote key={i} className="max-w-3xl rounded-xl border-l-4 border-gold-400 bg-brand-50 px-5 py-4 text-[16px] leading-relaxed text-slate-800">
+              <blockquote key={i} className="max-w-3xl rounded-xl border-l-4 border-brand-600 bg-brand-50 px-5 py-4 text-[16px] leading-relaxed text-slate-800">
                 <RichText text={b.x!} />
               </blockquote>
             );
@@ -331,7 +331,7 @@ function Blocks({ section }: { section: ContentSection }) {
                     <div className={`${card} p-5 sm:p-6 flex flex-col w-full`}>
                       <h3 className="text-base sm:text-lg font-bold text-slate-900 leading-snug">{cd.title}</h3>
                       {cd.best && (
-                        <p className="mt-2 inline-flex self-start rounded-full bg-gold-100 text-brand-900 text-xs font-bold px-2.5 py-1">
+                        <p className="mt-2 inline-flex self-start rounded-full bg-brand-100 text-brand-900 text-xs font-bold px-2.5 py-1">
                           Best for: {cd.best.replace(/^best for:?\s*/i, '').replace(/\.$/, '')}
                         </p>
                       )}
@@ -427,7 +427,7 @@ export default function ContentPage({ c }: { c: ContentPageData }) {
           <>
             {c.hero.intro.slice(0, 2).map((p, i) => (
               <span key={i} className={i ? 'block mt-3' : 'block'}>
-                <RichText text={p} linkClass="font-semibold text-brand-800 underline underline-offset-4 decoration-gold-400 decoration-2 hover:text-brand-950" />
+                <RichText text={p} linkClass="font-semibold text-brand-800 underline underline-offset-4 decoration-brand-600 decoration-2 hover:text-brand-950" />
               </span>
             ))}
           </>
@@ -475,7 +475,7 @@ export default function ContentPage({ c }: { c: ContentPageData }) {
                     className={
                       s.blocks[0]?.t === 'whyprocess'
                         ? 'sr-only'
-                        : 'text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900 leading-tight mb-6 max-w-3xl'
+                        : 'text-2xl sm:text-3xl font-extrabold tracking-tight text-brand-900 leading-tight mb-6 max-w-3xl'
                     }
                   >
                     {s.h2}
@@ -494,12 +494,12 @@ export default function ContentPage({ c }: { c: ContentPageData }) {
           <div className={container}>
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14">
               <div className="lg:col-span-4">
-                <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight leading-tight text-slate-900">
+                <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight leading-tight text-brand-900">
                   Frequently asked questions
                 </h2>
                 <p className="mt-4 text-slate-600 leading-relaxed">
                   Straight answers to what people ask us most. Still unsure?{' '}
-                  <Link href="/contact" className="font-semibold text-brand-800 underline underline-offset-4 decoration-gold-400 decoration-2">Send us an enquiry</Link>.
+                  <Link href="/contact" className="font-semibold text-brand-800 underline underline-offset-4 decoration-brand-600 decoration-2">Send us an enquiry</Link>.
                 </p>
               </div>
               <div className="lg:col-span-8">
@@ -511,7 +511,7 @@ export default function ContentPage({ c }: { c: ContentPageData }) {
                         {f.a.split('\n').reduce<React.ReactNode[]>((acc, line, i) => {
                           acc.push(
                             line.startsWith('- ') ? (
-                              <p key={i} className="pl-4 relative before:absolute before:left-0 before:top-[11px] before:w-1.5 before:h-1.5 before:rounded-full before:bg-gold-400"><RichText text={line.slice(2)} /></p>
+                              <p key={i} className="pl-4 relative before:absolute before:left-0 before:top-[11px] before:w-1.5 before:h-1.5 before:rounded-full before:bg-brand-600"><RichText text={line.slice(2)} /></p>
                             ) : (
                               <p key={i}><RichText text={line} /></p>
                             )
@@ -534,7 +534,7 @@ export default function ContentPage({ c }: { c: ContentPageData }) {
           <div className={container}>
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
               <div className="lg:col-span-5">
-                <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight leading-tight text-slate-900">
+                <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight leading-tight text-brand-900">
                   {formSection?.h2 || 'Talk to a registered migration agent'}
                 </h2>
                 <div className="mt-4 space-y-3 text-slate-700 leading-relaxed">
