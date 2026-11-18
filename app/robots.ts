@@ -18,5 +18,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
       },
     ],
+    sitemap: 'https://bansalimmigration.com.au/sitemap.xml',
   };
 }

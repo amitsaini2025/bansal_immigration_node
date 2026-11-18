@@ -3725,57 +3725,57 @@
   "context": "Often yes, if the test is met. [CONFIRM]"
  },
  {
-  "page": "/family-visa/orphan-reletive-visa-117",
+  "page": "/family-visa/orphan-relative-visa-117",
   "marker": "[CONFIRM: age and marital rules]",
   "context": "| Applicant | A child under 18 outside Australia [CONFIRM: age and marital rules] |"
  },
  {
-  "page": "/family-visa/orphan-reletive-visa-117",
+  "page": "/family-visa/orphan-relative-visa-117",
   "marker": "[CONFIRM]",
   "context": "| Sponsor | A relative who is an Australian citizen, permanent resident or eligible New Zealand citizen, aged 18 or over [CONFIRM] |"
  },
  {
-  "page": "/family-visa/orphan-reletive-visa-117",
+  "page": "/family-visa/orphan-relative-visa-117",
   "marker": "[CONFIRM]",
   "context": "| Key test | The child cannot be cared for by a parent, for example because both parents have died, or cannot care for the child [CONFIRM] |"
  },
  {
-  "page": "/family-visa/orphan-reletive-visa-117",
+  "page": "/family-visa/orphan-relative-visa-117",
   "marker": "[CONFIRM: current charge from Home Affairs]",
   "context": "| Government charge | [CONFIRM: current charge from Home Affairs] |"
  },
  {
-  "page": "/family-visa/orphan-reletive-visa-117",
+  "page": "/family-visa/orphan-relative-visa-117",
   "marker": "[CONFIRM: current time from Home Affairs]",
   "context": "| Processing time | [CONFIRM: current time from Home Affairs] |"
  },
  {
-  "page": "/family-visa/orphan-reletive-visa-117",
+  "page": "/family-visa/orphan-relative-visa-117",
   "marker": "[CONFIRM: wording of the test]",
   "context": "- The child's parents have died, or cannot care for the child. [CONFIRM: wording of the test]"
  },
  {
-  "page": "/family-visa/orphan-reletive-visa-117",
+  "page": "/family-visa/orphan-relative-visa-117",
   "marker": "[CONFIRM]",
   "context": "- Where a parent is alive, you may need legal proof that they cannot care for the child, or have agreed to the move. [CONFIRM]"
  },
  {
-  "page": "/family-visa/orphan-reletive-visa-117",
+  "page": "/family-visa/orphan-relative-visa-117",
   "marker": "[CONFIRM: current charge from Home Affairs]",
   "context": "| Government charge | [CONFIRM: current charge from Home Affairs] |"
  },
  {
-  "page": "/family-visa/orphan-reletive-visa-117",
+  "page": "/family-visa/orphan-relative-visa-117",
   "marker": "[CONFIRM: Bansal professional fee statement]",
   "context": "| Our professional fees | [CONFIRM: Bansal professional fee statement] |"
  },
  {
-  "page": "/family-visa/orphan-reletive-visa-117",
+  "page": "/family-visa/orphan-relative-visa-117",
   "marker": "[CONFIRM: current published processing time and any queue from Home Affairs.]",
   "context": "[CONFIRM: current published processing time and any queue from Home Affairs.] Because a child may be waiting without a parent, tell us at the start if urgency applies. We can advise on any short-term "
  },
  {
-  "page": "/family-visa/orphan-reletive-visa-117",
+  "page": "/family-visa/orphan-relative-visa-117",
   "marker": "[CONFIRM: eligible relatives]",
   "context": "Often yes. [CONFIRM: eligible relatives]"
  },

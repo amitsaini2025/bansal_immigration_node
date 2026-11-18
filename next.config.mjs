@@ -36,6 +36,22 @@ const nextConfig = {
     }
 
     const customRedirects = [
+      { source: "/parent-visas", destination: "/family-visa", permanent: true },
+      {
+        source: "/family-visa/new-zealand-citizen-family-relationship-461",
+        destination: "/family-visa/new-zealand-citizen-family-relationship-visa-subclass-461",
+        permanent: true,
+      },
+      {
+        source: "/family-visa/orphan-reletive-visa-117",
+        destination: "/family-visa/orphan-relative-visa-117",
+        permanent: true,
+      },
+      {
+        source: "/employer-sponsored/global-talent-employer-sponsored-gtes",
+        destination: "/employer-sponsored/gtes",
+        permanent: true,
+      },
       { source: "/our-team", destination: "/team", permanent: true },
       { source: "/people", destination: "/team", permanent: true },
       { source: "/staff", destination: "/team", permanent: true },

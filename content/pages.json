@@ -8719,7 +8719,7 @@
         "The same applicants, already in Australia"
        ],
        [
-        "[Orphan Relative, offshore 117](/family-visa/orphan-reletive-visa-117)",
+        "[Orphan Relative, offshore 117](/family-visa/orphan-relative-visa-117)",
         "A child outside Australia with no parent who can care for them, cared for by a relative in Australia"
        ],
        [
@@ -14279,8 +14279,8 @@
   },
   "form": false
  },
- "/family-visa/orphan-reletive-visa-117": {
-  "path": "/family-visa/orphan-reletive-visa-117",
+ "/family-visa/orphan-relative-visa-117": {
+  "path": "/family-visa/orphan-relative-visa-117",
   "category": "family-visa",
   "isHub": false,
   "name": "Orphan Relative Visa 117",
