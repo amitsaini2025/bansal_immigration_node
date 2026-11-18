@@ -12,12 +12,15 @@ function useProductionKeys(): boolean {
 }
 
 function configuredKeys(): { siteKey: string; secretKey: string } | null {
+  // Local development has no hostname-locked keys. The test pair matches the
+  // checkbox already shown on the page. Production still requires real keys.
+  if (!useProductionKeys()) {
+    return { siteKey: TEST_SITE_KEY, secretKey: TEST_SECRET_KEY };
+  }
   const siteKey = (process.env.TURNSTILE_SITE_KEY || "").trim();
   const secretKey = (process.env.TURNSTILE_SECRET_KEY || "").trim();
   if (!siteKey || !secretKey) return null;
-  return useProductionKeys()
-    ? { siteKey, secretKey }
-    : { siteKey: TEST_SITE_KEY, secretKey: TEST_SECRET_KEY };
+  return { siteKey, secretKey };
 }
 
 /** Public site key for enquiry forms. Null only when production keys are missing. */

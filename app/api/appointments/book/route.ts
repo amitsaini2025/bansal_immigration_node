@@ -36,6 +36,56 @@ const SERVICES = new Set([
   'international-migration',
 ]);
 
+const NATURE_OF_ENQUIRY: Record<string, number> = {
+  'permanent-residency': 1,
+  'temporary-residency': 2,
+  'jrp-skill-assessment': 3,
+  'tourist-visa': 4,
+  'education-visa': 5,
+  'complex-matters': 6,
+  'visa-cancellation': 7,
+  'international-migration': 8,
+  'eoi-roi': 9,
+  'employer-sponsored-visas': 10,
+  'family-visas': 11,
+  citizenship: 12,
+};
+
+/** Shape expected by the public guest booking route. */
+function publicBookingBody(input: {
+  fullName: string;
+  email: string;
+  phone: string;
+  location: string;
+  meetingType: string;
+  language: string;
+  serviceType: string;
+  specificService: string;
+  details: string;
+  date: string;
+  time: string;
+}) {
+  const serviceId =
+    input.specificService === 'paid-consultation' ? 2 : input.specificService === 'overseas-enquiry' ? 3 : 1;
+  const appointmentDetails = input.meetingType === 'phone' ? 1 : input.meetingType === 'video-call' ? 3 : 2;
+  const preferredLanguage = input.language === 'hindi' ? 2 : input.language === 'punjabi' ? 3 : 1;
+
+  return {
+    noe_id: NATURE_OF_ENQUIRY[input.serviceType],
+    service_id: serviceId,
+    appoint_date: input.date,
+    appoint_time: input.time,
+    description: input.details,
+    appointment_details: appointmentDetails,
+    preferred_language: preferredLanguage,
+    inperson_address: input.location === 'adelaide' ? 1 : 2,
+    full_name: input.fullName,
+    email: input.email,
+    phone: input.phone,
+    timezone: input.location === 'adelaide' ? 'Australia/Adelaide' : 'Australia/Melbourne',
+  };
+}
+
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json().catch(() => ({}));
@@ -141,39 +191,53 @@ export async function POST(req: NextRequest) {
     }
 
     const enquiryType = getEffectiveEnquiryTypeForBooking(location, serviceType, paid);
+    const amount = paid ? PRICES[enquiryType] ?? 150 : 0;
 
-    const forwarded = await forwardToLaravel('/api/appointments/book', {
+    const forwarded = await forwardToLaravel('/api/appointments/add-appointment-without-login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
         Accept: 'application/json',
         'X-Requested-With': 'XMLHttpRequest',
       },
-      body: JSON.stringify({
-        full_name: fullName,
+      body: JSON.stringify(publicBookingBody({
+        fullName,
         email,
         phone,
         location,
-        meeting_type: meetingType,
-        preferred_language: language,
-        enquiry_type: enquiryType,
-        service_type: serviceType,
-        specific_service: specificService,
-        enquiry_details: details,
-        appointment_date: date,
-        appointment_time: time,
-        is_paid: paid,
-      }),
+        meetingType,
+        language,
+        serviceType,
+        specificService,
+        details,
+        date,
+        time,
+      })),
     });
     if (forwarded) {
       const data = await forwarded.json().catch(() => ({
         success: false,
         message: 'Failed to book appointment. Please try again.',
       }));
-      return NextResponse.json(data, { status: forwarded.status });
+      if (forwarded.ok && data?.success !== false) {
+        return NextResponse.json({
+          success: true,
+          appointment_id: data?.data?.id ?? data?.bansal_appointment_id ?? null,
+          payment_required: paid,
+          amount,
+          message: paid
+            ? 'Appointment created. The $150 consultation fee is due before this booking is confirmed.'
+            : 'Appointment booked successfully. Our office will confirm your time shortly.',
+        });
+      }
+      return NextResponse.json(
+        {
+          success: false,
+          message: typeof data?.message === 'string' ? data.message : 'Failed to book appointment. Please try again.',
+        },
+        { status: forwarded.status >= 400 ? forwarded.status : 422 }
+      );
     }
-
-    const amount = paid ? PRICES[enquiryType] ?? 150 : 0;
     const token = randomBytes(32).toString('hex');
     const ip = clientIp(req.headers) || null;
     const userAgent = (req.headers.get('user-agent') || '').slice(0, 255);
