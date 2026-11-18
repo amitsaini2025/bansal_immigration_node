@@ -3,6 +3,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getDb } from '@/lib/db';
 import { clientIp, verifyTurnstile } from '@/lib/turnstile';
 import { isSlotBookable, melbourneToday } from '@/lib/appointment/availability';
+import { forwardToLaravel } from '@/lib/appointment/laravelApi';
 import {
   getEffectiveEnquiryTypeForBooking,
   hideOverseasPackage,
@@ -140,6 +141,38 @@ export async function POST(req: NextRequest) {
     }
 
     const enquiryType = getEffectiveEnquiryTypeForBooking(location, serviceType, paid);
+
+    const forwarded = await forwardToLaravel('/api/appointments/book', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+        'X-Requested-With': 'XMLHttpRequest',
+      },
+      body: JSON.stringify({
+        full_name: fullName,
+        email,
+        phone,
+        location,
+        meeting_type: meetingType,
+        preferred_language: language,
+        enquiry_type: enquiryType,
+        service_type: serviceType,
+        specific_service: specificService,
+        enquiry_details: details,
+        appointment_date: date,
+        appointment_time: time,
+        is_paid: paid,
+      }),
+    });
+    if (forwarded) {
+      const data = await forwarded.json().catch(() => ({
+        success: false,
+        message: 'Failed to book appointment. Please try again.',
+      }));
+      return NextResponse.json(data, { status: forwarded.status });
+    }
+
     const amount = paid ? PRICES[enquiryType] ?? 150 : 0;
     const token = randomBytes(32).toString('hex');
     const ip = clientIp(req.headers) || null;

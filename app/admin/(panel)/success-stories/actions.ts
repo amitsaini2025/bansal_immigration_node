@@ -127,7 +127,14 @@ export async function moveStory(formData: FormData) {
   if (index < 0 || swapIndex < 0 || swapIndex >= rows.length) redirect('/admin/success-stories');
   const current = rows[index];
   const other = rows[swapIndex];
-  await db.query('UPDATE success_stories SET `order` = ?, updated_at = NOW() WHERE id = ?', [other.order, current.id]);
-  await db.query('UPDATE success_stories SET `order` = ?, updated_at = NOW() WHERE id = ?', [current.order, other.id]);
+  const currentOrder = Number(current.order);
+  const otherOrder = Number(other.order);
+  if (currentOrder === otherOrder) {
+    const nextOrder = currentOrder + (direction === -1 ? -1 : 1);
+    await db.query('UPDATE success_stories SET `order` = ?, updated_at = NOW() WHERE id = ?', [nextOrder, current.id]);
+  } else {
+    await db.query('UPDATE success_stories SET `order` = ?, updated_at = NOW() WHERE id = ?', [otherOrder, current.id]);
+    await db.query('UPDATE success_stories SET `order` = ?, updated_at = NOW() WHERE id = ?', [currentOrder, other.id]);
+  }
   redirect('/admin/success-stories?saved=Order%20updated');
 }

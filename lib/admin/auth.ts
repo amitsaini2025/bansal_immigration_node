@@ -88,7 +88,7 @@ export async function requireAdmin(): Promise<SessionUser> {
 export async function loginWithPassword(email: string, password: string): Promise<string | null> {
   const db = getDb();
   const [rows] = await db.query<any[]>(
-    'SELECT id, password, role, status, is_archived FROM users WHERE email = ? LIMIT 1',
+    'SELECT id, password, role, status, is_archived FROM users WHERE LOWER(email) = ? LIMIT 1',
     [email.trim().toLowerCase()]
   );
   const user = rows[0];
@@ -96,7 +96,12 @@ export async function loginWithPassword(email: string, password: string): Promis
     return 'Those details do not match an admin account.';
   }
   const hash = String(user.password || '').replace(/^\$2y\$/, '$2a$');
-  const ok = await bcrypt.compare(password, hash);
+  let ok = false;
+  try {
+    ok = await bcrypt.compare(password, hash);
+  } catch {
+    return 'Those details do not match an admin account.';
+  }
   if (!ok) return 'Those details do not match an admin account.';
   await createSession(Number(user.id));
   return null;

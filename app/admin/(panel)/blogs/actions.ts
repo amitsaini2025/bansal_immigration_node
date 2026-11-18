@@ -1,6 +1,10 @@
 'use server';
 
 import { redirect } from 'next/navigation';
+import { requireAdmin } from '@/lib/admin/auth';
+import { slugify } from '@/lib/admin/format';
+import { savePublicImage, savePublicPdf } from '@/lib/admin/uploads';
+import { getDb } from '@/lib/db';
 
 function isRedirect(error: unknown) {
   return (
@@ -10,10 +14,6 @@ function isRedirect(error: unknown) {
     String((error as { digest?: string }).digest).startsWith('NEXT_REDIRECT')
   );
 }
-import { requireAdmin } from '@/lib/admin/auth';
-import { slugify } from '@/lib/admin/format';
-import { savePublicImage, savePublicPdf } from '@/lib/admin/uploads';
-import { getDb } from '@/lib/db';
 
 async function uniqueSlug(slug: string, ignoreId?: number) {
   const db = getDb();

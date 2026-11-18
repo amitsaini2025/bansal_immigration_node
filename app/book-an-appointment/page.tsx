@@ -382,6 +382,7 @@ export default function BookAppointmentPage() {
           service_type: selectedService,
           specific_service: selectedTier,
           enquiry_details: enquiryDetails.trim(),
+          enquiry_type: getEffectiveEnquiryTypeForBooking(location, selectedService, isPaidSubmission),
           appointment_date: appointmentDate,
           appointment_time: appointmentTime,
           is_paid: isPaidSubmission,
@@ -393,6 +394,10 @@ export default function BookAppointmentPage() {
       const data = await res.json().catch(() => ({}));
 
       if (res.ok && data.success !== false) {
+        if (data.payment_required && data.redirect) {
+          window.location.href = data.redirect;
+          return;
+        }
         setPaymentRequired(Boolean(data.payment_required));
         setBookingMessage(data.message || 'Appointment booked successfully.');
         setSubmitted(true);
@@ -1112,7 +1117,7 @@ export default function BookAppointmentPage() {
                           <div className="p-4 rounded-xl bg-brand-50 border border-brand-100 text-brand-950 text-sm flex items-start gap-2.5">
                             <Info className="w-5 h-5 text-brand-800 shrink-0" aria-hidden="true" />
                             <span>
-                              <strong>Professional consultation fee ($150 AUD):</strong> Submitting reserves this time. The fee is due before the appointment is confirmed.
+                              <strong>Professional consultation fee ($150 AUD):</strong> Pay &amp; Submit opens the secure payment page. The appointment is confirmed after payment.
                             </span>
                           </div>
                         )}
@@ -1154,7 +1159,7 @@ export default function BookAppointmentPage() {
                               onClick={() => handleFinalSubmit(true)}
                               className={`${btnNext} w-full sm:w-auto`}
                             >
-                              {loading ? <span>Processing...</span> : <span>Pay &amp; Submit ($150)</span>}
+                              {loading ? <span>Preparing payment...</span> : <span>Pay &amp; Submit ($150)</span>}
                             </button>
                           )}
                         </div>
