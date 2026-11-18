@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import { TurnstileSiteKeyProvider } from "@/components/forms/TurnstileField";
+import { TurnstileSiteKeyProvider } from "@/components/forms/TurnstileSiteKey";
 import { getTurnstileSiteKey } from "@/lib/turnstile";
 
 const inter = Inter({

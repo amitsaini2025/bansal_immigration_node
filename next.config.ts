@@ -2,6 +2,9 @@ import type { NextConfig } from "next";
 import legacyRedirects from "./lib/legacy-redirects.json";
 
 const nextConfig: NextConfig = {
+  serverActions: {
+    bodySizeLimit: '8mb',
+  },
   turbopack: {
     rules: {
       "*.css": {

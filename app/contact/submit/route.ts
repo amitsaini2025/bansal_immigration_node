@@ -1,5 +1,14 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getDb } from "@/lib/db";
+import {
+  REPEAT_LIMIT_MESSAGE,
+  recentSubmissionCount,
+  tooManyRecentLeads,
+  validateEmail,
+  validateLeadText,
+  validatePersonName,
+  validatePhone,
+} from "@/lib/lead-guard";
 import { clientIp, verifyTurnstile } from "@/lib/turnstile";
 
 export async function POST(req: NextRequest) {
@@ -48,24 +57,23 @@ export async function POST(req: NextRequest) {
     const leadSubject = (subject || "General Consultation").trim();
     const leadMessage = (message || "Requested call back from homepage").trim();
 
-    if (!leadName) {
-      return NextResponse.json(
-        { success: false, message: "Please provide your full name." },
-        { status: 400 }
-      );
+    const fieldError =
+      validatePersonName(leadName, "full name") ||
+      (!leadPhone && !leadEmail
+        ? "Please provide a valid phone number or email address."
+        : null) ||
+      validateEmail(leadEmail, false) ||
+      validatePhone(leadPhone, false) ||
+      validateLeadText(leadSubject, leadMessage);
+    if (fieldError) {
+      return NextResponse.json({ success: false, message: fieldError }, { status: 400 });
     }
 
-    if (!leadPhone && !leadEmail) {
-      return NextResponse.json(
-        { success: false, message: "Please provide a valid phone number or email address." },
-        { status: 400 }
-      );
+    const ipAddress = clientIp(req.headers) || "127.0.0.1";
+    const recent = await recentSubmissionCount(getDb(), "contacts", ipAddress, leadEmail, leadPhone);
+    if (tooManyRecentLeads(recent)) {
+      return NextResponse.json({ success: false, message: REPEAT_LIMIT_MESSAGE }, { status: 429 });
     }
-
-    const ipAddress =
-      req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ||
-      req.headers.get("x-real-ip") ||
-      "127.0.0.1";
     const userAgent = req.headers.get("user-agent") || "";
 
     const db = getDb();

@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 import { Mail, Phone, Clock, ShieldCheck, ChevronDown } from 'lucide-react';
 import { COMPANY, CONTACT, LEGAL, TOOLS, VISA_GROUPS } from '@/lib/nav';
@@ -46,6 +47,7 @@ function Column({ title, links }: { title: string; links: NavLink[] }) {
 }
 
 export default function Footer() {
+  const pathname = usePathname();
   const [iasHtml, setIasHtml] = useState<{ href: string; src: string } | null>(null);
   // Visa list: open on larger screens, folded on phones (open by default so it works without JavaScript).
   const [wide, setWide] = useState(true);
@@ -77,6 +79,8 @@ export default function Footer() {
       cancelled = true;
     };
   }, []);
+
+  if (pathname.startsWith('/admin')) return null;
 
   return (
     <footer className="bg-slate-100 text-slate-700 border-t-4 border-brand-700">

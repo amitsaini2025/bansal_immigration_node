@@ -1,6 +1,9 @@
 'use client';
 
-import React, { createContext, useContext, useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import { useTurnstileSiteKey } from '@/components/forms/TurnstileSiteKey';
+
+export { useTurnstileSiteKey } from '@/components/forms/TurnstileSiteKey';
 
 interface TurnstileApi {
   render: (
@@ -25,22 +28,6 @@ declare global {
 const SCRIPT_SRC = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';
 let scriptPromise: Promise<void> | null = null;
 
-const SiteKeyContext = createContext<string | null>(null);
-
-export function TurnstileSiteKeyProvider({
-  siteKey,
-  children,
-}: {
-  siteKey: string | null;
-  children: React.ReactNode;
-}) {
-  return <SiteKeyContext.Provider value={siteKey}>{children}</SiteKeyContext.Provider>;
-}
-
-export function useTurnstileSiteKey(): string | null {
-  return useContext(SiteKeyContext);
-}
-
 function loadTurnstileScript(): Promise<void> {
   if (typeof window === 'undefined') return Promise.resolve();
   if (window.turnstile) return Promise.resolve();
@@ -56,6 +43,7 @@ function loadTurnstileScript(): Promise<void> {
     script.src = SCRIPT_SRC;
     script.async = true;
     script.defer = true;
+    script.fetchPriority = 'low';
     script.dataset.turnstile = 'true';
     script.onload = () => resolve();
     script.onerror = () => {
@@ -96,19 +84,51 @@ function TurnstileWidget({ siteKey, onToken }: { siteKey: string; onToken: (toke
   return <div ref={containerRef} />;
 }
 
-/** Cloudflare Turnstile widget. Renders nothing when the site key is unavailable. */
+/**
+ * The Cloudflare script stays off the first paint.
+ * A form already on screen waits until the visitor focuses or clicks it.
+ * A form below the fold waits until it scrolls into view.
+ * `eager` is for a step that only appears after the visitor has already moved through the page.
+ */
 export function TurnstileField({
   resetKey,
   onToken,
+  eager = false,
 }: {
   resetKey: number;
   onToken: (token: string) => void;
+  eager?: boolean;
 }) {
   const siteKey = useTurnstileSiteKey();
+  const anchorRef = useRef<HTMLDivElement>(null);
+  const [engaged, setEngaged] = useState(eager);
+
+  useEffect(() => {
+    if (!siteKey || engaged) return;
+    const node = anchorRef.current;
+    if (!node) return;
+    const host = node.closest('form') ?? node.parentElement;
+    if (!host) return;
+
+    const engage = () => setEngaged(true);
+    const startedBelow = host.getBoundingClientRect().top >= window.innerHeight;
+    host.addEventListener('focusin', engage);
+    host.addEventListener('pointerdown', engage);
+    const observer = startedBelow
+      ? new IntersectionObserver((entries) => {
+          if (entries.some((entry) => entry.isIntersecting)) engage();
+        })
+      : null;
+    observer?.observe(host);
+
+    return () => {
+      host.removeEventListener('focusin', engage);
+      host.removeEventListener('pointerdown', engage);
+      observer?.disconnect();
+    };
+  }, [siteKey, engaged]);
+
   if (!siteKey) return null;
-  return (
-    <div className="min-h-[65px]">
-      <TurnstileWidget key={resetKey} siteKey={siteKey} onToken={onToken} />
-    </div>
-  );
+
+  return <div ref={anchorRef}>{engaged ? <TurnstileWidget key={resetKey} siteKey={siteKey} onToken={onToken} /> : null}</div>;
 }

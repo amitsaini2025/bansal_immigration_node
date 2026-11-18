@@ -1,5 +1,13 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getDb } from '@/lib/db';
+import {
+  REPEAT_LIMIT_MESSAGE,
+  recentSubmissionCount,
+  tooManyRecentLeads,
+  validateEmail,
+  validatePersonName,
+  validatePhone,
+} from '@/lib/lead-guard';
 import { clientIp, verifyTurnstile } from '@/lib/turnstile';
 import type { ResultSetHeader } from 'mysql2';
 
@@ -11,12 +19,14 @@ export async function POST(request: NextRequest) {
     const lastName = String(body.last_name || '').trim();
     const email = String(body.email || '').trim().toLowerCase();
     const phone = String(body.phone || '').trim();
+    const details = String(body.enquiry_details || '').trim();
 
-    if (!firstName || !lastName || !email || !phone) {
-      return NextResponse.json(
-        { success: false, message: 'First name, last name, email, and phone number are required.' },
-        { status: 422 }
-      );
+    if (body.website_honeypot || body.bot_field) {
+      return NextResponse.json({
+        success: true,
+        message: 'Office visit registration submitted successfully',
+        redirectUrl: '/office-visit-form/thank-you',
+      });
     }
 
     const turnstileOk = await verifyTurnstile(
@@ -30,7 +40,21 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const ipAddress = request.headers.get('x-forwarded-for')?.split(',')[0].trim() || '127.0.0.1';
+    const fieldError =
+      validatePersonName(firstName, 'first name') ||
+      validatePersonName(lastName, 'last name') ||
+      validateEmail(email, true) ||
+      validatePhone(phone, true) ||
+      (details.length > 5000 ? 'Please keep the message under 5000 characters.' : null);
+    if (fieldError) {
+      return NextResponse.json({ success: false, message: fieldError }, { status: 400 });
+    }
+
+    const ipAddress = clientIp(request.headers) || '127.0.0.1';
+    const recent = await recentSubmissionCount(getDb(), 'office_visit_forms', ipAddress, email, phone);
+    if (tooManyRecentLeads(recent)) {
+      return NextResponse.json({ success: false, message: REPEAT_LIMIT_MESSAGE }, { status: 429 });
+    }
 
     const db = getDb();
     const [result] = await db.execute<ResultSetHeader>(

@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useId, useState } from 'react';
 import PhoneField from '@/components/forms/PhoneField';
 import { TurnstileField, useTurnstileSiteKey } from '@/components/forms/TurnstileField';
 
@@ -35,9 +35,16 @@ export default function UnifiedContactForm({
   const turnstileSiteKey = useTurnstileSiteKey();
   const [turnstileToken, setTurnstileToken] = useState('');
   const [turnstileKey, setTurnstileKey] = useState(0);
+  const [honeypot, setHoneypot] = useState('');
+  const honeypotId = useId();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (honeypot) {
+      setStatus('success');
+      setResponseMsg('Thank you! Your message has been sent successfully. We will contact you soon.');
+      return;
+    }
     if (turnstileSiteKey && !turnstileToken) {
       setStatus('error');
       setResponseMsg('Please complete the security check before sending.');
@@ -58,6 +65,7 @@ export default function UnifiedContactForm({
           ...formData,
           form_source: formSource,
           form_variant: formVariant,
+          website_honeypot: honeypot,
           cf_turnstile_response: turnstileToken,
         }),
       });
@@ -105,6 +113,18 @@ export default function UnifiedContactForm({
       )}
 
       <form onSubmit={handleSubmit} className="space-y-6">
+        <div className="hidden" aria-hidden="true">
+          <label htmlFor={honeypotId}>Leave blank</label>
+          <input
+            type="text"
+            id={honeypotId}
+            name="website_honeypot"
+            tabIndex={-1}
+            autoComplete="off"
+            value={honeypot}
+            onChange={(e) => setHoneypot(e.target.value)}
+          />
+        </div>
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-2">
             Full Name <span className="text-red-500">*</span>

@@ -28,8 +28,9 @@ export function getTurnstileSiteKey(): string | null {
 
 export function clientIp(headers: { get(name: string): string | null }): string {
   return (
+    headers.get("cf-connecting-ip")?.trim() ||
+    headers.get("x-real-ip")?.trim() ||
     headers.get("x-forwarded-for")?.split(",")[0]?.trim() ||
-    headers.get("x-real-ip") ||
     ""
   );
 }
