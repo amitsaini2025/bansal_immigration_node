@@ -1,6 +1,6 @@
 import { AppointmentSectionNav } from '@/components/admin/AppointmentSectionNav';
 import { Notice, secondaryButtonClass } from '@/components/admin/ui';
-import { clock, dayLabel, ENQUIRY_FILTERS, enquiryLabel } from '@/lib/admin/appointments';
+import { BLOCK_ENQUIRY_TYPES, clock, dayLabel, enquiryLabel } from '@/lib/admin/appointments';
 import { getDb } from '@/lib/db';
 import { createBlockedTime, toggleBlockedTime } from '../actions';
 
@@ -80,7 +80,7 @@ export default async function BlockedTimesPage({
           Calendar
           <select name="enquiry_type" defaultValue="" className="mt-1 block w-full rounded-lg border border-slate-300 px-3 py-2 text-sm">
             <option value="">Every calendar</option>
-            {ENQUIRY_FILTERS.map((item) => (
+            {BLOCK_ENQUIRY_TYPES.map((item) => (
               <option key={item} value={item}>
                 {enquiryLabel(item)}
               </option>

@@ -2,7 +2,7 @@
 
 import { redirect } from 'next/navigation';
 import { requireAdmin } from '@/lib/admin/auth';
-import { ENQUIRY_FILTERS, STATUSES } from '@/lib/admin/appointments';
+import { BLOCK_ENQUIRY_TYPES, STATUSES } from '@/lib/admin/appointments';
 import { getDb } from '@/lib/db';
 
 export async function updateAppointmentStatus(formData: FormData) {
@@ -65,7 +65,7 @@ export async function createBlockedTime(formData: FormData) {
   if (location && location !== 'melbourne' && location !== 'adelaide') {
     redirect('/admin/appointments/blocked?error=Choose%20a%20valid%20office.');
   }
-  if (enquiry && !ENQUIRY_FILTERS.includes(enquiry as (typeof ENQUIRY_FILTERS)[number])) {
+  if (enquiry && !BLOCK_ENQUIRY_TYPES.includes(enquiry as (typeof BLOCK_ENQUIRY_TYPES)[number])) {
     redirect('/admin/appointments/blocked?error=Choose%20a%20valid%20calendar.');
   }
 

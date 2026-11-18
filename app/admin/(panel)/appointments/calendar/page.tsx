@@ -1,6 +1,6 @@
 import { AppointmentSectionNav } from '@/components/admin/AppointmentSectionNav';
 import { Notice, secondaryButtonClass } from '@/components/admin/ui';
-import { clock, enquiryLabel } from '@/lib/admin/appointments';
+import { clock, MELBOURNE_CALENDARS } from '@/lib/admin/appointments';
 import { getDb } from '@/lib/db';
 import { updateCalendarHours } from '../actions';
 
@@ -26,10 +26,60 @@ function timeInput(value: unknown) {
   return String(value).slice(0, 5);
 }
 
-function place(location: string, enquiry: string | null) {
-  if (location === 'adelaide') return 'Adelaide office';
-  if (location === 'adelaide_education_tourist') return 'Adelaide education and tourist';
-  return `Melbourne · ${enquiryLabel(enquiry)}`;
+function HoursForm({ row }: { row: Record<string, unknown> }) {
+  const selected = days(row.days_of_week);
+  return (
+    <form action={updateCalendarHours} className="rounded-xl border border-slate-200 p-4">
+      <input type="hidden" name="id" value={String(row.id)} />
+      <div className="flex flex-wrap items-center justify-between gap-2">
+        <h3 className="font-semibold capitalize text-slate-900">{String(row.appointment_type)} appointments</h3>
+        <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-700">
+          {clock(row.start_time)}–{clock(row.end_time)} · {String(row.slot_duration_minutes)} min
+          {row.is_active ? '' : ' · inactive'}
+        </span>
+      </div>
+      <div className="mt-3 flex flex-wrap gap-3">
+        <label className="text-sm text-slate-700">
+          Opens
+          <input type="time" name="start_time" defaultValue={timeInput(row.start_time)} required className="mt-1 block rounded-lg border border-slate-300 px-3 py-2 text-sm" />
+        </label>
+        <label className="text-sm text-slate-700">
+          Closes
+          <input type="time" name="end_time" defaultValue={timeInput(row.end_time)} required className="mt-1 block rounded-lg border border-slate-300 px-3 py-2 text-sm" />
+        </label>
+        <label className="text-sm text-slate-700">
+          Slot minutes
+          <input
+            type="number"
+            name="slot_duration_minutes"
+            min={10}
+            max={180}
+            defaultValue={Number(row.slot_duration_minutes)}
+            required
+            className="mt-1 block w-28 rounded-lg border border-slate-300 px-3 py-2 text-sm"
+          />
+        </label>
+      </div>
+      <fieldset className="mt-3">
+        <legend className="text-sm text-slate-700">Open days</legend>
+        <div className="mt-2 flex flex-wrap gap-3">
+          {DAY_NAMES.map((name, index) => (
+            <label key={name} className="flex items-center gap-1 text-sm text-slate-700">
+              <input type="checkbox" name="days" value={index + 1} defaultChecked={selected.includes(index + 1)} />
+              {name}
+            </label>
+          ))}
+        </div>
+      </fieldset>
+      <label className="mt-3 flex items-center gap-2 text-sm text-slate-700">
+        <input type="checkbox" name="is_active" value="1" defaultChecked={Boolean(row.is_active)} />
+        Active
+      </label>
+      <button className={`${secondaryButtonClass} mt-3`} type="submit">
+        Save hours
+      </button>
+    </form>
+  );
 }
 
 export default async function CalendarHoursPage({
@@ -49,71 +99,55 @@ export default async function CalendarHoursPage({
     <div>
       <h1 className="text-2xl font-semibold text-slate-900">Calendar hours</h1>
       <p className="mt-1 text-sm text-slate-600">
-        These hours decide the times offered on the public booking form. Free and paid consultations can use different lengths.
+        Adelaide has one office calendar plus an education and tourist calendar. Melbourne has a calendar for JRP, Vijay, Education, Ajay, and Arun. Free and paid consultations can use different lengths.
       </p>
       <AppointmentSectionNav current="/admin/appointments/calendar" />
       <Notice error={params.error} saved={params.saved} />
       <div className="mt-4 grid gap-4">
-        {rows.length === 0 ? (
-          <p className="rounded-2xl border border-slate-200 bg-white p-5 text-sm text-slate-600">
-            No calendar rows are saved yet. The booking form uses the standard office hours until a row is added in the current appointment system.
-          </p>
-        ) : (
-          rows.map((row) => {
-            const selected = days(row.days_of_week);
-            return (
-              <form key={row.id} action={updateCalendarHours} className="rounded-2xl border border-slate-200 bg-white p-5">
-                <input type="hidden" name="id" value={row.id} />
-                <div className="flex flex-wrap items-center justify-between gap-2">
-                  <h2 className="font-semibold text-slate-900">{place(row.location, row.enquiry_type)}</h2>
-                  <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium capitalize text-slate-700">
-                    {row.appointment_type} · {clock(row.start_time)}–{clock(row.end_time)}
-                  </span>
-                </div>
-                <div className="mt-3 flex flex-wrap gap-3">
-                  <label className="text-sm text-slate-700">
-                    Opens
-                    <input type="time" name="start_time" defaultValue={timeInput(row.start_time)} required className="mt-1 block rounded-lg border border-slate-300 px-3 py-2 text-sm" />
-                  </label>
-                  <label className="text-sm text-slate-700">
-                    Closes
-                    <input type="time" name="end_time" defaultValue={timeInput(row.end_time)} required className="mt-1 block rounded-lg border border-slate-300 px-3 py-2 text-sm" />
-                  </label>
-                  <label className="text-sm text-slate-700">
-                    Slot minutes
-                    <input
-                      type="number"
-                      name="slot_duration_minutes"
-                      min={10}
-                      max={180}
-                      defaultValue={row.slot_duration_minutes}
-                      required
-                      className="mt-1 block w-28 rounded-lg border border-slate-300 px-3 py-2 text-sm"
-                    />
-                  </label>
-                </div>
-                <fieldset className="mt-3">
-                  <legend className="text-sm text-slate-700">Open days</legend>
-                  <div className="mt-2 flex flex-wrap gap-3">
-                    {DAY_NAMES.map((name, index) => (
-                      <label key={name} className="flex items-center gap-1 text-sm text-slate-700">
-                        <input type="checkbox" name="days" value={index + 1} defaultChecked={selected.includes(index + 1)} />
-                        {name}
-                      </label>
+        <section className="overflow-hidden rounded-2xl border border-slate-200 bg-white">
+          <div className="bg-red-700 px-5 py-4 text-white">
+            <h2 className="text-lg font-semibold">Adelaide Office</h2>
+            <p className="mt-1 text-sm text-red-100">All Adelaide enquiries except education and tourist.</p>
+          </div>
+          <div className="grid gap-4 p-5 md:grid-cols-2">
+            {rows.filter((row) => row.location === 'adelaide' && !row.enquiry_type).map((row) => (
+              <HoursForm key={row.id} row={row} />
+            ))}
+          </div>
+        </section>
+        <section className="overflow-hidden rounded-2xl border border-slate-200 bg-white">
+          <div className="bg-red-700 px-5 py-4 text-white">
+            <h2 className="text-lg font-semibold">Adelaide Education/Tourist Calendar</h2>
+            <p className="mt-1 text-sm text-red-100">Adelaide education and tourist enquiries only.</p>
+          </div>
+          <div className="grid gap-4 p-5 md:grid-cols-2">
+            {rows.filter((row) => row.location === 'adelaide_education_tourist').map((row) => (
+              <HoursForm key={row.id} row={row} />
+            ))}
+          </div>
+        </section>
+        <section className="overflow-hidden rounded-2xl border border-slate-200 bg-white">
+          <div className="bg-blue-700 px-5 py-4 text-white">
+            <h2 className="text-lg font-semibold">Melbourne Office</h2>
+            <p className="mt-1 text-sm text-blue-100">Separate timing for JRP, Vijay, Education, Ajay, and Arun.</p>
+          </div>
+          <div className="grid gap-6 p-5">
+            {MELBOURNE_CALENDARS.map((calendar) => (
+              <div key={calendar.key}>
+                <h3 className="border-b border-slate-200 pb-2 text-lg font-semibold text-slate-900" title={calendar.hover}>
+                  {calendar.title}
+                </h3>
+                <div className="mt-4 grid gap-4 md:grid-cols-2">
+                  {rows
+                    .filter((row) => row.location === 'melbourne' && row.enquiry_type === calendar.key)
+                    .map((row) => (
+                      <HoursForm key={row.id} row={row} />
                     ))}
-                  </div>
-                </fieldset>
-                <label className="mt-3 flex items-center gap-2 text-sm text-slate-700">
-                  <input type="checkbox" name="is_active" value="1" defaultChecked={Boolean(row.is_active)} />
-                  Active
-                </label>
-                <button className={`${secondaryButtonClass} mt-3`} type="submit">
-                  Save hours
-                </button>
-              </form>
-            );
-          })
-        )}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
       </div>
     </div>
   );
