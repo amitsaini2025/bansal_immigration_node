@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { ArrowRight, CheckCircle2, Phone } from 'lucide-react';
 import PhoneField from '@/components/forms/PhoneField';
+import { TurnstileField, useTurnstileSiteKey } from '@/components/forms/TurnstileField';
 import { btnPrimaryLight, fieldInput, fieldLabel, focusRing } from '@/components/ui/brand';
 
 const HELP_OPTIONS = [
@@ -23,6 +24,9 @@ export default function HeroLeadForm() {
   const [phone, setPhone] = useState('');
   const [help, setHelp] = useState(HELP_OPTIONS[0]);
   const [honeypot, setHoneypot] = useState('');
+  const turnstileSiteKey = useTurnstileSiteKey();
+  const [turnstileToken, setTurnstileToken] = useState('');
+  const [turnstileKey, setTurnstileKey] = useState(0);
   const [loading, setLoading] = useState(false);
   const [done, setDone] = useState(false);
   const [error, setError] = useState('');
@@ -36,6 +40,7 @@ export default function HeroLeadForm() {
     }
     if (!name.trim()) return setError('Please enter your name.');
     if (phone.replace(/\D/g, '').length < 6) return setError('Please enter a valid phone number.');
+    if (turnstileSiteKey && !turnstileToken) return setError('Please complete the security check before sending.');
     setLoading(true);
     try {
       const res = await fetch('/contact/submit', {
@@ -48,6 +53,8 @@ export default function HeroLeadForm() {
           message: `Visa / Service Enquiry: ${help}\nRequested from the home page.`,
           form_source: 'homepage_hero',
           form_variant: 'callback',
+          website_honeypot: honeypot,
+          cf_turnstile_response: turnstileToken,
         }),
       });
       const data = await res.json().catch(() => ({}));
@@ -57,9 +64,13 @@ export default function HeroLeadForm() {
           (window as any).gtag('event', 'generate_lead', { event_category: 'Hero Form', event_label: help });
         }
       } else {
+        setTurnstileToken('');
+        setTurnstileKey((key) => key + 1);
         setError(data.message || 'We could not send your request. Please call +61 3 9602 1330.');
       }
     } catch {
+      setTurnstileToken('');
+      setTurnstileKey((key) => key + 1);
       setError('Connection problem. Please call +61 3 9602 1330.');
     } finally {
       setLoading(false);
@@ -159,6 +170,8 @@ export default function HeroLeadForm() {
             {error}
           </p>
         )}
+
+        <TurnstileField resetKey={turnstileKey} onToken={setTurnstileToken} />
 
         <button type="submit" disabled={loading} className={`${btnPrimaryLight} w-full disabled:opacity-60`}>
           {loading ? 'Sending...' : 'Request a call back'}

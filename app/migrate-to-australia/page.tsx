@@ -276,6 +276,9 @@ const agents = [
   { name: 'Arun Bansal', marn: '2418466', href: '/team/arun-bansal' },
   { name: 'Vipul Goyal', marn: '2418571', href: '/team/vipul-goyal' },
   { name: 'Mamta Puri', marn: '2418481', href: '/team/mamta-puri' },
+  { name: 'Celesty Parmar', marn: '2619664', href: '/team/celesty-parmar' },
+  { name: 'Shubam Kumar', marn: '2619683', href: '/team/shubam-kumar' },
+  { name: 'Shaveena', marn: '2619533', href: '/team/shaveena' },
 ];
 
 const whyUs = [

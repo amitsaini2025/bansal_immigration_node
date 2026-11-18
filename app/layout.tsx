@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { TurnstileSiteKeyProvider } from "@/components/forms/TurnstileField";
+import { getTurnstileSiteKey } from "@/lib/turnstile";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -50,11 +52,13 @@ export default function RootLayout({
         className="min-h-full flex flex-col font-sans antialiased text-gray-900 bg-white"
         suppressHydrationWarning
       >
-        <Header />
-        <main id="main-content" className="flex-1">
-          {children}
-        </main>
-        <Footer />
+        <TurnstileSiteKeyProvider siteKey={getTurnstileSiteKey()}>
+          <Header />
+          <main id="main-content" className="flex-1">
+            {children}
+          </main>
+          <Footer />
+        </TurnstileSiteKeyProvider>
       </body>
     </html>
   );

@@ -67,7 +67,7 @@ export const metadata: Metadata = {
 const trustItems = [
   {
     title: "Registered migration agents",
-    desc: "MARN 2418466, 2418571 and 2418481. Check any agent on the OMARA register.",
+    desc: "MARN 2418466, 2418571, 2418481, 2619683, 2619533 and 2619664. Check any agent on the OMARA register.",
     icon: ShieldCheck,
   },
   {
@@ -133,7 +133,9 @@ const expertTeam = [
   { name: "Arun Bansal", title: "Director and Registered Migration Agent", marn: "2418466", profileHref: "/team/arun-bansal", image: "/img/team/arun-bansal.avif" },
   { name: "Vipul Goyal", title: "Managing Director and Migration Consultant", marn: "2418571", profileHref: "/team/vipul-goyal", image: "/img/team/vipul-goyal.avif" },
   { name: "Mamta Puri", title: "Registered Migration Agent", marn: "2418481", profileHref: "/team/mamta-puri", image: "/img/team/mamta-puri.avif" },
-  { name: "Celesty Parmar", title: "Senior Migration Consultant", marn: "", profileHref: "/team/celesty-parmar", image: "/img/team/celesty-parmar.svg" },
+  { name: "Celesty Parmar", title: "Registered Migration Agent", marn: "2619664", profileHref: "/team/celesty-parmar", image: "/img/team/celesty-parmar.svg" },
+  { name: "Shubam Kumar", title: "Registered Migration Agent", marn: "2619683", profileHref: "/team/shubam-kumar", image: "/img/team/shubam-kumar.svg" },
+  { name: "Shaveena", title: "Registered Migration Agent", marn: "2619533", profileHref: "/team/shaveena", image: "/img/team/shaveena.svg" },
 ];
 
 const verifiedReviews = [

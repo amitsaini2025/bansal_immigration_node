@@ -8,7 +8,7 @@ import { COMPANY, CONTACT, LEGAL, TOOLS, VISA_GROUPS } from '@/lib/nav';
 import type { NavLink } from '@/lib/nav';
 import { SOCIAL_ICONS } from '@/components/layout/socialIcons';
 
-const MARNS = ['2418466', '2418571', '2418481'];
+const MARNS = ['2418466', '2418571', '2418481', '2619683', '2619533', '2619664'];
 const OMARA = 'https://portal.mara.gov.au/search-the-register-of-migration-agents/';
 const CODE_OF_CONDUCT =
   'https://www.legislation.gov.au/F2021L01856/2026-04-01/2026-04-01/text/original/pdf';

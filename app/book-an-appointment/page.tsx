@@ -2,6 +2,7 @@
 
 import React, { useState, useMemo } from 'react';
 import Link from 'next/link';
+import { TurnstileField, useTurnstileSiteKey } from '@/components/forms/TurnstileField';
 import Image from 'next/image';
 import {
   Calendar,
@@ -154,6 +155,9 @@ export default function BookAppointmentPage() {
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
+  const turnstileSiteKey = useTurnstileSiteKey();
+  const [turnstileToken, setTurnstileToken] = useState('');
+  const [turnstileKey, setTurnstileKey] = useState(0);
 
   // Generate the next 10 business days for quick date selection
   const availableDates = useMemo(() => {
@@ -284,6 +288,12 @@ export default function BookAppointmentPage() {
     setLoading(true);
     setErrorMessage('');
 
+    if (turnstileSiteKey && !turnstileToken) {
+      setLoading(false);
+      setErrorMessage('Please complete the security check before sending.');
+      return;
+    }
+
     const fullPhone = `${countryCode} ${phone.trim()}`;
     const locationName =
       location === 'melbourne'
@@ -322,6 +332,7 @@ export default function BookAppointmentPage() {
           message: `Booking Details:\nLocation: ${locationName}\nMeeting Type: ${meetingTypeName}\nLanguage: ${langName}\nService: ${currentService}\nPackage: ${currentTier} (${isPaidSubmission ? '$150 AUD' : 'FREE'})\nDate: ${appointmentDate} at ${appointmentTime} (${location === 'melbourne' ? 'AEST' : 'ACST'})\nEnquiry Details:\n${enquiryDetails.trim()}`,
           form_source: 'book_appointment_wizard_4step',
           form_variant: isPaidSubmission ? 'appointment_paid' : 'appointment_free',
+          cf_turnstile_response: turnstileToken,
         }),
       });
 
@@ -330,12 +341,16 @@ export default function BookAppointmentPage() {
       if (res.ok && data.success !== false) {
         setSubmitted(true);
       } else {
+        setTurnstileToken('');
+        setTurnstileKey((key) => key + 1);
         setErrorMessage(
           data.message ||
             'There was an issue processing your booking. Please call our office directly on +61 3 9602 1330.'
         );
       }
     } catch {
+      setTurnstileToken('');
+      setTurnstileKey((key) => key + 1);
       setErrorMessage(
         'Unable to connect to the server. Please call us directly on +61 3 9602 1330.'
       );
@@ -969,6 +984,8 @@ export default function BookAppointmentPage() {
                             </span>
                           </div>
                         )}
+
+                        <TurnstileField resetKey={turnstileKey} onToken={setTurnstileToken} />
 
                         <div className="pt-2 flex flex-col-reverse sm:flex-row sm:items-center sm:justify-between gap-3">
                           <button type="button" onClick={handlePrevStep} className={`${btnBack} w-full sm:w-auto`}>

@@ -151,11 +151,27 @@ const teamMembers = [
   },
   {
     name: 'Celesty Parmar',
-    title: 'Senior Migration Consultant',
-    marn: 'Senior Consultant',
+    title: 'Registered Migration Agent',
+    marn: '2619664',
     slug: 'celesty-parmar',
-    qualifications: 'Australian migration law and education specialist',
+    qualifications: 'Registered with OMARA',
     image: '/img/team/celesty-parmar.svg',
+  },
+  {
+    name: 'Shubam Kumar',
+    title: 'Registered Migration Agent',
+    marn: '2619683',
+    slug: 'shubam-kumar',
+    qualifications: 'Registered with OMARA',
+    image: '/img/team/shubam-kumar.svg',
+  },
+  {
+    name: 'Shaveena',
+    title: 'Registered Migration Agent',
+    marn: '2619533',
+    slug: 'shaveena',
+    qualifications: 'Registered with OMARA',
+    image: '/img/team/shaveena.svg',
   },
 ];
 

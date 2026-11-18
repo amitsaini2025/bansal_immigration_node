@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import PhoneField from '@/components/forms/PhoneField';
+import { TurnstileField, useTurnstileSiteKey } from '@/components/forms/TurnstileField';
 
 interface UnifiedContactFormProps {
   formSource?: string;
@@ -31,9 +32,18 @@ export default function UnifiedContactForm({
   const [national, setNational] = useState('');
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
   const [responseMsg, setResponseMsg] = useState('');
+  const turnstileSiteKey = useTurnstileSiteKey();
+  const [turnstileToken, setTurnstileToken] = useState('');
+  const [turnstileKey, setTurnstileKey] = useState(0);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (turnstileSiteKey && !turnstileToken) {
+      setStatus('error');
+      setResponseMsg('Please complete the security check before sending.');
+      return;
+    }
+
     setStatus('loading');
     setResponseMsg('');
 
@@ -48,6 +58,7 @@ export default function UnifiedContactForm({
           ...formData,
           form_source: formSource,
           form_variant: formVariant,
+          cf_turnstile_response: turnstileToken,
         }),
       });
 
@@ -57,11 +68,17 @@ export default function UnifiedContactForm({
         setResponseMsg(data.message || 'Thank you! Your message has been sent successfully. We will contact you soon.');
         setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
         setNational('');
+        setTurnstileToken('');
+        setTurnstileKey((key) => key + 1);
       } else {
+        setTurnstileToken('');
+        setTurnstileKey((key) => key + 1);
         setStatus('error');
         setResponseMsg(data.message || 'There was an error submitting your request. Please try again or call us directly.');
       }
     } catch {
+      setTurnstileToken('');
+      setTurnstileKey((key) => key + 1);
       setStatus('error');
       setResponseMsg('Unable to connect to the server. Please call us directly at +61 3 9602 1330.');
     }
@@ -170,6 +187,8 @@ export default function UnifiedContactForm({
             placeholder="Please describe your inquiry in detail..."
           />
         </div>
+
+        <TurnstileField resetKey={turnstileKey} onToken={setTurnstileToken} />
 
         <div>
           <button

@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getDb } from '@/lib/db';
+import { clientIp, verifyTurnstile } from '@/lib/turnstile';
 import type { ResultSetHeader } from 'mysql2';
 
 export async function POST(request: NextRequest) {
@@ -14,6 +15,17 @@ export async function POST(request: NextRequest) {
     if (!firstName || !lastName || !email || !phone) {
       return NextResponse.json(
         { success: false, message: 'First name, last name, email, and phone number are required.' },
+        { status: 422 }
+      );
+    }
+
+    const turnstileOk = await verifyTurnstile(
+      typeof body.cf_turnstile_response === 'string' ? body.cf_turnstile_response : '',
+      clientIp(request.headers)
+    );
+    if (!turnstileOk) {
+      return NextResponse.json(
+        { success: false, message: 'Please complete the security check and try again.' },
         { status: 422 }
       );
     }

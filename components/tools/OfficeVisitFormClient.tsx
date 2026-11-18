@@ -1,6 +1,7 @@
 'use client';
 
 import PhoneField from '@/components/forms/PhoneField';
+import { TurnstileField, useTurnstileSiteKey } from '@/components/forms/TurnstileField';
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
@@ -48,6 +49,9 @@ export default function OfficeVisitFormClient() {
   const router = useRouter();
   const [submitting, setSubmitting] = useState(false);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
+  const turnstileSiteKey = useTurnstileSiteKey();
+  const [turnstileToken, setTurnstileToken] = useState('');
+  const [turnstileKey, setTurnstileKey] = useState(0);
 
   // Form State
   const [formData, setFormData] = useState({
@@ -114,13 +118,18 @@ export default function OfficeVisitFormClient() {
       return;
     }
 
+    if (turnstileSiteKey && !turnstileToken) {
+      setErrorMsg('Please complete the security check before sending.');
+      return;
+    }
+
     setSubmitting(true);
 
     try {
       const res = await fetch('/api/office-visit-form/submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ ...formData, cf_turnstile_response: turnstileToken }),
       });
 
       const data = await res.json();
@@ -128,10 +137,14 @@ export default function OfficeVisitFormClient() {
       if (res.ok && data.success) {
         router.push(data.redirectUrl || '/office-visit-form/thank-you');
       } else {
+        setTurnstileToken('');
+        setTurnstileKey((key) => key + 1);
         setErrorMsg(data.message || 'Submission failed. Please check your details and try again.');
         setSubmitting(false);
       }
     } catch {
+      setTurnstileToken('');
+      setTurnstileKey((key) => key + 1);
       setErrorMsg('Network error. Please try again or call our office directly.');
       setSubmitting(false);
     }
@@ -422,6 +435,8 @@ export default function OfficeVisitFormClient() {
               </label>
             </div>
           </div>
+
+          <TurnstileField resetKey={turnstileKey} onToken={setTurnstileToken} />
 
           {/* Submit Button */}
           <div>

@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getDb } from "@/lib/db";
+import { clientIp, verifyTurnstile } from "@/lib/turnstile";
 
 export async function POST(req: NextRequest) {
   try {
@@ -16,6 +17,7 @@ export async function POST(req: NextRequest) {
       form_variant = "callback",
       website_honeypot,
       bot_field,
+      cf_turnstile_response,
     } = body;
 
     // Spam protection: if honeypot is filled, return success silently
@@ -24,6 +26,20 @@ export async function POST(req: NextRequest) {
         success: true,
         message: "Thank you! Your call-back request has been received.",
       });
+    }
+
+    const turnstileOk = await verifyTurnstile(
+      typeof cf_turnstile_response === "string" ? cf_turnstile_response : "",
+      clientIp(req.headers)
+    );
+    if (!turnstileOk) {
+      return NextResponse.json(
+        {
+          success: false,
+          message: "Please complete the security check and try again.",
+        },
+        { status: 422 }
+      );
     }
 
     const leadName = (name || "").trim();

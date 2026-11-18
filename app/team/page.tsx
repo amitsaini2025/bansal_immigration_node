@@ -62,7 +62,7 @@ const whoToAsk = [
 
 const credentials = [
   { title: 'Registered agents', desc: 'Registered with OMARA. MARN shown for every agent.' },
-  { title: 'Migration law training', desc: 'Our agents hold a Graduate Certificate in Australian Migration Law or higher.' },
+  { title: 'Migration law training', desc: 'Qualifications are listed on each profile. Check the MARN on the OMARA register.' },
   { title: 'Melbourne and Adelaide', desc: 'Meet in person, or by phone or video.' },
   { title: 'Code of Conduct', desc: 'Our agents are bound by the Migration Agents Code of Conduct.' },
 ];
@@ -117,7 +117,20 @@ const teamStructuredData = {
       {
         '@type': 'Person',
         name: 'Celesty Parmar',
-        jobTitle: 'Senior Migration Consultant',
+        jobTitle: 'Registered Migration Agent',
+        identifier: 'MARN: 2619664',
+      },
+      {
+        '@type': 'Person',
+        name: 'Shubam Kumar',
+        jobTitle: 'Registered Migration Agent',
+        identifier: 'MARN: 2619683',
+      },
+      {
+        '@type': 'Person',
+        name: 'Shaveena',
+        jobTitle: 'Registered Migration Agent',
+        identifier: 'MARN: 2619533',
       },
     ],
   },
@@ -231,6 +244,9 @@ export default function TeamPage() {
                 <li>Arun Bansal: MARN 2418466</li>
                 <li>Vipul Goyal: MARN 2418571</li>
                 <li>Mamta Puri: MARN 2418481</li>
+                <li>Celesty Parmar: MARN 2619664</li>
+                <li>Shubam Kumar: MARN 2619683</li>
+                <li>Shaveena: MARN 2619533</li>
               </ul>
               <a
                 href="https://portal.mara.gov.au/search-the-register-of-migration-agents/"

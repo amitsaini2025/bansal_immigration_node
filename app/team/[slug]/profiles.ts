@@ -364,11 +364,12 @@ export const PROFILES: Record<string, Profile> = {
     slug: 'celesty-parmar',
     first: 'Celesty',
     name: 'Celesty Parmar',
-    h1: 'Celesty Parmar, Senior Migration Consultant',
-    role: 'Senior Migration Consultant',
-    seoTitle: 'Celesty Parmar, Senior Migration Consultant | Melbourne',
+    h1: 'Celesty Parmar, Registered Migration Agent',
+    role: 'Registered Migration Agent',
+    marn: '2619664',
+    seoTitle: 'Celesty Parmar, Migration Agent (MARN 2619664) | Melbourne',
     seoDescription:
-      'Celesty Parmar is a Senior Migration Consultant in Melbourne. She guides students and graduates on student, graduate and skilled visa pathways.',
+      'Celesty Parmar is a registered migration agent (MARN 2619664) at Bansal Immigration in Melbourne.',
     keywords: [
       'Celesty Parmar migration consultant',
       'student visa consultant Melbourne',
@@ -377,10 +378,11 @@ export const PROFILES: Record<string, Profile> = {
       'education migration consultant Melbourne',
       'student visa subclass 500 advice',
     ],
-    line: 'Celesty guides international students and graduates from course choice to graduate and skilled visa options.',
+    line: 'Celesty Parmar is a registered migration agent (MARN 2619664) at Bansal Immigration Consultants in Melbourne.',
     image: '/img/team/celesty-parmar.svg',
     facts: [
-      { label: 'Role', value: 'Senior Migration Consultant' },
+      { label: 'Role', value: 'Registered Migration Agent' },
+      { label: 'Registration', value: 'MARN 2619664, registered with the Office of the Migration Agents Registration Authority (OMARA)' },
       { label: 'Office', value: 'Melbourne' },
       { label: 'Languages', value: 'English, Hindi, Gujarati' },
       { label: 'Focus', value: 'Australian migration law and education' },
@@ -392,13 +394,20 @@ export const PROFILES: Record<string, Profile> = {
       'Skilled graduates who want to understand permanent residency options (189, 190, 491).',
     ],
     experience: [
-      'Celesty is a Senior Migration Consultant at Bansal Immigration. She is an Australian migration law and education specialist.',
+      'Celesty Parmar is a registered migration agent (MARN 2619664) at Bansal Immigration.',
       'She gives practical, step-by-step guidance to international graduates and technical professionals who are in Australia. Her work covers Student visas (500), Temporary Graduate visas (485) and skills assessment planning for permanent residency.',
       'She works with clients to build a timeline, so that study choices and work experience line up with current Australian state and territory priorities.',
     ],
-    qualifications: [],
+    qualifications: ['Registered migration agent, MARN 2619664 (OMARA)'],
     registrationNote:
-      'Where a matter needs advice from a registered migration agent, it is handled or reviewed by one of the agents listed on our team page.',
+      'Celesty is registered with OMARA, so she has to follow the Code of Conduct for registered migration agents. You can read the Code of Conduct and our Consumer Guide before you book a consultation.',
+    registrationLinks: [
+      {
+        href: 'https://www.legislation.gov.au/F2021L01856/2026-04-01/2026-04-01/text/original/pdf',
+        label: 'Code of Conduct',
+      },
+      { href: '/consumer_guide_english.pdf', label: 'Consumer Guide' },
+    ],
     areas: [
       { name: 'Student visa (500)', href: '/study-australia' },
       { name: 'Temporary Graduate visa (485)', href: '/study-australia' },
@@ -419,7 +428,105 @@ export const PROFILES: Record<string, Profile> = {
       },
       { q: 'Which languages does Celesty speak?', a: 'English, Hindi and Gujarati.' },
       {
+        q: 'Is Celesty a registered migration agent?',
+        a: 'Yes. Her MARN is 2619664. You can check it on the OMARA register.',
+      },
+      {
         q: 'Can Celesty guarantee my visa?',
+        a: 'No. The Department of Home Affairs decides.',
+      },
+    ],
+  },
+  'shubam-kumar': {
+    slug: 'shubam-kumar',
+    first: 'Shubam',
+    name: 'Shubam Kumar',
+    h1: 'Shubam Kumar, Registered Migration Agent',
+    role: 'Registered Migration Agent',
+    marn: '2619683',
+    seoTitle: 'Shubam Kumar, Migration Agent (MARN 2619683) | Melbourne',
+    seoDescription:
+      'Shubam Kumar is a registered migration agent (MARN 2619683) at Bansal Immigration in Melbourne.',
+    keywords: ['Shubam Kumar migration agent', 'registered migration agent Melbourne', 'MARN 2619683'],
+    line: 'Shubam Kumar is a registered migration agent (MARN 2619683) at Bansal Immigration Consultants in Melbourne.',
+    image: '/img/team/shubam-kumar.svg',
+    facts: [
+      { label: 'Role', value: 'Registered Migration Agent' },
+      { label: 'Registration', value: 'MARN 2619683, registered with the Office of the Migration Agents Registration Authority (OMARA)' },
+      { label: 'Office', value: 'Melbourne' },
+    ],
+    helps: [
+      'People who want to talk through an Australian visa with a registered migration agent.',
+    ],
+    experience: [
+      'Shubam Kumar is a registered migration agent (MARN 2619683) at Bansal Immigration. You can check his registration on the OMARA register before you book.',
+    ],
+    qualifications: ['Registered migration agent, MARN 2619683 (OMARA)'],
+    registrationNote:
+      'Shubam is registered with OMARA, so he has to follow the Code of Conduct for registered migration agents. You can read the Code of Conduct and our Consumer Guide before you book a consultation.',
+    registrationLinks: [
+      {
+        href: 'https://www.legislation.gov.au/F2021L01856/2026-04-01/2026-04-01/text/original/pdf',
+        label: 'Code of Conduct',
+      },
+      { href: '/consumer_guide_english.pdf', label: 'Consumer Guide' },
+    ],
+    areas: [{ name: 'Book a consultation', href: '/book-an-appointment' }],
+    bookText: 'Meet Shubam in Melbourne, or by phone or video.',
+    faqs: [
+      {
+        q: 'Is Shubam a registered migration agent?',
+        a: 'Yes. His MARN is 2619683. You can check it on the OMARA register.',
+      },
+      {
+        q: 'Can Shubam guarantee my visa?',
+        a: 'No. The Department of Home Affairs decides.',
+      },
+    ],
+  },
+  'shaveena': {
+    slug: 'shaveena',
+    first: 'Shaveena',
+    name: 'Shaveena',
+    h1: 'Shaveena, Registered Migration Agent',
+    role: 'Registered Migration Agent',
+    marn: '2619533',
+    seoTitle: 'Shaveena, Migration Agent (MARN 2619533) | Melbourne',
+    seoDescription:
+      'Shaveena is a registered migration agent (MARN 2619533) at Bansal Immigration in Melbourne.',
+    keywords: ['Shaveena migration agent', 'registered migration agent Melbourne', 'MARN 2619533'],
+    line: 'Shaveena is a registered migration agent (MARN 2619533) at Bansal Immigration Consultants in Melbourne.',
+    image: '/img/team/shaveena.svg',
+    facts: [
+      { label: 'Role', value: 'Registered Migration Agent' },
+      { label: 'Registration', value: 'MARN 2619533, registered with the Office of the Migration Agents Registration Authority (OMARA)' },
+      { label: 'Office', value: 'Melbourne' },
+    ],
+    helps: [
+      'People who want to talk through an Australian visa with a registered migration agent.',
+    ],
+    experience: [
+      'Shaveena is a registered migration agent (MARN 2619533) at Bansal Immigration. You can check her registration on the OMARA register before you book.',
+    ],
+    qualifications: ['Registered migration agent, MARN 2619533 (OMARA)'],
+    registrationNote:
+      'Shaveena is registered with OMARA, so she has to follow the Code of Conduct for registered migration agents. You can read the Code of Conduct and our Consumer Guide before you book a consultation.',
+    registrationLinks: [
+      {
+        href: 'https://www.legislation.gov.au/F2021L01856/2026-04-01/2026-04-01/text/original/pdf',
+        label: 'Code of Conduct',
+      },
+      { href: '/consumer_guide_english.pdf', label: 'Consumer Guide' },
+    ],
+    areas: [{ name: 'Book a consultation', href: '/book-an-appointment' }],
+    bookText: 'Meet Shaveena in Melbourne, or by phone or video.',
+    faqs: [
+      {
+        q: 'Is Shaveena a registered migration agent?',
+        a: 'Yes. Her MARN is 2619533. You can check it on the OMARA register.',
+      },
+      {
+        q: 'Can Shaveena guarantee my visa?',
         a: 'No. The Department of Home Affairs decides.',
       },
     ],

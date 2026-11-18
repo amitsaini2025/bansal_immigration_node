@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import PhoneField from '@/components/forms/PhoneField';
+import { TurnstileField, useTurnstileSiteKey } from '@/components/forms/TurnstileField';
 import { Send, CheckCircle2, AlertCircle } from 'lucide-react';
 import { card, btnPrimaryLight, btnGhostLight, fieldInput, fieldLabel } from '@/components/ui/brand';
 
@@ -42,6 +43,9 @@ export default function MainContactForm() {
   const [officePreference, setOfficePreference] = useState('Melbourne Head Office');
   const [message, setMessage] = useState('');
   const [honeypot, setHoneypot] = useState('');
+  const turnstileSiteKey = useTurnstileSiteKey();
+  const [turnstileToken, setTurnstileToken] = useState('');
+  const [turnstileKey, setTurnstileKey] = useState(0);
 
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
@@ -72,6 +76,11 @@ export default function MainContactForm() {
       return;
     }
 
+    if (turnstileSiteKey && !turnstileToken) {
+      setErrorMessage('Please complete the security check before sending.');
+      return;
+    }
+
     setLoading(true);
 
     try {
@@ -90,6 +99,8 @@ export default function MainContactForm() {
           message: `Visa Service: ${service}\nPreferred Office: ${officePreference}\nMessage: ${message.trim() || 'No additional details provided.'}`,
           form_source: 'contact_page_main',
           form_variant: 'full',
+          website_honeypot: honeypot,
+          cf_turnstile_response: turnstileToken,
         }),
       });
 
@@ -104,11 +115,15 @@ export default function MainContactForm() {
           });
         }
       } else {
+        setTurnstileToken('');
+        setTurnstileKey((key) => key + 1);
         setErrorMessage(
           data.message || 'There was an issue submitting your message. Please call our Melbourne office on +61 3 9602 1330.'
         );
       }
     } catch {
+      setTurnstileToken('');
+      setTurnstileKey((key) => key + 1);
       setErrorMessage('Unable to connect to the server. Please call us directly on +61 3 9602 1330.');
     } finally {
       setLoading(false);
@@ -141,6 +156,8 @@ export default function MainContactForm() {
             setEmail('');
             setPhone('');
             setMessage('');
+            setTurnstileToken('');
+            setTurnstileKey((key) => key + 1);
           }}
           className={`${btnGhostLight} cursor-pointer`}
         >
@@ -276,6 +293,8 @@ export default function MainContactForm() {
             className={`${fieldInput} resize-y`}
           />
         </div>
+
+        <TurnstileField resetKey={turnstileKey} onToken={setTurnstileToken} />
 
         {/* Submit Button */}
         <div>

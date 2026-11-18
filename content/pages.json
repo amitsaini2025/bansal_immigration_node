@@ -20988,14 +20988,14 @@
   "pageType": "Appeals subpage (explainer)",
   "seo": {
    "title": "Overview of Immigration Review Process | Bansal Immigration",
-   "description": "Overview of Review Process",
+   "description": "How an Australian visa review moves from your decision letter to the ART, the courts and the Minister. Deadlines are short. Call Bansal Immigration.",
    "h1": "Review Process"
   },
   "hero": {
    "badge": "",
    "h1": "Review Process",
    "intro": [
-    "Overview of Review Process"
+    "A visa review is a sequence of steps, and each step has its own deadline. Start with the date in your decision letter, then work out whether the Administrative Review Tribunal, a court or the Minister is the right next step."
    ],
    "buttons": [
     {
@@ -21014,11 +21014,40 @@
     "blocks": [
      {
       "t": "h3",
-      "x": "Review Process"
+      "x": "How a review usually unfolds"
      },
      {
       "t": "p",
-      "x": "Placeholder content. Update via CMS."
+      "x": "After the Department of Home Affairs refuses or cancels a visa, your review rights depend on the decision and where you are. Your letter says whether you can ask for review, who decides it and how long you have. Time is often counted from when you are taken to have received the notice, not from when you opened the email."
+     },
+     {
+      "t": "p",
+      "x": "Most cases move through the stages below. You may not need every stage, and a later stage does not pause an earlier deadline."
+     },
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "**Read the decision letter.** It names the decision, the reasons and any review rights. [Visa refusal](/appeals/visa-refusal) and [visa cancellation](/appeals/visa-cancellation) explain what those letters mean."
+       },
+       {
+        "x": "**Merits review at the ART.** Where the law allows it, the Administrative Review Tribunal looks at the decision again on the merits. See [ART appeals](/appeals/art-appeals)."
+       },
+       {
+        "x": "**Court review.** If you lose at the ART and believe the law was applied wrongly, a court can look at legal error. It does not rehear the facts. See [Federal Court appeals](/appeals/federal-court-appeals)."
+       },
+       {
+        "x": "**Ministerial Intervention.** This is a request to the Minister after other review options have ended. It is not a further appeal, and there is no right to a particular outcome. See [Ministerial Intervention](/appeals/ministerial-intervention)."
+       },
+       {
+        "x": "**A notice before cancellation.** If you hold a notice of intention to consider cancellation, the date to reply is in that notice. See [notice of intention to consider cancellation](/appeals/notice-of-intention-to-consider-cancellation)."
+       }
+      ]
+     },
+     {
+      "t": "note",
+      "label": "Note",
+      "x": "General information only. It is not legal advice for your situation. The ART, the Department of Home Affairs, the Minister and the courts decide outcomes."
      }
     ]
    },
@@ -21032,7 +21061,7 @@
       "t": "ul",
       "items": [
        {
-        "x": "**Review Process.** Placeholder content. Update via CMS."
+        "x": "**Review Process.** We read your letter, map the stage you are at and tell you which deadline matters today, before any other work starts."
        },
        {
         "x": "**Strict Timeframes.** Appeals have short lodgement deadlines. We prioritise urgent lodgements to protect your review rights."
@@ -28438,12 +28467,27 @@
         "Mamta Puri",
         "Registered Migration Agent",
         "2418481"
+       ],
+       [
+        "Celesty Parmar",
+        "Registered Migration Agent",
+        "2619664"
+       ],
+       [
+        "Shubam Kumar",
+        "Registered Migration Agent",
+        "2619683"
+       ],
+       [
+        "Shaveena",
+        "Registered Migration Agent",
+        "2619533"
        ]
       ]
      },
      {
       "t": "p",
-      "x": "[Meet the whole team](/team). Celesty Parmar is a Senior Migration Consultant."
+      "x": "[Meet the whole team](/team)."
      }
     ]
    },
