@@ -213,7 +213,7 @@ export default function SouthAustraliaStateNominationPage() {
       <div className="border-b border-slate-200/80 bg-white">
         <Breadcrumbs
           items={[
-            { label: 'Skilled Migration', href: '/skilled-migration' },
+            { label: 'Migrate to Australia', href: '/migrate-to-australia' },
             { label: 'South Australia State Nomination' },
           ]}
           className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"

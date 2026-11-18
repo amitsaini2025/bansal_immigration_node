@@ -129,8 +129,8 @@ export async function getPaginatedBlogs(options: {
   const limit = Math.max(1, Number(options.limit) || 12);
   const offset = (page - 1) * limit;
 
-  const whereClauses: string[] = ['status = 1'];
-  const params: any[] = [];
+  const whereClauses: string[] = ['status = 1', 'slug <> ?'];
+  const params: any[] = ['test-title'];
 
   if (options.featuredOnly) {
     whereClauses.push('featured = 1');
@@ -173,10 +173,13 @@ export async function getPaginatedBlogs(options: {
   };
 }
 
+/** Posts that must not be public, even if a database row is turned back on. */
+const HIDDEN_BLOG_SLUGS = new Set(['test-title']);
+
 export async function getBlogs(featuredOnly = false, search = ''): Promise<BlogRecord[]> {
   const db = getDb();
-  let sql = 'SELECT * FROM blogs WHERE status = 1';
-  const params: any[] = [];
+  let sql = 'SELECT * FROM blogs WHERE status = 1 AND slug <> ?';
+  const params: any[] = ['test-title'];
 
   if (featuredOnly) {
     sql += ' AND featured = 1';
@@ -192,6 +195,7 @@ export async function getBlogs(featuredOnly = false, search = ''): Promise<BlogR
 }
 
 export async function getBlog(slug: string): Promise<BlogRecord | null> {
+  if (HIDDEN_BLOG_SLUGS.has(slug)) return null;
   const db = getDb();
   const [rows] = await db.query<any[]>(
     'SELECT * FROM blogs WHERE slug = ? AND status = 1 LIMIT 1',
@@ -203,8 +207,8 @@ export async function getBlog(slug: string): Promise<BlogRecord | null> {
 export async function getRelatedBlogs(excludeId: number, limit = 3): Promise<BlogRecord[]> {
   const db = getDb();
   const [rows] = await db.query<any[]>(
-    'SELECT * FROM blogs WHERE status = 1 AND id != ? ORDER BY COALESCE(published_at, created_at) DESC LIMIT ?',
-    [excludeId, limit]
+    'SELECT * FROM blogs WHERE status = 1 AND slug <> ? AND id != ? ORDER BY COALESCE(published_at, created_at) DESC LIMIT ?',
+    ['test-title', excludeId, limit]
   );
   return (rows as BlogRecord[]) || [];
 }

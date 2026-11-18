@@ -248,7 +248,7 @@ export default async function BlogDetailPage({
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm">
                   <Link
-                    href="/skilled-migration"
+                    href="/migrate-to-australia"
                     className="p-3.5 rounded-2xl bg-slate-50 hover:bg-brand-50 text-slate-800 hover:text-brand-900 font-semibold transition border border-slate-200 flex items-center justify-between"
                   >
                     <span>General Skilled Migration (189, 190, 491)</span>

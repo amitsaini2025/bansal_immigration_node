@@ -39,13 +39,12 @@ export const VISA_GROUPS: NavGroup[] = [
         heading: 'Graduates and planning',
         links: [
           { label: 'Temporary Graduate (485)', href: '/migrate-to-australia/temporary-graduate-visa-subclass-485' },
-          { label: 'Post Study Work (485)', href: '/migrate-to-australia/post-study-work-visa-subclass-485' },
-          { label: 'Second Temporary Graduate (485)', href: '/skilled-migration/temporary-graduate-visa-extension', desc: 'Extra stay for regional graduates' },
-          { label: 'How points are calculated', href: '/skilled-migration/how-points-are-calculated' },
+          { label: 'Second Temporary Graduate (485)', href: '/skilled-migration/temporary-graduate-visa-extension', desc: 'Extra stay for regional graduates. Different visa charge from a first 485' },
+          { label: 'PR Points Calculator', href: '/migrate-to-australia/pr-point-calculator', desc: 'Your score for 189, 190 and 491' },
+          { label: 'How the points test works', href: '/skilled-migration/how-points-are-calculated' },
           { label: 'Points for an English score', href: '/migrate-to-australia/points-for-english-score' },
           { label: 'Regional points', href: '/migrate-to-australia/how-to-claim-regional-points' },
-          { label: 'How skilled migration works', href: '/skilled-migration' },
-          { label: 'Step-by-step process guide', href: '/migrate-to-australia/migration' },
+          { label: 'Skilled migration overview', href: '/migrate-to-australia' },
         ],
       },
       {
@@ -64,10 +63,7 @@ export const VISA_GROUPS: NavGroup[] = [
       {
         heading: 'Talent visas',
         links: [
-          { label: 'National Innovation visa (858)', href: '/migrate-to-australia/national-innovation-visa-858' },
-          { label: 'Global Talent Independent', href: '/migrate-to-australia/global-talent-independent-program-gti' },
-          { label: 'Distinguished Talent (124)', href: '/migrate-to-australia/distinguished-talent-visa-124' },
-          { label: 'Distinguished Talent (858)', href: '/migrate-to-australia/distinguished-talent-visa-858' },
+          { label: 'National Innovation visa (858)', href: '/migrate-to-australia/national-innovation-visa-858', desc: 'Replaces Global Talent and Distinguished Talent' },
         ],
       },
     ],
@@ -216,8 +212,7 @@ export const VISA_GROUPS: NavGroup[] = [
       {
         heading: 'Student visas',
         links: [
-          { label: 'Student visa information (500)', href: '/study-australia/student-visa-information' },
-          { label: 'Student visa journey', href: '/study-australia/student-visa-journey' },
+          { label: 'Student visa (500)', href: '/study-australia/student-visa-subclass-500' },
           { label: 'Student visa extension', href: '/study-australia/student-visa-extension' },
           { label: 'Family on a student visa (500)', href: '/study-australia/student-dependent-visa-500' },
           { label: 'Student Guardian (590)', href: '/study-australia/student-guardian-visa-590' },

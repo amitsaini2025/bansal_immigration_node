@@ -57,7 +57,6 @@ export const metadata: Metadata = {
     'subclass 190 visa',
     'subclass 491 visa',
     'skilled visa Australia',
-    'PR points calculator',
     'state nomination Victoria',
     'registered migration agent Adelaide',
   ],
@@ -159,8 +158,8 @@ const whoFor = [
     icon: Briefcase,
     title: 'Skilled professionals overseas',
     desc: 'You have a degree and several years in fields such as health, engineering, IT, teaching or accounting. You will need a skills assessment before you can be invited.',
-    href: '/skilled-migration',
-    link: 'How skilled migration works',
+    href: '/migrate-to-australia#check-you-are-ready',
+    link: 'Check you are ready',
   },
   {
     icon: Wrench,
@@ -173,11 +172,11 @@ const whoFor = [
 
 const readiness = [
   { title: 'Your occupation', desc: 'It must be on the Skilled Occupation List that applies to your visa.', href: '/occupation-finder', link: 'Use the Occupation Finder' },
-  { title: 'A skills assessment', desc: 'The assessing authority for your occupation confirms your qualification and experience.', href: '/skilled-migration', link: 'How assessments work' },
-  { title: 'An English test', desc: 'Competent English is the minimum. Test results expire, so check the dates.', href: '/skilled-migration', link: 'English and eligibility' },
-  { title: 'Your age', desc: 'You must be under 45 when you are invited.', href: '/skilled-migration', link: 'Basic requirements' },
+  { title: 'A skills assessment', desc: 'The assessing authority for your occupation confirms your qualification and experience.', href: '/skill-assessment', link: 'How assessments work' },
+  { title: 'An English test', desc: 'Competent English is the minimum. Test results expire, so check the dates.', href: '/migrate-to-australia/points-for-english-score', link: 'English points' },
+  { title: 'Your age', desc: 'You must be under 45 when you are invited.', href: '/skilled-migration/how-points-are-calculated', link: 'Age points' },
   { title: 'Your points', desc: 'You need at least 65 points to lodge an Expression of Interest. Invitations often go to higher scores.', href: '/migrate-to-australia/pr-point-calculator', link: 'Check my points' },
-  { title: 'An Expression of Interest', desc: 'You lodge it in SkillSelect. It is not a visa application.', href: '/skilled-migration', link: 'How the EOI works' },
+  { title: 'An Expression of Interest', desc: 'You lodge it in SkillSelect. It is not a visa application.', href: '#how-the-pathway-runs', link: 'How the pathway runs' },
 ];
 
 const timeline = [
@@ -192,7 +191,7 @@ const timeline = [
 const studyPath = [
   { title: 'Study in Australia', desc: 'Complete a course on a student visa.', href: '/study-australia' },
   { title: 'Temporary Graduate (485)', desc: 'Work in Australia after your course.', href: '/migrate-to-australia/temporary-graduate-visa-subclass-485' },
-  { title: 'Assessment and EOI', desc: 'Get a skills assessment and lodge an Expression of Interest.', href: '/skilled-migration' },
+  { title: 'Assessment and EOI', desc: 'Get a skills assessment and lodge an Expression of Interest.', href: '#how-the-pathway-runs' },
   { title: 'Invitation', desc: 'Apply for the 189, 190 or 491.', href: '/migrate-to-australia/skilled-independent-visa-subclass-189' },
   { title: 'PR Skilled Regional (191)', desc: 'If you hold a 491, apply after meeting its requirements.', href: '/migrate-to-australia/permanent-residence-skilled-regional-visa-subclass-191' },
 ];
@@ -269,7 +268,7 @@ const tools = [
   { title: 'Occupation Finder', desc: 'Searches occupations, codes and assessing authorities.', href: '/occupation-finder', icon: Search },
   { title: 'Regional Postcode Checker', desc: 'Shows whether a postcode is regional.', href: '/postcode-checker', icon: MapPin },
   { title: 'How points are calculated', desc: 'The full points table and a worked example.', href: '/skilled-migration/how-points-are-calculated', icon: Compass },
-  { title: 'Migration process step by step', desc: 'Each stage in order, with documents and common delays.', href: '/migrate-to-australia/migration', icon: Clock },
+  { title: 'How the pathway runs', desc: 'Six stages, from the skills assessment to the Department’s decision.', href: '#how-the-pathway-runs', icon: Clock },
 ];
 
 const agents = [
@@ -278,7 +277,6 @@ const agents = [
   { name: 'Mamta Puri', marn: '2418481', href: '/team/mamta-puri' },
   { name: 'Shubam Kumar', marn: '2619683', href: '/team/shubam-kumar' },
   { name: 'Shaveena', marn: '2619533', href: '/team/shaveena' },
-  { name: 'Vijay Patel', marn: '', href: '/team/vijay-patel' },
   { name: 'Celesty Parmar', marn: '2619664', href: '/team/celesty-parmar' },
 ];
 

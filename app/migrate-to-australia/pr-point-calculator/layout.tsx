@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   description:
     'Free Australia PR points calculator for visas 189, 190 and 491. Check your age, English, work and study points, then speak to a migration agent.',
   keywords: [
+    'Australia PR points',
     'Australia PR points calculator',
     'skilled migration points calculator',
     '189 190 491 points test',

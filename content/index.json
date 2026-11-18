@@ -7,32 +7,11 @@
   "order": 0
  },
  {
-  "path": "/skilled-migration",
-  "name": "Skilled Migration Services",
-  "category": "skilled-migration",
-  "isHub": true,
-  "order": 1
- },
- {
-  "path": "/migrate-to-australia/migration",
-  "name": "Step-by-Step Migration Process Guide",
-  "category": "migrate-to-australia",
-  "isHub": false,
-  "order": 2
- },
- {
   "path": "/migrate-to-australia/temporary-graduate-visa-subclass-485",
   "name": "Temporary Graduate Visa (Subclass 485)",
   "category": "migrate-to-australia",
   "isHub": false,
   "order": 3
- },
- {
-  "path": "/migrate-to-australia/post-study-work-visa-subclass-485",
-  "name": "Post Study Work Visa (Subclass 485)",
-  "category": "migrate-to-australia",
-  "isHub": false,
-  "order": 4
  },
  {
   "path": "/migrate-to-australia/skilled-independent-visa-subclass-189",
@@ -749,15 +728,8 @@
   "order": 106
  },
  {
-  "path": "/study-australia/student-visa-journey",
-  "name": "Student Visa Journey",
-  "category": "study-australia",
-  "isHub": false,
-  "order": 107
- },
- {
-  "path": "/study-australia/student-visa-information",
-  "name": "Student Visa Information (Subclass 500)",
+  "path": "/study-australia/student-visa-subclass-500",
+  "name": "Student Visa (Subclass 500)",
   "category": "study-australia",
   "isHub": false,
   "order": 108
@@ -936,27 +908,6 @@
   "category": "migrate-to-australia",
   "isHub": false,
   "order": 133
- },
- {
-  "path": "/migrate-to-australia/global-talent-independent-program-gti",
-  "name": "Global Talent Independent Program (GTI)",
-  "category": "migrate-to-australia",
-  "isHub": false,
-  "order": 134
- },
- {
-  "path": "/migrate-to-australia/distinguished-talent-visa-124",
-  "name": "Distinguished Talent Visa (124)",
-  "category": "migrate-to-australia",
-  "isHub": false,
-  "order": 135
- },
- {
-  "path": "/migrate-to-australia/distinguished-talent-visa-858",
-  "name": "Distinguished Talent Visa (858)",
-  "category": "migrate-to-australia",
-  "isHub": false,
-  "order": 136
  },
  {
   "path": "/migrate-to-australia/how-to-claim-regional-points",

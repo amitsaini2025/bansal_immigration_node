@@ -46,7 +46,7 @@
     "blocks": [
      {
       "t": "p",
-      "x": "Skilled migration suits you if you have a qualification and work experience in an occupation Australia needs. Most people fall into one of three groups. The requirements are set out in [how skilled migration works](/skilled-migration)."
+      "x": "Skilled migration suits you if you have a qualification and work experience in an occupation Australia needs. Most people fall into one of three groups. The requirements are set out in [how skilled migration works](/migrate-to-australia)."
      },
      {
       "t": "ul",
@@ -113,7 +113,7 @@
        ],
        [
         "[Temporary Graduate (subclass 485)](/migrate-to-australia/temporary-graduate-visa-subclass-485)",
-        "Temporary post-study work visa. Not points-tested. See also [post-study work rights](/migrate-to-australia/post-study-work-visa-subclass-485).",
+        "Temporary post-study work visa. Not points-tested. See also [post-study work rights](/migrate-to-australia/temporary-graduate-visa-subclass-485).",
         "Recent graduates who want Australian work experience"
        ]
       ]
@@ -169,7 +169,7 @@
         "x": "Complete a course in Australia on a student visa. See [Study in Australia](/study-australia)."
        },
        {
-        "x": "Apply for a Temporary Graduate visa (485) to work. See [485 eligibility](/migrate-to-australia/temporary-graduate-visa-subclass-485) and [post-study work rights](/migrate-to-australia/post-study-work-visa-subclass-485)."
+        "x": "Apply for a Temporary Graduate visa (485) to work. See [485 eligibility](/migrate-to-australia/temporary-graduate-visa-subclass-485) and [post-study work rights](/migrate-to-australia/temporary-graduate-visa-subclass-485)."
        },
        {
         "x": "Get a skills assessment and lodge an Expression of Interest."
@@ -202,11 +202,11 @@
       ],
       "rows": [
        [
-        "[How skilled migration works](/skilled-migration)",
+        "[How skilled migration works](/migrate-to-australia)",
         "Explains skills assessments, points, the Expression of Interest and invitations"
        ],
        [
-        "[Migration process step by step](/migrate-to-australia/migration)",
+        "[Migration process step by step](/migrate-to-australia#how-the-pathway-runs)",
         "Walks through each stage in order, with documents, costs and common delays"
        ],
        [
@@ -592,7 +592,7 @@
         "x": "Estimate your points with the [PR Points Calculator](/migrate-to-australia/pr-point-calculator)."
        },
        {
-        "x": "Read the [step-by-step migration process](/migrate-to-australia/migration) to plan documents and costs."
+        "x": "Read the [step-by-step migration process](/migrate-to-australia#how-the-pathway-runs) to plan documents and costs."
        }
       ]
      },
@@ -635,7 +635,7 @@
    },
    {
     "q": "How long does the whole process take?",
-    "a": "It varies widely. Skills assessment, invitation and visa processing each take time. See the [step-by-step guide](/migrate-to-australia/migration)."
+    "a": "It varies widely. Skills assessment, invitation and visa processing each take time. See the [step-by-step guide](/migrate-to-australia#how-the-pathway-runs)."
    },
    {
     "q": "Can you guarantee an invitation?",
@@ -1246,7 +1246,7 @@
       "t": "ul",
       "items": [
        {
-        "x": "[Temporary Graduate Visa Subclass 485-Higher Education](/migrate-to-australia/post-study-work-visa-subclass-485)"
+        "x": "[Temporary Graduate Visa Subclass 485-Higher Education](/migrate-to-australia/temporary-graduate-visa-subclass-485)"
        },
        {
         "x": "[Second Temporary Graduate visa (485)](/skilled-migration/temporary-graduate-visa-extension)"
@@ -1947,7 +1947,7 @@
         "x": "[Temporary Graduate Visa Subclass 485-Vocational](/migrate-to-australia/temporary-graduate-visa-subclass-485)"
        },
        {
-        "x": "[Temporary Graduate Visa Subclass 485-Higher Education](/migrate-to-australia/post-study-work-visa-subclass-485)"
+        "x": "[Temporary Graduate Visa Subclass 485-Higher Education](/migrate-to-australia/temporary-graduate-visa-subclass-485)"
        },
        {
         "x": "[Second Temporary Graduate visa (485)](/skilled-migration/temporary-graduate-visa-extension)"
@@ -2347,7 +2347,7 @@
         "x": "[Temporary Graduate Visa Subclass 485-Vocational](/migrate-to-australia/temporary-graduate-visa-subclass-485)"
        },
        {
-        "x": "[Temporary Graduate Visa Subclass 485-Higher Education](/migrate-to-australia/post-study-work-visa-subclass-485)"
+        "x": "[Temporary Graduate Visa Subclass 485-Higher Education](/migrate-to-australia/temporary-graduate-visa-subclass-485)"
        },
        {
         "x": "[Second Temporary Graduate visa (485)](/skilled-migration/temporary-graduate-visa-extension)"
@@ -2723,7 +2723,7 @@
         "x": "[Temporary Graduate Visa Subclass 485-Vocational](/migrate-to-australia/temporary-graduate-visa-subclass-485)"
        },
        {
-        "x": "[Temporary Graduate Visa Subclass 485-Higher Education](/migrate-to-australia/post-study-work-visa-subclass-485)"
+        "x": "[Temporary Graduate Visa Subclass 485-Higher Education](/migrate-to-australia/temporary-graduate-visa-subclass-485)"
        },
        {
         "x": "[Second Temporary Graduate visa (485)](/skilled-migration/temporary-graduate-visa-extension)"
@@ -3069,7 +3069,7 @@
         "x": "[Temporary Graduate Visa Subclass 485-Vocational](/migrate-to-australia/temporary-graduate-visa-subclass-485)"
        },
        {
-        "x": "[Temporary Graduate Visa Subclass 485-Higher Education](/migrate-to-australia/post-study-work-visa-subclass-485)"
+        "x": "[Temporary Graduate Visa Subclass 485-Higher Education](/migrate-to-australia/temporary-graduate-visa-subclass-485)"
        },
        {
         "x": "[Second Temporary Graduate visa (485)](/skilled-migration/temporary-graduate-visa-extension)"
@@ -3446,7 +3446,7 @@
         "x": "[Temporary Graduate Visa Subclass 485-Vocational](/migrate-to-australia/temporary-graduate-visa-subclass-485)"
        },
        {
-        "x": "[Temporary Graduate Visa Subclass 485-Higher Education](/migrate-to-australia/post-study-work-visa-subclass-485)"
+        "x": "[Temporary Graduate Visa Subclass 485-Higher Education](/migrate-to-australia/temporary-graduate-visa-subclass-485)"
        },
        {
         "x": "[Second Temporary Graduate visa (485)](/skilled-migration/temporary-graduate-visa-extension)"
@@ -3502,24 +3502,24 @@
   "category": "skilled-migration",
   "isHub": false,
   "name": "How Points Are Calculated",
-  "primaryKeyword": "skilled migration points calculator Australia",
+  "primaryKeyword": "how the Australian points test works",
   "keywords": [
-   "how are points calculated for PR",
+   "skilled migration points test explained",
    "Australian points test 2026",
    "points table 189 190 491",
-   "how to increase PR points",
+   "partner points skilled migration",
    "65 points skilled migration",
-   "partner skills points"
+   "age English work study points"
   ],
   "pageType": "Guide / explainer that supports the PR Points Calculator",
   "seo": {
-   "title": "How PR Points Are Calculated in Australia | Bansal Immigration",
+   "title": "How the Australian Points Test Works | Bansal Immigration",
    "description": "How the Australian skilled migration points test works: age, English, work, study and bonus points explained. Use our free calculator.",
-   "h1": "How Points Are Calculated for Australian Skilled Migration"
+   "h1": "How the Australian Points Test Works"
   },
   "hero": {
    "badge": "",
-   "h1": "How Points Are Calculated for Australian Skilled Migration",
+   "h1": "How the Australian Points Test Works",
    "intro": [
     "Australia ranks skilled migration applicants on a points test. You need at least 65 points to lodge an Expression of Interest, and most invitations go to people with more. This guide explains every category in plain English. When you are ready, use [our free PR Points Calculator](/migrate-to-australia/pr-point-calculator)."
    ],
@@ -3988,7 +3988,7 @@
       "t": "ul",
       "items": [
        {
-        "x": "[How skilled migration works](/skilled-migration)"
+        "x": "[How skilled migration works](/migrate-to-australia)"
        },
        {
         "x": "[Skilled Independent (189)](/migrate-to-australia/skilled-independent-visa-subclass-189)"
@@ -5236,7 +5236,7 @@
      },
      {
       "t": "p",
-      "x": "Through a DAMA, employers can access both **skilled and semi-skilled occupations**, often with **concessions** to requirements like English language, salary level (TSMIT), and age limits. DAMAs support regional communities by filling labour gaps while ensuring Australian workers remain the first priority for recruitment."
+      "x": "Through a DAMA, employers can access both **skilled and semi-skilled occupations**, often with **concessions** to requirements like English language, the income threshold and age limits. From 1 July 2026 the Core Skills Income Threshold (CSIT), used for most Skills in Demand (482) and Employer Nomination Scheme (186) nominations, and the Temporary Skilled Migration Income Threshold (TSMIT), used for the subclass 494, are both AUD 79,423 before any concession in the agreement. DAMAs support regional communities by filling labour gaps while ensuring Australian workers remain the first priority for recruitment."
      },
      {
       "t": "p",
@@ -5597,7 +5597,7 @@
         "x": "You satisfy health and character checks."
        },
        {
-        "x": "You meet the minimum income threshold (TSMIT)."
+        "x": "You meet the income threshold of AUD 79,423. For a subclass 494 nomination this is still called the Temporary Skilled Migration Income Threshold (TSMIT). It is the same amount as the Core Skills Income Threshold (CSIT) used for most 482 and 186 nominations."
        },
        {
         "x": "You intend to live and work only in a designated regional area."
@@ -7885,7 +7885,7 @@
       "t": "ul",
       "items": [
        {
-        "x": "Pay market salary rates (minimum $70,000 for most positions)"
+        "x": "Pay the market salary rate, and at least the Core Skills Income Threshold (CSIT) of AUD 79,423 for most 482 and 186 nominations"
        },
        {
         "x": "Provide terms and conditions no less favorable than Australian workers"
@@ -7956,7 +7956,7 @@
       "t": "ul",
       "items": [
        {
-        "x": "**Pay Market Salary Rate:** At least $70,000 or the Annual Market Salary Rate (AMSR), whichever is higher"
+        "x": "**Pay the market salary rate:** At least the Core Skills Income Threshold (CSIT) of AUD 79,423, or the Annual Market Salary Rate (AMSR), whichever is higher"
        },
        {
         "x": "**Provide Equal Terms:** Same terms and conditions as equivalent Australian workers"
@@ -8409,7 +8409,7 @@
         "x": "Occupation not on relevant skilled list"
        },
        {
-        "x": "Salary below market rate or $70,000 minimum"
+        "x": "Salary below the market rate or the Core Skills Income Threshold (CSIT) of AUD 79,423"
        },
        {
         "x": "Insufficient evidence position is genuine"
@@ -21175,7 +21175,7 @@
   "pageType": "Appeals subpage",
   "seo": {
    "title": "Australian Visa Refusal Guide | Bansal Immigration",
-   "description": "Visa refusal occurs when an application for an Australian visa is declined by the Department of Home Affairs or a review tribunal. If your visa.",
+   "description": "What to do after an Australian visa refusal: ART review deadlines, the AUD 3,727 fee, and when you can apply again.",
    "h1": "Visa Refusal"
   },
   "hero": {
@@ -21229,7 +21229,7 @@
      },
      {
       "t": "p",
-      "x": "For many visa refusals, you can apply for a merits review by the Administrative Review Tribunal (ART). The ART reviews the decision afresh and can affirm, vary, or set aside the original decision. You usually have a limited time to apply for review after receiving the refusal notice."
+      "x": "For many visa refusals, you can apply for a merits review by the Administrative Review Tribunal (ART). The ART reviews the decision afresh and can affirm, vary, or set aside the original decision. Read the deadline in the refusal letter. For most refusals it is 28 days after notification, or 14 days if you are in immigration detention. The fee for most migration reviews is AUD 3,727 and must be paid before that deadline."
      },
      {
       "t": "h3",
@@ -21267,11 +21267,19 @@
      },
      {
       "t": "h3",
-      "x": "Acknowledgement"
+      "x": "Review deadlines"
      },
      {
       "t": "p",
-      "x": "The Department of Home Affairs acknowledges the Traditional Custodians of Country throughout Australia and pays respects to Aboriginal and Torres Strait Islander peoples, their cultures, and elders past, present, and emerging."
+      "x": "The time limit is in your Department of Home Affairs decision letter. For most visa refusals reviewed by the Administrative Review Tribunal, you have 28 days after you are notified of the decision. If you are in immigration detention when you are notified, the limit is 14 days. A character decision made by a delegate, when you are in Australia, is usually 9 days. The Tribunal cannot extend the 28-day or 14-day limit. A late application is not a valid application."
+     },
+     {
+      "t": "h3",
+      "x": "ART application fee"
+     },
+     {
+      "t": "p",
+      "x": "The fee for a review of most migration decisions under Part 5 of the Migration Act is AUD 3,727. You must pay it before the deadline. In cases of financial hardship the Tribunal may reduce it by 50 percent, and you still have to pay at least half before the deadline. A bridging visa decision that resulted in immigration detention has no fee. A character-related review uses a different fee, currently AUD 1,195. Check the [ART fees page](https://www.art.gov.au/help-and-resources/fees) before you lodge. Figures checked November 2026."
      }
     ]
    },
@@ -26002,7 +26010,7 @@
         "x": "**Get your Confirmation of Enrolment (CoE).** Your provider issues it after you accept your offer. See [New CoE](/study-australia/new-coe)."
        },
        {
-        "x": "**Apply for the Subclass 500 student visa.** You need your CoE, health cover, English, funds and a clear Genuine Student statement. See [Student visa information](/study-australia/student-visa-information)."
+        "x": "**Apply for the Subclass 500 student visa.** You need your CoE, health cover, English, funds and a clear Genuine Student statement. See [Student visa information](/study-australia/student-visa-subclass-500)."
        },
        {
         "x": "**Study within your visa conditions.** Student visas have work limits during study periods."
@@ -26060,11 +26068,11 @@
         "Postpone your start date and keep your visa on track"
        ],
        [
-        "[Student visa journey](/study-australia/student-visa-journey)",
+        "[Student visa journey](/study-australia/student-visa-subclass-500)",
         "The whole process in one view"
        ],
        [
-        "[Student visa information](/study-australia/student-visa-information)",
+        "[Student visa information](/study-australia/student-visa-subclass-500)",
         "Requirements, documents and conditions after grant"
        ],
        [
@@ -27838,7 +27846,7 @@
    "badge": "",
    "h1": "Student Guardian Visa Subclass 590",
    "intro": [
-    "The Student Guardian visa (Subclass 590) lets a parent, custodian, or eligible relative (21+) live in Australia temporarily to provide care and support to an international student visa holder, usually under 18. You must show sufficient funds, hold health insurance, and meet health, character, and Genuine Temporary Entrant (GTE) requirements."
+    "The Student Guardian visa (Subclass 590) lets a parent, custodian, or eligible relative (21+) live in Australia temporarily to provide care and support to an international student visa holder, usually under 18. You must show sufficient funds, hold health insurance, and meet health and character requirements, and be a genuine temporary entrant. The Genuine Student requirement applies to the Student visa (subclass 500). It does not replace this test for a Student Guardian visa."
    ],
    "buttons": [
     {
@@ -27913,7 +27921,7 @@
         "x": "Student is under 18 (or over 18 with exceptional circumstances requiring a guardian)."
        },
        {
-        "x": "Demonstrate Genuine Temporary Entrant (GTE) intent to stay temporarily."
+        "x": "Be a genuine temporary entrant: you intend to stay in Australia temporarily to care for the student. Home Affairs still uses this test for the subclass 590. The Genuine Student requirement applies to the Student visa (subclass 500), not to the guardian."
        },
        {
         "x": "Show financial capacity to support yourself and the student."
@@ -27993,7 +28001,7 @@
         "x": "Confirm the student holds (or has applied for) a valid Student visa (Subclass 500)."
        },
        {
-        "x": "Check your relationship eligibility and age (21+) and GTE intent."
+        "x": "Check your relationship eligibility and age (21+), and that you are a genuine temporary entrant."
        },
        {
         "x": "Arrange adequate health insurance for your full stay."
@@ -28137,6 +28145,304 @@
    "text": "Book a consultation or call +61 3 9602 1330."
   },
   "form": false
+ },
+ "/study-australia/student-visa-subclass-500": {
+  "path": "/study-australia/student-visa-subclass-500",
+  "category": "study-australia",
+  "isHub": false,
+  "name": "Student Visa (Subclass 500)",
+  "primaryKeyword": "student visa subclass 500",
+  "keywords": [
+   "student visa Australia requirements",
+   "genuine student requirement",
+   "how to apply for a student visa Australia",
+   "student visa documents checklist",
+   "student visa cost Australia",
+   "Confirmation of Enrolment student visa"
+  ],
+  "pageType": "Visa subpage (study)",
+  "seo": {
+   "title": "Student Visa Subclass 500 | Requirements and How to Apply | Bansal Immigration",
+   "description": "Student visa (subclass 500): Confirmation of Enrolment, Genuine Student requirement, funds, English, OSHC, the visa charge and what to do after you are granted.",
+   "h1": "Student Visa (Subclass 500)"
+  },
+  "hero": {
+   "badge": "",
+   "h1": "Student Visa (Subclass 500)",
+   "intro": [
+    "The Student visa (subclass 500) lets you study full-time in Australia on a CRICOS-registered course. You need a Confirmation of Enrolment, Overseas Student Health Cover, and evidence of English, funds, health and character. You must also meet the Genuine Student requirement. This page covers who can apply, what to prepare, how to lodge, and what happens after the visa is granted."
+   ],
+   "buttons": [
+    {
+     "label": "Book a Consultation",
+     "href": "/book-an-appointment"
+    },
+    {
+     "label": "Estimate your funds",
+     "href": "/study-australia/student-visa-financial-calculator"
+    }
+   ],
+   "phone": true
+  },
+  "sections": [
+   {
+    "id": "key-facts-box",
+    "name": "Key facts box",
+    "kind": "keyfacts",
+    "h2": "Key facts",
+    "blocks": [
+     {
+      "t": "table",
+      "head": [
+       "Fact",
+       "Detail"
+      ],
+      "rows": [
+       [
+        "Visa",
+        "Student visa (subclass 500)"
+       ],
+       [
+        "Study",
+        "Full-time CRICOS course, with a Confirmation of Enrolment"
+       ],
+       [
+        "Genuine Student",
+        "Required for applications lodged on or after 23 March 2024"
+       ],
+       [
+        "Cost",
+        "AUD 2,500 for most students. Some sectors and passports pay less"
+       ],
+       [
+        "Work",
+        "Usually limited while your course is in session. Check the grant letter"
+       ],
+       [
+        "After study",
+        "A Temporary Graduate visa (485) may be available if you qualify"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "id": "requirements",
+    "name": "Requirements",
+    "kind": "prose",
+    "h2": "What you need before you apply",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Start with the course, then the visa. The Department of Home Affairs decides the visa. Your education provider decides the offer."
+     },
+     {
+      "t": "ol",
+      "items": [
+       {
+        "x": "**Choose a CRICOS course and accept the offer.** Pay any deposit the provider asks for. The provider then issues a Confirmation of Enrolment (CoE)."
+       },
+       {
+        "x": "**Arrange Overseas Student Health Cover (OSHC)** for the whole stay, for you and any family members on the application."
+       },
+       {
+        "x": "**Show English.** The level depends on the course. Common tests include IELTS, PTE and TOEFL. Some applicants are exempt. Your provider and Home Affairs can require different levels."
+       },
+       {
+        "x": "**Show you can pay for the course, living costs and travel.** Use the [Student Visa Financial Calculator](/study-australia/student-visa-financial-calculator) for an estimate. The living-cost figure changes, so check it before you lodge."
+       },
+       {
+        "x": "**Meet health and character requirements.** Home Affairs may ask for a medical examination and police certificates."
+       },
+       {
+        "x": "**Write a Genuine Student statement.** Explain why you chose this course in Australia, how it follows your past study or work, and what you plan to do with the qualification."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "genuine-student",
+    "name": "Genuine Student",
+    "kind": "prose",
+    "h2": "Genuine Student requirement",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "Applications lodged on or after 23 March 2024 are assessed under the Genuine Student requirement, not the old Genuine Temporary Entrant test. You must be a genuine applicant for entry and stay as a student, and studying in Australia must be your primary reason for the visa. A later plan to apply for another visa, including permanent residence, does not by itself count against you. Home Affairs looks at your circumstances, your immigration history, and, if you are under 18, the intentions of a parent or guardian. The Student Guardian visa (subclass 590) is different: the guardian is still assessed as a genuine temporary entrant."
+     }
+    ]
+   },
+   {
+    "id": "how-to-apply",
+    "name": "How to apply",
+    "kind": "prose",
+    "h2": "How to apply",
+    "blocks": [
+     {
+      "t": "ol",
+      "items": [
+       {
+        "x": "**Get the CoE and collect the evidence.** Passport, CoE, English results, financial evidence, OSHC and the Genuine Student statement."
+       },
+       {
+        "x": "**Lodge in ImmiAccount.** Complete the subclass 500 application, upload the documents and pay the visa application charge."
+       },
+       {
+        "x": "**Respond if Home Affairs asks for more.** That can include biometrics, a health examination or police certificates. Answer before the date in the request."
+       },
+       {
+        "x": "**Check the grant.** Use VEVO for the conditions and the expiry date. Keep your provider and Home Affairs updated if your details change."
+       }
+      ]
+     },
+     {
+      "t": "p",
+      "x": "From 2 October 2026 there are extra limits on who can apply for a Student visa while in Australia, and on including family members. Read the current [Home Affairs student visa page](https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500) before you lodge."
+     }
+    ]
+   },
+   {
+    "id": "after-the-grant",
+    "name": "After the grant",
+    "kind": "prose",
+    "h2": "After the visa is granted",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "Stay enrolled and meet course progress and attendance."
+       },
+       {
+        "x": "Keep OSHC current for everyone on the visa."
+       },
+       {
+        "x": "Follow the work condition on your grant. For many students that is up to 48 hours a fortnight while the course is in session, with more hours in official breaks. A masters by research or a doctoral degree can be different."
+       },
+       {
+        "x": "Tell your provider before you defer, change course or take a break. See [course change](/study-australia/course-change-in-australia) and [deferring your studies](/study-australia/request-to-defer-your-studies)."
+       },
+       {
+        "x": "If you need to keep studying after this visa ends, you lodge a new Student visa. See [student visa extension](/study-australia/student-visa-extension)."
+       },
+       {
+        "x": "Family members are not automatic. See [family on a student visa](/study-australia/student-dependent-visa-500). A parent caring for a student under 18 may need a [Student Guardian visa (590)](/study-australia/student-guardian-visa-590)."
+       },
+       {
+        "x": "Near the end of the course, check whether a [Temporary Graduate visa (485)](/migrate-to-australia/temporary-graduate-visa-subclass-485) is open to you. It is a separate application."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "costs",
+    "name": "Costs",
+    "kind": "prose",
+    "h2": "Visa application charge",
+    "blocks": [
+     {
+      "t": "table",
+      "head": [
+       "Item",
+       "Amount",
+       "What it covers"
+      ],
+      "rows": [
+       [
+        "Schools, vocational education, higher education and postgraduate research",
+        "AUD 2,500",
+        "Base charge for most students"
+       ],
+       [
+        "Additional applicant, 18 or over",
+        "AUD 1,530",
+        "On a schools, vocational or higher education application"
+       ],
+       [
+        "Additional applicant, under 18",
+        "AUD 500",
+        "On most student visa applications"
+       ],
+       [
+        "ELICOS or non-award sector",
+        "AUD 2,050",
+        "Base charge. Additional applicant 18 or over is AUD 1,255. Under 18 is AUD 410."
+       ],
+       [
+        "Foreign Affairs, Defence, or secondary exchange",
+        "Nil",
+        "No base charge for these sectors"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "x": "These amounts are from the Department of Home Affairs [current visa pricing table](https://immi.homeaffairs.gov.au/visas/getting-a-visa/fees-and-charges/current-visa-pricing), checked November 2026. Some passport holders pay a lower charge. Tuition, OSHC and living costs are separate. Include family members in the first application if they need a visa."
+     }
+    ]
+   },
+   {
+    "id": "processing-times",
+    "name": "Processing times",
+    "kind": "prose",
+    "h2": "Processing times",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "There is no set processing time. Use the Department of Home Affairs [visa processing time guide](https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-processing-times/global-visa-processing-times). It shows how long recent applications took. It is a guide only, not a promise for your application."
+     }
+    ]
+   },
+   {
+    "id": "related",
+    "name": "Related pages",
+    "kind": "related",
+    "h2": "Related pages",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "[Admission in Australia](/study-australia/admission-in-australia)"
+       },
+       {
+        "x": "[Student visa financial calculator](/study-australia/student-visa-financial-calculator)"
+       },
+       {
+        "x": "[Family on a student visa](/study-australia/student-dependent-visa-500)"
+       },
+       {
+        "x": "[Student Guardian visa (590)](/study-australia/student-guardian-visa-590)"
+       },
+       {
+        "x": "[Temporary Graduate visa (485)](/migrate-to-australia/temporary-graduate-visa-subclass-485)"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "faqs": [
+   {
+    "q": "What replaced the Genuine Temporary Entrant test?",
+    "a": "For a Student visa lodged on or after 23 March 2024, the Genuine Student requirement replaced the Genuine Temporary Entrant test. A Student Guardian visa (subclass 590) is still assessed as a genuine temporary entrant."
+   },
+   {
+    "q": "Can I work on a student visa?",
+    "a": "Usually yes, with a limit while your course is in session. Many grants allow 48 hours a fortnight in session and unlimited hours in official breaks. Read the conditions on your grant letter."
+   },
+   {
+    "q": "Does a student visa lead to permanent residence?",
+    "a": "Not by itself. After you finish, a Temporary Graduate visa or a skilled or employer-sponsored visa may be possible if you meet that visa’s own rules."
+   }
+  ],
+  "cta": {
+   "title": "Talk to a registered migration agent",
+   "text": "Bring your offer, English result and a sketch of your funds. We will tell you what is missing before you lodge."
+  },
+  "form": true
  },
  "/study-australia/student-visa-journey": {
   "path": "/study-australia/student-visa-journey",
@@ -28543,7 +28849,7 @@
       "t": "ul",
       "items": [
        {
-        "x": "[Student Visa Information (Subclass 500)](/study-australia/student-visa-information)"
+        "x": "[Student Visa Information (Subclass 500)](/study-australia/student-visa-subclass-500)"
        },
        {
         "x": "[Admission in Australia](/study-australia/admission-in-australia)"
@@ -28552,7 +28858,7 @@
         "x": "[Study in Australia](/study-australia)"
        },
        {
-        "x": "[Student Visa Journey](/study-australia/student-visa-journey)"
+        "x": "[Student Visa Journey](/study-australia/student-visa-subclass-500)"
        },
        {
         "x": "[Student Guardian Visa (Subclass 590)](/study-australia/student-guardian-visa-590)"
@@ -35809,7 +36115,7 @@
        ],
        [
         "Cost",
-        "AUD 2,265 for the main applicant"
+        "AUD 2,265 for this second stream. A first 485 visa is AUD 5,750"
        ],
        [
         "Processing Time",
@@ -36027,23 +36333,28 @@
        [
         "Base application charge",
         "AUD 2,265",
-        "Second Post-Higher Education Work stream"
+        "Second Post-Higher Education Work stream only"
        ],
        [
         "Additional applicant, 18 or over",
         "AUD 1,140",
-        "Each extra applicant aged 18 or over"
+        "Each extra applicant aged 18 or over on this stream"
        ],
        [
         "Additional applicant, under 18",
         "AUD 575",
-        "Each extra applicant under 18"
+        "Each extra applicant under 18 on this stream"
+       ],
+       [
+        "First Temporary Graduate visa (485)",
+        "AUD 5,750",
+        "Post-Higher Education Work or Post-Vocational Education Work stream. This is a different application."
        ]
       ]
      },
      {
       "t": "p",
-      "x": "These amounts are from the Department of Home Affairs [current visa pricing table](https://immi.homeaffairs.gov.au/visas/getting-a-visa/fees-and-charges/current-visa-pricing). Charges can change. Check the table before you apply. Some citizens of Pacific Island countries, Timor-Leste and ASEAN countries pay less for some visas."
+      "x": "The Second Post-Higher Education Work stream is AUD 2,265. A first Temporary Graduate visa is AUD 5,750. The amounts differ because they are different streams. These figures are from the Department of Home Affairs [current visa pricing table](https://immi.homeaffairs.gov.au/visas/getting-a-visa/fees-and-charges/current-visa-pricing), checked November 2026. Charges can change. Check the table before you apply. Some citizens of Pacific Island countries, Timor-Leste and ASEAN countries pay less for some visas."
      }
     ]
    },
@@ -36060,7 +36371,7 @@
         "x": "[Temporary Graduate Visa Subclass 485-Vocational](/migrate-to-australia/temporary-graduate-visa-subclass-485)"
        },
        {
-        "x": "[Temporary Graduate Visa Subclass 485-Higher Education](/migrate-to-australia/post-study-work-visa-subclass-485)"
+        "x": "[Temporary Graduate Visa Subclass 485-Higher Education](/migrate-to-australia/temporary-graduate-visa-subclass-485)"
        },
        {
         "x": "[Skilled Independent Visa Subclass 189](/migrate-to-australia/skilled-independent-visa-subclass-189)"
@@ -36095,7 +36406,10 @@
   "keywords": [
    "national innovation visa 858",
    "subclass 858",
-   "global talent visa Australia"
+   "global talent visa Australia",
+   "distinguished talent visa 858",
+   "distinguished talent visa 124",
+   "global talent independent program closed"
   ],
   "pageType": "Service page",
   "seo": {
@@ -36163,7 +36477,37 @@
     "blocks": [
      {
       "t": "p",
-      "x": "The National Innovation visa is for people with an internationally recognised record of exceptional achievement in a profession, sport, the arts, or research. It is permanent. There is no points test. Send an expression of interest. It stays active for 2 years. If you are invited, apply within 60 days and include Form 1000 from a nominator. An expression of interest is not a visa application. See the [Home Affairs page](https://immi.homeaffairs.gov.au/visas/working-in-australia/visas-for-innovation/national-innovation-visa)."
+      "x": "The National Innovation visa is for people with an internationally recognised record of exceptional achievement in a profession, sport, the arts, or research. It is permanent. There is no points test and no employer sponsor. Send an expression of interest. It stays active for 2 years. If you are invited, apply within 60 days and include Form 1000 from a nominator. An expression of interest is not a visa application. See the [Home Affairs page](https://immi.homeaffairs.gov.au/visas/working-in-australia/visas-for-innovation/national-innovation-visa)."
+     }
+    ]
+   },
+   {
+    "id": "visas-this-replaced",
+    "name": "Visas this replaced",
+    "kind": "prose",
+    "h2": "The talent visas this replaced",
+    "blocks": [
+     {
+      "t": "p",
+      "x": "New applications for exceptional achievement use this visa. The older talent pathways are closed."
+     },
+     {
+      "t": "ul",
+      "items": [
+       {
+        "x": "**Distinguished Talent visa (subclass 124).** This was the offshore distinguished talent visa. You cannot lodge a new subclass 124 application. Use the National Innovation visa."
+       },
+       {
+        "x": "**The previous Distinguished Talent visa (subclass 858).** The subclass number 858 is still used, but the old distinguished talent criteria are not. A new application is a National Innovation visa application, and you need an invitation first."
+       },
+       {
+        "x": "**Global Talent Independent program.** This closed on 6 December 2024. An old Global Talent expression of interest or unique identifier cannot be used to apply now. You need a new expression of interest for the National Innovation visa."
+       }
+      ]
+     },
+     {
+      "t": "p",
+      "x": "This is not a points-tested visa and it is not employer sponsorship. If your record is strong but not internationally recognised as exceptional, look at [skilled migration](/migrate-to-australia) or an [employer-sponsored visa](/employer-sponsored)."
      }
     ]
    },
@@ -36351,13 +36695,7 @@
         "x": "[PR Point Calculator](/migrate-to-australia/pr-point-calculator)"
        },
        {
-        "x": "[Distinguished Talent Visa (124)](/migrate-to-australia/distinguished-talent-visa-124)"
-       },
-       {
-        "x": "[Distinguished Talent Visa (858)](/migrate-to-australia/distinguished-talent-visa-858)"
-       },
-       {
-        "x": "[Global Talent Independent Program (GTI)](/migrate-to-australia/global-talent-independent-program-gti)"
+        "x": "[Skilled migration (189, 190 and 491)](/migrate-to-australia)"
        }
       ]
      }
@@ -36593,10 +36931,10 @@
         "x": "[National Innovation Visa (subclass 858)](/migrate-to-australia/national-innovation-visa-858)"
        },
        {
-        "x": "[Distinguished Talent Visa (858)](/migrate-to-australia/distinguished-talent-visa-858)"
+        "x": "[Distinguished Talent Visa (858)](/migrate-to-australia/national-innovation-visa-858)"
        },
        {
-        "x": "[Distinguished Talent Visa (124)](/migrate-to-australia/distinguished-talent-visa-124)"
+        "x": "[Distinguished Talent Visa (124)](/migrate-to-australia/national-innovation-visa-858)"
        },
        {
         "x": "[Global Talent Employer Sponsored (GTES) — closed](/employer-sponsored/gtes)"
@@ -36678,13 +37016,13 @@
       "t": "ul",
       "items": [
        {
-        "x": "[Distinguished Talent Visa (858)](/migrate-to-australia/distinguished-talent-visa-858)"
+        "x": "[Distinguished Talent Visa (858)](/migrate-to-australia/national-innovation-visa-858)"
        },
        {
         "x": "[National Innovation Visa (subclass 858)](/migrate-to-australia/national-innovation-visa-858)"
        },
        {
-        "x": "[Global Talent Independent Program (GTI)](/migrate-to-australia/global-talent-independent-program-gti)"
+        "x": "[Global Talent Independent Program (GTI)](/migrate-to-australia/national-innovation-visa-858)"
        },
        {
         "x": "[Skilled migration visas](/migrate-to-australia)"
@@ -36778,13 +37116,13 @@
       "t": "ul",
       "items": [
        {
-        "x": "[Distinguished Talent Visa (124)](/migrate-to-australia/distinguished-talent-visa-124)"
+        "x": "[Distinguished Talent Visa (124)](/migrate-to-australia/national-innovation-visa-858)"
        },
        {
         "x": "[National Innovation Visa (subclass 858)](/migrate-to-australia/national-innovation-visa-858)"
        },
        {
-        "x": "[Global Talent Independent Program (GTI)](/migrate-to-australia/global-talent-independent-program-gti)"
+        "x": "[Global Talent Independent Program (GTI)](/migrate-to-australia/national-innovation-visa-858)"
        },
        {
         "x": "[Skilled migration visas](/migrate-to-australia)"
@@ -36824,7 +37162,7 @@
   "primaryKeyword": "How to Claim Regional Points for Australian Skilled Migration",
   "keywords": [
    "regional points Australia",
-   "Australian immigration points",
+   "regional study points 491",
    "claim regional points",
    "regional sponsorship Australia",
    "study in regional Australia",
@@ -37040,10 +37378,10 @@
   "name": "Points for English Score",
   "primaryKeyword": "Points for English Score",
   "keywords": [
-   "australian migration",
-   "permanent residency",
-   "skilled visa",
-   "PR australia"
+   "English points skilled migration",
+   "IELTS points Australia visa",
+   "PTE points 189 190 491",
+   "competent proficient superior English"
   ],
   "pageType": "Service page",
   "seo": {
@@ -38472,7 +38810,7 @@
         "x": "[Temporary Graduate (485)](/migrate-to-australia/temporary-graduate-visa-subclass-485)"
        },
        {
-        "x": "[Post Study Work (485)](/migrate-to-australia/post-study-work-visa-subclass-485)"
+        "x": "[Post Study Work (485)](/migrate-to-australia/temporary-graduate-visa-subclass-485)"
        },
        {
         "x": "[Citizenship by conferral](/citizenship/citizenship-by-conferral)"
@@ -40211,7 +40549,7 @@
     "blocks": [
      {
       "t": "p",
-      "x": "A positive skills assessment is one part of [how skilled migration works](/skilled-migration). You still need the occupation on the right list, enough points, and an invitation or a sponsor. Teachers are often invited through a state or territory."
+      "x": "A positive skills assessment is one part of [how skilled migration works](/migrate-to-australia). You still need the occupation on the right list, enough points, and an invitation or a sponsor. Teachers are often invited through a state or territory."
      },
      {
       "t": "ul",
@@ -40479,7 +40817,7 @@
        },
        {
         "title": "Then the visa",
-        "desc": "Use the registration as the skills assessment in the Expression of Interest, nomination or visa application. See [how skilled migration works](/skilled-migration)."
+        "desc": "Use the registration as the skills assessment in the Expression of Interest, nomination or visa application. See [how skilled migration works](/migrate-to-australia)."
        }
       ]
      }
@@ -40725,7 +41063,7 @@
      },
      {
       "t": "p",
-      "x": "A suitable outcome lets you claim the occupation in a skilled visa, such as the [189](/migrate-to-australia/skilled-independent-visa-subclass-189), [190](/migrate-to-australia/skilled-nominated-visa-subclass-190) or [491](/migrate-to-australia/skilled-work-regional-provisional-visa-subclass-491). It does not grant the visa. If an employer is sponsoring you, look at the [Skills in Demand visa (subclass 482)](/employer-sponsored/sid-visa-482). Read [how skilled migration works](/skilled-migration) and check your score with the [PR points calculator](/migrate-to-australia/pr-point-calculator)."
+      "x": "A suitable outcome lets you claim the occupation in a skilled visa, such as the [189](/migrate-to-australia/skilled-independent-visa-subclass-189), [190](/migrate-to-australia/skilled-nominated-visa-subclass-190) or [491](/migrate-to-australia/skilled-work-regional-provisional-visa-subclass-491). It does not grant the visa. If an employer is sponsoring you, look at the [Skills in Demand visa (subclass 482)](/employer-sponsored/sid-visa-482). Read [how skilled migration works](/migrate-to-australia) and check your score with the [PR points calculator](/migrate-to-australia/pr-point-calculator)."
      }
     ]
    },

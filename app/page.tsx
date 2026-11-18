@@ -101,7 +101,7 @@ const popularVisas = [
   { label: "Employer Nomination (186)", href: "/employer-sponsored/ens-186-trt" },
   { label: "Partner visa (820)", href: "/family-visa/partner-provisional-visa-subclass-820" },
   { label: "Partner visa (309)", href: "/family-visa/partner-provisional-visa-subclass-309" },
-  { label: "Student visa (500)", href: "/study-australia/student-visa-information" },
+  { label: "Student visa (500)", href: "/study-australia/student-visa-subclass-500" },
   { label: "Temporary Graduate (485)", href: "/migrate-to-australia/temporary-graduate-visa-subclass-485" },
   { label: "Visitor visa (600)", href: "/visitor-visa/visitor-visa-600" },
 ];
@@ -135,7 +135,6 @@ const expertTeam = [
   { name: "Mamta Puri", title: "Registered Migration Agent", marn: "2418481", profileHref: "/team/mamta-puri", image: "/img/team/mamta-puri.avif" },
   { name: "Shubam Kumar", title: "Registered Migration Agent", marn: "2619683", profileHref: "/team/shubam-kumar", image: "/img/team/shubam-kumar.svg" },
   { name: "Shaveena", title: "Registered Migration Agent", marn: "2619533", profileHref: "/team/shaveena", image: "/img/team/shaveena.svg" },
-  { name: "Vijay Patel", title: "Registered Migration Agent", marn: "", profileHref: "/team/vijay-patel", image: "/img/team/vijay-patel.svg" },
   { name: "Celesty Parmar", title: "Registered Migration Agent", marn: "2619664", profileHref: "/team/celesty-parmar", image: "/img/team/celesty-parmar.svg" },
 ];
 

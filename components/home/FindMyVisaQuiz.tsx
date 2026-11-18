@@ -43,8 +43,7 @@ const nodes: Record<string, Node> = {
           title: "Student visa (subclass 500)",
           body: "A student visa is the usual pathway to study in Australia. You will need an offer and a confirmation of enrolment, and you must show you meet the visa requirements.",
           links: [
-            { label: "Student visa information", href: "/study-australia/student-visa-information" },
-            { label: "Student visa journey", href: "/study-australia/student-visa-journey" },
+            { label: "Student visa (500)", href: "/study-australia/student-visa-subclass-500" },
             { label: "Family on a student visa (500)", href: "/study-australia/student-dependent-visa-500" },
           ],
           tool: { label: "Student visa financial calculator", href: "/study-australia/student-visa-financial-calculator" },

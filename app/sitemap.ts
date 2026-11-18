@@ -5,6 +5,19 @@ import { getBlogs, getSuccessStories } from '@/lib/db';
 
 const SITE = 'https://www.bansalimmigration.com.au';
 
+const HIDDEN_PATHS = new Set([
+  '/blogs/test-title',
+  '/team/vijay-patel',
+  '/skilled-migration',
+  '/migrate-to-australia/migration',
+  '/migrate-to-australia/post-study-work-visa-subclass-485',
+  '/migrate-to-australia/distinguished-talent-visa-124',
+  '/migrate-to-australia/distinguished-talent-visa-858',
+  '/migrate-to-australia/global-talent-independent-program-gti',
+  '/study-australia/student-visa-information',
+  '/study-australia/student-visa-journey',
+]);
+
 /** Pages that are not built from content/index.json. */
 const STATIC_PATHS = [
   '/',
@@ -47,7 +60,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   try {
     const blogs = await getBlogs();
     for (const blog of blogs) {
-      if (blog.slug) paths.add(`/blogs/${blog.slug}`);
+      if (blog.slug && !HIDDEN_PATHS.has(`/blogs/${blog.slug}`)) paths.add(`/blogs/${blog.slug}`);
     }
   } catch (error) {
     console.warn('Sitemap could not list blog posts:', error);
@@ -63,6 +76,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   }
 
   return [...paths]
+    .filter((path) => !HIDDEN_PATHS.has(path))
     .sort((a, b) => a.localeCompare(b))
     .map((path) => ({
       url: path === '/' ? SITE : `${SITE}${path}`,

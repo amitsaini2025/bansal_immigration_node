@@ -166,14 +166,6 @@ const teamMembers = [
     image: '/img/team/shaveena.svg',
   },
   {
-    name: 'Vijay Patel',
-    title: 'Registered Migration Agent',
-    marn: '',
-    slug: 'vijay-patel',
-    qualifications: 'Registered migration agent',
-    image: '/img/team/vijay-patel.svg',
-  },
-  {
     name: 'Celesty Parmar',
     title: 'Registered Migration Agent',
     marn: '2619664',

@@ -30,79 +30,6 @@ export interface Profile {
 const REGISTER_URL = 'https://portal.mara.gov.au/search-the-register-of-migration-agents/';
 export const omaraUrl = REGISTER_URL;
 
-function placeholderAgent(input: {
-  slug: string;
-  first: string;
-  name: string;
-  pronoun: 'His' | 'Her';
-  languages: string;
-}): Profile {
-  const { slug, first, name, pronoun, languages } = input;
-  return {
-    slug,
-    first,
-    name,
-    h1: `${name}, Registered Migration Agent`,
-    role: 'Registered Migration Agent',
-    seoTitle: `${name}, Registered Migration Agent | Melbourne`,
-    seoDescription: `${name} is a registered migration agent at Bansal Immigration in Melbourne.`,
-    keywords: [`${name} migration agent`, 'registered migration agent Melbourne', 'Bansal Immigration'],
-    line: `${name} is a registered migration agent at Bansal Immigration in Melbourne.`,
-    image: `/img/team/${slug}.svg`,
-    facts: [
-      { label: 'Role', value: 'Registered Migration Agent' },
-      { label: 'Office', value: 'Level 8, 278 Collins Street, Melbourne VIC 3000' },
-      { label: 'Languages', value: languages },
-    ],
-    helps: [
-      'People who want to talk through an Australian visa with a registered migration agent.',
-      'Individuals and families planning to study, work or settle in Australia.',
-      'Anyone who wants advice before lodging an application.',
-    ],
-    experience: [
-      `${name} is a registered migration agent at Bansal Immigration.`,
-    ],
-    howWorks: [
-      `${first} starts with your situation, then explains the options that may fit and what each one needs.`,
-      'Our fees are service-based and explained upfront, and we do not charge success fees. The first consultation is free.',
-    ],
-    qualifications: ['Registered migration agent'],
-    registrationNote: `${first} is a registered migration agent, so ${pronoun === 'His' ? 'he' : 'she'} has to follow the Code of Conduct for registered migration agents. You can read the Code of Conduct and our Consumer Guide before you book.`,
-    registrationLinks: [
-      {
-        href: 'https://www.legislation.gov.au/F2021L01856/2026-04-01/2026-04-01/text/original/pdf',
-        label: 'Code of Conduct',
-      },
-      { href: '/consumer_guide_english.pdf', label: 'Consumer Guide' },
-    ],
-    areas: [{ name: 'Book a consultation', href: '/book-an-appointment' }],
-    bookText: `Book online, call +61 3 9602 1330 or email info@bansalimmigration.com.au. You can meet ${first} at Level 8, 278 Collins Street, Melbourne, or by phone or video.`,
-    bookLinks: [
-      { href: '/contact', label: 'Contact our team for a call back' },
-      { href: '/terms-conditions', label: 'Read our consultation Terms and Conditions' },
-    ],
-    faqs: [
-      {
-        q: 'Is the first consultation free?',
-        a: 'Yes. We offer a free first consultation so you can understand your options before you decide.',
-      },
-      {
-        q: 'Do you charge a success fee?',
-        a: 'No. Our fees are service-based, and we do not charge a success fee.',
-      },
-      {
-        q: `Is ${first} a registered migration agent?`,
-        a: `Yes. ${first} is registered with OMARA.`,
-      },
-      { q: `Which languages does ${first} speak?`, a: languages.endsWith('.') ? languages : `${languages}.` },
-      {
-        q: `Can ${first} guarantee my visa?`,
-        a: 'No. The Department of Home Affairs decides.',
-      },
-    ],
-  };
-}
-
 export const PROFILES: Record<string, Profile> = {
   'arun-bansal': {
     slug: 'arun-bansal',
@@ -433,13 +360,6 @@ export const PROFILES: Record<string, Profile> = {
       },
     ],
   },
-  'vijay-patel': placeholderAgent({
-    slug: 'vijay-patel',
-    first: 'Vijay',
-    name: 'Vijay Patel',
-    pronoun: 'His',
-    languages: 'English, Hindi, Gujarati',
-  }),
   'celesty-parmar': {
     slug: 'celesty-parmar',
     first: 'Celesty',

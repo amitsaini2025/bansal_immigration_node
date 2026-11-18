@@ -29,7 +29,7 @@ export default function VictorianPointsTestPage() {
         <Breadcrumbs
           items={[
             { label: 'Migrate to Australia', href: '/migrate-to-australia' },
-            { label: 'Skilled Migration', href: '/skilled-migration' },
+            { label: 'Migrate to Australia', href: '/migrate-to-australia' },
             { label: 'Victorian Points Test' },
           ]}
           className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"

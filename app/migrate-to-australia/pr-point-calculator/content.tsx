@@ -38,10 +38,10 @@ const meaning = [
 ];
 
 const next = [
+  { t: 'How the points test works', d: 'Each part of the test, in plain English.', href: '/skilled-migration/how-points-are-calculated' },
+  { t: 'English test points', d: 'How IELTS, PTE and TOEFL map to points.', href: '/migrate-to-australia/points-for-english-score' },
+  { t: 'Regional points', d: 'When regional study or nomination adds points.', href: '/migrate-to-australia/how-to-claim-regional-points' },
   { t: 'Check your occupation', d: 'Use the Occupation Finder.', href: '/occupation-finder' },
-  { t: 'Check if your area is regional', d: 'Use the Postcode Checker.', href: '/postcode-checker' },
-  { t: 'Looking at Victoria?', d: 'Try the Victorian Points Test.', href: '/migrate-to-australia/victorian-points-test' },
-  { t: 'Looking at South Australia?', d: 'Read the South Australia nomination guide.', href: '/south-australia-state-nomination' },
 ];
 
 const faqs = [
@@ -85,7 +85,7 @@ export function PrContent() {
           <SectionHeader
             eyebrow="The rules"
             title="How the points test works"
-            lede="The points test is used for the Skilled Independent (189), Skilled Nominated (190) and Skilled Work Regional (491) visas. You need at least 65 points to lodge an Expression of Interest (EOI) in SkillSelect. Meeting 65 does not mean you will be invited. Invitations go to the highest-scoring people in each occupation."
+            lede="This is the page for your PR points. You need at least 65 points to lodge an Expression of Interest (EOI) in SkillSelect for the Skilled Independent (189), Skilled Nominated (190) or Skilled Work Regional (491) visa. Meeting 65 does not mean you will be invited. The guides below explain one part of the test each."
           />
           <div className={`${card} mt-12 overflow-x-auto`}>
             <table className="w-full text-left min-w-[560px]">
