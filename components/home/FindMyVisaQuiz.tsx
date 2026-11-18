@@ -132,6 +132,7 @@ const nodes: Record<string, Node> = {
           title: "Partner visas",
           body: "The visa depends on whether the applicant is in Australia or overseas. Most partner applications go through a temporary stage before a permanent visa.",
           links: [
+            { label: "Partner visas overview", href: "/family-visa/partner-visa" },
             { label: "Partner visa, applying in Australia (820 then 801)", href: "/family-visa/partner-provisional-visa-subclass-820" },
             { label: "Partner visa, applying outside Australia (309 then 100)", href: "/family-visa/partner-provisional-visa-subclass-309" },
             { label: "Prospective Marriage visa (300)", href: "/family-visa/prospective-marriage-visa-subclass-300" },

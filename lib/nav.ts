@@ -156,6 +156,7 @@ export const VISA_GROUPS: NavGroup[] = [
       {
         heading: 'Partner visas',
         links: [
+          { label: 'Partner visas overview', href: '/family-visa/partner-visa', desc: '820, 801, 309, 100 and 300' },
           { label: 'Partner onshore (820)', href: '/family-visa/partner-provisional-visa-subclass-820' },
           { label: 'Partner onshore permanent (801)', href: '/family-visa/partner-permanent-visa-subclass-801' },
           { label: 'Partner offshore (309)', href: '/family-visa/partner-provisional-visa-subclass-309' },

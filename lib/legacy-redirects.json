@@ -151,7 +151,7 @@
   "/ourservices/employer-sponsored-visas": "/employer-sponsored",
   "/ourservices/family-visa": "/family-visa",
   "/ourservices/general-skilled-migration-consultation": "/skill-assessment",
-  "/ourservices/partner-visa-services": "/family-visa",
+  "/ourservices/partner-visa-services": "/family-visa/partner-visa",
   "/ourservices/skilled-migration": "/migrate-to-australia",
   "/ourservices/student-visa": "/study-australia/student-dependent-visa-500",
   "/ourservices/temporary-graduate-visa": "/migrate-to-australia/temporary-graduate-visa-subclass-485",
@@ -181,5 +181,5 @@
   "/family-visa/sponsored-parent-temporary-870": "/family-visa/sponsored-parent-temporary-visa-subclass-870",
   "/business-visas/business-innovation-investment-permanent-888": "/business-visa/business-innovation-and-investment-permanent-visa-subclass-888",
   "/business-visas": "/business-visa",
-  "/partner-visas": "/family-visa"
+  "/partner-visas": "/family-visa/partner-visa"
 }

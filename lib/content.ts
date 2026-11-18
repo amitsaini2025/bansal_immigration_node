@@ -31,6 +31,8 @@ export interface ContentPageData {
   pageType: string;
   seo: { title: string; description: string; h1: string };
   hero: { badge: string; h1: string; intro: string[]; buttons: { label: string; href: string }[]; phone: boolean };
+  /** ISO date (YYYY-MM-DD) shown as "Last updated". */
+  updated?: string;
   sections: ContentSection[];
   faqs: { q: string; a: string }[];
   cta: { title?: string; text?: string };

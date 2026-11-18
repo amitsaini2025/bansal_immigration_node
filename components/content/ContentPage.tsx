@@ -36,6 +36,17 @@ import {
 
 const SITE = 'https://www.bansalimmigration.com.au';
 
+function formatUpdated(value: string) {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) return value;
+  const [year, month, day] = value.split('-').map(Number);
+  return new Date(Date.UTC(year, month - 1, day)).toLocaleDateString('en-AU', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+    timeZone: 'UTC',
+  });
+}
+
 export function contentMetadata(path: string): Metadata | null {
   const c = getContent(path);
   if (!c) return null;
@@ -400,6 +411,16 @@ export default function ContentPage({ c }: { c: ContentPageData }) {
   const secondary = c.hero.buttons.find((b) => b.href !== '/book-an-appointment' && !b.href.startsWith('tel:'));
 
 
+  const updatedLd = c.updated
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'WebPage',
+        name: c.hero.h1,
+        url: `${SITE}${c.path}`,
+        dateModified: c.updated,
+      }
+    : null;
+
   const faqLd = c.faqs.length
     ? {
         '@context': 'https://schema.org',
@@ -414,6 +435,7 @@ export default function ContentPage({ c }: { c: ContentPageData }) {
 
   return (
     <div className="bg-white">
+      {updatedLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(updatedLd) }} />}
       {faqLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />}
 
       <div className="border-b border-slate-200 bg-white">
@@ -468,6 +490,11 @@ export default function ContentPage({ c }: { c: ContentPageData }) {
       <div className={`${container} py-14 lg:py-20`}>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14">
           <div className="lg:col-span-12 max-w-4xl mx-auto w-full">
+            {c.updated && (
+              <p className="mb-8 text-sm text-slate-500">
+                Last updated {formatUpdated(c.updated)}. Rules and charges change. Check the Department of Home Affairs before you apply.
+              </p>
+            )}
             <div className="divide-y divide-slate-200">
               {body.map((s) => (
                 <section key={s.id} id={s.id} className="scroll-mt-28 py-10 first:pt-0 last:pb-0">

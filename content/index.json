@@ -161,6 +161,13 @@
   "order": 25
  },
  {
+  "path": "/family-visa/partner-visa",
+  "name": "Partner Visas",
+  "category": "family-visa",
+  "isHub": false,
+  "order": 26
+ },
+ {
   "path": "/family-visa/partner-provisional-visa-subclass-309",
   "name": "Partner Provisional Visa Subclass 309",
   "category": "family-visa",
