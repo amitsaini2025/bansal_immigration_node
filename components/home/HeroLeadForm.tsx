@@ -72,7 +72,7 @@ export default function HeroLeadForm() {
         <div className="w-14 h-14 mx-auto rounded-full bg-emerald-50 text-emerald-700 flex items-center justify-center">
           <CheckCircle2 className="w-8 h-8" aria-hidden="true" />
         </div>
-        <h2 className="mt-4 text-2xl font-extrabold text-slate-900">Thank you, {name.split(' ')[0] || 'we have it'}</h2>
+        <h2 className="mt-4 text-2xl font-extrabold text-brand-900">Thank you, {name.split(' ')[0] || 'we have it'}</h2>
         <p className="mt-2 text-slate-600 leading-relaxed">
           A member of our team will call you on {dial} {phone}. Our hours are Monday to Friday, 9:30 am to 6:00 pm.
         </p>

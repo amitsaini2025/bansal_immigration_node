@@ -100,7 +100,7 @@ export default async function BlogDetailPage({
             </div>
 
             {/* Article Title */}
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 leading-tight tracking-tight mb-5">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-brand-900 leading-tight tracking-tight mb-5">
               {blog.title}
             </h1>
 
@@ -151,7 +151,7 @@ export default async function BlogDetailPage({
                 <div
                   className="prose prose-slate prose-lg max-w-none [&_.flex.space-x-4]:flex-wrap [&_.flex.space-x-4]:gap-2
                     text-slate-800 leading-relaxed
-                    prose-headings:font-extrabold prose-headings:text-slate-900 prose-headings:tracking-tight
+                    prose-headings:font-extrabold prose-headings:text-brand-900 prose-headings:tracking-tight
                     prose-h2:text-2xl sm:prose-h2:text-3xl prose-h2:mt-10 prose-h2:mb-4 prose-h2:border-b prose-h2:border-slate-100 prose-h2:pb-3
                     prose-h3:text-xl sm:prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-3
                     prose-p:text-slate-700 prose-p:leading-relaxed prose-p:text-base sm:prose-p:text-lg prose-p:mb-5
@@ -185,7 +185,7 @@ export default async function BlogDetailPage({
                       href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(currentUrl)}&text=${encodeURIComponent(blog.title)}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="px-3.5 py-1.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white text-xs font-semibold transition"
+                      className="px-3.5 py-1.5 rounded-xl bg-brand-700 hover:bg-brand-800 text-white text-xs font-semibold transition"
                     >
                       Twitter / X
                     </a>
@@ -193,7 +193,7 @@ export default async function BlogDetailPage({
                       href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(currentUrl)}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="px-3.5 py-1.5 rounded-xl bg-brand-900 hover:bg-brand-950 text-white text-xs font-semibold transition"
+                      className="px-3.5 py-1.5 rounded-xl bg-brand-700 hover:bg-brand-800 text-white text-xs font-semibold transition"
                     >
                       LinkedIn
                     </a>
@@ -280,7 +280,7 @@ export default async function BlogDetailPage({
             <aside className="lg:col-span-4 space-y-6 lg:sticky lg:top-24">
               
               {/* Consultation Booking CTA Card */}
-              <div className="bg-gradient-to-br from-brand-950 via-brand-900 to-slate-900 rounded-3xl p-6 sm:p-7 text-white shadow-lg space-y-4">
+              <div className="bg-brand-950 rounded-3xl p-6 sm:p-7 text-white shadow-lg space-y-4">
                 <h3 className="text-xl font-extrabold leading-tight">
                   Need Help With Your Australian Visa?
                 </h3>
@@ -290,7 +290,7 @@ export default async function BlogDetailPage({
                 <div className="pt-2 space-y-2.5">
                   <Link
                     href="/book-an-appointment"
-                    className="block w-full py-3 px-4 rounded-xl text-center bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-slate-900 font-extrabold text-sm shadow-md transition"
+                    className="block w-full min-h-12 py-3 px-4 rounded-xl text-center bg-brand-700 hover:bg-brand-800 text-white font-bold text-sm shadow-sm transition-colors"
                   >
                     Book Consultation
                   </Link>
@@ -366,7 +366,7 @@ export default async function BlogDetailPage({
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between mb-8">
               <div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900">Related Articles</h2>
+                <h2 className="text-2xl sm:text-3xl font-extrabold text-brand-900">Related Articles</h2>
                 <p className="text-xs sm:text-sm text-slate-600 mt-1">
                   Continue exploring Australian visa updates and migration guidance.
                 </p>

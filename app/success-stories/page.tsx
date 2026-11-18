@@ -24,7 +24,7 @@ export default async function SuccessStoriesPage() {
       </div>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-b from-slate-900 via-brand-950 to-slate-900 text-white py-16 lg:py-20">
+      <section className="bg-brand-950 text-white py-16 lg:py-20">
         <div className="container mx-auto px-4 max-w-6xl text-center">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight mb-4">
             Success Stories

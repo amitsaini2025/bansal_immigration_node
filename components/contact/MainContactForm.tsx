@@ -121,7 +121,7 @@ export default function MainContactForm() {
         <div className="w-16 h-16 rounded-full bg-green-100 text-green-700 mx-auto flex items-center justify-center mb-5">
           <CheckCircle2 className="w-9 h-9" aria-hidden="true" />
         </div>
-        <h3 className="text-2xl font-extrabold text-slate-900 mb-2">
+        <h3 className="text-2xl font-extrabold text-brand-900 mb-2">
           Your Enquiry Has Been Received
         </h3>
         <p className="text-slate-600 max-w-md mx-auto text-base mb-6 leading-relaxed">

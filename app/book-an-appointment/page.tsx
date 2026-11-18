@@ -359,7 +359,7 @@ export default function BookAppointmentPage() {
   const groupLabel = `${fieldLabel} !mb-3`;
   const btnBack = `${btnGhostLight} cursor-pointer`;
   const btnNext = `${btnPrimaryLight} cursor-pointer disabled:opacity-60`;
-  const stepTitle = 'text-xl sm:text-2xl font-bold text-slate-900';
+  const stepTitle = 'text-xl sm:text-2xl font-bold text-brand-900';
   const stepLede = 'mt-2 text-slate-600 leading-relaxed max-w-2xl';
   const meetingLabel =
     meetingType === 'phone' ? 'Phone Call' : meetingType === 'in-person' ? 'In Person at Office' : 'Video Call (Online)';
@@ -520,7 +520,7 @@ export default function BookAppointmentPage() {
                     <div className="w-16 h-16 rounded-full bg-green-100 text-green-700 mx-auto flex items-center justify-center mb-5">
                       <CheckCircle2 className="w-10 h-10" aria-hidden="true" />
                     </div>
-                    <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-3">
+                    <h2 className="text-2xl sm:text-3xl font-extrabold text-brand-900 mb-3">
                       Appointment Request Received!
                     </h2>
                     <p className="text-slate-600 max-w-md mx-auto text-base mb-6 leading-relaxed">

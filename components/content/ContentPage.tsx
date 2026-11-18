@@ -164,7 +164,7 @@ function WhyProcess({ b }: { b: Block }) {
         <ol className="mt-5 space-y-5">
           {b.steps!.map((st, i) => (
             <li key={st.title} className="flex items-start gap-3">
-              <span className="w-8 h-8 shrink-0 rounded-full bg-brand-600 text-white font-extrabold text-sm flex items-center justify-center">{i + 1}</span>
+              <span className="w-8 h-8 shrink-0 rounded-full bg-brand-700 text-white font-extrabold text-sm flex items-center justify-center">{i + 1}</span>
               <span>
                 <span className="block font-bold text-slate-900">{st.title}</span>
                 <span className="block mt-1 text-base leading-relaxed text-slate-600">{st.desc}</span>
@@ -222,7 +222,7 @@ function Steps({ items }: { items: { x: string; c?: string[] }[] }) {
             {i < items.length - 1 && (
               <span aria-hidden="true" className="absolute left-[19px] top-10 bottom-0 w-px bg-brand-200" />
             )}
-            <span className="absolute left-0 top-0 w-10 h-10 rounded-full bg-brand-600 text-white font-extrabold flex items-center justify-center ring-4 ring-white">
+            <span className="absolute left-0 top-0 w-10 h-10 rounded-full bg-brand-700 text-white font-extrabold flex items-center justify-center ring-4 ring-white">
               {i + 1}
             </span>
             {m ? (
@@ -475,7 +475,7 @@ export default function ContentPage({ c }: { c: ContentPageData }) {
                     className={
                       s.blocks[0]?.t === 'whyprocess'
                         ? 'sr-only'
-                        : 'text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900 leading-tight mb-6 max-w-3xl'
+                        : 'text-2xl sm:text-3xl font-extrabold tracking-tight text-brand-900 leading-tight mb-6 max-w-3xl'
                     }
                   >
                     {s.h2}
@@ -494,7 +494,7 @@ export default function ContentPage({ c }: { c: ContentPageData }) {
           <div className={container}>
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14">
               <div className="lg:col-span-4">
-                <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight leading-tight text-slate-900">
+                <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight leading-tight text-brand-900">
                   Frequently asked questions
                 </h2>
                 <p className="mt-4 text-slate-600 leading-relaxed">
@@ -534,7 +534,7 @@ export default function ContentPage({ c }: { c: ContentPageData }) {
           <div className={container}>
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
               <div className="lg:col-span-5">
-                <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight leading-tight text-slate-900">
+                <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight leading-tight text-brand-900">
                   {formSection?.h2 || 'Talk to a registered migration agent'}
                 </h2>
                 <div className="mt-4 space-y-3 text-slate-700 leading-relaxed">

@@ -338,7 +338,7 @@ export default function AfpPoliceCheckPage() {
           <div className={`${card} ${cardPad} flex flex-col sm:flex-row gap-6 items-start max-w-4xl`}>
             <IconTile icon={FileText} />
             <div>
-              <h2 className="text-2xl font-extrabold text-slate-900">How we handle your documents</h2>
+              <h2 className="text-2xl font-extrabold text-brand-900">How we handle your documents</h2>
               <p className="mt-3 text-base text-slate-600 leading-relaxed max-w-2xl">
                 Your ID scans are sensitive. We use them only to complete your application. We handle them under the
                 Privacy Act 1988. See our{' '}

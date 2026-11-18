@@ -341,7 +341,7 @@ export default function OccupationFinderClient() {
           {selectedOccupation && (
             <div className={`${card} ${cardPad} lg:p-8 mb-10`}>
               <div className="mb-6">
-                <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mb-4">
+                <h2 className="text-2xl sm:text-3xl font-bold text-brand-900 tracking-tight mb-4">
                   {selectedOccupation.anzsco_code}: {selectedOccupation.occupation_title}
                 </h2>
                 <div className="flex flex-wrap items-center gap-2">
@@ -529,7 +529,7 @@ export default function OccupationFinderClient() {
           {hasSearched && searchResults.length === 0 && !selectedOccupation && (
             <div className={`${card} p-10 sm:p-12 text-center`}>
               <Compass className="w-12 h-12 text-slate-400 mx-auto mb-4" aria-hidden="true" />
-              <h2 className="text-xl font-bold text-slate-900 mb-2">No matching occupations found</h2>
+              <h2 className="text-xl font-bold text-brand-900 mb-2">No matching occupations found</h2>
               <p className="text-slate-600 text-base max-w-md mx-auto mb-6">
                 We could not find an occupation matching &quot;{query}&quot;. Try a broader title (for example &quot;Developer&quot;, &quot;Nurse&quot; or &quot;Engineer&quot;) or a 6-digit ANZSCO code.
               </p>

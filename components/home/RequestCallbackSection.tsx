@@ -187,7 +187,7 @@ export default function RequestCallbackSection() {
                   <div className="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 mx-auto flex items-center justify-center mb-5">
                     <CheckCircle2 className="w-9 h-9" />
                   </div>
-                  <h3 className="text-2xl font-bold text-slate-900 mb-2">
+                  <h3 className="text-2xl font-bold text-brand-900 mb-2">
                     Call Back Request Received
                   </h3>
                   <p className="text-slate-600 max-w-md mx-auto text-sm sm:text-base mb-6 leading-relaxed">

@@ -355,7 +355,7 @@ export default function SouthAustraliaStateNominationPage() {
         <div className={container}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <div className={`${card} ${cardPad} lg:p-8`}>
-              <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900">Costs and timing</h2>
+              <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-brand-900">Costs and timing</h2>
               <dl className="mt-6 divide-y divide-slate-100">
                 {COSTS.map((c) => (
                   <div key={c.k} className="py-4 first:pt-0 last:pb-0">
@@ -366,7 +366,7 @@ export default function SouthAustraliaStateNominationPage() {
               </dl>
             </div>
             <div className={`${card} ${cardPad} lg:p-8`}>
-              <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900">Common mistakes to avoid</h2>
+              <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-brand-900">Common mistakes to avoid</h2>
               <ul className="mt-6 space-y-3">
                 {MISTAKES.map((m) => (
                   <li key={m} className="flex items-start gap-2.5 text-slate-700 leading-relaxed">

@@ -133,7 +133,7 @@ export default async function BlogsPage({
             <span>Verified Immigration Insights • OMARA Reviewed</span>
           </div>
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight tracking-tight mb-4">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-brand-900 leading-tight tracking-tight mb-4">
             Australian Immigration News &amp; Guides
           </h1>
 
@@ -151,7 +151,7 @@ export default async function BlogsPage({
               <span>Updated for 2025/2026 Regulations</span>
             </span>
             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-slate-200 shadow-2xs">
-              <BookOpen className="w-3.5 h-3.5 text-purple-600" />
+              <BookOpen className="w-3.5 h-3.5 text-brand-700" />
               <span>{total} Total Published Articles</span>
             </span>
           </div>
@@ -220,7 +220,7 @@ export default async function BlogsPage({
           {/* Header & Status Indicator */}
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-8 pb-4 border-b border-slate-200/80">
             <div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight">
+              <h2 className="text-xl sm:text-2xl font-extrabold text-brand-900 tracking-tight">
                 {search
                   ? `Search results for "${search}"`
                   : category
@@ -266,14 +266,14 @@ export default async function BlogsPage({
                               loading="lazy"
                             />
                           ) : (
-                            <div className="w-full h-full bg-gradient-to-br from-brand-950 via-brand-950 to-slate-900 flex items-center justify-center">
+                            <div className="w-full h-full bg-brand-950 flex items-center justify-center">
                               <Newspaper className="text-brand-300/40 w-12 h-12" />
                             </div>
                           )}
 
                           {Boolean(blog.featured) && (
                             <div className="absolute top-3 right-3">
-                              <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-bold bg-amber-500 text-white shadow-xs">
+                              <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-bold bg-brand-700 text-white shadow-xs">
                                 <Star className="w-3 h-3 fill-white text-white" />
                                 <span>Featured</span>
                               </span>
@@ -419,7 +419,7 @@ export default async function BlogsPage({
               </p>
               <Link
                 href="/blogs"
-                className="inline-block px-5 py-2.5 bg-brand-800 hover:bg-brand-900 text-white font-bold text-xs rounded-xl shadow-xs transition"
+                className="inline-flex items-center justify-center min-h-12 px-5 bg-brand-700 hover:bg-brand-800 text-white font-bold text-sm rounded-xl shadow-sm transition-colors"
               >
                 View All Articles
               </Link>
@@ -431,9 +431,9 @@ export default async function BlogsPage({
       {/* 5. CONSULTATION CALL TO ACTION BANNER */}
       <section className="py-12 bg-white border-y border-slate-200/80">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-br from-brand-950 via-brand-950 to-slate-900 rounded-3xl p-8 sm:p-10 text-white shadow-md flex flex-col md:flex-row md:items-center justify-between gap-6">
+          <div className="bg-brand-950 rounded-3xl p-8 sm:p-10 text-white shadow-md flex flex-col md:flex-row md:items-center justify-between gap-6">
             <div className="max-w-xl">
-              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold text-amber-300 bg-white/10 border border-white/15 mb-3">
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold text-brand-200 bg-white/10 border border-white/15 mb-3">
                 <Sparkles className="w-3.5 h-3.5" />
                 <span>Tailored Visa Assessment</span>
               </div>
@@ -448,7 +448,7 @@ export default async function BlogsPage({
             <div className="shrink-0 flex flex-col sm:flex-row md:flex-col gap-3">
               <Link
                 href="/book-an-appointment"
-                className="px-6 py-3 rounded-xl font-bold text-white bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 shadow-md text-xs sm:text-sm text-center transition flex items-center justify-center gap-2 cursor-pointer"
+                className="min-h-12 px-6 rounded-xl font-bold text-white bg-brand-700 hover:bg-brand-800 shadow-sm text-sm text-center transition-colors flex items-center justify-center gap-2"
               >
                 <Calendar className="w-4 h-4" />
                 <span>Book a Consultation</span>

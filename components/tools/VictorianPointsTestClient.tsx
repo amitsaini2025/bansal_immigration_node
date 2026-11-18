@@ -393,7 +393,7 @@ export default function VictorianPointsTestClient({ children }: { children?: Rea
           <div className="max-w-3xl mx-auto bg-white rounded-2xl border border-slate-200 shadow-[0_1px_2px_rgba(26,26,43,0.04)] p-6 sm:p-10 space-y-6">
             <div className="space-y-3">
               <p className="text-xs font-bold uppercase tracking-[0.14em] text-brand-700">Victoria subclass 190 and 491</p>
-              <h2 className="text-3xl font-extrabold text-slate-900 tracking-tight">Need help with your Victorian ROI?</h2>
+              <h2 className="text-3xl font-extrabold text-brand-900 tracking-tight">Need help with your Victorian ROI?</h2>
               <p className="text-base text-slate-600 leading-relaxed">
                 Our registered migration agents can check your score, evidence and timing.
               </p>
