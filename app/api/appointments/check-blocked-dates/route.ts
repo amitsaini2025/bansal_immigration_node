@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { blockedDatesInRange } from '@/lib/appointment/availability';
-import { forwardToLaravel } from '@/lib/appointment/laravelApi';
+import { forwardToLaravel, publicCalendarClosed } from '@/lib/appointment/laravelApi';
 
 export async function GET(req: NextRequest) {
   const { searchParams } = new URL(req.url);
@@ -20,10 +20,11 @@ export async function GET(req: NextRequest) {
 
   try {
     const forwarded = await forwardToLaravel(`/api/appointments/check-blocked-dates?${searchParams.toString()}`);
-    if (forwarded) {
+    if (forwarded && !publicCalendarClosed(forwarded)) {
       const data = await forwarded.json().catch(() => ({ success: false, message: 'Could not check the calendar.' }));
       return NextResponse.json(data, { status: forwarded.status });
     }
+    await forwarded?.body?.cancel().catch(() => undefined);
 
     const blocked = await blockedDatesInRange({
       startDate,
