@@ -29,9 +29,17 @@ export async function generateMetadata({
   const blog = await getBlog(slug);
   if (!blog) return { title: 'Blog Not Found | Bansal Immigration' };
 
+  const url = `https://bansalimmigration.com.au/blogs/${slug}`;
   return {
     title: blog.meta_title || `${blog.title} | Bansal Immigration`,
     description: blog.meta_description || blog.short_description || undefined,
+    alternates: { canonical: url },
+    openGraph: {
+      title: blog.meta_title || blog.title,
+      description: blog.meta_description || blog.short_description || undefined,
+      url,
+      type: 'article',
+    },
   };
 }
 
@@ -74,7 +82,7 @@ export default async function BlogDetailPage({
       ? 'Arun Bansal (MARN 2418466)'
       : blog.author;
 
-  const currentUrl = `https://www.bansalimmigration.com.au/blogs/${blog.slug}`;
+  const currentUrl = `https://bansalimmigration.com.au/blogs/${blog.slug}`;
 
   return (
     <div className="bg-slate-50/60 min-h-screen">

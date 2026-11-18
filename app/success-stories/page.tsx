@@ -6,6 +6,13 @@ import Breadcrumbs from '@/components/common/Breadcrumbs';
 export const metadata: Metadata = {
   title: 'Success Stories - Bansal Immigration',
   description: 'Read inspiring success stories from our clients who achieved their Australian visa dreams with Bansal Immigration.',
+  alternates: { canonical: 'https://bansalimmigration.com.au/success-stories' },
+  openGraph: {
+    title: 'Success Stories - Bansal Immigration',
+    description: 'Read inspiring success stories from our clients who achieved their Australian visa dreams with Bansal Immigration.',
+    url: 'https://bansalimmigration.com.au/success-stories',
+    type: 'website',
+  },
 };
 
 export default async function SuccessStoriesPage() {

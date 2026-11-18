@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     'Adelaide migration agent',
   ],
   alternates: {
-    canonical: 'https://www.bansalimmigration.com.au/south-australia-state-nomination',
+    canonical: 'https://bansalimmigration.com.au/south-australia-state-nomination',
   },
 };
 

@@ -11,8 +11,20 @@ const nextConfig: NextConfig = {
     },
   },
   async redirects() {
-    const list: Array<{ source: string; destination: string; permanent: boolean }> = [];
-    const seen = new Set<string>();
+    const list: Array<{
+      source: string;
+      destination: string;
+      permanent: boolean;
+      has?: Array<{ type: 'host'; value: string }>;
+    }> = [
+      {
+        source: '/:path*',
+        destination: 'https://bansalimmigration.com.au/:path*',
+        permanent: true,
+        has: [{ type: 'host', value: 'www.bansalimmigration.com.au' }],
+      },
+    ];
+    const seen = new Set<string>(['/:path*']);
 
     for (const [from, to] of Object.entries(legacyRedirects)) {
       if (from && to && from !== to) {

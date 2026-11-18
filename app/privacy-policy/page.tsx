@@ -4,6 +4,7 @@ import LegalDocument from '@/components/legal/LegalDocument';
 export const metadata: Metadata = {
   title: 'Privacy Policy - Bansal Immigration Consultants',
   description: 'Read our privacy policy to understand how Bansal Immigration Consultants collects, uses, and protects your personal information.',
+  alternates: { canonical: 'https://bansalimmigration.com.au/privacy-policy' },
 };
 
 export default function PrivacyPolicyPage() {
