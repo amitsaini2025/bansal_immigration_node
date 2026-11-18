@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     'regional area for 494 visa',
   ],
   alternates: {
-    canonical: 'https://bansalimmigration.com.au/postcode-checker',
+    canonical: 'https://www.bansalimmigration.com.au/postcode-checker',
   },
 };
 

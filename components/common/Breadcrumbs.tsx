@@ -53,13 +53,13 @@ export default function Breadcrumbs({ items, className = '' }: BreadcrumbsProps)
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://bansalimmigration.com.au',
+        item: 'https://www.bansalimmigration.com.au',
       },
       ...items.map((item, index) => ({
         '@type': 'ListItem',
         position: index + 2,
         name: item.label,
-        ...(item.href ? { item: `https://bansalimmigration.com.au${item.href}` } : {}),
+        ...(item.href ? { item: `https://www.bansalimmigration.com.au${item.href}` } : {}),
       })),
     ],
   };

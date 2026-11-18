@@ -34,13 +34,13 @@ export const metadata: Metadata = {
     'student visa agent reviews',
     'partner visa agent reviews',
   ],
-  alternates: { canonical: 'https://bansalimmigration.com.au/testimonials' },
+  alternates: { canonical: 'https://www.bansalimmigration.com.au/testimonials' },
   openGraph: {
     title: TITLE,
     description: DESCRIPTION,
     images: ['/img/team/team-bansal-960.jpg'],
     type: 'website',
-    url: 'https://bansalimmigration.com.au/testimonials',
+    url: 'https://www.bansalimmigration.com.au/testimonials',
   },
 };
 

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     'general skilled migration points',
   ],
   alternates: {
-    canonical: 'https://bansalimmigration.com.au/migrate-to-australia/pr-point-calculator',
+    canonical: 'https://www.bansalimmigration.com.au/migrate-to-australia/pr-point-calculator',
   },
 };
 

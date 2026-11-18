@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     'registered migration agents Melbourne',
   ],
   alternates: {
-    canonical: 'https://bansalimmigration.com.au/blogs',
+    canonical: 'https://www.bansalimmigration.com.au/blogs',
   },
   openGraph: {
     title: 'Australian Immigration News & Guides | Bansal Immigration',
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
       'Authoritative news, policy updates, and practical application guides on Australian skilled migration, student visas, partner visas, and citizenship reviewed by registered migration agents.',
     images: ['/img/team/team-bansal-960.jpg'],
     type: 'website',
-    url: 'https://bansalimmigration.com.au/blogs',
+    url: 'https://www.bansalimmigration.com.au/blogs',
   },
 };
 

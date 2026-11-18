@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     'student visa calculator',
   ],
   alternates: {
-    canonical: 'https://bansalimmigration.com.au/study-australia/student-visa-financial-calculator',
+    canonical: 'https://www.bansalimmigration.com.au/study-australia/student-visa-financial-calculator',
   },
 };
 

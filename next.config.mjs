@@ -14,9 +14,9 @@ const nextConfig = {
     const list = [
       {
         source: "/:path*",
-        destination: "https://bansalimmigration.com.au/:path*",
+        destination: "https://www.bansalimmigration.com.au/:path*",
         permanent: true,
-        has: [{ type: "host", value: "www.bansalimmigration.com.au" }],
+        has: [{ type: "host", value: "bansalimmigration.com.au" }],
       },
     ];
     const seen = new Set(["/:path*"]);

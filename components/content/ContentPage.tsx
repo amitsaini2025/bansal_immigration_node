@@ -34,7 +34,7 @@ import {
   type ContentSection,
 } from '@/lib/content';
 
-const SITE = 'https://bansalimmigration.com.au';
+const SITE = 'https://www.bansalimmigration.com.au';
 
 export function contentMetadata(path: string): Metadata | null {
   const c = getContent(path);

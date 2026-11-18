@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     'migration agency Melbourne and Adelaide',
   ],
   alternates: {
-    canonical: 'https://bansalimmigration.com.au/about',
+    canonical: 'https://www.bansalimmigration.com.au/about',
   },
   openGraph: {
     title: 'About Bansal Immigration | Migration Agents Melbourne',
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
       'Meet the registered migration agents at Bansal Immigration in Melbourne and Adelaide. See how we work, what we cover and why clients trust us.',
     images: ['/img/team/team-bansal-960.jpg'],
     type: 'website',
-    url: 'https://bansalimmigration.com.au/about',
+    url: 'https://www.bansalimmigration.com.au/about',
   },
 };
 

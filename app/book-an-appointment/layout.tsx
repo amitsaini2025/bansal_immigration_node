@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     'online migration consultation',
   ],
   alternates: {
-    canonical: 'https://bansalimmigration.com.au/book-an-appointment',
+    canonical: 'https://www.bansalimmigration.com.au/book-an-appointment',
   },
 };
 

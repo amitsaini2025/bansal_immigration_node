@@ -24,7 +24,7 @@ import {
 } from '@/components/ui/brand';
 import { PROFILES, PROFILE_SLUGS, omaraUrl } from './profiles';
 
-const SITE = 'https://bansalimmigration.com.au';
+const SITE = 'https://www.bansalimmigration.com.au';
 
 export function generateStaticParams() {
   return PROFILE_SLUGS.map((slug) => ({ slug }));

@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   description:
     'Meet the registered migration agents and consultants at Bansal Immigration in Melbourne and Adelaide. See each person’s focus, languages and MARN.',
   alternates: {
-    canonical: 'https://bansalimmigration.com.au/team',
+    canonical: 'https://www.bansalimmigration.com.au/team',
   },
   openGraph: {
     title: 'Our Migration Agents in Melbourne | Bansal Immigration',
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
       'Meet the registered migration agents and consultants at Bansal Immigration in Melbourne and Adelaide. See each person’s focus, languages and MARN.',
     images: ['/img/team/team-bansal-960.jpg'],
     type: 'website',
-    url: 'https://bansalimmigration.com.au/team',
+    url: 'https://www.bansalimmigration.com.au/team',
   },
 };
 
@@ -80,11 +80,11 @@ const teamStructuredData = {
   '@context': 'https://schema.org',
   '@type': 'AboutPage',
   name: 'Our Migration Agents in Melbourne | Bansal Immigration',
-  url: 'https://bansalimmigration.com.au/team',
+  url: 'https://www.bansalimmigration.com.au/team',
   mainEntity: {
     '@type': 'LegalService',
     name: 'Bansal Immigration Consultants',
-    url: 'https://bansalimmigration.com.au',
+    url: 'https://www.bansalimmigration.com.au',
     telephone: '+61-3-9602-1330',
     email: 'info@bansalimmigration.com.au',
     address: {

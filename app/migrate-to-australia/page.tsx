@@ -41,7 +41,7 @@ import { SKILLED_PAGE_REVIEWER, SKILLED_PAGE_UPDATED } from '@/lib/siteConfig';
 export const dynamic = 'force-static';
 
 const PATH = '/migrate-to-australia';
-const SITE = 'https://bansalimmigration.com.au';
+const SITE = 'https://www.bansalimmigration.com.au';
 
 const TITLE = 'Skilled Migration Melbourne: 189, 190, 491 | Bansal Immigration';
 const DESCRIPTION =

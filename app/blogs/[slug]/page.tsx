@@ -29,7 +29,7 @@ export async function generateMetadata({
   const blog = await getBlog(slug);
   if (!blog) return { title: 'Blog Not Found | Bansal Immigration' };
 
-  const url = `https://bansalimmigration.com.au/blogs/${slug}`;
+  const url = `https://www.bansalimmigration.com.au/blogs/${slug}`;
   return {
     title: blog.meta_title || `${blog.title} | Bansal Immigration`,
     description: blog.meta_description || blog.short_description || undefined,
@@ -82,7 +82,7 @@ export default async function BlogDetailPage({
       ? 'Arun Bansal (MARN 2418466)'
       : blog.author;
 
-  const currentUrl = `https://bansalimmigration.com.au/blogs/${blog.slug}`;
+  const currentUrl = `https://www.bansalimmigration.com.au/blogs/${blog.slug}`;
 
   return (
     <div className="bg-slate-50/60 min-h-screen">
@@ -357,8 +357,8 @@ export default async function BlogDetailPage({
                   <div className="pt-2 border-t border-slate-100">
                     <h4 className="font-bold text-slate-900">Adelaide Office</h4>
                     <p className="text-slate-600 mt-0.5">Unit 5, 55 Gawler Pl, Adelaide SA 5000</p>
-                    <a href="tel:+61870798130" className="text-brand-900 font-semibold mt-0.5 inline-block hover:underline">
-                      +61 8 7079 8130
+                    <a href="tel:+61883171340" className="text-brand-900 font-semibold mt-0.5 inline-block hover:underline">
+                      +61 8 8317 1340
                     </a>
                   </div>
                 </div>

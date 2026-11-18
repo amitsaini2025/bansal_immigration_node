@@ -3,7 +3,7 @@ import { PROFILES } from '@/app/team/[slug]/profiles';
 import { getAllPaths } from '@/lib/content';
 import { getBlogs, getSuccessStories } from '@/lib/db';
 
-const SITE = 'https://bansalimmigration.com.au';
+const SITE = 'https://www.bansalimmigration.com.au';
 
 /** Pages that are not built from content/index.json. */
 const STATIC_PATHS = [

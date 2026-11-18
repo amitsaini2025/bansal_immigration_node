@@ -4,7 +4,7 @@ import LegalDocument from '@/components/legal/LegalDocument';
 export const metadata: Metadata = {
   title: 'Cookie Policy - Bansal Immigration Consultants',
   description: 'Learn about how Bansal Immigration Consultants uses cookies and similar technologies on our website.',
-  alternates: { canonical: 'https://bansalimmigration.com.au/cookie-policy' },
+  alternates: { canonical: 'https://www.bansalimmigration.com.au/cookie-policy' },
 };
 
 export default function CookiePolicyPage() {

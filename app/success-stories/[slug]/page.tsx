@@ -30,7 +30,7 @@ export async function generateMetadata({
   const story = await getSuccessStory(slug);
   if (!story) return { title: 'Success Story | Bansal Immigration' };
 
-  const url = `https://bansalimmigration.com.au/success-stories/${slug}`;
+  const url = `https://www.bansalimmigration.com.au/success-stories/${slug}`;
   return {
     title: `${story.title} - Success Story | Bansal Immigration`,
     description: story.excerpt || undefined,

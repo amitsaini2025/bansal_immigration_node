@@ -4,7 +4,7 @@ import LegalDocument from '@/components/legal/LegalDocument';
 export const metadata: Metadata = {
   title: 'Terms & Conditions - Bansal Immigration Consultants',
   description: 'Read our terms and conditions to understand the terms of service for Bansal Immigration Consultants immigration services.',
-  alternates: { canonical: 'https://bansalimmigration.com.au/terms-conditions' },
+  alternates: { canonical: 'https://www.bansalimmigration.com.au/terms-conditions' },
 };
 
 export default function TermsConditionsPage() {

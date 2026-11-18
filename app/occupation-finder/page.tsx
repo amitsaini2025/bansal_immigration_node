@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     'regional occupation list',
   ],
   alternates: {
-    canonical: 'https://bansalimmigration.com.au/occupation-finder',
+    canonical: 'https://www.bansalimmigration.com.au/occupation-finder',
   },
 };
 

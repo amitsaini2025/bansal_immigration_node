@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     index: false,
     follow: false,
   },
-  alternates: { canonical: 'https://bansalimmigration.com.au/office-visit-form/thank-you' },
+  alternates: { canonical: 'https://www.bansalimmigration.com.au/office-visit-form/thank-you' },
 };
 
 export default function OfficeVisitThankYouPage() {

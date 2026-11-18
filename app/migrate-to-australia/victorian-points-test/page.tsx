@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     'Victoria registration of interest',
   ],
   alternates: {
-    canonical: 'https://bansalimmigration.com.au/migrate-to-australia/victorian-points-test',
+    canonical: 'https://www.bansalimmigration.com.au/migrate-to-australia/victorian-points-test',
   },
 };
 

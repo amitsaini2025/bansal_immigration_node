@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     'visa enquiry Melbourne',
   ],
   alternates: {
-    canonical: 'https://bansalimmigration.com.au/contact',
+    canonical: 'https://www.bansalimmigration.com.au/contact',
   },
   openGraph: {
     title: 'Contact Bansal Immigration | Migration Agents Melbourne',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
       'Call, email or visit our Melbourne and Adelaide offices. Send an enquiry and a registered migration agent will reply within one business day.',
     images: ['/img/team/team-bansal-960.jpg'],
     type: 'website',
-    url: 'https://bansalimmigration.com.au/contact',
+    url: 'https://www.bansalimmigration.com.au/contact',
   },
 };
 
@@ -37,7 +37,7 @@ const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'ContactPage',
   name: 'Contact Bansal Immigration Consultants',
-  url: 'https://bansalimmigration.com.au/contact',
+  url: 'https://www.bansalimmigration.com.au/contact',
   mainEntity: {
     '@type': 'LegalService',
     name: 'Bansal Immigration Consultants',

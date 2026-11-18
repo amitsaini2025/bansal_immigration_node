@@ -13,7 +13,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://bansalimmigration.com.au"),
+  metadataBase: new URL("https://www.bansalimmigration.com.au"),
   title: "Registered Migration Agents Melbourne - Bansal Immigration Consultants",
   description:
     "MARN listed registered migration agents in Melbourne for skilled, partner, student, and employer-sponsored visas. Fast-track your Australian PR with Bansal Immigration.",

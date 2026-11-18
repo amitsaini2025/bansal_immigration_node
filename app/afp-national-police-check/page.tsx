@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     'AFP check Melbourne',
   ],
   alternates: {
-    canonical: 'https://bansalimmigration.com.au/afp-national-police-check',
+    canonical: 'https://www.bansalimmigration.com.au/afp-national-police-check',
   },
 };
 

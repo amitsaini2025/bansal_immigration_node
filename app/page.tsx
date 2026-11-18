@@ -47,7 +47,7 @@ export const metadata: Metadata = {
   description:
     "OMARA registered migration agents in Melbourne and Adelaide for skilled, student, partner and employer visas. Book a consultation today.",
   alternates: {
-    canonical: "https://bansalimmigration.com.au",
+    canonical: "https://www.bansalimmigration.com.au",
   },
   keywords: [
     "registered migration agents Melbourne",
@@ -201,8 +201,8 @@ const structuredData = {
   "@context": "https://schema.org",
   "@type": ["LegalService", "ProfessionalService"],
   name: "Bansal Immigration",
-  image: "https://bansalimmigration.com.au/img/logo/logo.webp",
-  url: "https://bansalimmigration.com.au",
+  image: "https://www.bansalimmigration.com.au/img/logo/logo.webp",
+  url: "https://www.bansalimmigration.com.au",
   telephone: "+61-3-9602-1330",
   email: "info@bansalimmigration.com.au",
   priceRange: "$$",
