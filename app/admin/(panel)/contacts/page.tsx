@@ -16,9 +16,7 @@ export default async function ContactsPage({
   const params = await searchParams;
   const q = (params.q || '').trim();
   const status = STATUSES.includes(params.status || '') ? params.status! : '';
-  const page = Math.max(1, Number(params.page) || 1);
   const limit = 20;
-  const offset = (page - 1) * limit;
   const where: string[] = [];
   const values: unknown[] = [];
   if (status) {
@@ -35,12 +33,13 @@ export default async function ContactsPage({
   const [countRows] = await db.query<any[]>(`SELECT COUNT(*) AS total FROM contacts ${whereSql}`, values);
   const total = Number(countRows[0]?.total || 0);
   const pages = Math.max(1, Math.ceil(total / limit));
+  const page = Math.min(Math.max(1, Number(params.page) || 1), pages);
   const [rows] = await db.query<any[]>(
     `SELECT id, name, contact_email, contact_phone, subject, status, form_source, created_at
      FROM contacts ${whereSql}
      ORDER BY created_at DESC
      LIMIT ? OFFSET ?`,
-    [...values, limit, offset]
+    [...values, limit, (page - 1) * limit]
   );
 
   const query = new URLSearchParams();

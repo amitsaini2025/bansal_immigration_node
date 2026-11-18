@@ -34,7 +34,6 @@ export async function PoliceList({
   const status = (params.status || '').trim();
   const from = /^\d{4}-\d{2}-\d{2}$/.test(params.from || '') ? params.from! : '';
   const to = /^\d{4}-\d{2}-\d{2}$/.test(params.to || '') ? params.to! : '';
-  const page = Math.max(1, Number(params.page) || 1);
   const limit = 20;
   const where: string[] = [];
   const values: unknown[] = [];
@@ -60,6 +59,7 @@ export async function PoliceList({
   const [countRows] = await db.query<any[]>(`SELECT COUNT(*) AS total FROM ${config.table} ${whereSql}`, values);
   const total = Number(countRows[0]?.total || 0);
   const pages = Math.max(1, Math.ceil(total / limit));
+  const page = Math.min(Math.max(1, Number(params.page) || 1), pages);
   const [rows] = await db.query<any[]>(
     `SELECT id, reference, first_names, family_name, email, status, total_amount, created_at
      FROM ${config.table} ${whereSql} ORDER BY created_at DESC LIMIT ? OFFSET ?`,

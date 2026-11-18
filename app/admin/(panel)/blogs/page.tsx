@@ -13,7 +13,6 @@ export default async function BlogsAdminPage({
   const params = await searchParams;
   const q = (params.q || '').trim();
   const status = params.status === '0' || params.status === '1' ? params.status : '';
-  const page = Math.max(1, Number(params.page) || 1);
   const limit = 20;
   const where: string[] = [];
   const values: unknown[] = [];
@@ -31,6 +30,7 @@ export default async function BlogsAdminPage({
   const [countRows] = await db.query<any[]>(`SELECT COUNT(*) AS total FROM blogs ${whereSql}`, values);
   const total = Number(countRows[0]?.total || 0);
   const pages = Math.max(1, Math.ceil(total / limit));
+  const page = Math.min(Math.max(1, Number(params.page) || 1), pages);
   const [rows] = await db.query<any[]>(
     `SELECT id, title, slug, status, featured, author, updated_at FROM blogs ${whereSql} ORDER BY updated_at DESC LIMIT ? OFFSET ?`,
     [...values, limit, (page - 1) * limit]

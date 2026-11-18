@@ -104,7 +104,7 @@ export function StoryForm({ story }: { story?: StoryFormValues }) {
       </div>
       <div className="flex flex-wrap gap-4 text-sm">
         <label className="inline-flex items-center gap-2">
-          <input type="checkbox" name="status" value="1" defaultChecked={story ? on(story.status) : true} />
+          <input type="checkbox" name="status" value="1" defaultChecked={on(story?.status)} />
           Published
         </label>
         <label className="inline-flex items-center gap-2">

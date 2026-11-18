@@ -13,6 +13,12 @@ function idsFrom(formData: FormData) {
     .filter((id) => Number.isInteger(id) && id > 0);
 }
 
+function returnPath(value: FormDataEntryValue | null) {
+  const path = String(value || '/admin/contacts');
+  if (!path.startsWith('/admin') || path.startsWith('//') || path.includes('\\')) return '/admin/contacts';
+  return path;
+}
+
 export async function updateContactStatus(formData: FormData) {
   await requireAdmin();
   const id = Number(formData.get('id'));
@@ -29,7 +35,7 @@ export async function bulkUpdateContactStatus(formData: FormData) {
   await requireAdmin();
   const status = String(formData.get('status') || '');
   const ids = idsFrom(formData);
-  const back = String(formData.get('back') || '/admin/contacts');
+  const back = returnPath(formData.get('back'));
   if (!STATUSES.includes(status as (typeof STATUSES)[number]) || ids.length === 0) {
     redirect(`${back}${back.includes('?') ? '&' : '?'}error=Select%20at%20least%20one%20contact.`);
   }
