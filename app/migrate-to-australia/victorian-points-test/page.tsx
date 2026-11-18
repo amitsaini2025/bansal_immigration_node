@@ -28,7 +28,7 @@ export default function VictorianPointsTestPage() {
       <div className="border-b border-slate-200/80 bg-white">
         <Breadcrumbs
           items={[
-            { label: 'Visa Services', href: '/visa-services' },
+            { label: 'Migrate to Australia', href: '/migrate-to-australia' },
             { label: 'Skilled Migration', href: '/skilled-migration' },
             { label: 'Victorian Points Test' },
           ]}

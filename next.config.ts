@@ -19,7 +19,8 @@ const nextConfig: NextConfig = {
     const list: Array<{
       source: string;
       destination: string;
-      permanent: boolean;
+      permanent?: boolean;
+      statusCode?: number;
       has?: Array<{ type: 'host'; value: string }>;
     }> = [
       {
@@ -46,6 +47,22 @@ const nextConfig: NextConfig = {
     }
 
     const customRedirects = [
+      { source: '/parent-visas', destination: '/family-visa', statusCode: 301 },
+      {
+        source: '/family-visa/new-zealand-citizen-family-relationship-461',
+        destination: '/family-visa/new-zealand-citizen-family-relationship-visa-subclass-461',
+        statusCode: 301,
+      },
+      {
+        source: '/family-visa/orphan-reletive-visa-117',
+        destination: '/family-visa/orphan-relative-visa-117',
+        statusCode: 301,
+      },
+      {
+        source: '/employer-sponsored/global-talent-employer-sponsored-gtes',
+        destination: '/employer-sponsored/gtes',
+        statusCode: 301,
+      },
       { source: '/our-team', destination: '/team', permanent: true },
       { source: '/people', destination: '/team', permanent: true },
       { source: '/staff', destination: '/team', permanent: true },

@@ -210,7 +210,7 @@
    }
   }
  },
- "/family-visa/orphan-reletive-visa-117": {
+ "/family-visa/orphan-relative-visa-117": {
   "replace": {
    "which-orphan-relative-visa-applies": {
     "h2": "117 or 837?",
@@ -280,7 +280,7 @@
      },
      {
       "t": "p",
-      "x": "A child's temporary visa can end while family arrangements are being sorted out. Tell us the visa end date at once. You can usually lodge a valid application while the child holds a visa, and a bridging visa may follow. See [Bridging Visa A (010)](/bridging-return-visas/bridging-visa-a-010). Do not travel overseas with the child without advice. For a child overseas, see the [Orphan Relative Visa 117](/family-visa/orphan-reletive-visa-117)."
+      "x": "A child's temporary visa can end while family arrangements are being sorted out. Tell us the visa end date at once. You can usually lodge a valid application while the child holds a visa, and a bridging visa may follow. See [Bridging Visa A (010)](/bridging-return-visas/bridging-visa-a-010). Do not travel overseas with the child without advice. For a child overseas, see the [Orphan Relative Visa 117](/family-visa/orphan-relative-visa-117)."
      }
     ]
    }
